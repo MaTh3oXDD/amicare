@@ -1,0 +1,84 @@
+@if (doctor(); as d) {
+  <article class="doctor-detail">
+    <!-- Content section -->
+    <section class="doctor-detail__content">
+      <div class="container">
+        <!-- Header with name and specialty -->
+        <header class="doctor-detail__header">
+          <div class="doctor-detail__badge">{{ d.title }}</div>
+          <h1 class="doctor-detail__name">{{ d.name }}</h1>
+        </header>
+
+        <div class="doctor-detail__grid">
+          <!-- Main content -->
+          <div class="doctor-detail__main">
+            @if (content(); as c) {
+              <section class="doctor-detail__bio" aria-labelledby="about-h">
+                <h2 id="about-h" class="visually-hidden">O doktorze</h2>
+                <div class="doctor-detail__text">
+                  @for (line of c.narrative; track $index) {
+                    @if (line.toLowerCase().startsWith('główne obszary')) {
+                      <h3 class="doctor-detail__subheading">{{ line }}</h3>
+                    } @else {
+                      <p>{{ line }}</p>
+                    }
+                  }
+                </div>
+              </section>
+
+              @if (c.priceRows.length > 0) {
+                <section class="doctor-detail__pricing" aria-labelledby="pricing-h">
+                  <h2 id="pricing-h" class="doctor-detail__section-title">Cennik</h2>
+                  <table class="cennik">
+                    <tbody>
+                      @for (row of c.priceRows; track row.label) {
+                        <tr>
+                          <td>{{ row.label }}</td>
+                          <td>{{ row.price }}</td>
+                        </tr>
+                      }
+                    </tbody>
+                  </table>
+                </section>
+              }
+            }
+          </div>
+
+          <!-- Sidebar: photo + contact -->
+          <aside class="doctor-detail__sidebar">
+            @if (d.photo) {
+              <div class="doctor-detail__photo-frame">
+                <img
+                  [src]="d.photo"
+                  [alt]="d.name"
+                  width="380"
+                  height="507"
+                  loading="lazy"
+                  class="doctor-detail__photo"
+                />
+              </div>
+            }
+
+            <div class="doctor-detail__contact-card">
+              <h2 class="doctor-detail__section-title">Zarezerwuj wizytę</h2>
+              <div class="doctor-detail__contact-item">
+                <span class="label">Telefon</span>
+                <a href="tel:+48422890250" class="contact-link">42 28 90 250</a>
+              </div>
+              <div class="doctor-detail__contact-item">
+                <span class="label">Email</span>
+                <a href="mailto:rejestracja@amicare.pl" class="contact-link">rejestracja@amicare.pl</a>
+              </div>
+              <a href="tel:+48422890250" class="btn btn--solid">Zadzwoń teraz</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back link -->
+    <nav class="doctor-detail__nav">
+      <a [routerLink]="['/o-nas/zespol']" class="doctor-detail__back">← Powrót do zespołu</a>
+    </nav>
+  </article>
+}

@@ -1,0 +1,44 @@
+<form class="form" (ngSubmit)="wyslij()" #f="ngForm">
+  <div class="form__row">
+    <label>
+      Imię i nazwisko*
+      <input type="text" name="imie" required [(ngModel)]="model.imie" autocomplete="name" />
+    </label>
+    <label>
+      Adres email*
+      <input type="email" name="email" required [(ngModel)]="model.email" autocomplete="email" />
+    </label>
+  </div>
+
+  <label>
+    Prosimy o podanie tematu kontaktu*
+    <select name="temat" required [(ngModel)]="model.temat">
+      <option value="" disabled selected>—Proszę wybrać opcję—</option>
+      @for (t of tematy; track t) {
+        <option [value]="t">{{ t }}</option>
+      }
+    </select>
+  </label>
+
+  <label>
+    Treść wiadomości*
+    <textarea name="tresc" rows="6" required [(ngModel)]="model.tresc"></textarea>
+  </label>
+
+  <label class="form__check">
+    <input type="checkbox" name="zgoda" required [(ngModel)]="model.zgoda" />
+    <span>
+      Wyrażam zgodę na przetwarzanie moich danych osobowych w celach i zakresie zgodnymi z
+      realizacją odpowiedzi na zadane zapytanie, opisanej w Polityce prywatności. Wiem, że zgodę
+      tą mogę w każdej chwili wycofać.
+    </span>
+  </label>
+
+  <p class="form__note">Prosimy o wypełnienie pól oznaczonych *</p>
+
+  <button type="submit" class="btn btn--solid" [disabled]="f.invalid">Wyślij</button>
+
+  @if (wyslano()) {
+    <p class="form__ok" role="status">Otwarto program pocztowy — dziękujemy za wiadomość.</p>
+  }
+</form>

@@ -1,0 +1,25 @@
+<section class="akt" aria-labelledby="akt-h">
+  <div class="container akt__head">
+    <div>
+      <span class="eyebrow">Aktualności</span>
+      <h2 id="akt-h">Obecnie prowadzone badania i&nbsp;ogłoszenia</h2>
+    </div>
+    <div class="akt__ctrl">
+      <button type="button" aria-label="Przewiń w lewo" (click)="przewin(-1)">←</button>
+      <button type="button" aria-label="Przewiń w prawo" (click)="przewin(1)">→</button>
+    </div>
+  </div>
+
+  <div class="akt__track" #track tabindex="0" aria-label="Karuzela ogłoszeń">
+    @for (w of wpisy; track w.tytul) {
+      <a class="akt__card" [routerLink]="w.link">
+        <img [src]="w.obraz" [alt]="w.tytul" loading="lazy" />
+        <div class="akt__body">
+          <span class="mono">{{ w.tag }}</span>
+          <h3>{{ w.tytul }}</h3>
+          <span class="akt__go mono">Zobacz →</span>
+        </div>
+      </a>
+    }
+  </div>
+</section>

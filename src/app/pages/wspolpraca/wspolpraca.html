@@ -1,0 +1,62 @@
+<app-page-hero
+  title="Współpraca"
+  lead="AmiCare Centrum Medyczne zapraszamy do współpracy lekarzy specjalistów, sponsorów badań klinicznych oraz podmioty zainteresowane badaniami klinicznymi zgodnie z wytycznymi GCP."
+/>
+
+<section class="section" aria-labelledby="oferta-h">
+  <div class="container grid grid--2">
+    <div>
+      <span class="eyebrow">Dla lekarzy badaczy</span>
+      <h2 id="oferta-h">Współpraca w badaniach klinicznych</h2>
+      <p>
+        AmiCare Centrum Medyczne zapraszamy do wspólnego prowadzenia badań klinicznych. Wszystkie badania
+        realizowane są zgodnie z wytycznymi dobrej praktyki klinicznej (ICH GCP), obowiązującym prawem
+        polskim i międzynarodowym oraz z uwzględnieniem specyficznych wymagań Sponsorów badań.
+      </p>
+      <h3 class="wspolpraca__subheading">Co oferujemy:</h3>
+      <ul class="lista">
+        @for (o of oferta; track o) {
+          <li>{{ o }}</li>
+        }
+      </ul>
+      <p>
+        Zespół AmiCare wykazuje znaczne doświadczenie w prowadzeniu badań klinicznych oraz posiada
+        certyfikacje GCP. Naszą praktyką jest egzekwowanie najwyższych standardów bezpieczeństwa i etyki
+        badań, co zostało potwierdzone pozytywną inspekcją FDA w 2023 roku.
+      </p>
+    </div>
+    <div>
+      <span class="eyebrow">Infrastruktura</span>
+      <h2>Wyposażenie i obiekty</h2>
+      <p>
+        Nasze ośrodki dysponują nowocześnie wyposażonymi gabinetami lekarskimi oraz pracowniami diagnostycznymi.
+        Infrastruktura umożliwia prowadzenie badań z zakresu wielu specjalizacji medycznych.
+      </p>
+      <h3 class="wspolpraca__subheading">Dostępny sprzęt diagnostyczny:</h3>
+      <ul class="lista">
+        @for (s of sprzet; track s) {
+          <li>{{ s }}</li>
+        }
+      </ul>
+      <p>
+        Placówki AmiCare w Łodzi (2 lokalizacje) i Jeleniej Górze (1 lokalizacja) są dostosowane do
+        prowadzenia badań klinicznych w różnych dziedzinach medycyny.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="join-h">
+  <div class="container join">
+    <span class="eyebrow">Zapraszamy do kontaktu</span>
+    <h2 id="join-h">Dołącz do nas!</h2>
+    <p>
+      Dziękujemy lekarzom za zaufanie i owocną współpracę. Twoja opinia i referencje są dla nas
+      niesamowicie cenne – pozwalają nam na rozwój i dotarcie do większej liczby pacjentów.
+    </p>
+    <div class="join__actions">
+      <a href="tel:+48426394944" class="btn btn--light">tel: +48 42 639 49 44</a>
+      <a href="mailto:office@amicare.pl" class="btn btn--light">Wyślij email</a>
+    </div>
+  </div>
+</section>

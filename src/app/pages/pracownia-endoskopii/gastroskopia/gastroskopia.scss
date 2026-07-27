@@ -1,0 +1,184 @@
+// Dossier layout: sticky mono index rail + chunked entry cards.
+// Echoes the site's "lab-report" mono voice (see .eyebrow / .mono in styles.scss)
+// so a long clinical document reads like a requisition sheet, not a wall of text.
+
+.dossier {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dossier__toc {
+  position: sticky;
+  top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding-top: 0.2rem;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  a {
+    position: relative;
+    padding: 0.55rem 0 0.55rem 1rem;
+    font-size: 0.88rem;
+    color: var(--c-ink-soft);
+    border-left: 2px solid var(--c-mist);
+    transition: color 0.2s ease, border-color 0.2s ease;
+  }
+
+  a:hover {
+    color: var(--c-evergreen);
+  }
+
+  a.is-active {
+    color: var(--c-evergreen);
+    font-weight: 600;
+    border-left-color: var(--c-green);
+  }
+
+  @media (max-width: 860px) {
+    position: static;
+    top: auto;
+
+    nav {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 0.4rem;
+      padding-bottom: 0.3rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    a {
+      flex: 0 0 auto;
+      padding: 0.5rem 0.9rem;
+      border-left: none;
+      border-bottom: 2px solid var(--c-mist);
+      white-space: nowrap;
+    }
+
+    a.is-active {
+      border-left: none;
+      border-bottom-color: var(--c-green);
+    }
+  }
+}
+
+.dossier__toc-label {
+  display: block;
+}
+
+.dossier__content {
+  max-width: 68ch;
+}
+
+.dossier__entry {
+  padding: 2.4rem 0;
+  border-top: 1px solid var(--c-mist);
+
+  &:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+// tri-mark echo — same three-stroke motif as the site eyebrow, sized down as a
+// quiet section marker instead of decorative bullet.
+.dossier__entry > h3 {
+  position: relative;
+  padding-left: 1.9rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.3em;
+    width: 16px;
+    height: 0.85em;
+    background:
+      linear-gradient(var(--c-green), var(--c-green)) 0 0 / 2px 100% no-repeat,
+      linear-gradient(var(--c-green), var(--c-green)) 6px 0 / 2px 100% no-repeat,
+      linear-gradient(var(--c-green), var(--c-green)) 12px 0 / 2px 100% no-repeat;
+  }
+}
+
+.content-prose ul {
+  list-style: none;
+  margin: 1em 0;
+  padding-left: 0;
+}
+
+.content-prose li {
+  position: relative;
+  padding-left: 1.2rem;
+  margin-bottom: 0.55em;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 1px;
+    background: var(--c-bronze);
+  }
+}
+
+.callout {
+  margin: 1.5em 0;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--c-mist);
+  border-left: 3px solid var(--c-bronze);
+  background: var(--c-porcelain);
+
+  h4 {
+    margin-bottom: 0.4em;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-bronze);
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.cennik-card {
+  border: 1px solid var(--c-mist);
+  padding: 0 1.25rem;
+  margin-top: 1rem;
+}
+
+.exam__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.contact-note {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+}

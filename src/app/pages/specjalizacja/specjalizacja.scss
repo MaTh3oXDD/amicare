@@ -1,0 +1,47 @@
+.spec {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+.spec__text {
+  h3 {
+    margin-top: 1.6em;
+  }
+
+  ul {
+    margin: 0 0 1.2em;
+    padding-left: 1.2rem;
+    color: var(--c-ink-soft);
+
+    li {
+      margin-bottom: 0.3em;
+    }
+  }
+}
+
+.spec__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.spec__cennik {
+  background: var(--c-cream);
+  border: 1px solid var(--c-line);
+  padding: 2rem;
+
+  h3 {
+    margin-top: 1.2em;
+    font-size: 1.15rem;
+  }
+
+  table {
+    background: #fff;
+  }
+}

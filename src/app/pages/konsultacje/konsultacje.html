@@ -1,0 +1,31 @@
+<app-page-hero
+  title="Konsultacje specjalistyczne"
+  lead="Łatwy i szybki dostęp do wysoko specjalistycznej diagnostyki, będącej na najwyższym światowym poziomie (endoskopia, rezonans magnetyczny, tomografia komputerowa, optyczna tomografia koherencyjna i inne) zapewnia naszym pacjentom poczucie bezpieczeństwa i komfortu."
+/>
+
+<section class="section" aria-labelledby="kons-h">
+  <div class="container">
+    <span class="eyebrow">Specjalizacje</span>
+    <h2 id="kons-h">Gabinety prywatne</h2>
+    <div class="grid grid--3">
+      @for (s of specjalizacje; track s.slug) {
+        <a class="item" [routerLink]="['/konsultacje-specjalistyczne', s.slug]">
+          <h3>{{ s.nazwa }}</h3>
+          <p>{{ s.opis[0].slice(0, 130) }}…</p>
+          <span>zobacz więcej</span>
+        </a>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" aria-labelledby="poz-h">
+  <div class="container">
+    <h2 id="poz-h">Współpracujemy również w dziedzinach</h2>
+    <ul class="tags">
+      @for (p of pozostale; track p) {
+        <li>{{ p }}</li>
+      }
+    </ul>
+  </div>
+</section>

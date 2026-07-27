@@ -1,0 +1,53 @@
+<header class="header">
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__what">Badania kliniczne i opieka zdrowotna · Łódź · Jelenia Góra</span>
+      <span class="topbar__contact">
+        <a href="tel:+48422890250">tel · 42 28 90 250</a>
+        <a href="mailto:rejestracja@amicare.pl">rejestracja&#64;amicare.pl</a>
+      </span>
+    </div>
+  </div>
+  <div class="container header__inner">
+    <a routerLink="/" class="header__brand" (click)="close()" aria-label="AmiCare — strona główna">
+      <img src="images/logo.png" alt="AmiCare Centrum Medyczne — logo" width="44" height="44" />
+    </a>
+
+    <button
+      class="header__burger"
+      type="button"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Menu"
+      (click)="toggleMenu()"
+    >
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="header__nav" [class.header__nav--open]="menuOpen()" aria-label="Nawigacja główna">
+      @for (g of nav; track g.label) {
+        @if (g.children) {
+          <div class="header__drop" [class.header__drop--open]="openGroup() === g.label">
+            <a [routerLink]="g.link" routerLinkActive="active" (click)="close()">{{ g.label }}</a>
+            <button
+              class="header__caret"
+              type="button"
+              [attr.aria-expanded]="openGroup() === g.label"
+              aria-label="Rozwiń: {{ g.label }}"
+              (click)="toggleGroup(g.label)"
+            ></button>
+            <div class="header__dropmenu">
+              @for (c of g.children; track c.label) {
+                <a [routerLink]="c.link" [fragment]="c.fragment" (click)="close()">{{ c.label }}</a>
+              }
+            </div>
+          </div>
+        } @else {
+          <a [routerLink]="g.link" routerLinkActive="active" (click)="close()">{{ g.label }}</a>
+        }
+      }
+      <a routerLink="/kontakt" routerLinkActive="active" class="header__cta" (click)="close()"
+        >Kontakt</a
+      >
+    </nav>
+  </div>
+</header>

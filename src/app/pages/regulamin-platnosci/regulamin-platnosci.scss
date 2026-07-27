@@ -1,0 +1,37 @@
+.content-prose {
+  max-width: 65ch;
+  margin: 0 auto;
+  line-height: 1.6;
+
+  h2,
+  h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
+
+  ul,
+  ol {
+    margin: 1em 0;
+    padding-left: 2em;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  strong {
+    font-weight: 600;
+  }
+}

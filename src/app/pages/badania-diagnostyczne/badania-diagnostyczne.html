@@ -1,0 +1,17 @@
+<app-page-hero title="Badania diagnostyczne" lead="Twoje zdrowie w najlepszych rękach." />
+
+<section class="section" aria-label="Lista badań diagnostycznych">
+  <div class="container">
+    <div class="grid grid--3">
+      @for (b of badania; track b) {
+        <div class="diag">
+          <h3>{{ b }}</h3>
+        </div>
+      }
+    </div>
+    <div class="cta">
+      <a routerLink="/kontakt" class="btn btn--solid">Zarezerwuj wizytę</a>
+      <a href="tel:+48422890250" class="btn btn--ghost">tel: 42 28 90 250</a>
+    </div>
+  </div>
+</section>

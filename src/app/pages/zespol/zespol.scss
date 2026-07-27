@@ -1,0 +1,58 @@
+.osoba {
+  display: flex;
+  flex-direction: column;
+}
+
+.osoba__more {
+  align-self: flex-start;
+  margin-top: 0.6rem;
+  background: none;
+  border: none;
+  padding: 0.2rem 0;
+  cursor: pointer;
+  color: var(--c-green-ink);
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+
+  &:hover {
+    color: var(--c-steel);
+  }
+
+  &[routerLink] {
+    display: inline-block;
+  }
+}
+
+.staff__meta {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.staff {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem 2rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 720px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--c-line);
+
+    span {
+      color: var(--c-ink-soft);
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+  }
+}

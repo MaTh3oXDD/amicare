@@ -1,0 +1,78 @@
+<app-page-hero
+  title="Zespół"
+  lead="We help Patients through Science. Zapraszamy do zapoznania się z zespołem tworzącym AmiCare Centrum Medyczne."
+/>
+
+<section class="section" aria-labelledby="lekarze-h">
+  <div class="container">
+    <span class="eyebrow">Zespół</span>
+    <h2 id="lekarze-h">Lekarze</h2>
+    <div class="grid grid--3">
+      @for (d of lekarze; track d.name) {
+        <div class="osoba">
+          <app-doctor-card [doctor]="d" />
+          @if (hasBiogram(d)) {
+            <a [routerLink]="getDetailUrl(d)" class="osoba__more mono">
+              zobacz więcej +
+            </a>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="kadra-h">
+  <div class="container">
+    <h2 id="kadra-h">Kadra zarządzająca</h2>
+    <div class="grid grid--3">
+      @for (d of kadra; track d.name) {
+        <div class="osoba">
+          <app-doctor-card [doctor]="d" />
+          @if (hasBiogram(d)) {
+            <a [routerLink]="getDetailUrl(d)" class="osoba__more mono">
+              zobacz więcej +
+            </a>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="koord-h">
+  <div class="container">
+    <h2 id="koord-h">Koordynatorzy</h2>
+    <div class="grid grid--3">
+      @for (d of koordynatorzy; track d.name) {
+        <div class="osoba">
+          <app-doctor-card [doctor]="d" />
+          @if (hasBiogram(d)) {
+            <a [routerLink]="getDetailUrl(d)" class="osoba__more mono">
+              zobacz więcej +
+            </a>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="piel-h">
+  <div class="container">
+    <h2 id="piel-h">Zespół pielęgniarski</h2>
+    <ul class="staff">
+      @for (d of pielegniarki; track d.name) {
+        <li>
+          <strong>{{ d.name }}</strong>
+          <span class="staff__meta">
+            {{ d.title }}
+            @if (hasBiogram(d)) {
+              <a [routerLink]="getDetailUrl(d)" class="osoba__more mono">więcej +</a>
+            }
+          </span>
+        </li>
+      }
+    </ul>
+  </div>
+</section>

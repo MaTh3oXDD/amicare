@@ -1,0 +1,45 @@
+<dialog #dialog class="zgloszenie" (close)="onDialogClose()" (click)="onBackdropClick($event, dialog)">
+  @if (study(); as s) {
+    <div class="zgloszenie__panel" (click)="$event.stopPropagation()">
+      <button type="button" class="zgloszenie__close" (click)="dialog.close()" aria-label="Zamknij">✕</button>
+      <span class="mono zgloszenie__tag">Formularz zgłoszeniowy</span>
+      <h3>{{ s.jednostka }}</h3>
+      <p class="zgloszenie__lead">
+        Zostaw kontakt, a nasz koordynator oddzwoni i przekaże szczegóły udziału w badaniu.
+      </p>
+
+      @if (!wyslano()) {
+        <form class="zgloszenie__form" (ngSubmit)="wyslij()" #f="ngForm">
+          <label>
+            Imię i nazwisko*
+            <input type="text" name="imie" required [(ngModel)]="model.imie" autocomplete="name" />
+          </label>
+          <label>
+            Telefon*
+            <input type="tel" name="telefon" required [(ngModel)]="model.telefon" autocomplete="tel" />
+          </label>
+          <label>
+            Email (opcjonalnie)
+            <input type="email" name="email" [(ngModel)]="model.email" autocomplete="email" />
+          </label>
+          <label>
+            Wiadomość (opcjonalnie)
+            <textarea name="wiadomosc" rows="3" [(ngModel)]="model.wiadomosc"></textarea>
+          </label>
+          <label class="zgloszenie__check">
+            <input type="checkbox" name="zgoda" required [(ngModel)]="model.zgoda" />
+            <span>
+              Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie badania
+              klinicznego, zgodnie z Polityką prywatności.
+            </span>
+          </label>
+          <button type="submit" class="btn btn--solid" [disabled]="f.invalid">Wyślij zgłoszenie</button>
+        </form>
+      } @else {
+        <p class="zgloszenie__ok" role="status">
+          Otwarto program pocztowy — dziękujemy za zgłoszenie. Skontaktujemy się telefonicznie.
+        </p>
+      }
+    </div>
+  }
+</dialog>

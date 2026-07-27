@@ -1,0 +1,597 @@
+{
+  "angular.json": {
+    "mtime": 1784404555.8849883,
+    "ast_hash": "11c24dd9d16fb7d6f0035c833dc08ed0",
+    "semantic_hash": "11c24dd9d16fb7d6f0035c833dc08ed0"
+  },
+  "package.json": {
+    "mtime": 1784402860.099898,
+    "ast_hash": "6654eba7c22b1582f0d3d9c61a30904d",
+    "semantic_hash": "6654eba7c22b1582f0d3d9c61a30904d"
+  },
+  "src/app/app.config.ts": {
+    "mtime": 1784403404.4575582,
+    "ast_hash": "d60e7e17f050a2adf5ce3984d5d504a9",
+    "semantic_hash": "d60e7e17f050a2adf5ce3984d5d504a9"
+  },
+  "src/app/app.routes.ts": {
+    "mtime": 1784487400.6388154,
+    "ast_hash": "8a31415278edf1b073508531eb2a1dba",
+    "semantic_hash": ""
+  },
+  "src/app/app.spec.ts": {
+    "mtime": 1784403520.7582946,
+    "ast_hash": "c652cedc22b85b9a113eb3d959433bca",
+    "semantic_hash": "c652cedc22b85b9a113eb3d959433bca"
+  },
+  "src/app/app.ts": {
+    "mtime": 1784483218.2449493,
+    "ast_hash": "921a1568172e7724de779484430e8c4a",
+    "semantic_hash": ""
+  },
+  "src/app/components/doctor-card/doctor-card.ts": {
+    "mtime": 1784403150.6705935,
+    "ast_hash": "076d0fc55a5edfeefae32dc7ef103287",
+    "semantic_hash": "076d0fc55a5edfeefae32dc7ef103287"
+  },
+  "src/app/components/footer/footer.ts": {
+    "mtime": 1784403119.9317634,
+    "ast_hash": "2cb579bac19b2dbe890817ab273059e0",
+    "semantic_hash": "2cb579bac19b2dbe890817ab273059e0"
+  },
+  "src/app/components/header/header.ts": {
+    "mtime": 1784487097.5981221,
+    "ast_hash": "a0dc0ef07edfc61f2508b045926773a5",
+    "semantic_hash": ""
+  },
+  "src/app/components/page-hero/page-hero.ts": {
+    "mtime": 1784403143.0984886,
+    "ast_hash": "1ff8b8d08ac9dbee0d369ad595295580",
+    "semantic_hash": "1ff8b8d08ac9dbee0d369ad595295580"
+  },
+  "src/app/components/placowka-card/placowka-card.ts": {
+    "mtime": 1784405100.6538777,
+    "ast_hash": "deb2636e0b56c424e483ba55ae45824f",
+    "semantic_hash": "deb2636e0b56c424e483ba55ae45824f"
+  },
+  "src/app/models/doctor.ts": {
+    "mtime": 1784405911.4663515,
+    "ast_hash": "69812450cd98bf708790bdc0f0a2edd2",
+    "semantic_hash": "69812450cd98bf708790bdc0f0a2edd2"
+  },
+  "src/app/models/placowka.ts": {
+    "mtime": 1784404948.9558911,
+    "ast_hash": "c124517e610381e99e5cd8c6e900ab05",
+    "semantic_hash": "c124517e610381e99e5cd8c6e900ab05"
+  },
+  "src/app/pages/badania-diagnostyczne/badania-diagnostyczne.ts": {
+    "mtime": 1784405919.395982,
+    "ast_hash": "d65a11e9250f104b62b74c87ee5a7316",
+    "semantic_hash": "d65a11e9250f104b62b74c87ee5a7316"
+  },
+  "src/app/pages/badania-kliniczne/badania-kliniczne.ts": {
+    "mtime": 1784484290.843862,
+    "ast_hash": "cdb0daa89a5dce3aa8728c198f8c491d",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/study-card/study-card.ts": {
+    "mtime": 1784484277.2544253,
+    "ast_hash": "31109122d9aa8a1eb6330cef428df42b",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/models/study.ts": {
+    "mtime": 1784484546.6099963,
+    "ast_hash": "208264ff0685ab3ef89553f015f16f4f",
+    "semantic_hash": ""
+  },
+  "src/app/pages/home/components/aktualnosci/aktualnosci.ts": {
+    "mtime": 1784406455.162051,
+    "ast_hash": "8f2ae0cbfa23224bb7f6e77f5d74260d",
+    "semantic_hash": "8f2ae0cbfa23224bb7f6e77f5d74260d"
+  },
+  "src/app/pages/home/home.ts": {
+    "mtime": 1784454716.0315826,
+    "ast_hash": "44f120eaf04786d17d603543b321f647",
+    "semantic_hash": ""
+  },
+  "src/app/pages/konsultacje/konsultacje.ts": {
+    "mtime": 1784403409.6426764,
+    "ast_hash": "85966082184baf17371f389b2d634a53",
+    "semantic_hash": "85966082184baf17371f389b2d634a53"
+  },
+  "src/app/pages/kontakt/components/formularz-kontaktowy/formularz-kontaktowy.ts": {
+    "mtime": 1784403469.153017,
+    "ast_hash": "f7ca43eb74adf3ad283d29a128a065b2",
+    "semantic_hash": "f7ca43eb74adf3ad283d29a128a065b2"
+  },
+  "src/app/pages/kontakt/kontakt.ts": {
+    "mtime": 1784403456.3655646,
+    "ast_hash": "1c1799c4448c47f86ec7e74d780b2e36",
+    "semantic_hash": "1c1799c4448c47f86ec7e74d780b2e36"
+  },
+  "src/app/pages/o-nas/o-nas.ts": {
+    "mtime": 1784403240.3534312,
+    "ast_hash": "be9497368c8c25d22e7cd76d35cf333d",
+    "semantic_hash": "be9497368c8c25d22e7cd76d35cf333d"
+  },
+  "src/app/pages/placowki/placowka-detail/placowka-detail.ts": {
+    "mtime": 1784454737.904356,
+    "ast_hash": "f3fc1a1bdd829760393eeeee78d0fed6",
+    "semantic_hash": ""
+  },
+  "src/app/pages/placowki/placowki.ts": {
+    "mtime": 1784404957.5211575,
+    "ast_hash": "501ecc519fd9596552409c06ff631760",
+    "semantic_hash": "501ecc519fd9596552409c06ff631760"
+  },
+  "src/app/pages/pracownia-endoskopii/pracownia-endoskopii.ts": {
+    "mtime": 1784487395.4360697,
+    "ast_hash": "6fac28ac95322d947b39703f4660dfd0",
+    "semantic_hash": ""
+  },
+  "src/app/pages/specjalizacja/models/specjalizacja-data.ts": {
+    "mtime": 1784403380.941961,
+    "ast_hash": "a3cdaf42f35930573591c7e6f57a0760",
+    "semantic_hash": "a3cdaf42f35930573591c7e6f57a0760"
+  },
+  "src/app/pages/specjalizacja/specjalizacja.ts": {
+    "mtime": 1784454786.1628551,
+    "ast_hash": "52f75e4fca8c99f89b20c91aa33d7a3d",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpraca/wspolpraca.ts": {
+    "mtime": 1784454744.1894271,
+    "ast_hash": "15eea00dfbc191aac897683c2f0f975f",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/components/biogram-dialog/biogram-dialog.ts": {
+    "mtime": 1784406997.1473005,
+    "ast_hash": "b7d1b3ea5b8443de1e09edc22501b698",
+    "semantic_hash": "b7d1b3ea5b8443de1e09edc22501b698"
+  },
+  "src/app/pages/zespol/models/biogramy.ts": {
+    "mtime": 1784406988.09873,
+    "ast_hash": "8b99d2cb96bd470b1b7000eedd340736",
+    "semantic_hash": "8b99d2cb96bd470b1b7000eedd340736"
+  },
+  "src/app/pages/zespol/zespol.ts": {
+    "mtime": 1784454749.0705624,
+    "ast_hash": "232e6b345e7848b6e0ba39900a38ae76",
+    "semantic_hash": ""
+  },
+  "src/app/services/seo.ts": {
+    "mtime": 1784403089.606111,
+    "ast_hash": "df840a4ce5d08a588670691162d09cc3",
+    "semantic_hash": "df840a4ce5d08a588670691162d09cc3"
+  },
+  "src/main.ts": {
+    "mtime": 1784402860.1155732,
+    "ast_hash": "1289536d6d8f94242a4ffc598d094633",
+    "semantic_hash": "1289536d6d8f94242a4ffc598d094633"
+  },
+  "tsconfig.app.json": {
+    "mtime": 1784402860.1185806,
+    "ast_hash": "f0ed6c81d0a374939052cff4567f713f",
+    "semantic_hash": "f0ed6c81d0a374939052cff4567f713f"
+  },
+  "tsconfig.json": {
+    "mtime": 1784402860.1039689,
+    "ast_hash": "481934fa92ea3deadda691e7aa66ff31",
+    "semantic_hash": "481934fa92ea3deadda691e7aa66ff31"
+  },
+  "tsconfig.spec.json": {
+    "mtime": 1784402860.119578,
+    "ast_hash": "09ccc14eae54035b93ae8f1768ca2506",
+    "semantic_hash": "09ccc14eae54035b93ae8f1768ca2506"
+  },
+  ".claude/settings.json": {
+    "mtime": 1784451246.313671,
+    "ast_hash": "18843da59668dd2a9468306f7f1f1057",
+    "semantic_hash": ""
+  },
+  "src/app/pages/polityka-prywatnosci/polityka-prywatnosci.ts": {
+    "mtime": 1784454766.3308773,
+    "ast_hash": "82fd7802bb4746e9b98a27b71fc53901",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784402860.1009789,
+    "ast_hash": "075ecbd12f2f09d1c89854b0bc2f9344",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1784403485.4586995,
+    "ast_hash": "8cdbde72373ced8a9dc5586ee37165b9",
+    "semantic_hash": ""
+  },
+  "src/app/app.html": {
+    "mtime": 1784403180.0011356,
+    "ast_hash": "966dee3a21400a3f7e64069fcd1f3813",
+    "semantic_hash": ""
+  },
+  "src/app/components/footer/footer.html": {
+    "mtime": 1784451888.9122982,
+    "ast_hash": "43379071058bd9b88679a6125cd66a51",
+    "semantic_hash": ""
+  },
+  "src/app/components/header/header.html": {
+    "mtime": 1784486808.9089854,
+    "ast_hash": "8122b045696fe8dc27be0acd97d0683b",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-diagnostyczne/badania-diagnostyczne.html": {
+    "mtime": 1784403445.7548683,
+    "ast_hash": "48aebf9cda4c1c25d811e6fcdd49e48e",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/badania-kliniczne.html": {
+    "mtime": 1784484551.6741352,
+    "ast_hash": "c0d9afb3a7f0196f58fbe9e446a19af6",
+    "semantic_hash": ""
+  },
+  "src/app/pages/home/components/aktualnosci/aktualnosci.html": {
+    "mtime": 1784406458.75761,
+    "ast_hash": "0fec4bbbcf4f472d5a32084ebd842db3",
+    "semantic_hash": ""
+  },
+  "src/app/pages/home/home.html": {
+    "mtime": 1784406476.1032465,
+    "ast_hash": "b26eebd37058cc0ff60e3c4fb50a1885",
+    "semantic_hash": ""
+  },
+  "src/app/pages/konsultacje/konsultacje.html": {
+    "mtime": 1784403415.2810304,
+    "ast_hash": "afb9bd9a41bcfcbe49a7d1e04a9a6193",
+    "semantic_hash": ""
+  },
+  "src/app/pages/kontakt/components/formularz-kontaktowy/formularz-kontaktowy.html": {
+    "mtime": 1784403476.142955,
+    "ast_hash": "80f02cfd2100a0e4dce458d2211f51d2",
+    "semantic_hash": ""
+  },
+  "src/app/pages/kontakt/kontakt.html": {
+    "mtime": 1784405931.4601023,
+    "ast_hash": "a49d4681094aa0620cc9c875d76afaa7",
+    "semantic_hash": ""
+  },
+  "src/app/pages/o-nas/o-nas.html": {
+    "mtime": 1784403253.0871835,
+    "ast_hash": "8d4b969fa0fda059900ccaf04f73d289",
+    "semantic_hash": ""
+  },
+  "src/app/pages/placowki/placowka-detail/placowka-detail.html": {
+    "mtime": 1784404992.6441772,
+    "ast_hash": "c8f2a4644655cebb34b7a5142dfb6129",
+    "semantic_hash": ""
+  },
+  "src/app/pages/placowki/placowki.html": {
+    "mtime": 1784404962.6922395,
+    "ast_hash": "c88e64b6b4e97f1c86ff11d4ea6fb3ce",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/pracownia-endoskopii.html": {
+    "mtime": 1784487386.6154363,
+    "ast_hash": "b45cac336429970670ce83f70fddcb42",
+    "semantic_hash": ""
+  },
+  "src/app/pages/specjalizacja/specjalizacja.html": {
+    "mtime": 1784403393.3277943,
+    "ast_hash": "511d418789337b2cbbf8fc604450c6df",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpraca/wspolpraca.html": {
+    "mtime": 1784482645.0611298,
+    "ast_hash": "9305a23e5be68cc322e5e246ad25a058",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/components/biogram-dialog/biogram-dialog.html": {
+    "mtime": 1784407000.9266229,
+    "ast_hash": "b12425e35b72fc87d2e5b706abbf559e",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/zespol.html": {
+    "mtime": 1784452014.8617113,
+    "ast_hash": "e5096cd087449e8859ab854ceea8903e",
+    "semantic_hash": ""
+  },
+  "src/index.html": {
+    "mtime": 1784482570.890349,
+    "ast_hash": "34bc186584efe3ac363e6d868e44be35",
+    "semantic_hash": ""
+  },
+  "uwagi.txt": {
+    "mtime": 1784452039.6479363,
+    "ast_hash": "fa05b977dedb1af394664806287ff816",
+    "semantic_hash": ""
+  },
+  "public/images/amicare-bg.webp": {
+    "mtime": 1784402899.088207,
+    "ast_hash": "576546975aa4b6b480dfdf81e593d936",
+    "semantic_hash": ""
+  },
+  "public/images/badania/cennik-drozda.jpg": {
+    "mtime": 1784406429.231386,
+    "ast_hash": "8bdaa2197fc0682dd608760710a04d0f",
+    "semantic_hash": ""
+  },
+  "public/images/badania/crohn.jpg": {
+    "mtime": 1784402901.2181823,
+    "ast_hash": "98c3af2096861c0e75698c55637fd102",
+    "semantic_hash": ""
+  },
+  "public/images/badania/gastropareza.png": {
+    "mtime": 1784406429.003989,
+    "ast_hash": "e0e045ea05c5939aa804f609fd059993",
+    "semantic_hash": ""
+  },
+  "public/images/badania/luszczyca.jpg": {
+    "mtime": 1784402901.499604,
+    "ast_hash": "1740bc7b91f0d807a4ed70274e99404c",
+    "semantic_hash": ""
+  },
+  "public/images/badania/miastenia-gravis.jpg": {
+    "mtime": 1784406428.7581813,
+    "ast_hash": "32a50480179742ffdda61dd6b3a33e07",
+    "semantic_hash": ""
+  },
+  "public/images/badania/swierzbiaczka.jpg": {
+    "mtime": 1784402902.813914,
+    "ast_hash": "126d1c166eaee35c05c4131d4274e137",
+    "semantic_hash": ""
+  },
+  "public/images/badania/tradzik-odwrocony.webp": {
+    "mtime": 1784402902.258437,
+    "ast_hash": "42ce6eef3d250c622e97dab0029c0523",
+    "semantic_hash": ""
+  },
+  "public/images/badania/tradzik.png": {
+    "mtime": 1784402901.9476073,
+    "ast_hash": "c8d2b93295be55ac1fd0eb867def1bad",
+    "semantic_hash": ""
+  },
+  "public/images/badania/watroba.webp": {
+    "mtime": 1784402902.5489748,
+    "ast_hash": "9200d9a839b0378857d3d16e4a257864",
+    "semantic_hash": ""
+  },
+  "public/images/badania/wzjg.jpg": {
+    "mtime": 1784402900.9281468,
+    "ast_hash": "5b8e2403876bba6918a45c6e597e0e86",
+    "semantic_hash": ""
+  },
+  "public/images/centrum-015.webp": {
+    "mtime": 1784402899.3372617,
+    "ast_hash": "793230264c55677dc8ce7d002812c088",
+    "semantic_hash": ""
+  },
+  "public/images/centrum-020.webp": {
+    "mtime": 1784402899.5682702,
+    "ast_hash": "f1ba34f0323a7e98259a5e2bfb01ce2d",
+    "semantic_hash": ""
+  },
+  "public/images/kompleksowosc-01.jpg": {
+    "mtime": 1784402900.050955,
+    "ast_hash": "ef759cd1b74030b26bc5a2ce6ed38ba2",
+    "semantic_hash": ""
+  },
+  "public/images/kompleksowosc-02.jpg": {
+    "mtime": 1784402900.4201343,
+    "ast_hash": "1f1608e4c29bdb94301424417679da9e",
+    "semantic_hash": ""
+  },
+  "public/images/logo.png": {
+    "mtime": 1784402898.726349,
+    "ast_hash": "ea23aeb246bcdc996803331718d11076",
+    "semantic_hash": ""
+  },
+  "public/images/slogan.svg": {
+    "mtime": 1784402900.6449401,
+    "ast_hash": "616dce6d39cc8be36b69f86389814b96",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/adam-poliwczak-kardiolog.webp": {
+    "mtime": 1784402926.300607,
+    "ast_hash": "6e277a8830ef0e845400669c8cdcb06e",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/adam_juszczak.webp": {
+    "mtime": 1784402926.431604,
+    "ast_hash": "2b540b17f5a62c0bad79f9f100c05bc3",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/agnieszka-bala.webp": {
+    "mtime": 1784402925.241742,
+    "ast_hash": "9d1d32d52888124a718cdc57fbf18263",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/aleksandra-bala-wojsznis-1.jpg": {
+    "mtime": 1784402926.126744,
+    "ast_hash": "bcbe0bfcabb7cc0b2bb2b55b4a6d95e0",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/amicare-angelika-jurkiewicz-sm.jpg": {
+    "mtime": 1784402927.3014266,
+    "ast_hash": "6a39eee7eeeacac759f76f48e3001938",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/anna-gora-sm.jpg": {
+    "mtime": 1784402926.8894365,
+    "ast_hash": "b5d0ddc145985dc14712cdb20d3765df",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/danuta-domzal-magrowska.webp": {
+    "mtime": 1784402925.771665,
+    "ast_hash": "c6673df0146a2d38692aa7ff8c9c0699",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/dariusz-krzyczmanik.webp": {
+    "mtime": 1784402925.5494654,
+    "ast_hash": "c4a9506035c6f9d14ac528ed2f9893a3",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/dorota-sobczyk-clapa.webp": {
+    "mtime": 1784402927.0034287,
+    "ast_hash": "3120b3f67e32ef4415e62340081aeeb4",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/dr-katarzyna-przybylowska-kustosik.jpg": {
+    "mtime": 1784402925.8817234,
+    "ast_hash": "3175f4d259997265793e9fe24c3466b2",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/hubert-sadowski-sm.jpg": {
+    "mtime": 1784402927.2014277,
+    "ast_hash": "57aaad73586f02062e06b7a59448a704",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/izabela-kubinska.webp": {
+    "mtime": 1784402925.9927294,
+    "ast_hash": "451f2c95fd19df1f6fcb8cecd337bf10",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/jakub-majka.jpg": {
+    "mtime": 1784402926.7914371,
+    "ast_hash": "1aaf92db7d5bd6645afeb09140b6c8ec",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/joanna-jerzynska.webp": {
+    "mtime": 1784402924.9082286,
+    "ast_hash": "1fd6831eb17cf0570b8960e093c008ab",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/joanna-kowalska-majka.jpg": {
+    "mtime": 1784402925.3387406,
+    "ast_hash": "396f3f64888de5109e8c3e9bc62b8848",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/julia-banasik.webp": {
+    "mtime": 1784402924.8122227,
+    "ast_hash": "fb238672a97b5a12fef831c75e913130",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/karolina-niczyporuk.jpg": {
+    "mtime": 1784402924.7172253,
+    "ast_hash": "9cd733dcbd7c259a620a5abfb11acb9a",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/karolina-szczesniak.webp": {
+    "mtime": 1784402927.1054313,
+    "ast_hash": "35c8171049fd8cb5c564b747b81f20e5",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/lukasz-spadlinski-kardiolog.jpg": {
+    "mtime": 1784402925.0292244,
+    "ast_hash": "bb3161c8f148b96dfe13977d70378aec",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/magdalena-baranska.webp": {
+    "mtime": 1784402924.620229,
+    "ast_hash": "89c1cbe120058881577db180f7f618eb",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/marlena-serwacinska.webp": {
+    "mtime": 1784402926.6544278,
+    "ast_hash": "e2bbbd12831787489bf6ae8bc3979942",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/michal-bytomski.webp": {
+    "mtime": 1784402926.550432,
+    "ast_hash": "71f6c050068679b3d2934ff26d14f2a0",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/michal-stasiak.webp": {
+    "mtime": 1784402925.4407375,
+    "ast_hash": "5dee55206bc3ce05722791d8386e9aa9",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/milena-padysz.webp": {
+    "mtime": 1784402925.643476,
+    "ast_hash": "c6b28fc134d7c0efcdf551e087f97926",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/natalia-zawada-kornalewicz.jpg": {
+    "mtime": 1784402925.1427484,
+    "ast_hash": "bbdb37b836c4ec45bf06ed984f6c09fd",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/rafal-drozda.webp": {
+    "mtime": 1784402924.5262322,
+    "ast_hash": "4177134a1b333870179cc5349c059915",
+    "semantic_hash": ""
+  },
+  "src/app/pages/regulamin-platnosci/regulamin-platnosci.ts": {
+    "mtime": 1784454771.9229786,
+    "ast_hash": "d9b9b2035b0934411e63048da4f0db71",
+    "semantic_hash": ""
+  },
+  "src/app/pages/polityka-prywatnosci/polityka-prywatnosci.html": {
+    "mtime": 1784485782.5479782,
+    "ast_hash": "4e22929b2c9b9f3225cfefa5d6a2739a",
+    "semantic_hash": ""
+  },
+  "src/app/pages/regulamin-platnosci/regulamin-platnosci.html": {
+    "mtime": 1784485718.2286496,
+    "ast_hash": "fcc149a29a9ce4d78981f917392562e1",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/zespol-detail/zespol-detail.ts": {
+    "mtime": 1784482700.3475773,
+    "ast_hash": "38d4115a50920cc5ffc2f6f831d5cf24",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/zespol-detail/zespol-detail.html": {
+    "mtime": 1784482617.4970322,
+    "ast_hash": "db4d1678ce2cd2f98fa57315e1cb2498",
+    "semantic_hash": ""
+  },
+  "AUDYT-UI-UX.md": {
+    "mtime": 1784482485.1936276,
+    "ast_hash": "938990145841d1f9537999105ad6c1e5",
+    "semantic_hash": ""
+  },
+  "src/app/services/scroll-reveal.ts": {
+    "mtime": 1784486094.1695237,
+    "ast_hash": "afe756ae3cc4b7f7540036884fb5a328",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1784487867.3456633,
+    "ast_hash": "ef7b63db0a3e2af760d2177157ff8eef",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/zgloszenie-dialog/zgloszenie-dialog.ts": {
+    "mtime": 1784484242.9287577,
+    "ast_hash": "3d0007a5581c676a17b5f2d2749fc29c",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/zgloszenie-dialog/zgloszenie-dialog.html": {
+    "mtime": 1784484255.9224694,
+    "ast_hash": "af1c23b645cecb2bf68abe6538d32bcf",
+    "semantic_hash": ""
+  },
+  "audyt.md": {
+    "mtime": 1784485859.7513955,
+    "ast_hash": "7c1ad88283fe7d5d15af19f4ca688843",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia/gastroskopia.ts": {
+    "mtime": 1784487974.0713522,
+    "ast_hash": "a9b0655e0eefbe82accf2f9e602dd6a2",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia/kolonoskopia.ts": {
+    "mtime": 1784487220.055791,
+    "ast_hash": "a13926079549818af63a38f0237cd7fd",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia/gastroskopia.html": {
+    "mtime": 1784487969.5156622,
+    "ast_hash": "51c71ce1675806e7bb1cb66b8dec0f37",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia/kolonoskopia.html": {
+    "mtime": 1784488235.3903177,
+    "ast_hash": "5efd63dde1e23660ea14f84243ccd5eb",
+    "semantic_hash": ""
+  }
+}

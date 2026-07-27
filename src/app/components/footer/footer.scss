@@ -1,0 +1,82 @@
+.footer {
+  background: var(--c-ink);
+  color: #c2cede;
+  padding: clamp(3rem, 6vw, 5rem) 0 2rem;
+  font-size: 0.92rem;
+
+  p {
+    color: #c2cede;
+  }
+
+  a {
+    color: #e4eaf3;
+
+    &:hover {
+      color: var(--c-green);
+    }
+  }
+}
+
+.footer__grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 860px) {
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  }
+}
+
+.footer__brand {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  color: #fff;
+
+  strong {
+    color: var(--c-green);
+    font-weight: 600;
+  }
+
+  span {
+    font-family: var(--font-sans);
+    font-size: 0.8rem;
+    margin-left: 0.4rem;
+  }
+}
+
+.footer__slogan {
+  font-style: italic;
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+}
+
+.footer__h {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--c-green);
+  margin-bottom: 0.8rem;
+}
+
+.footer__note {
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.footer__bottom {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+
+.footer__links {
+  display: flex;
+  gap: 1.4rem;
+}

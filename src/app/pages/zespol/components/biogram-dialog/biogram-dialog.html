@@ -1,0 +1,29 @@
+<div class="overlay" (click)="zamknij.emit()">
+  <div
+    class="dialog"
+    role="dialog"
+    aria-modal="true"
+    [attr.aria-label]="'Biogram: ' + doctor().name"
+    (click)="$event.stopPropagation()"
+  >
+    <button class="dialog__close" type="button" aria-label="Zamknij" (click)="zamknij.emit()">
+      ×
+    </button>
+
+    <div class="dialog__head">
+      @if (doctor().photo) {
+        <img [src]="doctor().photo" [alt]="doctor().name" width="96" height="96" />
+      }
+      <div>
+        <span class="mono">{{ doctor().title }}</span>
+        <h2>{{ doctor().name }}</h2>
+      </div>
+    </div>
+
+    <div class="dialog__body">
+      @for (p of biogram(); track $index) {
+        <p>{{ p }}</p>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,95 @@
+@if (placowka(); as p) {
+  <section class="head" [class.head--noimg]="!p.zdjecie">
+    <div class="container head__inner">
+      <div class="head__text">
+        <nav class="crumbs mono" aria-label="Okruszki">
+          <a routerLink="/placowki">Placówki</a>
+          <span aria-hidden="true">/</span>
+          <span>{{ p.miasto }}</span>
+        </nav>
+        <span class="mono head__typ">{{ p.typ }}</span>
+        <h1>{{ p.miasto }}</h1>
+        @if (p.adres) {
+          <p class="head__adres">{{ p.adres }}</p>
+        }
+        <p class="head__opis">{{ p.opis }}</p>
+
+        <dl class="facts">
+          @if (p.godziny) {
+            <div>
+              <dt class="mono">Godziny</dt>
+              <dd>{{ p.godziny }}</dd>
+            </div>
+          }
+          <div>
+            <dt class="mono">Telefon</dt>
+            <dd>
+              <a href="tel:{{ p.telefon.split(' ').join('') }}">{{ p.telefon }}</a>
+            </dd>
+          </div>
+          <div>
+            <dt class="mono">Email</dt>
+            <dd>
+              <a href="mailto:{{ p.email }}">{{ p.email }}</a>
+            </dd>
+          </div>
+        </dl>
+        @if (p.uwaga) {
+          <p class="head__uwaga">{{ p.uwaga }}</p>
+        }
+        <a routerLink="/kontakt" class="btn btn--solid">Zarezerwuj wizytę</a>
+      </div>
+      @if (p.zdjecie) {
+        <img [src]="p.zdjecie" alt="{{ p.nazwa }} — {{ p.miasto }} — wnętrze" width="1024" height="775" />
+      }
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="zakres-h">
+    <div class="container">
+      <span class="eyebrow">W tej placówce</span>
+      <h2 id="zakres-h">Zakres opieki</h2>
+      <ul class="zakres">
+        @for (z of p.zakres; track z.nazwa) {
+          <li>
+            <a [routerLink]="z.link">{{ z.nazwa }} <span aria-hidden="true">→</span></a>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+
+  @if (badania().length) {
+    <section class="section section--tint" aria-labelledby="bad-h">
+      <div class="container">
+        <span class="eyebrow">Badania kliniczne — {{ p.miasto }}</span>
+        <h2 id="bad-h">Obecnie prowadzone badania</h2>
+        <ul class="badania">
+          @for (b of badania(); track b.jednostka) {
+            <li>
+              <span class="mono">{{ b.dziedzina }}</span>
+              <strong>{{ b.jednostka }}</strong>
+            </li>
+          }
+        </ul>
+        <a routerLink="/badania-kliniczne" class="btn btn--ghost">Formularze zgłoszeniowe</a>
+      </div>
+    </section>
+  }
+
+  <section class="section" aria-labelledby="inne-h">
+    <div class="container">
+      <span class="eyebrow">Pozostałe placówki</span>
+      <h2 id="inne-h">Odwiedź nas również</h2>
+      <div class="grid grid--2">
+        @for (o of inne(); track o.slug) {
+          <a class="other" [routerLink]="['/placowki', o.slug]">
+            <span class="mono">{{ o.typ }}</span>
+            <h3>{{ o.miasto }}{{ o.adres ? ' · ' + o.adres.split(',')[0] : '' }}</h3>
+            <span class="other__arrow" aria-hidden="true">→</span>
+          </a>
+        }
+      </div>
+    </div>
+  </section>
+}

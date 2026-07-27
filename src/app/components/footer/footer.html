@@ -1,0 +1,49 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <p class="footer__brand">Ami<strong>Care</strong> <span>sp. z o.o. sp. k.</span></p>
+        <p class="footer__slogan">We help Patients through Science — Pomagamy pacjentom przez naukę</p>
+        <p>
+          telefon: <a href="tel:+48422890250">+48 42 28 90 250</a><br />
+          email: <a href="mailto:rejestracja@amicare.pl">rejestracja@amicare.pl</a>
+        </p>
+      </div>
+
+      @for (p of placowki; track p.slug) {
+        <div>
+          <h3 class="footer__h">{{ p.nazwa }} — {{ p.miasto }}</h3>
+          @if (p.adres) {
+            <p>{{ p.adres }}</p>
+          }
+          @if (p.godziny) {
+            <p>{{ p.godziny }}</p>
+          }
+          @if (p.uwaga) {
+            <p class="footer__note">{{ p.uwaga }}</p>
+          }
+          <p>
+            <a href="tel:{{ p.telefon.split(' ').join('') }}">{{ p.telefon }}</a><br />
+            <a href="mailto:{{ p.email }}">{{ p.email }}</a>
+          </p>
+        </div>
+      }
+    </div>
+
+    <div class="footer__bottom">
+      <p>
+        AmiCare sp. z o.o. sp. k. {{ rok }} | Inspektor Ochrony Danych:
+        <a href="mailto:iod@amicare.pl">iod@amicare.pl</a>
+      </p>
+      <nav class="footer__links" aria-label="Stopka">
+        <a routerLink="/placowki">Placówki</a>
+        <a routerLink="/o-nas">O nas</a>
+        <a routerLink="/badania-kliniczne">Badania kliniczne</a>
+        <a routerLink="/wspolpraca">Współpraca</a>
+        <a routerLink="/kontakt">Kontakt</a>
+        <a routerLink="/regulamin-platnosci">Regulamin płatności online</a>
+        <a routerLink="/polityka-prywatnosci">Polityka prywatności, cookies i RODO</a>
+      </nav>
+    </div>
+  </div>
+</footer>

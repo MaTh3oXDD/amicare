@@ -1,0 +1,10 @@
+NAPRAWIONE:
+✓ 1. Zamiana Dialogu na podstrony - Biogramy zespołu teraz wyświetlają się na podstronach /o-nas/zespol/:slug
+✓ 3. Polityka prywatności - Dodana strona /polityka-prywatnosci z oficjalnym tekstem z amicare.pl
+✓ 4. Regulamin płatności online - Dodana strona /regulamin-platnosci z oficjalnym tekstem
+✓ 5. Współpraca - Zaktualizowana z rzeczywistymi informacjami o współpracy (lekarzy, sprzętu)
+✓ 7. Fazy badań klinicznych - Dodana sekcja z opisem 4 faz badań klinicznych na stronie badań
+
+POZOSTAŁ DO NAPRAWY:
+2. W o nas nie ma specjalizacji - Specjalizacje są wymienione, ale mogą potrzebować bardziej szczegółowego opisu
+6. Brak formularzy zgłoszeniowych - Formularze są dostępne ale mogą wymagać integracji z systemem rezerwacji

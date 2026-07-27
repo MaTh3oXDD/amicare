@@ -1,0 +1,107 @@
+<app-page-hero
+  title="Badania kliniczne"
+  lead="Tutaj znajdziecie Państwo informacje o obecnie prowadzonych badaniach klinicznych oraz możliwość wypełnienia ankiety kwalifikującej do badań."
+/>
+
+<section class="section" aria-labelledby="obadaniach-h">
+  <div class="container">
+    <span class="eyebrow">O badaniach klinicznych</span>
+    <h2 id="obadaniach-h">Dlaczego badania kliniczne są tak istotne?</h2>
+    <p class="intro">
+      Badania kliniczne to programy badań nad lekami, prowadzone z udziałem pacjentów, mające na celu
+      określenie bezpieczeństwa nowatorskiej terapii oraz skuteczności. W efekcie prowadzonych badań
+      określane są nowe sposoby zapobiegania, diagnozowania lub leczenia poszczególnych chorób.
+    </p>
+    <p>
+      Naszym hasłem jest „WE HELP PATIENTS THROUGH SCIENCE – POMAGAMY PACJENTOM PRZEZ NAUKĘ” — to
+      dla nas niezmiernie ważne, aby ta pomoc była na najwyższym poziomie. W 2023 roku zostało to
+      docenione przez inspektora rządu amerykańskiego FDA.
+    </p>
+
+    <div class="phases">
+      <div class="phases__head">
+        <span class="eyebrow">Etapy</span>
+        <h3>Fazy badań klinicznych</h3>
+        <p>
+          Badania kliniczne prowadzone są w czterech etapach. Każda faza musi zakończyć się wynikiem
+          pozytywnym, aby można było przejść do kolejnej.
+        </p>
+      </div>
+
+      <div
+        class="phases-carousel"
+        role="region"
+        aria-roledescription="karuzela"
+        aria-label="Fazy badań klinicznych"
+        (mouseenter)="pauseAutoplay()"
+        (mouseleave)="resumeAutoplay()"
+        (focusin)="pauseAutoplay()"
+        (focusout)="resumeAutoplay()"
+      >
+        <div class="phases-carousel__viewport">
+          <div class="phases-carousel__track" [style.transform]="'translateX(-' + activePhase() * 100 + '%)'">
+            @for (p of phases; track p.numeral) {
+              <article class="phase-card" [attr.aria-hidden]="phases.indexOf(p) !== activePhase()">
+                <span class="mono phase-card__no">Faza {{ p.numeral }}</span>
+                <div class="phase-card__body">
+                  <h4>{{ p.title }}</h4>
+                  <p>{{ p.desc }}</p>
+                </div>
+              </article>
+            }
+          </div>
+        </div>
+
+        <div class="phases-carousel__nav">
+          <button type="button" class="phases-carousel__arrow" (click)="onPrevClick()" aria-label="Poprzednia faza">←</button>
+          <div class="phases-carousel__dots" role="tablist" aria-label="Wybierz fazę">
+            @for (p of phases; track p.numeral; let i = $index) {
+              <button
+                type="button"
+                class="phases-carousel__dot"
+                role="tab"
+                [class.is-active]="activePhase() === i"
+                [attr.aria-selected]="activePhase() === i"
+                [attr.aria-label]="'Faza ' + p.numeral"
+                (click)="goToPhase(i)"
+              ></button>
+            }
+          </div>
+          <button type="button" class="phases-carousel__arrow" (click)="onNextClick()" aria-label="Następna faza">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream" aria-labelledby="obecne-h">
+  <div class="container">
+    <h2 id="obecne-h">Obecnie prowadzone badania kliniczne i ankiety kwalifikujące</h2>
+
+    <div class="filters" role="group" aria-label="Filtruj po mieście">
+      @for (m of miasta; track m) {
+        <button
+          type="button"
+          class="filters__btn"
+          [class.filters__btn--active]="filtr() === m"
+          (click)="filtr.set(m)"
+        >
+          {{ m }}
+        </button>
+      }
+    </div>
+
+    <div class="grid grid--3">
+      @for (b of badania(); track b.jednostka + b.miasto) {
+        <app-study-card [study]="b" (openForm)="openZgloszenie(b)" />
+      }
+    </div>
+
+    <p class="contact-note">
+      Kontakt w sprawie badań klinicznych: <a href="tel:+48786086331">+48 786 086 331</a> ·
+      <a href="mailto:office@amicare.pl">office&#64;amicare.pl</a>
+    </p>
+  </div>
+</section>
+
+<app-zgloszenie-dialog [study]="selectedStudy()" (closed)="onZgloszenieClosed()" />

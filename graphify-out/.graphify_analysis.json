@@ -1,0 +1,362 @@
+{
+  "communities": {
+    "0": [
+      "injectable",
+      "src_app_components_page_hero_page_hero",
+      "src_app_components_page_hero_page_hero_pagehero",
+      "src_app_components_page_hero_page_hero_ts_component",
+      "src_app_pages_badania_diagnostyczne_badania_diagnostyczne",
+      "src_app_pages_badania_diagnostyczne_badania_diagnostyczne_badaniadiagnostyczne",
+      "src_app_pages_badania_diagnostyczne_badania_diagnostyczne_badaniadiagnostyczne_ngoninit",
+      "src_app_pages_badania_diagnostyczne_badania_diagnostyczne_ts_component",
+      "src_app_pages_konsultacje_konsultacje",
+      "src_app_pages_konsultacje_konsultacje_konsultacje",
+      "src_app_pages_konsultacje_konsultacje_konsultacje_ngoninit",
+      "src_app_pages_konsultacje_konsultacje_ts_component",
+      "src_app_pages_kontakt_components_formularz_kontaktowy_formularz_kontaktowy",
+      "src_app_pages_kontakt_components_formularz_kontaktowy_formularz_kontaktowy_formularzkontaktowy",
+      "src_app_pages_kontakt_components_formularz_kontaktowy_formularz_kontaktowy_formularzkontaktowy_wyslij",
+      "src_app_pages_kontakt_components_formularz_kontaktowy_formularz_kontaktowy_ts_component",
+      "src_app_pages_kontakt_kontakt",
+      "src_app_pages_o_nas_o_nas",
+      "src_app_pages_o_nas_o_nas_onas",
+      "src_app_pages_o_nas_o_nas_onas_ngoninit",
+      "src_app_pages_o_nas_o_nas_ts_component",
+      "src_app_pages_placowki_placowki",
+      "src_app_pages_placowki_placowki_placowki",
+      "src_app_pages_placowki_placowki_placowki_ngoninit",
+      "src_app_pages_placowki_placowki_ts_component",
+      "src_app_pages_pracownia_endoskopii_pracownia_endoskopii",
+      "src_app_pages_pracownia_endoskopii_pracownia_endoskopii_pracowniaendoskopii",
+      "src_app_pages_pracownia_endoskopii_pracownia_endoskopii_pracowniaendoskopii_ngoninit",
+      "src_app_pages_pracownia_endoskopii_pracownia_endoskopii_ts_component",
+      "src_app_pages_specjalizacja_models_specjalizacja_data",
+      "src_app_pages_specjalizacja_models_specjalizacja_data_cennikpozycja",
+      "src_app_pages_specjalizacja_models_specjalizacja_data_cenniktabela",
+      "src_app_pages_specjalizacja_models_specjalizacja_data_specjalizacje",
+      "src_app_pages_wspolpraca_wspolpraca",
+      "src_app_services_seo",
+      "src_app_services_seo_seo",
+      "src_app_services_seo_seo_set",
+      "src_app_services_seo_seo_setcanonical",
+      "src_app_services_seo_seo_setjsonld"
+    ],
+    "1": [
+      "hostlistener",
+      "src_app_components_doctor_card_doctor_card",
+      "src_app_components_doctor_card_doctor_card_doctorcard",
+      "src_app_components_doctor_card_doctor_card_doctorcard_initials",
+      "src_app_components_doctor_card_doctor_card_ts_component",
+      "src_app_models_doctor",
+      "src_app_models_doctor_dietetycy",
+      "src_app_models_doctor_doctor",
+      "src_app_models_doctor_kadra",
+      "src_app_models_doctor_koordynatorzy",
+      "src_app_models_doctor_lekarze",
+      "src_app_models_doctor_pielegniarki",
+      "src_app_pages_specjalizacja_models_specjalizacja_data_specjalizacjainfo",
+      "src_app_pages_specjalizacja_specjalizacja",
+      "src_app_pages_specjalizacja_specjalizacja_specjalizacja",
+      "src_app_pages_specjalizacja_specjalizacja_specjalizacja_constructor",
+      "src_app_pages_specjalizacja_specjalizacja_ts_component",
+      "src_app_pages_zespol_components_biogram_dialog_biogram_dialog",
+      "src_app_pages_zespol_components_biogram_dialog_biogram_dialog_biogramdialog",
+      "src_app_pages_zespol_components_biogram_dialog_biogram_dialog_biogramdialog_onescape",
+      "src_app_pages_zespol_components_biogram_dialog_biogram_dialog_ts_component",
+      "src_app_pages_zespol_models_biogramy",
+      "src_app_pages_zespol_models_biogramy_biogramy",
+      "src_app_pages_zespol_zespol",
+      "src_app_pages_zespol_zespol_ts_component",
+      "src_app_pages_zespol_zespol_zespol",
+      "src_app_pages_zespol_zespol_zespol_biogram",
+      "src_app_pages_zespol_zespol_zespol_ngoninit",
+      "src_app_pages_zespol_zespol_zespol_pokaz"
+    ],
+    "2": [
+      "angular_build",
+      "angular_compiler_cli",
+      "jasmine_core",
+      "karma",
+      "karma_chrome_launcher",
+      "karma_coverage",
+      "karma_jasmine",
+      "karma_jasmine_html_reporter",
+      "package_devdependencies",
+      "package_devdependencies_angular_build",
+      "package_devdependencies_angular_cli",
+      "package_devdependencies_angular_compiler_cli",
+      "package_devdependencies_jasmine_core",
+      "package_devdependencies_karma",
+      "package_devdependencies_karma_chrome_launcher",
+      "package_devdependencies_karma_coverage",
+      "package_devdependencies_karma_jasmine",
+      "package_devdependencies_karma_jasmine_html_reporter",
+      "package_devdependencies_types_jasmine",
+      "package_devdependencies_typescript",
+      "package_json_angular_cli",
+      "types_jasmine",
+      "typescript"
+    ],
+    "3": [
+      "angular_amicare_architect",
+      "angular_architect_build",
+      "angular_architect_extract_i18n",
+      "angular_architect_serve",
+      "angular_architect_test",
+      "angular_build_builder",
+      "angular_build_configurations",
+      "angular_build_defaultconfiguration",
+      "angular_configurations_development",
+      "angular_configurations_production",
+      "angular_development_buildtarget",
+      "angular_development_extractlicenses",
+      "angular_development_optimization",
+      "angular_development_sourcemap",
+      "angular_extract_i18n_builder",
+      "angular_production_budgets",
+      "angular_production_buildtarget",
+      "angular_production_outputhashing",
+      "angular_serve_builder",
+      "angular_serve_configurations",
+      "angular_serve_defaultconfiguration",
+      "angular_test_builder"
+    ],
+    "4": [
+      "angular_common",
+      "angular_compiler",
+      "angular_core",
+      "angular_forms",
+      "angular_platform_browser",
+      "angular_router",
+      "package_dependencies",
+      "package_dependencies_angular_common",
+      "package_dependencies_angular_compiler",
+      "package_dependencies_angular_core",
+      "package_dependencies_angular_forms",
+      "package_dependencies_angular_platform_browser",
+      "package_dependencies_angular_router",
+      "package_dependencies_rxjs",
+      "package_dependencies_tslib",
+      "package_dependencies_zone_js",
+      "rxjs",
+      "tslib",
+      "zone_js"
+    ],
+    "5": [
+      "src_app_app",
+      "src_app_app_app",
+      "src_app_app_config",
+      "src_app_app_config_appconfig",
+      "src_app_app_routes",
+      "src_app_app_routes_routes",
+      "src_app_app_spec",
+      "src_app_app_ts_component",
+      "src_app_components_footer_footer_footer",
+      "src_app_components_footer_footer_ts_component",
+      "src_app_components_header_header",
+      "src_app_components_header_header_header",
+      "src_app_components_header_header_header_close",
+      "src_app_components_header_header_header_togglegroup",
+      "src_app_components_header_header_header_togglemenu",
+      "src_app_components_header_header_navgroup",
+      "src_app_components_header_header_navlink",
+      "src_app_components_header_header_ts_component",
+      "src_main"
+    ],
+    "6": [
+      "src_app_components_footer_footer",
+      "src_app_components_placowka_card_placowka_card",
+      "src_app_components_placowka_card_placowka_card_placowkacard",
+      "src_app_components_placowka_card_placowka_card_ts_component",
+      "src_app_models_placowka",
+      "src_app_models_placowka_placowka",
+      "src_app_models_placowka_placowki",
+      "src_app_pages_home_components_aktualnosci_aktualnosci",
+      "src_app_pages_home_components_aktualnosci_aktualnosci_aktualnosci",
+      "src_app_pages_home_components_aktualnosci_aktualnosci_aktualnosci_przewin",
+      "src_app_pages_home_components_aktualnosci_aktualnosci_ts_component",
+      "src_app_pages_home_components_aktualnosci_aktualnosci_wpis",
+      "src_app_pages_home_home",
+      "src_app_pages_home_home_home",
+      "src_app_pages_home_home_home_ngoninit",
+      "src_app_pages_home_home_ts_component"
+    ],
+    "7": [
+      "angular",
+      "angular_amicare_prefix",
+      "angular_amicare_projecttype",
+      "angular_amicare_root",
+      "angular_amicare_schematics",
+      "angular_amicare_sourceroot",
+      "angular_cli_analytics",
+      "angular_json_angular_cli",
+      "angular_newprojectroot",
+      "angular_projects",
+      "angular_projects_amicare",
+      "angular_schema",
+      "angular_schematics_angular_component_style",
+      "angular_schematics_schematics_angular_component",
+      "angular_version"
+    ],
+    "8": [
+      "package",
+      "package_name",
+      "package_prettier",
+      "package_prettier_overrides",
+      "package_prettier_printwidth",
+      "package_prettier_singlequote",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_ng",
+      "package_scripts_start",
+      "package_scripts_test",
+      "package_scripts_watch",
+      "package_version"
+    ],
+    "9": [
+      "src_app_pages_badania_kliniczne_badania_kliniczne",
+      "src_app_pages_badania_kliniczne_badania_kliniczne_badaniakliniczne",
+      "src_app_pages_badania_kliniczne_badania_kliniczne_badaniakliniczne_ngoninit",
+      "src_app_pages_badania_kliniczne_badania_kliniczne_ts_component",
+      "src_app_pages_badania_kliniczne_components_study_card_study_card",
+      "src_app_pages_badania_kliniczne_components_study_card_study_card_studycard",
+      "src_app_pages_badania_kliniczne_components_study_card_study_card_ts_component",
+      "src_app_pages_badania_kliniczne_models_study",
+      "src_app_pages_badania_kliniczne_models_study_badania",
+      "src_app_pages_badania_kliniczne_models_study_study",
+      "src_app_pages_placowki_placowka_detail_placowka_detail",
+      "src_app_pages_placowki_placowka_detail_placowka_detail_placowkadetail",
+      "src_app_pages_placowki_placowka_detail_placowka_detail_placowkadetail_constructor",
+      "src_app_pages_placowki_placowka_detail_placowka_detail_ts_component"
+    ],
+    "10": [
+      "angular_build_options",
+      "angular_options_assets",
+      "angular_options_browser",
+      "angular_options_inlinestylelanguage",
+      "angular_options_polyfills",
+      "angular_options_styles",
+      "angular_options_tsconfig",
+      "angular_test_options",
+      "ref_src_styles_scss",
+      "ref_zone_js",
+      "ref_zone_js_testing"
+    ],
+    "11": [
+      "src_app_pages_kontakt_kontakt_kontakt",
+      "src_app_pages_kontakt_kontakt_kontakt_ngoninit",
+      "src_app_pages_kontakt_kontakt_ts_component"
+    ],
+    "12": [
+      "src_app_pages_wspolpraca_wspolpraca_ts_component",
+      "src_app_pages_wspolpraca_wspolpraca_wspolpraca",
+      "src_app_pages_wspolpraca_wspolpraca_wspolpraca_ngoninit"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08232118758434548,
+    "1": 0.12315270935960591,
+    "2": 0.08695652173913043,
+    "3": 0.09956709956709957,
+    "4": 0.10526315789473684,
+    "5": 0.13450292397660818,
+    "6": 0.15833333333333333,
+    "7": 0.13333333333333333,
+    "8": 0.14285714285714285,
+    "9": 0.2087912087912088,
+    "10": 0.2545454545454545,
+    "11": 0.6666666666666666,
+    "12": 0.6666666666666666
+  },
+  "gods": [
+    {
+      "id": "src_app_services_seo_seo",
+      "label": "Seo",
+      "degree": 17
+    },
+    {
+      "id": "src_app_components_page_hero_page_hero_pagehero",
+      "label": "PageHero",
+      "degree": 12
+    },
+    {
+      "id": "angular_projects_amicare",
+      "label": "amicare",
+      "degree": 7
+    },
+    {
+      "id": "angular_build_options",
+      "label": "options",
+      "degree": 7
+    },
+    {
+      "id": "src_app_models_doctor_doctor",
+      "label": "Doctor",
+      "degree": 7
+    },
+    {
+      "id": "angular_configurations_development",
+      "label": "development",
+      "degree": 6
+    },
+    {
+      "id": "angular_test_options",
+      "label": "options",
+      "degree": 6
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 6
+    },
+    {
+      "id": "src_app_components_header_header_header",
+      "label": "Header",
+      "degree": 6
+    },
+    {
+      "id": "src_app_models_placowka_placowki",
+      "label": "PLACOWKI",
+      "degree": 6
+    }
+  ],
+  "surprises": [],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Seo` connect `Seo` to `badania-kliniczne.ts`, `placowka.ts`, `zespol.ts`?",
+      "why": "High betweenness centrality (0.078) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `PLACOWKI` connect `placowka.ts` to `Seo`, `badania-kliniczne.ts`?",
+      "why": "High betweenness centrality (0.042) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `devDependencies` connect `devDependencies` to `package.json`?",
+      "why": "High betweenness centrality (0.037) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `$schema`, `version`, `newProjectRoot` to the rest of the system?",
+      "why": "62 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Seo` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08232118758434548 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `zespol.ts` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.12315270935960591 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `devDependencies` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

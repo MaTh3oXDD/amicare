@@ -1,0 +1,146 @@
+<section class="hero" aria-label="AmiCare Centrum Medyczne">
+  <img
+    class="hero__bg"
+    src="images/centrum-020.webp"
+    alt=""
+    aria-hidden="true"
+    fetchpriority="high"
+  />
+  <div class="container hero__inner">
+    <span class="eyebrow hero__eyebrow">We help Patients through Science</span>
+    <h1>Badania kliniczne<br /><em>i opieka zdrowotna</em></h1>
+    <p class="hero__lead">
+      AmiCare to Twoje centrum zaawansowanych badań klinicznych i profesjonalnej opieki
+      zdrowotnej. Trzy placówki: dwie w Łodzi i jedna w Jeleniej Górze.
+    </p>
+    <div class="hero__actions">
+      <a routerLink="/kontakt" class="btn btn--light">Zarezerwuj wizytę</a>
+      <a href="tel:+48422890250" class="hero__tel mono">tel · 42 28 90 250</a>
+    </div>
+  </div>
+</section>
+
+<!-- dwie ścieżki: pacjent / uczestnik badania -->
+<section class="paths" aria-label="Od czego zacząć">
+  <div class="container">
+    <p class="paths__q">Od czego zacząć?</p>
+    <div class="grid grid--2">
+      <a class="path" routerLink="/konsultacje-specjalistyczne">
+        <span class="mono">Jestem pacjentem</span>
+        <h2>Szukam konsultacji lub badania</h2>
+        <p>
+          Konsultacje specjalistyczne, pracownia endoskopii i badania diagnostyczne w gabinetach
+          prywatnych w Łodzi.
+        </p>
+        <span class="path__go mono">Zobacz konsultacje →</span>
+      </a>
+      <a class="path" routerLink="/badania-kliniczne">
+        <span class="mono">Badania kliniczne</span>
+        <h2>Chcę dołączyć do badania klinicznego</h2>
+        <p>
+          Informacje o obecnie prowadzonych badaniach klinicznych oraz możliwość wypełnienia
+          ankiety kwalifikującej do badań.
+        </p>
+        <span class="path__go mono">Zobacz badania →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- signature: tryptyk placówek -->
+<section class="section section--tint tri-intro" aria-labelledby="tri-h">
+  <div class="container">
+    <span class="eyebrow">Placówki</span>
+    <h2 id="tri-h">Trzy placówki — wybierz swoją</h2>
+    <p class="tri-intro__lead">
+      Dwa Centra Medyczne w Łodzi oraz Ośrodek Badań Klinicznych w Jeleniej Górze.
+    </p>
+  </div>
+</section>
+<section class="tri" aria-label="Lista placówek">
+  @for (p of placowki; track p.slug; let i = $index) {
+    <a class="tri__panel" [routerLink]="['/placowki', p.slug]">
+      <span class="mono tri__no">{{ i + 1 }} / 3</span>
+      <div class="tri__body">
+        <span class="mono tri__typ">{{ p.typ }}</span>
+        <h3>{{ p.miasto }}</h3>
+        @if (p.adres) {
+          <p class="tri__adres">{{ p.adres.split(',')[0] }}</p>
+        } @else {
+          <p class="tri__adres">{{ p.uwaga }}</p>
+        }
+        @if (p.godziny) {
+          <span class="mono tri__hours">{{ p.godziny }}</span>
+        } @else {
+          <span class="mono tri__hours">{{ p.telefon }}</span>
+        }
+      </div>
+      <span class="tri__cta mono">Poznaj placówkę →</span>
+    </a>
+  }
+</section>
+
+<app-aktualnosci />
+
+<section class="section" aria-labelledby="onas-h">
+  <div class="container grid grid--2 about">
+    <div>
+      <span class="eyebrow">O nas</span>
+      <h2 id="onas-h">Nowoczesny ośrodek badań klinicznych</h2>
+      <p>
+        AmiCare Centrum Medyczne to nowoczesny ośrodek mający swoje siedziby w Łodzi oraz w
+        Jeleniej Górze. Zajmujemy się głównie badaniami klinicznymi, lecz stale rozszerzamy swoją
+        ofertę, aby każdy pacjent mógł poczuć się jak najlepiej zaopiekowany.
+      </p>
+      <p>
+        Jesteśmy Ośrodkiem tworzonym przez wykwalifikowanych i pełnych pasji lekarzy,
+        koordynatorów badań klinicznych i pielęgniarki.
+      </p>
+      <a routerLink="/o-nas" class="btn btn--ghost">Zobacz więcej</a>
+    </div>
+    <div class="about__media">
+      <img
+        src="images/centrum-015.webp"
+        alt="Amicare – Badania Kliniczne – wnętrze – gabinet zabiegowy"
+        loading="lazy"
+        width="1024"
+        height="777"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint" aria-labelledby="spec-h">
+  <div class="container">
+    <span class="eyebrow">Konsultacje specjalistyczne</span>
+    <h2 id="spec-h">Specjalizacje</h2>
+    <ul class="speclist">
+      @for (s of specjalizacje; track s.slug) {
+        <li>
+          <a [routerLink]="['/konsultacje-specjalistyczne', s.slug]">
+            <span>{{ s.label }}</span>
+            <span class="speclist__arrow" aria-hidden="true">→</span>
+          </a>
+        </li>
+      }
+      <li>
+        <a routerLink="/pracownia-endoskopii">
+          <span>Pracownia Endoskopii</span>
+          <span class="speclist__arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--dark" aria-labelledby="badania-h">
+  <div class="container cta">
+    <span class="eyebrow">Badania kliniczne</span>
+    <h2 id="badania-h">Obecnie prowadzone badania kliniczne i&nbsp;ankiety kwalifikujące</h2>
+    <p>
+      Tutaj znajdziecie Państwo informacje o obecnie prowadzonych badaniach klinicznych oraz
+      możliwość wypełnienia ankiety kwalifikującej do badań.
+    </p>
+    <a routerLink="/badania-kliniczne" class="btn btn--light">Zobacz więcej</a>
+  </div>
+</section>

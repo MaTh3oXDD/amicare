@@ -1,0 +1,157 @@
+.head {
+  background: var(--c-porcelain);
+  border-bottom: 1px solid var(--c-mist);
+}
+
+.head__inner {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding-top: clamp(2.5rem, 6vw, 5rem);
+  padding-bottom: clamp(2.5rem, 6vw, 5rem);
+
+  @media (min-width: 960px) {
+    grid-template-columns: 1.1fr 1fr;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.crumbs {
+  display: flex;
+  gap: 0.6rem;
+  color: var(--c-ink-soft);
+  margin-bottom: 1.6rem;
+
+  a {
+    color: var(--c-bronze);
+  }
+}
+
+.head__typ {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  margin-bottom: 0.15em;
+}
+
+.head__adres {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--c-ink);
+  margin-bottom: 1.2em;
+}
+
+.head__opis {
+  max-width: 54ch;
+}
+
+.facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  margin: 1.8rem 0 0.6rem;
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--c-mist);
+  border-bottom: 1px solid var(--c-mist);
+
+  dt {
+    margin-bottom: 0.3rem;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+}
+
+.head__uwaga {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 1.6rem;
+}
+
+.zakres {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--c-mist);
+
+  li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1rem 0.4rem;
+    border-bottom: 1px solid var(--c-mist);
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--c-ink);
+    transition: padding-left 0.25s ease, color 0.25s ease;
+
+    &:hover {
+      color: var(--c-pine);
+      padding-left: 1rem;
+
+      span {
+        color: var(--c-bronze);
+      }
+    }
+  }
+}
+
+.badania {
+  list-style: none;
+  margin: 1rem 0 2rem;
+  padding: 0;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    gap: 1.4rem;
+    padding: 0.9rem 0.3rem;
+    border-bottom: 1px solid var(--c-mist);
+
+    strong {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: 1.15rem;
+    }
+  }
+}
+
+.other {
+  position: relative;
+  display: block;
+  border: 1px solid var(--c-mist);
+  padding: 1.8rem 2rem;
+  transition: border-color 0.25s ease, background 0.25s ease;
+
+  h3 {
+    margin: 0.3em 0 0;
+  }
+
+  .other__arrow {
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: var(--c-ink-soft);
+    transition: color 0.25s ease, transform 0.25s ease;
+  }
+
+  &:hover {
+    border-color: var(--c-pine);
+    background: var(--c-porcelain);
+
+    .other__arrow {
+      color: var(--c-bronze);
+      transform: translateY(-50%) translateX(4px);
+    }
+  }
+}

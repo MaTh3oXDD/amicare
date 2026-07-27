@@ -1,0 +1,74 @@
+@if (spec(); as s) {
+  <app-page-hero [title]="s.nazwa" [lead]="s.opis[0]" />
+
+  <section class="section" aria-label="Opis specjalizacji">
+    <div class="container spec">
+      <div class="spec__text">
+        @for (p of s.opis.slice(1); track $index) {
+          <p>{{ p }}</p>
+        }
+
+        @for (l of s.listy ?? []; track l.tytul) {
+          <h3>{{ l.tytul }}</h3>
+          <ul>
+            @for (pt of l.punkty; track pt) {
+              <li>{{ pt }}</li>
+            }
+          </ul>
+        }
+
+        <div class="spec__cta">
+          <a routerLink="/kontakt" class="btn btn--solid">Umów się!</a>
+          <a href="tel:+48422890250" class="btn btn--ghost">tel: 42 28 90 250</a>
+        </div>
+      </div>
+
+      @if (s.cenniki.length) {
+        <aside class="spec__cennik" aria-label="Cennik">
+          <span class="eyebrow">Cennik</span>
+          @for (c of s.cenniki; track $index) {
+            @if (c.naglowek) {
+              <h3>{{ c.naglowek }}</h3>
+            }
+            <table class="cennik">
+              <thead>
+                <tr>
+                  <th scope="col">Usługa</th>
+                  <th scope="col">{{ c.weekend ? 'Cena dni robocze' : 'Cena' }}</th>
+                  @if (c.weekend) {
+                    <th scope="col">Cena weekend</th>
+                  }
+                </tr>
+              </thead>
+              <tbody>
+                @for (p of c.pozycje; track p.usluga) {
+                  <tr>
+                    <td>{{ p.usluga }}</td>
+                    <td>{{ p.cena }}</td>
+                    @if (c.weekend) {
+                      <td>{{ p.cenaWeekend ?? '—' }}</td>
+                    }
+                  </tr>
+                }
+              </tbody>
+            </table>
+          }
+        </aside>
+      }
+    </div>
+  </section>
+
+  @if (lekarze().length) {
+    <section class="section section--cream" aria-labelledby="spec-lekarze-h">
+      <div class="container">
+        <span class="eyebrow">Zespół</span>
+        <h2 id="spec-lekarze-h">Nasi specjaliści</h2>
+        <div class="grid grid--3">
+          @for (d of lekarze(); track d.name) {
+            <app-doctor-card [doctor]="d" />
+          }
+        </div>
+      </div>
+    </section>
+  }
+}

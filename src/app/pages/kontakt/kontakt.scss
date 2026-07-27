@@ -1,0 +1,57 @@
+.extra {
+  margin-top: 2.5rem;
+  font-size: 0.95rem;
+
+  p {
+    margin-bottom: 0.4em;
+  }
+}
+
+.social {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--c-mist);
+}
+
+.social__label {
+  display: block;
+  margin-bottom: 0.9rem;
+}
+
+.social__links {
+  display: flex;
+  gap: 0.9rem;
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--c-mist);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--c-ink);
+  transition: border-color 0.2s ease, color 0.2s ease;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: var(--c-evergreen);
+    border-color: var(--c-evergreen);
+  }
+}
+
+.social__link--soon {
+  color: var(--c-ink-soft);
+  cursor: default;
+
+  &:hover {
+    color: var(--c-ink-soft);
+    border-color: var(--c-mist);
+  }
+}
