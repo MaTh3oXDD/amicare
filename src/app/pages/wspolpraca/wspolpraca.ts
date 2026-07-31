@@ -26,7 +26,7 @@ export class Wspolpraca implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Współpraca — Dla lekarzy i Sponsorów/CRO | AmiCare Łódź',
+      title: 'Współpraca - Dla lekarzy i Sponsorów/CRO | AmiCare Łódź',
       description:
         'Dołącz do zespołu AmiCare w Łodzi w roli Badacza. Badania realizowane zgodnie z ICH GCP. Oferujemy konkurencyjne wynagrodzenie, nowoczesny sprzęt diagnostyczny oraz wynajem gabinetów lekarskich.',
       path: '/wspolpraca/',

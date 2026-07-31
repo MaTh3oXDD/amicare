@@ -28,7 +28,7 @@ export class BadaniaDiagnostyczne implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Badania diagnostyczne — AmiCare Centrum Medyczne Łódź',
+      title: 'Badania diagnostyczne - AmiCare Centrum Medyczne Łódź',
       description:
         'Twoje zdrowie w najlepszych rękach. Badania diagnostyczne w AmiCare: diagnostyka bólu brzucha, kolonoskopia, gastroskopia, spirometria, EKG, USG, badanie Holtera i leczenie biologiczne.',
       path: '/badania-diagnostyczne/',

@@ -95,7 +95,7 @@ export class HeroBlob implements AfterViewInit, OnDestroy {
       renderer.outputColorSpace = THREE.SRGBColorSpace;
 
       const scene = new THREE.Scene();
-      // Brand navy deepening into a lighter steel-blue — same family as the
+      // Brand navy deepening into a lighter steel-blue - same family as the
       // logo/site palette, no off-brand hues.
       scene.background = createGradientTexture(THREE, '#152a52', '#3d5c94');
 
@@ -110,7 +110,7 @@ export class HeroBlob implements AfterViewInit, OnDestroy {
       scene.add(group);
 
       // Normalize the imported model: scale it to a consistent footprint, then
-      // center it — the centering offset must itself be scaled, since position
+      // center it - the centering offset must itself be scaled, since position
       // is a translation applied on top of (not scaled by) the object's own scale.
       const box = new THREE.Box3().setFromObject(model);
       const size = new THREE.Vector3();
@@ -123,7 +123,7 @@ export class HeroBlob implements AfterViewInit, OnDestroy {
       model.position.copy(center).multiplyScalar(-modelScale);
       group.add(model);
 
-      // The source file's own material is a near-black 30%-opacity grey — replace
+      // The source file's own material is a near-black 30%-opacity grey - replace
       // it with a glassy, softly glowing look: translucent, low-roughness beads
       // with a faint inner emissive tint, echoing the reference render.
       model.traverse((obj) => {

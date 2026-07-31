@@ -25,7 +25,7 @@ export const BADANIA: Study[] = [
     obraz: 'images/badania/gastropareza.png',
   },
   {
-    jednostka: 'Badania wątrobowe — stłuszczenie wątroby',
+    jednostka: 'Badania wątrobowe - stłuszczenie wątroby',
     dziedzina: 'Gastroenterologia',
     miasto: 'Łódź',
     obraz: 'images/badania/watroba.webp',

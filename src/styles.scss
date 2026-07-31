@@ -1,4 +1,4 @@
-/* AmiCare — premium design system
+/* AmiCare - premium design system
    porcelana / evergreen / bronze · Fraunces + Archivo + IBM Plex Mono */
 
 :root {
@@ -99,7 +99,7 @@ p a:hover,
 
 img { max-width: 100%; display: block; }
 
-/* gentle zoom on photography inside content sections — never on icons/logos */
+/* gentle zoom on photography inside content sections - never on icons/logos */
 .section img {
   transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -141,7 +141,7 @@ img { max-width: 100%; display: block; }
   .eyebrow, .mono { color: #fff; }
 }
 
-/* mono label — lab-report voice, used for eyebrows, hours, prices */
+/* mono label - lab-report voice, used for eyebrows, hours, prices */
 .mono {
   font-family: var(--font-mono);
   font-size: 0.72rem;

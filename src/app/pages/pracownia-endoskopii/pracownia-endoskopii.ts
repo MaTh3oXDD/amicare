@@ -14,7 +14,7 @@ export class PracowniaEndoskopii implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Pracownia Endoskopii — AmiCare Centrum Medyczne Łódź',
+      title: 'Pracownia Endoskopii - AmiCare Centrum Medyczne Łódź',
       description:
         'Nowoczesna pracownia endoskopii AmiCare w Łodzi: kolonoskopia i gastroskopia. Wybierz badanie, aby poznać szczegóły, przygotowanie i cennik.',
       path: '/pracownia-endoskopii/',

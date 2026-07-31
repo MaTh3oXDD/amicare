@@ -192,7 +192,13 @@
   }
 
   .row__meta {
+    flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 0.6rem;
+  }
+
+  .row__hours {
+    flex: 1 1 100%;
   }
 
   .row__panel {

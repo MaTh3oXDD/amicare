@@ -13,7 +13,7 @@ export class RegulaminPlatnosci implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Regulamin płatności online — AmiCare Centrum Medyczne Łódź',
+      title: 'Regulamin płatności online - AmiCare Centrum Medyczne Łódź',
       description:
         'Regulamin płatności online i warunki transakcji w AmiCare Centrum Medyczne w Łodzi.',
       path: '/regulamin-platnosci/',

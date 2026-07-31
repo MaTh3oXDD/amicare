@@ -16,9 +16,9 @@ export class Kolonoskopia implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Kolonoskopia — Pracownia Endoskopii AmiCare Łódź',
+      title: 'Kolonoskopia - Pracownia Endoskopii AmiCare Łódź',
       description:
-        'Kolonoskopia w AmiCare Łódź — badanie dolnego odcinka przewodu pokarmowego. Przygotowanie, znieczulenie, cennik i rezerwacja wizyty.',
+        'Kolonoskopia w AmiCare Łódź - badanie dolnego odcinka przewodu pokarmowego. Przygotowanie, znieczulenie, cennik i rezerwacja wizyty.',
       path: '/pracownia-endoskopii/kolonoskopia/',
     });
   }

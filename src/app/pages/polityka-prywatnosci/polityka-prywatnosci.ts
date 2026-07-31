@@ -13,7 +13,7 @@ export class PolitykaPrywatnosci implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Polityka prywatności i RODO — AmiCare Centrum Medyczne Łódź',
+      title: 'Polityka prywatności i RODO - AmiCare Centrum Medyczne Łódź',
       description:
         'Polityka prywatności, ochrona danych osobowych i informacje RODO w AmiCare Centrum Medyczne w Łodzi.',
       path: '/polityka-prywatnosci/',

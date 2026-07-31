@@ -3,7 +3,7 @@ export interface Doctor {
   title: string;
   bio?: string;
   photo?: string;
-  /** Profil na ZnanyLekarz.pl — tylko jeśli lekarz faktycznie tam widnieje */
+  /** Profil na ZnanyLekarz.pl - tylko jeśli lekarz faktycznie tam widnieje */
   znanyLekarz?: string;
 }
 
@@ -102,7 +102,7 @@ export const LEKARZE: Doctor[] = [
     bio: 'Studia medyczne ukończył na Uniwersytecie Medycznym w Łodzi, a kilka lat później zdobył stopień doktora nauk medycznych (2009 r.).',
   },
   {
-    name: 'Dr Joanna Kowalska–Majka',
+    name: 'Dr Joanna Kowalska-Majka',
     title: 'Lekarz specjalista w zakresie reumatologii oraz chorób wewnętrznych',
     bio: 'Studia medyczne ukończyła jako absolwentka Wydziału Lekarskiego Uniwersytetu Medycznego w Łodzi.',
     photo: 'images/zespol/joanna-kowalska-majka.jpg',

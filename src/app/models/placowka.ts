@@ -8,7 +8,7 @@ export interface Placowka {
   uwaga?: string;
   telefon: string;
   email: string;
-  /** Krótki opis roli placówki — teksty ze strony amicare.pl */
+  /** Krótki opis roli placówki - teksty ze strony amicare.pl */
   opis: string;
   /** Obszary dostępne w danym mieście */
   zakres: { nazwa: string; link: string }[];
@@ -35,7 +35,7 @@ export const PLACOWKI: Placowka[] = [
       { nazwa: 'Psycholog', link: '/konsultacje-specjalistyczne/psychologia' },
       { nazwa: 'Dietetyk', link: '/konsultacje-specjalistyczne/dietetyka' },
       { nazwa: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
-      { nazwa: 'Badania kliniczne — Łódź', link: '/badania-kliniczne' },
+      { nazwa: 'Badania kliniczne - Łódź', link: '/badania-kliniczne' },
     ],
     zdjecie: 'images/centrum-020.webp',
   },
@@ -58,7 +58,7 @@ export const PLACOWKI: Placowka[] = [
       { nazwa: 'Internista', link: '/konsultacje-specjalistyczne' },
       { nazwa: 'Hepatolog', link: '/konsultacje-specjalistyczne' },
       { nazwa: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
-      { nazwa: 'Badania kliniczne — Łódź', link: '/badania-kliniczne' },
+      { nazwa: 'Badania kliniczne - Łódź', link: '/badania-kliniczne' },
     ],
     zdjecie: 'images/centrum-015.webp',
   },
@@ -71,6 +71,6 @@ export const PLACOWKI: Placowka[] = [
     telefon: '+48 786 086 331',
     email: 'office@amicare.pl',
     opis: 'Jesteśmy Ośrodkiem tworzonym przez wykwalifikowanych i pełnych pasji lekarzy, koordynatorów badań klinicznych i pielęgniarki. Obecnie prowadzone badania kliniczne w Jeleniej Górze obejmują gastroenterologię.',
-    zakres: [{ nazwa: 'Badania kliniczne — Jelenia Góra', link: '/badania-kliniczne' }],
+    zakres: [{ nazwa: 'Badania kliniczne - Jelenia Góra', link: '/badania-kliniczne' }],
   },
 ];

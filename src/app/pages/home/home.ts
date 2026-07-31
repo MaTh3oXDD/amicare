@@ -30,7 +30,7 @@ export class Home implements OnInit {
     this.seo.set({
       title: 'AmiCare Centrum Medyczne- kolonoskopia, gastroskopia, poradnie specjalistyczne',
       description:
-        'AmiCare Łódź — centrum medyczne z dwiema przychodniami (ul. Romanowska 55N i ul. Zgierska 249). Konsultacje specjalistyczne, badania kliniczne, endoskopia i diagnostyka w jednym miejscu.',
+        'AmiCare Łódź - centrum medyczne z dwiema przychodniami (ul. Romanowska 55N i ul. Zgierska 249). Konsultacje specjalistyczne, badania kliniczne, endoskopia i diagnostyka w jednym miejscu.',
       path: '/',
     });
 
@@ -42,7 +42,7 @@ export class Home implements OnInit {
       url: 'https://amicare.pl/',
       logo: 'https://amicare.pl/images/slogan.svg',
       image: 'https://amicare.pl/images/centrum-020.webp',
-      slogan: 'We help Patients through Science – Pomagamy pacjentom przez naukę',
+      slogan: 'We help Patients through Science - Pomagamy pacjentom przez naukę',
       telephone: '+48 42 28 90 250',
       email: 'rejestracja@amicare.pl',
       areaServed: [
@@ -53,7 +53,7 @@ export class Home implements OnInit {
       department: [
         {
           '@type': 'MedicalClinic',
-          name: 'Amicare Centrum Medyczne — Łódź, Romanowska',
+          name: 'Amicare Centrum Medyczne - Łódź, Romanowska',
           url: 'https://amicare.pl/placowki/lodz-romanowska/',
           address: {
             '@type': 'PostalAddress',
@@ -67,7 +67,7 @@ export class Home implements OnInit {
         },
         {
           '@type': 'MedicalClinic',
-          name: 'Amicare Centrum Medyczne — Łódź, Zgierska',
+          name: 'Amicare Centrum Medyczne - Łódź, Zgierska',
           url: 'https://amicare.pl/placowki/lodz-zgierska/',
           address: {
             '@type': 'PostalAddress',
@@ -81,7 +81,7 @@ export class Home implements OnInit {
         },
         {
           '@type': 'MedicalClinic',
-          name: 'Amicare Ośrodek Badań Klinicznych — Jelenia Góra',
+          name: 'Amicare Ośrodek Badań Klinicznych - Jelenia Góra',
           url: 'https://amicare.pl/placowki/jelenia-gora/',
           address: {
             '@type': 'PostalAddress',

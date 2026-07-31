@@ -39,14 +39,14 @@ export class Specjalizacja {
         return;
       }
       this.seo.set({
-        title: `${s.nazwa} Łódź — Konsultacje | AmiCare Centrum Medyczne`,
-        description: `${s.nazwa} w Łodzi — AmiCare Centrum Medyczne. ${s.opis[0]}`.slice(0, 160),
+        title: `${s.nazwa} Łódź - Konsultacje | AmiCare Centrum Medyczne`,
+        description: `${s.nazwa} w Łodzi - AmiCare Centrum Medyczne. ${s.opis[0]}`.slice(0, 160),
         path: `/konsultacje-specjalistyczne/${s.slug}/`,
       });
       this.seo.setJsonLd('ld-specjalizacja', {
         '@context': 'https://schema.org',
         '@type': 'MedicalClinic',
-        name: `AmiCare Centrum Medyczne — ${s.nazwa}`,
+        name: `AmiCare Centrum Medyczne - ${s.nazwa}`,
         medicalSpecialty: s.nazwa,
         areaServed: { '@type': 'City', name: 'Łódź' },
         url: `https://amicare.pl/konsultacje-specjalistyczne/${s.slug}/`,

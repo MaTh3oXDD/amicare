@@ -14,7 +14,7 @@ export class ONas implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'O nas — AmiCare Centrum Medyczne | Badania kliniczne Łódź, Jelenia Góra',
+      title: 'O nas - AmiCare Centrum Medyczne | Badania kliniczne Łódź, Jelenia Góra',
       description:
         'AmiCare Centrum Medyczne to nowoczesny ośrodek mający swoje siedziby w Łodzi oraz w Jeleniej Górze. Zajmujemy się głównie badaniami klinicznymi, stale rozszerzając ofertę opieki zdrowotnej.',
       path: '/o-nas/',

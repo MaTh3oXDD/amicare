@@ -31,9 +31,9 @@ export class Zespol implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Zespół — AmiCare Centrum Medyczne Łódź',
+      title: 'Zespół - AmiCare Centrum Medyczne Łódź',
       description:
-        'Poznaj zespół AmiCare Centrum Medyczne w Łodzi — lekarze specjaliści, kadra zarządzająca, koordynatorzy badań klinicznych i zespół pielęgniarski. We help Patients through Science.',
+        'Poznaj zespół AmiCare Centrum Medyczne w Łodzi - lekarze specjaliści, kadra zarządzająca, koordynatorzy badań klinicznych i zespół pielęgniarski. We help Patients through Science.',
       path: '/o-nas/zespol/',
     });
   }

@@ -37,15 +37,15 @@ export class PlacowkaDetail {
       this.seo.set({
         title:
           p.miasto === 'Łódź'
-            ? `${p.nazwa} Łódź — ${p.adres ? p.adres.split(',')[0] : p.typ} | AmiCare`
-            : `${p.nazwa} — ${p.miasto}${p.adres ? ', ' + p.adres.split(',')[0] : ''} | AmiCare`,
+            ? `${p.nazwa} Łódź - ${p.adres ? p.adres.split(',')[0] : p.typ} | AmiCare`
+            : `${p.nazwa} - ${p.miasto}${p.adres ? ', ' + p.adres.split(',')[0] : ''} | AmiCare`,
         description: `${p.typ} AmiCare w ${p.miasto}. ${p.adres ?? ''} ${p.godziny ?? ''} Telefon: ${p.telefon}, email: ${p.email}.`,
         path: `/placowki/${p.slug}/`,
       });
       this.seo.setJsonLd('ld-placowka', {
         '@context': 'https://schema.org',
         '@type': 'MedicalClinic',
-        name: `${p.nazwa} — ${p.miasto}`,
+        name: `${p.nazwa} - ${p.miasto}`,
         url: `https://amicare.pl/placowki/${p.slug}/`,
         ...(p.zdjecie ? { image: `https://amicare.pl/${p.zdjecie}` } : {}),
         telephone: p.telefon,

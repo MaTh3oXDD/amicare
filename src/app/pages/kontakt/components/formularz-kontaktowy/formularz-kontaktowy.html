@@ -13,7 +13,7 @@
   <label>
     Prosimy o podanie tematu kontaktu*
     <select name="temat" required [(ngModel)]="model.temat">
-      <option value="" disabled selected>—Proszę wybrać opcję—</option>
+      <option value="" disabled selected>-Proszę wybrać opcję-</option>
       @for (t of tematy; track t) {
         <option [value]="t">{{ t }}</option>
       }
@@ -39,6 +39,6 @@
   <button type="submit" class="btn btn--solid" [disabled]="f.invalid">Wyślij</button>
 
   @if (wyslano()) {
-    <p class="form__ok" role="status">Otwarto program pocztowy — dziękujemy za wiadomość.</p>
+    <p class="form__ok" role="status">Otwarto program pocztowy - dziękujemy za wiadomość.</p>
   }
 </form>

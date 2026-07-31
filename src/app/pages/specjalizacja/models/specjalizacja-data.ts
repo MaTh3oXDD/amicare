@@ -193,7 +193,7 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
         ],
       },
     ],
-    lekarze: ['Dr Joanna Kowalska–Majka'],
+    lekarze: ['Dr Joanna Kowalska-Majka'],
   },
   {
     slug: 'kardiologia',
@@ -232,7 +232,7 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
     slug: 'psychologia',
     nazwa: 'Psychologia',
     opis: [
-      'Twoje emocje mają znaczenie – skorzystaj z profesjonalnego wsparcia psychologicznego! Szukasz pomocy, zrozumienia i konkretnych rozwiązań? W naszym centrum medycznym oferujemy kompleksowe wsparcie dla dzieci, młodzieży i dorosłych. Pracujemy z empatią, doświadczeniem i indywidualnym podejściem do każdego pacjenta.',
+      'Twoje emocje mają znaczenie - skorzystaj z profesjonalnego wsparcia psychologicznego! Szukasz pomocy, zrozumienia i konkretnych rozwiązań? W naszym centrum medycznym oferujemy kompleksowe wsparcie dla dzieci, młodzieży i dorosłych. Pracujemy z empatią, doświadczeniem i indywidualnym podejściem do każdego pacjenta.',
       'Nasz zespół tworzą wykwalifikowani psycholodzy, terapeuci i mediatorzy, którzy łączą wieloletnie doświadczenie z empatycznym podejściem do każdego pacjenta. Pracujemy z osobami w różnym wieku i w różnych sytuacjach życiowych, zapewniając fachową pomoc opartą na rzetelnej wiedzy i szacunku.',
       'Wierzymy, że skuteczna pomoc psychologiczna wymaga uważności na indywidualną historię i potrzeby każdego człowieka. Dlatego nasza praca opiera się na dokładnym zrozumieniu sytuacji pacjenta i dopasowaniu formy terapii do jego możliwości, celów i tempa.',
       'Tworzymy atmosferę pełną zrozumienia, życzliwości i zaufania. Nasze gabinety to przestrzeń, w której możesz mówić swobodnie, bez oceniania i obaw.',
@@ -242,9 +242,9 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
       {
         tytul: 'Oferta',
         punkty: [
-          'Kompleksowa oferta psychologiczna — diagnoza psychologiczna, terapia i specjalistyczne wsparcie dostosowane do indywidualnych potrzeb',
-          'Diagnoza psychologiczna — korzystamy z nowoczesnych metod, takich jak test inteligencji Stanford-Binet',
-          'TUS — Trening Umiejętności Społecznych, skuteczna metoda wspierająca dzieci i młodzież w budowaniu relacji, asertywności i kontroli emocji',
+          'Kompleksowa oferta psychologiczna - diagnoza psychologiczna, terapia i specjalistyczne wsparcie dostosowane do indywidualnych potrzeb',
+          'Diagnoza psychologiczna - korzystamy z nowoczesnych metod, takich jak test inteligencji Stanford-Binet',
+          'TUS - Trening Umiejętności Społecznych, skuteczna metoda wspierająca dzieci i młodzież w budowaniu relacji, asertywności i kontroli emocji',
         ],
       },
     ],
@@ -252,12 +252,12 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
       {
         weekend: false,
         pozycje: [
-          { usluga: 'Konsultacje (50 minut) — pierwsza wizyta', cena: '220 zł' },
-          { usluga: 'Konsultacje (50 minut) — kolejna wizyta', cena: '200 zł' },
-          { usluga: 'Terapia psychologiczna (50 minut) — pierwsza wizyta', cena: '220 zł' },
-          { usluga: 'Terapia psychologiczna (50 minut) — kolejna wizyta', cena: '200 zł' },
-          { usluga: 'Mediacje (60 minut) — pierwsza wizyta', cena: '450 zł' },
-          { usluga: 'Mediacje (60 minut) — kolejna wizyta', cena: '400 zł' },
+          { usluga: 'Konsultacje (50 minut) - pierwsza wizyta', cena: '220 zł' },
+          { usluga: 'Konsultacje (50 minut) - kolejna wizyta', cena: '200 zł' },
+          { usluga: 'Terapia psychologiczna (50 minut) - pierwsza wizyta', cena: '220 zł' },
+          { usluga: 'Terapia psychologiczna (50 minut) - kolejna wizyta', cena: '200 zł' },
+          { usluga: 'Mediacje (60 minut) - pierwsza wizyta', cena: '450 zł' },
+          { usluga: 'Mediacje (60 minut) - kolejna wizyta', cena: '400 zł' },
           { usluga: 'Zaświadczenie psychologa', cena: '160 zł' },
           { usluga: 'Opinia psychologiczna', cena: '160 zł' },
           { usluga: 'Konsultacja diagnostyczna', cena: '280 zł' },
@@ -271,10 +271,10 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
             cena: 'od 3000 zł',
           },
           {
-            usluga: 'Test ADOS — raport z badania, wywiad 50 minut + test (2x50 minut)',
+            usluga: 'Test ADOS - raport z badania, wywiad 50 minut + test (2x50 minut)',
             cena: 'od 1200 zł',
           },
-          { usluga: 'MMPI-2 — pierwsza wizyta wywiad, druga i trzecia wizyta test', cena: '1100-1400 zł' },
+          { usluga: 'MMPI-2 - pierwsza wizyta wywiad, druga i trzecia wizyta test', cena: '1100-1400 zł' },
         ],
       },
     ],
@@ -317,10 +317,10 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
     slug: 'proktologia',
     nazwa: 'Proktologia',
     opis: [
-      'Proktologia to dziedzina medycyny zajmująca się diagnostyką, leczeniem oraz profilaktyką chorób końcowego odcinka przewodu pokarmowego – odbytnicy, kanału odbytu i okolic odbytu. Choć schorzenia proktologiczne często należą do tematów krępujących dla pacjentów, ich wczesne rozpoznanie i odpowiednie leczenie pozwalają skutecznie wyeliminować dolegliwości oraz zapobiec poważniejszym powikłaniom.',
+      'Proktologia to dziedzina medycyny zajmująca się diagnostyką, leczeniem oraz profilaktyką chorób końcowego odcinka przewodu pokarmowego - odbytnicy, kanału odbytu i okolic odbytu. Choć schorzenia proktologiczne często należą do tematów krępujących dla pacjentów, ich wczesne rozpoznanie i odpowiednie leczenie pozwalają skutecznie wyeliminować dolegliwości oraz zapobiec poważniejszym powikłaniom.',
       'W AmiCare zapewniamy kompleksową opiekę proktologiczną obejmującą konsultacje specjalistyczne, diagnostykę oraz dobór indywidualnego leczenia. Zajmujemy się rozpoznawaniem i leczeniem najczęstszych schorzeń proktologicznych, takich jak hemoroidy, szczeliny odbytu, przetoki, ropnie okołoodbytnicze, polipy oraz innych chorób końcowego odcinka jelita grubego.',
       'Do objawów, które powinny skłonić do konsultacji z proktologiem, należą między innymi: ból podczas wypróżniania, krwawienie z odbytu, świąd, pieczenie, uczucie dyskomfortu lub niepełnego wypróżnienia, a także przewlekłe zaparcia lub biegunki. Wiele schorzeń proktologicznych rozwija się stopniowo, dlatego nie warto odkładać wizyty u specjalisty.',
-      'Pacjentami poradni proktologicznej AmiCare opiekuje się dr n. med. Rafał Drozda – specjalista chirurgii ogólnej i onkologicznej, gastroenterolog oraz proktolog, od lat zajmujący się diagnostyką i leczeniem chorób przewodu pokarmowego oraz schorzeń proktologicznych.',
+      'Pacjentami poradni proktologicznej AmiCare opiekuje się dr n. med. Rafał Drozda - specjalista chirurgii ogólnej i onkologicznej, gastroenterolog oraz proktolog, od lat zajmujący się diagnostyką i leczeniem chorób przewodu pokarmowego oraz schorzeń proktologicznych.',
       'Dbamy o komfort, dyskrecję i bezpieczeństwo każdego pacjenta, zapewniając profesjonalną opiekę medyczną oraz indywidualne podejście na każdym etapie diagnostyki i leczenia.',
     ],
     cenniki: [

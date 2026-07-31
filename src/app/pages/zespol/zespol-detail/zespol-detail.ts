@@ -98,8 +98,8 @@ export class ZespolDetail implements OnInit {
         return;
       }
       this.seo.set({
-        title: `${d.name} — ${d.title} w Łodzi | AmiCare Centrum Medyczne`,
-        description: `${d.name} — ${d.title} w AmiCare Centrum Medyczne w Łodzi. Umów wizytę telefonicznie: 42 28 90 250.`.slice(
+        title: `${d.name} - ${d.title} w Łodzi | AmiCare Centrum Medyczne`,
+        description: `${d.name} - ${d.title} w AmiCare Centrum Medyczne w Łodzi. Umów wizytę telefonicznie: 42 28 90 250.`.slice(
           0,
           160,
         ),

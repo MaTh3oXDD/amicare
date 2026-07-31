@@ -18,7 +18,7 @@ export class Kontakt implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Kontakt — AmiCare Centrum Medyczne | Łódź, Jelenia Góra',
+      title: 'Kontakt - AmiCare Centrum Medyczne | Łódź, Jelenia Góra',
       description:
         'Skontaktuj się z AmiCare Centrum Medyczne. Oddziały Łódź: Ul. Romanowska 55N i Ul. Zgierska 249. Telefon: +48 42 28 90 250, email: rejestracja@amicare.pl. Badania kliniczne: +48 786 086 331.',
       path: '/kontakt/',

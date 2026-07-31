@@ -20,12 +20,12 @@ const PHASES: Phase[] = [
   {
     numeral: 'II',
     title: 'Skuteczność',
-    desc: 'Na tym etapie badań określa się, czy lek działa w określonej grupie chorych oraz czy jest dla nich bezpieczny. Oceniana jest także zależność między dawką a efektem terapeutycznym, co pozwala ustalić dawkowanie w kolejnych fazach badania. Przez cały czas trwania II Fazy monitorowana jest skuteczność i bezpieczeństwo leku. Szczegółowej ocenie podlegają dane dotyczące wchłaniania, metabolizmu i wydalania leku w zależności od płci i wieku. Nowy lek porównywany jest z placebo lub standardowym leczeniem metodą ślepej próby — ani pacjent, ani badacz nie wiedzą, czy choremu podawana jest substancja będąca przedmiotem badania, czy też placebo. Uczestnikami są losowo wybrani ochotnicy, zwykle kilkaset osób z badaną chorobą. Faza kończy się sukcesem, gdy korzyści istotnie przewyższają ryzyko, co pozwala przejść do kolejnego etapu badania.',
+    desc: 'Na tym etapie badań określa się, czy lek działa w określonej grupie chorych oraz czy jest dla nich bezpieczny. Oceniana jest także zależność między dawką a efektem terapeutycznym, co pozwala ustalić dawkowanie w kolejnych fazach badania. Przez cały czas trwania II Fazy monitorowana jest skuteczność i bezpieczeństwo leku. Szczegółowej ocenie podlegają dane dotyczące wchłaniania, metabolizmu i wydalania leku w zależności od płci i wieku. Nowy lek porównywany jest z placebo lub standardowym leczeniem metodą ślepej próby - ani pacjent, ani badacz nie wiedzą, czy choremu podawana jest substancja będąca przedmiotem badania, czy też placebo. Uczestnikami są losowo wybrani ochotnicy, zwykle kilkaset osób z badaną chorobą. Faza kończy się sukcesem, gdy korzyści istotnie przewyższają ryzyko, co pozwala przejść do kolejnego etapu badania.',
   },
   {
     numeral: 'III',
     title: 'Porównanie',
-    desc: 'III Faza badań klinicznych ma na celu ostateczne potwierdzenie skuteczności badanej substancji w leczeniu danej choroby. Badany jest związek między bezpieczeństwem a skutecznością leku zarówno przy krótko-, jak i długoterminowym stosowaniu. Uczestniczą w niej grupy liczące nawet kilka tysięcy pacjentów, a czas trwania badania wynosi od roku do kilku lat. Podobnie jak w Fazie II, stosuje się metodę podwójnie ślepej próby i losowy dobór pacjentów. Po pomyślnym zakończeniu III Fazy lek może otrzymać rejestrację i dopuszczenie do obrotu. Dokumentacja przekazywana do urzędu rejestracyjnego obejmuje wszystkie dane zebrane podczas badań przedklinicznych i klinicznych (Fazy I–III) i może liczyć nawet tysiące stron. Przed rozpoczęciem programu badawczego producenci leków konsultują się z urzędami rejestracji leków, aby precyzyjnie określić populację pacjentów i zminimalizować ryzyko odrzucenia dokumentacji z powodu braku kluczowych informacji.',
+    desc: 'III Faza badań klinicznych ma na celu ostateczne potwierdzenie skuteczności badanej substancji w leczeniu danej choroby. Badany jest związek między bezpieczeństwem a skutecznością leku zarówno przy krótko-, jak i długoterminowym stosowaniu. Uczestniczą w niej grupy liczące nawet kilka tysięcy pacjentów, a czas trwania badania wynosi od roku do kilku lat. Podobnie jak w Fazie II, stosuje się metodę podwójnie ślepej próby i losowy dobór pacjentów. Po pomyślnym zakończeniu III Fazy lek może otrzymać rejestrację i dopuszczenie do obrotu. Dokumentacja przekazywana do urzędu rejestracyjnego obejmuje wszystkie dane zebrane podczas badań przedklinicznych i klinicznych (Fazy I-III) i może liczyć nawet tysiące stron. Przed rozpoczęciem programu badawczego producenci leków konsultują się z urzędami rejestracji leków, aby precyzyjnie określić populację pacjentów i zminimalizować ryzyko odrzucenia dokumentacji z powodu braku kluczowych informacji.',
   },
   {
     numeral: 'IV',
@@ -116,7 +116,7 @@ export class BadaniaKliniczne implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Badania kliniczne — AmiCare | Łódź i Jelenia Góra',
+      title: 'Badania kliniczne - AmiCare | Łódź i Jelenia Góra',
       description:
         'Obecnie prowadzone badania kliniczne i ankiety kwalifikujące w ośrodkach AmiCare w Łodzi i Jeleniej Górze. Dlaczego badania kliniczne są tak istotne? Jakie są etapy badań klinicznych?',
       path: '/badania-kliniczne/',

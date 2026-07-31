@@ -59,7 +59,7 @@ export class ZgloszenieDialog {
     const { imie, telefon, email, wiadomosc, zgoda } = this.model;
     if (!imie || !telefon || !zgoda) return;
 
-    const subject = encodeURIComponent(`Zgłoszenie do badania — ${study.jednostka}`);
+    const subject = encodeURIComponent(`Zgłoszenie do badania - ${study.jednostka}`);
     const bodyLines = [
       `Badanie: ${study.jednostka} (${study.miasto})`,
       `Imię i nazwisko: ${imie}`,
