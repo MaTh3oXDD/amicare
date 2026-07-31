@@ -1,9 +1,22 @@
 import { Component, computed, inject, input, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Seo } from '../../../services/seo';
 import { Doctor, KADRA, KOORDYNATORZY, LEKARZE, PIELEGNIARKI } from '../../../models/doctor';
 import { BIOGRAMY } from '../models/biogramy';
+
+const ZL_WIDGET_SCRIPT_ID = 'zl-widget-s';
+const ZL_WIDGET_SRC = 'https://platform.docplanner.com/js/widget.js';
+
+/** wyciąga slug lekarza z URL ZnanyLekarz.pl, np. .../magdalena-baranska/gastrolog/lodz -> magdalena-baranska */
+function znanyLekarzSlug(url: string): string | undefined {
+  try {
+    return new URL(url).pathname.split('/').filter(Boolean)[0];
+  } catch {
+    return undefined;
+  }
+}
 
 interface PriceRow {
   label: string;
@@ -53,6 +66,7 @@ function parseBiogram(bio: string[]): BiogramContent {
 export class ZespolDetail implements OnInit {
   private seo = inject(Seo);
   private router = inject(Router);
+  private doc = inject(DOCUMENT);
 
   readonly slug = input.required<string>();
 
@@ -60,6 +74,11 @@ export class ZespolDetail implements OnInit {
     const s = this.slug();
     const all = [...LEKARZE, ...KADRA, ...KOORDYNATORZY, ...PIELEGNIARKI];
     return all.find((d) => d.name.toLowerCase().replace(/\s+/g, '-') === s);
+  });
+
+  protected readonly znanyLekarzSlug = computed<string | undefined>(() => {
+    const url = this.doctor()?.znanyLekarz;
+    return url ? znanyLekarzSlug(url) : undefined;
   });
 
   protected readonly biogram = computed<string[] | undefined>(() => {
@@ -98,7 +117,20 @@ export class ZespolDetail implements OnInit {
         },
         address: { '@type': 'PostalAddress', addressLocality: 'Łódź', addressCountry: 'PL' },
       });
+
+      if (d.znanyLekarz) {
+        // Kolejny mikrotick, żeby kotwica .zl-url z @if zdążyła się wyrenderować w DOM.
+        setTimeout(() => this.reloadZnanyLekarzWidget());
+      }
     });
+  }
+
+  private reloadZnanyLekarzWidget(): void {
+    this.doc.getElementById(ZL_WIDGET_SCRIPT_ID)?.remove();
+    const script = this.doc.createElement('script');
+    script.id = ZL_WIDGET_SCRIPT_ID;
+    script.src = ZL_WIDGET_SRC;
+    this.doc.body.appendChild(script);
   }
 
   ngOnInit(): void {}

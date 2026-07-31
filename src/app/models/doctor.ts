@@ -3,6 +3,8 @@ export interface Doctor {
   title: string;
   bio?: string;
   photo?: string;
+  /** Profil na ZnanyLekarz.pl — tylko jeśli lekarz faktycznie tam widnieje */
+  znanyLekarz?: string;
 }
 
 export const LEKARZE: Doctor[] = [
@@ -11,12 +13,14 @@ export const LEKARZE: Doctor[] = [
     title: 'Specjalista chirurgii ogólnej i onkologicznej. Specjalista gastroenterolog, proktolog.',
     bio: 'Jest specjalistą chirurgii ogólnej i onkologicznej, który od lat zajmuje się przede wszystkim leczeniem chorób przewodu pokarmowego i proktologią.',
     photo: 'images/zespol/rafal-drozda.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/rafal-drozda/chirurg-onkologiczny-proktolog-gastrolog/lodz',
   },
   {
     name: 'lek. Magdalena Barańska',
     title: 'Gastroenterolog',
     bio: 'Swoje zainteresowania zawodowe skupia wokół diagnostyki i leczenia głównie nieswoistych chorób zapalnych jelit (wrzodziejące zapalenie jelita grubego, choroba Leśniowskiego - Crohna), jak również ostrego i przewlekłego zapalenia trzustki.',
     photo: 'images/zespol/magdalena-baranska.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/magdalena-baranska/gastrolog-internista/lodz',
   },
   {
     name: 'lek. Karolina Kabot',
@@ -35,6 +39,7 @@ export const LEKARZE: Doctor[] = [
     name: 'Dr n.med. Krzysztof Grzegorczyk',
     title: 'Specjalista w zakresie medycyny internistycznej, gastroenterologii oraz chorób zakaźnych',
     bio: 'Studia medyczne ukończył jako absolwent Wojskowej Akademii Medycznej w Łodzi, a w roku 1986 uzyskał stopień doktora nauk medycznych.',
+    znanyLekarz: 'https://www.znanylekarz.pl/krzysztof-grzegorczyk/gastrolog/lodz',
   },
   {
     name: 'Dr Karolina Niczyporuk',
@@ -47,6 +52,7 @@ export const LEKARZE: Doctor[] = [
     title: 'Gastroenterolog',
     bio: 'W swojej pracy klinicznej zajmuje się diagnostyką i leczeniem chorób przewodu pokarmowego, a jej szczególnym obszarem zainteresowania są nieswoiste choroby zapalne jelit oraz choroba uchyłkowa.',
     photo: 'images/zespol/julia-banasik.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/julia-banasik/gastrolog/lodz',
   },
   {
     name: 'Prof. dr hab. n.med. Joanna Jerzyńska',
@@ -59,6 +65,7 @@ export const LEKARZE: Doctor[] = [
     title: 'Kardiolog',
     bio: 'Jest specjalistą kardiologii. Od 2019 roku pracuje w Klinice Kardiologii CSK UM w Łodzi, gdzie na co dzień zajmuje się diagnostyką oraz leczeniem chorób serca.',
     photo: 'images/zespol/lukasz-spadlinski-kardiolog.jpg',
+    znanyLekarz: 'https://www.znanylekarz.pl/lukasz-spadlinski/kardiolog/lodz',
   },
   {
     name: 'Dominika Buczyńska',
@@ -75,12 +82,14 @@ export const LEKARZE: Doctor[] = [
     name: 'dr n. med. Hubert Zatorski',
     title: 'Gastroenterolog',
     bio: 'Członek towarzystw naukowych: Polskiego Towarzystwa Gastroenterologicznego, European Society of Gastrointestinal Endoscopy (ESGE), Polskiego Towarzystwa Żywienia Pozajelitowego, Dojelitowego i Metabolizmu (POLSPEN).',
+    znanyLekarz: 'https://www.znanylekarz.pl/hubert-zatorski/gastrolog/lodz',
   },
   {
     name: 'Dr n.med. Agnieszka Bała',
     title: 'Lekarz specjalista w zakresie medycyny internistycznej oraz farmakologii klinicznej',
     bio: 'Ukończyła studia medyczne jako absolwentka Wydziału Lekarskiego Akademii Medycznej w Łodzi, posiada również tytuł doktora nauk medycznych.',
     photo: 'images/zespol/agnieszka-bala.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/agnieszka-bala-2/internista/lodz',
   },
   {
     name: 'Dr n.med. Dorota Czech',
@@ -97,30 +106,35 @@ export const LEKARZE: Doctor[] = [
     title: 'Lekarz specjalista w zakresie reumatologii oraz chorób wewnętrznych',
     bio: 'Studia medyczne ukończyła jako absolwentka Wydziału Lekarskiego Uniwersytetu Medycznego w Łodzi.',
     photo: 'images/zespol/joanna-kowalska-majka.jpg',
+    znanyLekarz: 'https://www.znanylekarz.pl/joanna-kowalska-majka/reumatolog-internista/lodz',
   },
   {
     name: 'lek. Michał Stasiak',
     title: 'Gastroenterolog',
     bio: 'Obszar zainteresowań w toku pracy zawodowej dotyczy chorób zapalnych trzustki (ostrego i przewlekłego zapalenia trzustki) oraz raka tego narządu, jak również nieswoistych chorób zapalnych jelit.',
     photo: 'images/zespol/michal-stasiak.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/michal-stasiak/gastrolog-internista/rzgow',
   },
   {
     name: 'dr n. med. Dariusz Krzyczmanik',
     title: 'Specjalista chorób zakaźnych',
     bio: 'Specjalista chorób wewnętrznych oraz chorób zakaźnych z wieloletnim doświadczeniem klinicznym. Zajmuje się diagnostyką i leczeniem schorzeń internistycznych oraz zakaźnych u pacjentów dorosłych i dzieci.',
     photo: 'images/zespol/dariusz-krzyczmanik.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/dariusz-krzyczmanik/internista-lekarz-chorob-zakaznych/lodz',
   },
   {
     name: 'dr n. med. Milena Padysz',
     title: 'Gastroenterolog',
     bio: 'Podczas pracy zajmuje się rozpoznawaniem i leczeniem chorób przewodu pokarmowego, zwłaszcza nieswoistych chorób zapalnych jelit, choroby uchyłkowej jelita grubego oraz zaburzeń czynnościowych jelit.',
     photo: 'images/zespol/milena-padysz.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/milena-padysz/gastrolog-internista/lodz',
   },
   {
     name: 'dr n. med. i n. o zdr. Danuta Domżał-Magrowska',
     title: 'Lekarz specjalista gastroenterologii i chorób wewnętrznych',
     bio: 'Jest lekarzem specjalistą gastroenterologii i chorób wewnętrznych. Z wyróżnieniem ukończyła wydział lekarski Uniwersytetu Medycznego.',
     photo: 'images/zespol/danuta-domzal-magrowska.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/danuta-domzal-magrowska/gastrolog-internista/lodz',
   },
   {
     name: 'Dr hab n. med. Mariola Świderek-Matysiak',
@@ -138,6 +152,7 @@ export const LEKARZE: Doctor[] = [
     title: 'Specjalistka chorób dziecięcych i gastroenterologii',
     bio: 'Ukończyła wydział lekarski na Uniwersytecie Medycznym w Łodzi, a specjalizację uzyskała w dziedzinie chorób dziecięcych i gastroenterologii, uzyskując ponadto stopień naukowy doktora nauk medycznych.',
     photo: 'images/zespol/izabela-kubinska.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/izabela-kubinska/pediatra-gastrolog/lodz',
   },
   {
     name: 'Dr n. med. Aleksandra Bała-Wojsznis',
@@ -150,6 +165,7 @@ export const LEKARZE: Doctor[] = [
     title: 'Lekarz specjalista w zakresie kardiologii oraz chorób wewnętrznych',
     bio: 'Studia medyczne ukończył na Wojskowej Akademii Medycznej w Łodzi, w 2003 r. uzyskał stopień doktora nauk medycznych.',
     photo: 'images/zespol/adam-poliwczak-kardiolog.webp',
+    znanyLekarz: 'https://www.znanylekarz.pl/adam-poliwczak/kardiolog-internista/lodz',
   },
 ];
 

@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Seo } from '../../services/seo';
 import { PageHero } from '../../components/page-hero/page-hero';
@@ -14,6 +14,19 @@ export class Placowki implements OnInit {
   private seo = inject(Seo);
 
   protected readonly placowki = PLACOWKI;
+  private readonly openSlugs = signal<ReadonlySet<string>>(new Set());
+
+  protected isOpen(slug: string): boolean {
+    return this.openSlugs().has(slug);
+  }
+
+  protected toggle(slug: string): void {
+    this.openSlugs.update((open) => {
+      const next = new Set(open);
+      next.has(slug) ? next.delete(slug) : next.add(slug);
+      return next;
+    });
+  }
 
   ngOnInit(): void {
     this.seo.set({

@@ -70,6 +70,21 @@
                 <a href="mailto:rejestracja@amicare.pl" class="contact-link">rejestracja@amicare.pl</a>
               </div>
               <a href="tel:+48422890250" class="btn btn--solid">Zadzwoń teraz</a>
+              @if (znanyLekarzSlug(); as zlSlug) {
+                <a
+                  id="zl-url"
+                  class="zl-url"
+                  rel="nofollow"
+                  [href]="d.znanyLekarz"
+                  [attr.data-zlw-doctor]="zlSlug"
+                  data-zlw-type="big"
+                  data-zlw-opinion="false"
+                  data-zlw-hide-branding="true"
+                  data-zlw-saas-only="false"
+                  data-zlw-a11y-title="Widget umówienia wizyty lekarskiej"
+                  >Umów wizytę</a
+                >
+              }
             </div>
           </aside>
         </div>

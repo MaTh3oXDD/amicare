@@ -15,19 +15,6 @@ export class Konsultacje implements OnInit {
 
   protected readonly specjalizacje = SPECJALIZACJE;
 
-  protected readonly pozostale = [
-    'Anestezjologia',
-    'Endokrynologia',
-    'Alergologia',
-    'Dermatologia',
-    'Diabetologia',
-    'Neurologia',
-    'Onkologia',
-    'Urologia',
-    'Psychiatria',
-    'Pulmonologia',
-  ];
-
   ngOnInit(): void {
     this.seo.set({
       title: 'Konsultacje specjalistyczne — AmiCare Centrum Medyczne Łódź',

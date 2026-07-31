@@ -28,7 +28,7 @@ export class Home implements OnInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'AmiCare Łódź — Centrum Medyczne i Badania Kliniczne | Romanowska, Zgierska',
+      title: 'AmiCare Centrum Medyczne- kolonoskopia, gastroskopia, poradnie specjalistyczne',
       description:
         'AmiCare Łódź — centrum medyczne z dwiema przychodniami (ul. Romanowska 55N i ul. Zgierska 249). Konsultacje specjalistyczne, badania kliniczne, endoskopia i diagnostyka w jednym miejscu.',
       path: '/',
@@ -40,7 +40,7 @@ export class Home implements OnInit {
       name: 'AmiCare Centrum Medyczne',
       alternateName: 'AmiCare Łódź',
       url: 'https://amicare.pl/',
-      logo: 'https://amicare.pl/images/logo.png',
+      logo: 'https://amicare.pl/images/slogan.svg',
       image: 'https://amicare.pl/images/centrum-020.webp',
       slogan: 'We help Patients through Science – Pomagamy pacjentom przez naukę',
       telephone: '+48 42 28 90 250',

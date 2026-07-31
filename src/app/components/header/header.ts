@@ -24,15 +24,9 @@ export class Header {
   protected readonly openGroup = signal<string | null>(null);
 
   protected readonly nav: NavGroup[] = [
-    {
-      label: 'Dla pacjenta',
-      link: '/konsultacje-specjalistyczne',
-      children: [
-        { label: 'Konsultacje specjalistyczne', link: '/konsultacje-specjalistyczne' },
-        { label: 'Pracownia endoskopii', link: '/pracownia-endoskopii' },
-        { label: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
-      ],
-    },
+    { label: 'Konsultacje specjalistyczne', link: '/konsultacje-specjalistyczne' },
+    { label: 'Pracownia endoskopii', link: '/pracownia-endoskopii' },
+    { label: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
     { label: 'Badania kliniczne', link: '/badania-kliniczne' },
     { label: 'Placówki', link: '/placowki' },
     {
