@@ -2,15 +2,23 @@
   <app-hero-blob></app-hero-blob>
   <div class="container hero__inner">
     <div class="hero__card">
-      <span class="eyebrow">We help Patients through Science</span>
-      <h1>Badania kliniczne<br /><em>i opieka zdrowotna</em></h1>
+      <span class="eyebrow">Kolonoskopia, gastroskopia i prywatne konsultacje specjalistyczne</span>
+      <h1>AmiCare Centrum<br /><em>Medyczne w Łodzi</em></h1>
       <p class="hero__lead">
-        AmiCare to Twoje centrum zaawansowanych badań klinicznych i profesjonalnej opieki
-        zdrowotnej. Trzy placówki: dwie w Łodzi i jedna w Jeleniej Górze.
+        AmiCare to nowoczesne centrum medyczne w Łodzi, specjalizujące się w diagnostyce
+        gastroenterologicznej oraz prywatnych konsultacjach lekarskich. W naszej pracowni
+        endoskopii wykonujemy gastroskopię, kolonoskopię oraz badania łączone - również w
+        analgosedacji i znieczuleniu ogólnym.
       </p>
+      <p class="hero__lead">
+        Zapewniamy krótkie terminy, opiekę doświadczonego zespołu lekarzy, pielęgniarek oraz
+        zespołu anestezjologicznego. Do Państw dyspozycji zostaje nasz doświadczony zespół
+        rejestracji.
+      </p>
+      <p class="hero__lead">Umów badanie endoskopowe lub konsultację specjalistyczną w Łodzi.</p>
       <div class="hero__actions">
-        <a routerLink="/kontakt" class="btn btn--solid">Zarezerwuj wizytę</a>
-        <a href="tel:+48422890250" class="hero__tel mono">tel · 42 28 90 250</a>
+        <a routerLink="/kontakt" class="btn btn--solid">Umów wizytę</a>
+        <a href="tel:+48422890250" class="btn btn--ghost hero__tel mono">Zadzwoń do nas</a>
       </div>
     </div>
   </div>
@@ -111,6 +119,12 @@
     <span class="eyebrow">Konsultacje specjalistyczne</span>
     <h2 id="spec-h">Specjalizacje</h2>
     <ul class="speclist">
+      <li>
+        <a routerLink="/pracownia-endoskopii">
+          <span>Pracownia Endoskopii</span>
+          <span class="speclist__arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
       @for (s of specjalizacje; track s.slug) {
         <li>
           <a [routerLink]="['/konsultacje-specjalistyczne', s.slug]">
@@ -119,12 +133,6 @@
           </a>
         </li>
       }
-      <li>
-        <a routerLink="/pracownia-endoskopii">
-          <span>Pracownia Endoskopii</span>
-          <span class="speclist__arrow" aria-hidden="true">→</span>
-        </a>
-      </li>
     </ul>
   </div>
 </section>

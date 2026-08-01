@@ -3,10 +3,11 @@
 <section class="section" aria-label="Lista badań diagnostycznych">
   <div class="container">
     <div class="grid grid--3">
-      @for (b of badania; track b) {
-        <div class="diag">
-          <h3>{{ b }}</h3>
-        </div>
+      @for (b of badania; track b.nazwa) {
+        <a class="diag" [routerLink]="b.link">
+          <h3>{{ b.nazwa }}</h3>
+          <span class="diag__arrow" aria-hidden="true">→</span>
+        </a>
       }
     </div>
     <div class="cta">

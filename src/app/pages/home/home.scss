@@ -24,9 +24,13 @@
 .hero__card {
   background: var(--c-white);
   padding: clamp(2rem, 5vw, 3.2rem);
-  max-width: 34rem;
+  max-width: 30rem;
   box-shadow: 0 24px 60px -24px rgba(21, 42, 82, 0.35);
   animation: rise 0.7s ease both;
+
+  @media (min-width: 860px) {
+    max-width: 52rem;
+  }
 }
 
 @keyframes rise {
@@ -54,8 +58,12 @@
 .hero__lead {
   font-size: 1.1rem;
   max-width: 44ch;
-  margin: 1.2rem 0 2.4rem;
+  margin: 0 0 1.2rem;
   color: var(--c-ink-soft);
+
+  @media (min-width: 860px) {
+    max-width: 62ch;
+  }
 }
 
 .hero__actions {

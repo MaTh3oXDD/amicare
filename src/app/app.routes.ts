@@ -54,15 +54,50 @@ export const routes: Routes = [
       import('./pages/pracownia-endoskopii/gastroskopia/gastroskopia').then((m) => m.Gastroskopia),
   },
   {
+    path: 'pracownia-endoskopii/gastroskopia-z-analgosedacja',
+    loadComponent: () =>
+      import('./pages/pracownia-endoskopii/gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja').then(
+        (m) => m.GastroskopiaZAnalgosedacja,
+      ),
+  },
+  {
+    path: 'pracownia-endoskopii/gastroskopia-znieczulenie-ogolne',
+    loadComponent: () =>
+      import(
+        './pages/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne'
+      ).then((m) => m.GastroskopiaZnieczulenieOgolne),
+  },
+  {
     path: 'pracownia-endoskopii/kolonoskopia',
     loadComponent: () =>
       import('./pages/pracownia-endoskopii/kolonoskopia/kolonoskopia').then((m) => m.Kolonoskopia),
+  },
+  {
+    path: 'pracownia-endoskopii/kolonoskopia-w-analgosedacji',
+    loadComponent: () =>
+      import('./pages/pracownia-endoskopii/kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji').then(
+        (m) => m.KolonoskopiaWAnalgosedacji,
+      ),
+  },
+  {
+    path: 'pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne',
+    loadComponent: () =>
+      import(
+        './pages/pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne/kolonoskopia-znieczulenie-ogolne'
+      ).then((m) => m.KolonoskopiaZnieczulenieOgolne),
   },
   {
     path: 'badania-diagnostyczne',
     loadComponent: () =>
       import('./pages/badania-diagnostyczne/badania-diagnostyczne').then(
         (m) => m.BadaniaDiagnostyczne,
+      ),
+  },
+  {
+    path: 'badania-diagnostyczne/:slug',
+    loadComponent: () =>
+      import('./pages/badania-diagnostyczne/badanie-detail/badanie-detail').then(
+        (m) => m.BadanieDetail,
       ),
   },
   {

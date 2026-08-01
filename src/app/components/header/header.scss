@@ -42,6 +42,15 @@
   .topbar__what {
     display: none;
   }
+
+  .topbar__inner {
+    justify-content: flex-start;
+  }
+
+  .topbar__contact {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 }
 
 .header__inner {

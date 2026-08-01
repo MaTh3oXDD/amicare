@@ -34,14 +34,16 @@
           </div>
 
           @if (isOpen(p.slug)) {
-            <div class="row__panel">
-              <ul class="row__zakres">
-                @for (z of p.zakres; track z.nazwa) {
-                  <li><a [routerLink]="z.link">{{ z.nazwa }}</a></li>
-                }
-              </ul>
-              <a routerLink="/kontakt" class="btn btn--solid row__book">Umów wizytę</a>
-            </div>
+            <ul class="row__zakres speclist">
+              @for (z of p.zakres; track z.nazwa) {
+                <li>
+                  <a [routerLink]="z.link">
+                    <span>{{ z.nazwa }}</span>
+                    <span class="speclist__arrow" aria-hidden="true">→</span>
+                  </a>
+                </li>
+              }
+            </ul>
           }
         </div>
       }

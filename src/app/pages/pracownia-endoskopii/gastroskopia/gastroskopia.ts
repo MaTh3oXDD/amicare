@@ -18,7 +18,7 @@ export class Gastroskopia implements OnInit, AfterViewInit {
     this.seo.set({
       title: 'Gastroskopia - Pracownia Endoskopii AmiCare Łódź',
       description:
-        'Gastroskopia w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego. Przygotowanie, znieczulenie, cennik i rezerwacja wizyty.',
+        'Gastroskopia w znieczuleniu miejscowym w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego. Przygotowanie, cennik i rezerwacja wizyty.',
       path: '/pracownia-endoskopii/gastroskopia/',
     });
   }

@@ -40,7 +40,12 @@
         <a routerLink="/kontakt" class="btn btn--solid">Zarezerwuj wizytę</a>
       </div>
       @if (p.zdjecie) {
-        <img [src]="p.zdjecie" alt="{{ p.nazwa }} - {{ p.miasto }} - wnętrze" width="1024" height="775" />
+        <img
+          [src]="p.zdjecie"
+          alt="{{ p.nazwa }} - {{ p.miasto }} - wnętrze"
+          [attr.width]="p.zdjecieWidth ?? 1024"
+          [attr.height]="p.zdjecieHeight ?? 775"
+        />
       }
     </div>
   </section>

@@ -30,28 +30,30 @@
             @if (c.naglowek) {
               <h3>{{ c.naglowek }}</h3>
             }
-            <table class="cennik">
-              <thead>
-                <tr>
-                  <th scope="col">Usługa</th>
-                  <th scope="col">{{ c.weekend ? 'Cena dni robocze' : 'Cena' }}</th>
-                  @if (c.weekend) {
-                    <th scope="col">Cena weekend</th>
-                  }
-                </tr>
-              </thead>
-              <tbody>
-                @for (p of c.pozycje; track p.usluga) {
+            <div class="cennik-scroll">
+              <table class="cennik">
+                <thead>
                   <tr>
-                    <td>{{ p.usluga }}</td>
-                    <td>{{ p.cena }}</td>
+                    <th scope="col">Usługa</th>
+                    <th scope="col">{{ c.weekend ? 'Cena dni robocze' : 'Cena' }}</th>
                     @if (c.weekend) {
-                      <td>{{ p.cenaWeekend ?? '-' }}</td>
+                      <th scope="col">Cena weekend</th>
                     }
                   </tr>
-                }
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  @for (p of c.pozycje; track p.usluga) {
+                    <tr>
+                      <td>{{ p.usluga }}</td>
+                      <td>{{ p.cena }}</td>
+                      @if (c.weekend) {
+                        <td>{{ p.cenaWeekend ?? '-' }}</td>
+                      }
+                    </tr>
+                  }
+                </tbody>
+              </table>
+            </div>
           }
         </aside>
       }

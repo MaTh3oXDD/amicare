@@ -1,13 +1,36 @@
 .diag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   background: #fff;
   border: 1px solid var(--c-line);
   border-left: 3px solid var(--c-gold);
   padding: 1.4rem 1.6rem;
+  color: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
   h3 {
     font-size: 1.15rem;
     margin: 0;
   }
+
+  &:hover {
+    border-left-color: var(--c-evergreen);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+
+    .diag__arrow {
+      color: var(--c-evergreen);
+      transform: translateX(4px);
+    }
+  }
+}
+
+.diag__arrow {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  color: var(--c-ink-soft);
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .cta {

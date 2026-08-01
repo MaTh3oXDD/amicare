@@ -1,0 +1,61 @@
+@if (badanie(); as b) {
+  <app-page-hero [title]="b.nazwa" [lead]="b.lead" />
+
+  <section class="section">
+    <div class="container badanie-layout">
+      <div class="content-prose badanie">
+        <span class="eyebrow">{{ b.kategoria }}</span>
+
+        @for (blok of tresc(); track $index) {
+          @switch (blok.typ) {
+            @case ('p') {
+              <p>{{ blok.text }}</p>
+            }
+            @case ('h4') {
+              <h4>{{ blok.text }}</h4>
+            }
+            @case ('ul') {
+              <ul>
+                @for (item of blok.items; track item) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+            }
+            @case ('warianty') {
+              <ul class="badanie__tags">
+                @for (item of blok.items; track item) {
+                  <li class="badanie__tag">{{ item }}</li>
+                }
+              </ul>
+            }
+          }
+        }
+      </div>
+
+      <aside class="badanie__aside">
+        @if (cena(); as c) {
+          <div class="badanie__aside-block">
+            <span class="mono badanie__aside-label">Cena</span>
+            <p class="badanie__price">{{ c.text }}</p>
+          </div>
+        }
+
+        @if (linki(); as l) {
+          <div class="badanie__aside-block">
+            <span class="mono badanie__aside-label">Przygotowanie</span>
+            <ul class="badanie__linki">
+              @for (item of l.items; track item.label) {
+                <li><a [routerLink]="item.link">{{ item.label }} →</a></li>
+              }
+            </ul>
+          </div>
+        }
+
+        <div class="badanie__aside-block">
+          <a routerLink="/kontakt" class="btn btn--solid badanie__book">Zarezerwuj wizytę</a>
+          <a href="tel:+48422890250" class="badanie__phone mono">tel · 42 28 90 250</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+}

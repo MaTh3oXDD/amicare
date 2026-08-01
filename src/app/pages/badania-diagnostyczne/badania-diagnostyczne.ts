@@ -13,17 +13,17 @@ export class BadaniaDiagnostyczne implements OnInit {
   private seo = inject(Seo);
 
   protected readonly badania = [
-    'Diagnostyka bólu brzucha',
-    'Kolonoskopia',
-    'Gastroskopia',
-    'Spirometria',
-    'Pomiar tętna i ciśnienia',
-    'Pomiar masy ciała',
-    'Pobranie krwi',
-    'Badanie Holtera',
-    'Badanie EKG',
-    'Badanie USG',
-    'Leczenie biologiczne',
+    { nazwa: 'Diagnostyka bólu brzucha', link: '/badania-diagnostyczne/diagnostyka-bolu-brzucha' },
+    { nazwa: 'Kolonoskopia', link: '/pracownia-endoskopii/kolonoskopia' },
+    { nazwa: 'Gastroskopia', link: '/pracownia-endoskopii/gastroskopia' },
+    { nazwa: 'Spirometria', link: '/badania-diagnostyczne/spirometria' },
+    { nazwa: 'Pomiar tętna i ciśnienia', link: '/badania-diagnostyczne/pomiar-tetna-i-cisnienia' },
+    { nazwa: 'Pomiar masy ciała', link: '/badania-diagnostyczne/pomiar-masy-ciala' },
+    { nazwa: 'Pobranie krwi', link: '/badania-diagnostyczne/pobranie-krwi' },
+    { nazwa: 'Badanie Holtera', link: '/badania-diagnostyczne/badanie-holtera' },
+    { nazwa: 'Badanie EKG', link: '/badania-diagnostyczne/badanie-ekg' },
+    { nazwa: 'Badanie USG', link: '/badania-diagnostyczne/badanie-usg' },
+    { nazwa: 'Leczenie biologiczne', link: '/badania-diagnostyczne/leczenie-biologiczne' },
   ];
 
   ngOnInit(): void {

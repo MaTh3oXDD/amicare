@@ -13,6 +13,8 @@ export interface Placowka {
   /** Obszary dostępne w danym mieście */
   zakres: { nazwa: string; link: string }[];
   zdjecie?: string;
+  zdjecieWidth?: number;
+  zdjecieHeight?: number;
 }
 
 export const PLACOWKI: Placowka[] = [
@@ -37,7 +39,9 @@ export const PLACOWKI: Placowka[] = [
       { nazwa: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
       { nazwa: 'Badania kliniczne - Łódź', link: '/badania-kliniczne' },
     ],
-    zdjecie: 'images/centrum-020.webp',
+    zdjecie: 'images/o-nas/budynek.webp',
+    zdjecieWidth: 1400,
+    zdjecieHeight: 934,
   },
   {
     slug: 'lodz-zgierska',
@@ -60,7 +64,9 @@ export const PLACOWKI: Placowka[] = [
       { nazwa: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
       { nazwa: 'Badania kliniczne - Łódź', link: '/badania-kliniczne' },
     ],
-    zdjecie: 'images/centrum-015.webp',
+    zdjecie: 'images/centrum-020.webp',
+    zdjecieWidth: 1024,
+    zdjecieHeight: 775,
   },
   {
     slug: 'jelenia-gora',

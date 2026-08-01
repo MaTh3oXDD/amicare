@@ -4,22 +4,22 @@ import { Seo } from '../../../services/seo';
 import { PageHero } from '../../../components/page-hero/page-hero';
 
 @Component({
-  selector: 'app-kolonoskopia',
+  selector: 'app-gastroskopia-znieczulenie-ogolne',
   imports: [RouterLink, PageHero],
-  templateUrl: './kolonoskopia.html',
-  styleUrl: './kolonoskopia.scss',
+  templateUrl: './gastroskopia-znieczulenie-ogolne.html',
+  styleUrl: './gastroskopia-znieczulenie-ogolne.scss',
 })
-export class Kolonoskopia implements OnInit, AfterViewInit {
+export class GastroskopiaZnieczulenieOgolne implements OnInit, AfterViewInit {
   private seo = inject(Seo);
   private host = inject(ElementRef<HTMLElement>);
   private destroyRef = inject(DestroyRef);
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Kolonoskopia - Pracownia Endoskopii AmiCare Łódź',
+      title: 'Gastroskopia w znieczuleniu ogólnym - Pracownia Endoskopii AmiCare Łódź',
       description:
-        'Kolonoskopia w znieczuleniu miejscowym w AmiCare Łódź - badanie dolnego odcinka przewodu pokarmowego. Przygotowanie i rezerwacja wizyty.',
-      path: '/pracownia-endoskopii/kolonoskopia/',
+        'Gastroskopia w znieczuleniu ogólnym w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego z udziałem anestezjologa. Przygotowanie, badania przed zabiegiem, cennik i rezerwacja wizyty.',
+      path: '/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne/',
     });
   }
 

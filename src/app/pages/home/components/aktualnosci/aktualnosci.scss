@@ -7,7 +7,8 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
   margin-bottom: 2rem;
 
   h2 {
@@ -43,6 +44,8 @@
   scroll-snap-type: x mandatory;
   padding: 0 clamp(1.25rem, 4vw, 2.75rem) 0.5rem;
   scrollbar-width: thin;
+  mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent 100%);
 
   @media (min-width: 1240px) {
     padding-left: calc((100vw - var(--max-w)) / 2 + 2.75rem);

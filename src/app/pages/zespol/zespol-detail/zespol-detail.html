@@ -29,16 +29,18 @@
               @if (c.priceRows.length > 0) {
                 <section class="doctor-detail__pricing" aria-labelledby="pricing-h">
                   <h2 id="pricing-h" class="doctor-detail__section-title">Cennik</h2>
-                  <table class="cennik">
-                    <tbody>
-                      @for (row of c.priceRows; track row.label) {
-                        <tr>
-                          <td>{{ row.label }}</td>
-                          <td>{{ row.price }}</td>
-                        </tr>
-                      }
-                    </tbody>
-                  </table>
+                  <div class="cennik-scroll">
+                    <table class="cennik">
+                      <tbody>
+                        @for (row of c.priceRows; track row.label) {
+                          <tr>
+                            <td>{{ row.label }}</td>
+                            <td>{{ row.price }}</td>
+                          </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </div>
                 </section>
               }
             }

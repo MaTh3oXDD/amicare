@@ -4,22 +4,22 @@ import { Seo } from '../../../services/seo';
 import { PageHero } from '../../../components/page-hero/page-hero';
 
 @Component({
-  selector: 'app-kolonoskopia',
+  selector: 'app-kolonoskopia-w-analgosedacji',
   imports: [RouterLink, PageHero],
-  templateUrl: './kolonoskopia.html',
-  styleUrl: './kolonoskopia.scss',
+  templateUrl: './kolonoskopia-w-analgosedacji.html',
+  styleUrl: './kolonoskopia-w-analgosedacji.scss',
 })
-export class Kolonoskopia implements OnInit, AfterViewInit {
+export class KolonoskopiaWAnalgosedacji implements OnInit, AfterViewInit {
   private seo = inject(Seo);
   private host = inject(ElementRef<HTMLElement>);
   private destroyRef = inject(DestroyRef);
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Kolonoskopia - Pracownia Endoskopii AmiCare Łódź',
+      title: 'Kolonoskopia w analgosedacji - Pracownia Endoskopii AmiCare Łódź',
       description:
-        'Kolonoskopia w znieczuleniu miejscowym w AmiCare Łódź - badanie dolnego odcinka przewodu pokarmowego. Przygotowanie i rezerwacja wizyty.',
-      path: '/pracownia-endoskopii/kolonoskopia/',
+        'Kolonoskopia w analgosedacji w AmiCare Łódź - badanie dolnego odcinka przewodu pokarmowego w znieczuleniu dożylnym. Przygotowanie i rezerwacja wizyty.',
+      path: '/pracownia-endoskopii/kolonoskopia-w-analgosedacji/',
     });
   }
 
