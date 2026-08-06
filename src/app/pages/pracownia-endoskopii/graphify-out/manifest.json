@@ -1,0 +1,72 @@
+{
+  "gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.ts": {
+    "mtime": 1785604837.9806852,
+    "ast_hash": "be0638c6ae6fa20a2d5b2fdabcd49208",
+    "semantic_hash": ""
+  },
+  "gastroskopia/gastroskopia.ts": {
+    "mtime": 1785604829.136303,
+    "ast_hash": "f6c037d13cdc11f0a64e6d141e0136e3",
+    "semantic_hash": ""
+  },
+  "kolonoskopia/kolonoskopia.ts": {
+    "mtime": 1785605225.9051118,
+    "ast_hash": "88287745f29eb44b57083d55b33a0f49",
+    "semantic_hash": ""
+  },
+  "pracownia-endoskopii.ts": {
+    "mtime": 1785526760.9536855,
+    "ast_hash": "632c63de46d45c80c3a0c265360cc68d",
+    "semantic_hash": ""
+  },
+  "gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.html": {
+    "mtime": 1785605530.9478757,
+    "ast_hash": "243e540ded5c5ceee64e19eaeffd51ff",
+    "semantic_hash": ""
+  },
+  "gastroskopia/gastroskopia.html": {
+    "mtime": 1785605524.791255,
+    "ast_hash": "3577462cabe1ad248246ed0bffeb1988",
+    "semantic_hash": ""
+  },
+  "kolonoskopia/kolonoskopia.html": {
+    "mtime": 1785605548.948232,
+    "ast_hash": "db45562415cb628e57fbb56aed5eaba5",
+    "semantic_hash": ""
+  },
+  "pracownia-endoskopii.html": {
+    "mtime": 1785605388.6721408,
+    "ast_hash": "ead66e409d863ce45bd9c40bd8a8f9c0",
+    "semantic_hash": ""
+  },
+  "gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.ts": {
+    "mtime": 1785604901.5928664,
+    "ast_hash": "460e63cfce5330e8277efa45a109b4e8",
+    "semantic_hash": ""
+  },
+  "gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.html": {
+    "mtime": 1785605540.009377,
+    "ast_hash": "62c85cd923144efbf5f01d74adecbe18",
+    "semantic_hash": ""
+  },
+  "kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.ts": {
+    "mtime": 1785605234.46337,
+    "ast_hash": "76bcf752f9aa7c326f849b2924ce7661",
+    "semantic_hash": ""
+  },
+  "kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.html": {
+    "mtime": 1785605555.4013703,
+    "ast_hash": "08468de20e4354945e7c36b50aacf0f1",
+    "semantic_hash": ""
+  },
+  "kolonoskopia-znieczulenie-ogolne/kolonoskopia-znieczulenie-ogolne.ts": {
+    "mtime": 1785605295.1547413,
+    "ast_hash": "74c38acc719e53ba7b87bdf596b4ace2",
+    "semantic_hash": ""
+  },
+  "kolonoskopia-znieczulenie-ogolne/kolonoskopia-znieczulenie-ogolne.html": {
+    "mtime": 1785605567.1346686,
+    "ast_hash": "ad826c6bbbe29bb05189cca9071c92c5",
+    "semantic_hash": ""
+  }
+}

@@ -5,7 +5,14 @@
   /* paleta z logo: granat "Ami" + zieleń "Care" */
   --c-ink: #1a2333;
   --c-ink-soft: #4a566b;
-  --c-navy: #152a52;
+
+  /* 4 dostępne odcienie granatu - przełączane widżetem w prawym dolnym rogu */
+  --c-blue-1: #152a52; /* Granat (domyślny) */
+  --c-blue-2: #0d2440; /* Atrament - najciemniejszy, max. kontrast */
+  --c-blue-3: #1d3f78; /* Kobalt */
+  --c-blue-4: #2a5aa8; /* Lazur */
+  --c-accent-blue: var(--c-blue-1);
+  --c-navy: var(--c-accent-blue);
   --c-steel: #3d5c94;
   --c-green: #57b33a;
   --c-green-ink: #3e8424;
@@ -39,6 +46,9 @@
 }
 
 html {
+  /* 17px base instead of 16px - every rem-sized element on the site scales
+     up together, a small but real help for older/low-vision readers. */
+  font-size: 106.25%;
   scroll-behavior: smooth;
 }
 
@@ -84,18 +94,19 @@ p { margin: 0 0 1em; color: var(--c-ink-soft); }
 a { color: var(--c-pine); text-decoration: none; }
 a:hover { color: var(--c-evergreen); }
 
-/* editorial underline-reveal for links inside body copy */
+/* links inside body copy: underlined by default (not color alone) - thickens on hover.
+   Low-vision/color-blind readers need a non-color cue that text is a link. */
 p a,
 .content-prose a {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 0% 1px;
+  background-size: 100% 1px;
   transition: background-size 0.35s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s ease;
 }
 p a:hover,
 .content-prose a:hover {
-  background-size: 100% 1px;
+  background-size: 100% 2px;
 }
 
 img { max-width: 100%; display: block; }
@@ -110,8 +121,8 @@ img { max-width: 100%; display: block; }
 }
 
 :focus-visible {
-  outline: 2px solid var(--c-bronze);
-  outline-offset: 2px;
+  outline: 3px solid var(--c-bronze);
+  outline-offset: 3px;
 }
 
 .container {
@@ -145,7 +156,7 @@ img { max-width: 100%; display: block; }
 /* mono label - lab-report voice, used for eyebrows, hours, prices */
 .mono {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -157,7 +168,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 0.7rem;
   font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.18em;
   text-transform: uppercase;
@@ -238,7 +249,7 @@ table.cennik th {
   font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  font-size: 0.68rem;
+  font-size: 0.74rem;
   color: var(--c-bronze);
   padding: 0.9rem 1rem;
   border-bottom: 1px solid var(--c-mist);

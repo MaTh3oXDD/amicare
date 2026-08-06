@@ -15,6 +15,25 @@
   overflow: hidden;
 }
 
+.hero__photo {
+  position: absolute;
+  inset: -6%;
+  z-index: 0;
+  background-image: url('/images/przychodnia/wejscie-parking.webp');
+  background-size: cover;
+  background-position: center;
+  filter: blur(16px) saturate(0.9);
+  transform: scale(1.06);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(155deg, rgba(255, 255, 255, 0.92) 0%, rgba(245, 247, 250, 0.85) 45%, rgba(21, 42, 82, 0.55) 100%);
+  }
+}
+
 .hero__inner {
   position: relative;
   padding-top: clamp(3.5rem, 9vw, 7rem);
@@ -109,6 +128,21 @@
   padding: 2rem 2.2rem;
   transition: border-color 0.25s ease, background 0.25s ease;
 
+  .path__photo {
+    display: block;
+    margin: -2rem -2.2rem 1.4rem;
+    aspect-ratio: 16 / 8;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+  }
+
   h2 {
     font-size: clamp(1.4rem, 2.6vw, 1.9rem);
     margin: 0;
@@ -128,6 +162,10 @@
   &:hover {
     background: var(--c-porcelain);
     border-color: var(--c-pine);
+
+    .path__photo img {
+      transform: scale(1.05);
+    }
 
     .path__go {
       color: var(--c-bronze);
@@ -165,6 +203,8 @@
 
 .tri__panel {
   position: relative;
+  isolation: isolate;
+  overflow: hidden;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -172,7 +212,7 @@
   gap: 2.5rem;
   padding: clamp(1.8rem, 3.5vw, 3rem);
   border-bottom: 1px solid var(--c-mist);
-  transition: flex 0.45s cubic-bezier(0.4, 0, 0.2, 1), background 0.3s ease;
+  transition: flex 0.45s cubic-bezier(0.4, 0, 0.2, 1);
 
   @media (min-width: 860px) {
     border-bottom: 0;
@@ -189,16 +229,36 @@
   }
 
   &:hover {
-    background: var(--c-white);
-
     @media (min-width: 860px) {
       flex: 1.5;
+    }
+
+    .tri__photo {
+      opacity: 1;
     }
 
     .tri__cta {
       color: var(--c-bronze);
     }
   }
+}
+
+.tri__photo {
+  position: absolute;
+  inset: -8%;
+  z-index: -2;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px) saturate(1.05);
+  opacity: 0.92;
+  transition: opacity 0.35s ease;
+}
+
+.tri__scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.55) 65%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .tri__no {
@@ -270,6 +330,43 @@
   transition: color 0.25s ease;
 }
 
+.spec-section {
+  background: var(--c-navy);
+
+  .eyebrow,
+  .mono {
+    color: #cfe0ff;
+  }
+
+  .eyebrow::before {
+    background:
+      linear-gradient(#fff, #fff) 0 0 / 2px 100% no-repeat,
+      linear-gradient(#fff, #fff) 8px 0 / 2px 100% no-repeat,
+      linear-gradient(#fff, #fff) 16px 0 / 2px 100% no-repeat;
+  }
+
+  h2 {
+    color: #fff;
+  }
+
+  .speclist {
+    border-top-color: rgba(255, 255, 255, 0.22);
+  }
+
+  .speclist a {
+    color: #fff;
+    border-bottom-color: rgba(255, 255, 255, 0.18);
+
+    &:hover {
+      color: var(--c-green);
+    }
+  }
+
+  .speclist__arrow {
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
 /* ── cta ────────────────────────────────── */
 
 .cta {
@@ -287,5 +384,32 @@
   p {
     max-width: 60ch;
     margin: 0 auto 2rem;
+  }
+}
+
+.badania-cta {
+  background: var(--c-white);
+
+  h2 {
+    color: var(--c-ink);
+  }
+
+  p {
+    color: var(--c-ink-soft);
+  }
+
+  .eyebrow,
+  .mono {
+    color: var(--c-bronze);
+  }
+
+  .btn--light {
+    border-color: var(--c-evergreen);
+    color: var(--c-evergreen);
+
+    &:hover {
+      background: var(--c-evergreen);
+      color: var(--c-white);
+    }
   }
 }

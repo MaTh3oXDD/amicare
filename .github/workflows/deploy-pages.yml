@@ -3,6 +3,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - 'docs/**'
   workflow_dispatch:
 
 permissions:
@@ -17,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -25,8 +29,16 @@ jobs:
       - run: npx ng build --base-href /amicare/
       - run: cp dist/amicare/browser/index.html dist/amicare/browser/404.html
       - run: touch dist/amicare/browser/.nojekyll
-      - uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist/amicare/browser
-          publish_branch: gh-pages
+      - name: Publish build into docs/ on main
+        run: |
+          rm -rf docs-site
+          mkdir docs-site
+          cp -r dist/amicare/browser/. docs-site/
+          rsync -a --delete --exclude 'superpowers' docs-site/ docs/
+          rm -rf docs-site
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet && echo "No changes to deploy" && exit 0
+          git commit -m "Deploy site build to docs/ [skip ci]"
+          git push

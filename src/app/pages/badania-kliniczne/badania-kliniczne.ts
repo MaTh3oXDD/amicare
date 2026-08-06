@@ -34,7 +34,7 @@ const PHASES: Phase[] = [
   },
 ];
 
-const AUTOPLAY_MS = 10_000;
+const AUTOPLAY_MS = 6_000;
 
 @Component({
   selector: 'app-badania-kliniczne',

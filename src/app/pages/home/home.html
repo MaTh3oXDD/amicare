@@ -1,5 +1,5 @@
 <section class="hero" aria-label="AmiCare Centrum Medyczne">
-  <app-hero-blob></app-hero-blob>
+  <div class="hero__photo" aria-hidden="true"></div>
   <div class="container hero__inner">
     <div class="hero__card">
       <span class="eyebrow">Kolonoskopia, gastroskopia i prywatne konsultacje specjalistyczne</span>
@@ -30,6 +30,15 @@
     <p class="paths__q">Od czego zacząć?</p>
     <div class="grid grid--2">
       <a class="path" routerLink="/konsultacje-specjalistyczne">
+        <span class="path__photo">
+          <img
+            src="images/przychodnia/recepcja-lada.webp"
+            alt=""
+            loading="lazy"
+            width="640"
+            height="420"
+          />
+        </span>
         <span class="mono">Jestem pacjentem</span>
         <h2>Szukam konsultacji lub badania</h2>
         <p>
@@ -39,6 +48,15 @@
         <span class="path__go mono">Zobacz konsultacje →</span>
       </a>
       <a class="path" routerLink="/badania-kliniczne">
+        <span class="path__photo">
+          <img
+            src="images/przychodnia/sprzet-endoskopowy.webp"
+            alt=""
+            loading="lazy"
+            width="640"
+            height="420"
+          />
+        </span>
         <span class="mono">Badania kliniczne</span>
         <h2>Chcę dołączyć do badania klinicznego</h2>
         <p>
@@ -64,6 +82,12 @@
 <section class="tri" aria-label="Lista placówek">
   @for (p of placowki; track p.slug; let i = $index) {
     <a class="tri__panel" [routerLink]="['/placowki', p.slug]">
+      <span
+        class="tri__photo"
+        aria-hidden="true"
+        [style.background-image]="'url(' + (p.zdjecie || 'images/centrum-015.webp') + ')'"
+      ></span>
+      <span class="tri__scrim" aria-hidden="true"></span>
       <span class="mono tri__no">{{ i + 1 }} / 3</span>
       <div class="tri__body">
         <span class="mono tri__typ">{{ p.typ }}</span>
@@ -104,17 +128,17 @@
     </div>
     <div class="about__media">
       <img
-        src="images/centrum-015.webp"
+        src="images/przychodnia/gabinet-konsultacyjny.webp"
         alt="Amicare - Badania Kliniczne - wnętrze - gabinet zabiegowy"
         loading="lazy"
-        width="1024"
-        height="777"
+        width="1600"
+        height="1200"
       />
     </div>
   </div>
 </section>
 
-<section class="section section--tint" aria-labelledby="spec-h">
+<section class="section section--tint spec-section" aria-labelledby="spec-h">
   <div class="container">
     <span class="eyebrow">Konsultacje specjalistyczne</span>
     <h2 id="spec-h">Specjalizacje</h2>
@@ -137,7 +161,7 @@
   </div>
 </section>
 
-<section class="section section--dark" aria-labelledby="badania-h">
+<section class="section section--dark badania-cta" aria-labelledby="badania-h">
   <div class="container cta">
     <span class="eyebrow">Badania kliniczne</span>
     <h2 id="badania-h">Obecnie prowadzone badania kliniczne i&nbsp;ankiety kwalifikujące</h2>

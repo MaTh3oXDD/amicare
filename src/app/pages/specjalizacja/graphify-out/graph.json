@@ -1,0 +1,224 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "specjalizacja-data.ts",
+      "file_type": "code",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_specjalizacja_data",
+      "community": 0,
+      "community_name": "specjalizacja-data.ts",
+      "norm_label": "specjalizacja-data.ts"
+    },
+    {
+      "label": "CennikPozycja",
+      "file_type": "code",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "models_specjalizacja_data_cennikpozycja",
+      "community": 0,
+      "community_name": "specjalizacja-data.ts",
+      "norm_label": "cennikpozycja"
+    },
+    {
+      "label": "CennikTabela",
+      "file_type": "code",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "models_specjalizacja_data_cenniktabela",
+      "community": 0,
+      "community_name": "specjalizacja-data.ts",
+      "norm_label": "cenniktabela"
+    },
+    {
+      "label": "SpecjalizacjaInfo",
+      "file_type": "code",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "models_specjalizacja_data_specjalizacjainfo",
+      "community": 0,
+      "community_name": "specjalizacja-data.ts",
+      "norm_label": "specjalizacjainfo"
+    },
+    {
+      "label": "SPECJALIZACJE",
+      "file_type": "code",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "models_specjalizacja_data_specjalizacje",
+      "community": 0,
+      "community_name": "specjalizacja-data.ts",
+      "norm_label": "specjalizacje"
+    },
+    {
+      "label": "specjalizacja.ts",
+      "file_type": "code",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specjalizacja",
+      "community": 0,
+      "community_name": "specjalizacja-data.ts",
+      "norm_label": "specjalizacja.ts"
+    },
+    {
+      "label": "Specjalizacja",
+      "file_type": "code",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "specjalizacja_specjalizacja",
+      "community": 1,
+      "community_name": "Specjalizacja",
+      "norm_label": "specjalizacja"
+    },
+    {
+      "label": "Component",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "component",
+      "community": 1,
+      "community_name": "Specjalizacja",
+      "norm_label": "component"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "specjalizacja_specjalizacja_constructor",
+      "community": 1,
+      "community_name": "Specjalizacja",
+      "norm_label": ".constructor()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_specjalizacja_data",
+      "target": "models_specjalizacja_data_cennikpozycja",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_specjalizacja_data",
+      "target": "models_specjalizacja_data_cenniktabela",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_specjalizacja_data",
+      "target": "models_specjalizacja_data_specjalizacjainfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "models/specjalizacja-data.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "models_specjalizacja_data",
+      "target": "models_specjalizacja_data_specjalizacje",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specjalizacja",
+      "target": "models_specjalizacja_data",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specjalizacja",
+      "target": "models_specjalizacja_data_specjalizacjainfo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specjalizacja",
+      "target": "models_specjalizacja_data_specjalizacje",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specjalizacja",
+      "target": "specjalizacja_specjalizacja",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "source": "specjalizacja_specjalizacja",
+      "target": "component",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "specjalizacja.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "specjalizacja_specjalizacja",
+      "target": "specjalizacja_specjalizacja_constructor",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "b1cead2b6860f5139a7e00302eabe35ffcbbb343"
+}

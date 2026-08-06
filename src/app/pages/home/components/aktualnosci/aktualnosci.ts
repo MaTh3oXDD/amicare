@@ -1,5 +1,16 @@
-import { Component, ElementRef, viewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  NgZone,
+  OnDestroy,
+  inject,
+  viewChild,
+} from '@angular/core';
 import { RouterLink } from '@angular/router';
+
+const AUTOPLAY_INTERVAL_MS = 3200;
+const END_THRESHOLD_PX = 4;
 
 interface Wpis {
   tytul: string;
@@ -14,8 +25,13 @@ interface Wpis {
   templateUrl: './aktualnosci.html',
   styleUrl: './aktualnosci.scss',
 })
-export class Aktualnosci {
+export class Aktualnosci implements AfterViewInit, OnDestroy {
   private track = viewChild.required<ElementRef<HTMLElement>>('track');
+  private zone = inject(NgZone);
+
+  private timerId?: ReturnType<typeof setInterval>;
+  private reducedMotion =
+    typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   protected readonly wpisy: Wpis[] = [
     {
@@ -83,5 +99,47 @@ export class Aktualnosci {
   przewin(kierunek: 1 | -1): void {
     const el = this.track().nativeElement;
     el.scrollBy({ left: kierunek * el.clientWidth * 0.8, behavior: 'smooth' });
+  }
+
+  ngAfterViewInit(): void {
+    if (this.reducedMotion) return;
+
+    const el = this.track().nativeElement;
+    this.zone.runOutsideAngular(() => {
+      el.addEventListener('pointerenter', this.stop);
+      el.addEventListener('pointerleave', this.start);
+      el.addEventListener('focusin', this.stop);
+      el.addEventListener('focusout', this.start);
+      this.start();
+    });
+  }
+
+  ngOnDestroy(): void {
+    this.stop();
+    const el = this.track().nativeElement;
+    el.removeEventListener('pointerenter', this.stop);
+    el.removeEventListener('pointerleave', this.start);
+    el.removeEventListener('focusin', this.stop);
+    el.removeEventListener('focusout', this.start);
+  }
+
+  private start = (): void => {
+    if (this.timerId) return;
+    this.timerId = setInterval(() => this.tick(), AUTOPLAY_INTERVAL_MS);
+  };
+
+  private stop = (): void => {
+    clearInterval(this.timerId);
+    this.timerId = undefined;
+  };
+
+  private tick(): void {
+    const el = this.track().nativeElement;
+    const atEnd = el.scrollLeft + el.clientWidth >= el.scrollWidth - END_THRESHOLD_PX;
+    if (atEnd) {
+      el.scrollTo({ left: 0, behavior: 'smooth' });
+    } else {
+      el.scrollBy({ left: el.clientWidth * 0.8, behavior: 'smooth' });
+    }
   }
 }

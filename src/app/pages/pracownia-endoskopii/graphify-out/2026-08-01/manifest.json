@@ -1,0 +1,62 @@
+{
+  "gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.ts": {
+    "mtime": 1785604837.9806852,
+    "ast_hash": "be0638c6ae6fa20a2d5b2fdabcd49208",
+    "semantic_hash": ""
+  },
+  "gastroskopia/gastroskopia.ts": {
+    "mtime": 1785604829.136303,
+    "ast_hash": "f6c037d13cdc11f0a64e6d141e0136e3",
+    "semantic_hash": ""
+  },
+  "kolonoskopia/kolonoskopia.ts": {
+    "mtime": 1785605225.9051118,
+    "ast_hash": "88287745f29eb44b57083d55b33a0f49",
+    "semantic_hash": ""
+  },
+  "pracownia-endoskopii.ts": {
+    "mtime": 1785526760.9536855,
+    "ast_hash": "632c63de46d45c80c3a0c265360cc68d",
+    "semantic_hash": ""
+  },
+  "gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.html": {
+    "mtime": 1785604890.294724,
+    "ast_hash": "8816069743e23ca396c1bc1004d4b628",
+    "semantic_hash": ""
+  },
+  "gastroskopia/gastroskopia.html": {
+    "mtime": 1785604808.919358,
+    "ast_hash": "afb8301ccef17ad86e5c0e42e354983d",
+    "semantic_hash": ""
+  },
+  "kolonoskopia/kolonoskopia.html": {
+    "mtime": 1785605212.7295234,
+    "ast_hash": "9a74fe2f946da844bb1fa3cdbe0a612d",
+    "semantic_hash": ""
+  },
+  "pracownia-endoskopii.html": {
+    "mtime": 1785604993.3646016,
+    "ast_hash": "0a8002f9115e486e5b6caea60c164aa4",
+    "semantic_hash": ""
+  },
+  "gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.ts": {
+    "mtime": 1785604901.5928664,
+    "ast_hash": "460e63cfce5330e8277efa45a109b4e8",
+    "semantic_hash": ""
+  },
+  "gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.html": {
+    "mtime": 1785604971.2449389,
+    "ast_hash": "d8be2ef6bc8bfaf7352ed9f376697df3",
+    "semantic_hash": ""
+  },
+  "kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.ts": {
+    "mtime": 1785605234.46337,
+    "ast_hash": "76bcf752f9aa7c326f849b2924ce7661",
+    "semantic_hash": ""
+  },
+  "kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.html": {
+    "mtime": 1785605285.359209,
+    "ast_hash": "f808a615716acfb9d253a63f6d4ace1d",
+    "semantic_hash": ""
+  }
+}

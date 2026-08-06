@@ -1,0 +1,17 @@
+{
+  "models/specjalizacja-data.ts": {
+    "mtime": 1785526760.9566836,
+    "ast_hash": "424fd4112c082708d633270dbb150713",
+    "semantic_hash": ""
+  },
+  "specjalizacja.ts": {
+    "mtime": 1785526760.958685,
+    "ast_hash": "9231b27a1d143b9b9df096e040f91d97",
+    "semantic_hash": ""
+  },
+  "specjalizacja.html": {
+    "mtime": 1785607975.3537836,
+    "ast_hash": "4e6cc71324aabc344260efcbcdfbd331",
+    "semantic_hash": ""
+  }
+}

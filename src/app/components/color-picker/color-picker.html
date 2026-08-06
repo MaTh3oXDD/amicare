@@ -1,0 +1,29 @@
+<div class="cp">
+  @if (otwarty()) {
+    <div class="cp__panel" role="group" aria-label="Wybór odcienia koloru">
+      <span class="cp__label mono">Odcień koloru</span>
+      <div class="cp__swatches">
+        @for (o of odcienie; track o.nazwa; let i = $index) {
+          <button
+            type="button"
+            class="cp__swatch"
+            [class.cp__swatch--active]="aktywny() === i"
+            [style.background]="o.wartosc"
+            [attr.aria-pressed]="aktywny() === i"
+            [attr.aria-label]="o.nazwa"
+            (click)="ustaw(i)"
+          ></button>
+        }
+      </div>
+    </div>
+  }
+  <button
+    type="button"
+    class="cp__toggle"
+    [attr.aria-expanded]="otwarty()"
+    aria-label="Zmień odcień koloru strony"
+    (click)="przelacz()"
+  >
+    <span class="cp__toggle-dot" aria-hidden="true"></span>
+  </button>
+</div>

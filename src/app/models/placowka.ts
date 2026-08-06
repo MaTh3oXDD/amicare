@@ -39,9 +39,9 @@ export const PLACOWKI: Placowka[] = [
       { nazwa: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
       { nazwa: 'Badania kliniczne - Łódź', link: '/badania-kliniczne' },
     ],
-    zdjecie: 'images/o-nas/budynek.webp',
-    zdjecieWidth: 1400,
-    zdjecieHeight: 934,
+    zdjecie: 'images/przychodnia/wejscie-parking.webp',
+    zdjecieWidth: 1800,
+    zdjecieHeight: 1200,
   },
   {
     slug: 'lodz-zgierska',

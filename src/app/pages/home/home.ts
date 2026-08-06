@@ -3,11 +3,10 @@ import { RouterLink } from '@angular/router';
 import { Seo } from '../../services/seo';
 import { PLACOWKI } from '../../models/placowka';
 import { Aktualnosci } from './components/aktualnosci/aktualnosci';
-import { HeroBlob } from '../../components/hero-blob/hero-blob';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, Aktualnosci, HeroBlob],
+  imports: [RouterLink, Aktualnosci],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

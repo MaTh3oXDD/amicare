@@ -1,3 +1,18 @@
+.kontakt-banner {
+  margin: 0 0 2.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+
+  figcaption {
+    margin-top: 0.6rem;
+    color: var(--c-ink-soft);
+  }
+}
+
 .extra {
   margin-top: 2.5rem;
   font-size: 0.95rem;
