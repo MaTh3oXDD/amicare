@@ -9,6 +9,7 @@ import { PLACOWKI } from '../../models/placowka';
   styleUrl: './footer.scss',
 })
 export class Footer {
-  protected readonly placowki = PLACOWKI;
+  protected readonly centra = PLACOWKI.filter((p) => p.typ === 'Centrum Medyczne');
+  protected readonly osrodki = PLACOWKI.filter((p) => p.typ === 'Ośrodek Badań Klinicznych');
   protected readonly rok = new Date().getFullYear();
 }
