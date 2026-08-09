@@ -7,6 +7,15 @@ import { DoctorCard } from '../../components/doctor-card/doctor-card';
 import { DIETETYCY, KADRA, KOORDYNATORZY, LEKARZE, Doctor } from '../../models/doctor';
 import { SPECJALIZACJE, SpecjalizacjaInfo } from './models/specjalizacja-data';
 
+function potasuj<T>(tablica: T[]): T[] {
+  const wynik = [...tablica];
+  for (let i = wynik.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [wynik[i], wynik[j]] = [wynik[j], wynik[i]];
+  }
+  return wynik;
+}
+
 @Component({
   selector: 'app-specjalizacja',
   imports: [RouterLink, PageHero, DoctorCard],
@@ -27,9 +36,10 @@ export class Specjalizacja {
     const s = this.spec();
     if (!s) return [];
     const all = [...LEKARZE, ...DIETETYCY, ...KADRA, ...KOORDYNATORZY];
-    return s.lekarze
+    const znalezieni = s.lekarze
       .map((name) => all.find((d) => d.name === name) ?? { name, title: '' })
       .filter((d): d is Doctor => !!d);
+    return potasuj(znalezieni);
   });
 
   constructor() {
