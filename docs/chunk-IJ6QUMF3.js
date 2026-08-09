@@ -1,0 +1,1 @@
+import{d as o,n as s,s as i,u,xa as t,za as c}from"./chunk-SOLVLAC6.js";function S(a,d){let n=d?.injector??s(i),e=new o(1),l=c(()=>{let r;try{r=a()}catch(b){t(()=>e.error(b));return}t(()=>e.next(r))},{injector:n,manualCleanup:!0});return n.get(u).onDestroy(()=>{l.destroy(),e.complete()}),e.asObservable()}export{S as a};

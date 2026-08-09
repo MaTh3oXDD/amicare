@@ -58,13 +58,18 @@
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  min-height: 76px;
+  min-height: 96px;
 }
 
 .header__brand {
   display: flex;
   align-items: center;
   gap: 0.7rem;
+
+  img {
+    height: clamp(72px, 8vw, 94px);
+    width: auto;
+  }
 }
 
 .header__nav {
@@ -113,6 +118,7 @@
   position: relative;
   margin-left: 0.5rem;
   padding: 0.5rem 1.3rem !important;
+  white-space: nowrap;
   background: var(--c-evergreen);
   border: 1px solid var(--c-evergreen) !important;
   color: #fff !important;

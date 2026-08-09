@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
       <div class="container">
         <div class="hero__text">
           <nav class="hero__crumbs" aria-label="Okruszki">
-            <a routerLink="/">Amicare</a>
+            <a routerLink="/">Amicare Centrum Medyczne</a>
             <span aria-hidden="true">/</span>
             <span>{{ title() }}</span>
           </nav>
