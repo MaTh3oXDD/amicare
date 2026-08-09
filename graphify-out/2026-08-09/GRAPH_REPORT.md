@@ -1,7 +1,7 @@
 # Graph Report - Amicare  (2026-08-09)
 
 ## Corpus Check
-- 62 files · ~4,605,603 words
+- 62 files · ~4,605,593 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary

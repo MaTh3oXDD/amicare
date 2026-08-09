@@ -1,0 +1,50 @@
+<dialog #dialog class="wywiad" (close)="onDialogClose()" (click)="onBackdropClick($event, dialog)">
+  <div class="wywiad__panel" (click)="$event.stopPropagation()">
+    <div class="wywiad__tear" aria-hidden="true"></div>
+    <button type="button" class="wywiad__close" (click)="dialog.close()" aria-label="Zamknij formularz">✕</button>
+
+    @if (!wyslano()) {
+      <span class="mono wywiad__tag">Umów kontakt</span>
+      <h3>Zostaw nam swój numer</h3>
+      <p class="wywiad__lead">
+        Zostaw dane kontaktowe, a nasz zespół rejestracji oddzwoni i umówi wizytę.
+      </p>
+
+      <form class="wywiad__form" (ngSubmit)="wyslij()" #f="ngForm">
+        <label>
+          Imię i nazwisko*
+          <input type="text" name="imie" required [(ngModel)]="model.imie" autocomplete="name" />
+        </label>
+        <label>
+          Numer telefonu*
+          <input type="tel" name="telefon" required [(ngModel)]="model.telefon" autocomplete="tel" />
+        </label>
+        <label>
+          Jakie badanie Cię interesuje? (opcjonalnie)
+          <select name="badanie" [(ngModel)]="model.badanie">
+            <option value="">Nie wiem / inne</option>
+            @for (b of badania; track b) {
+              <option [value]="b">{{ b }}</option>
+            }
+          </select>
+        </label>
+        <label>
+          Opisz swoją sprawę (opcjonalnie)
+          <textarea name="opis" rows="3" [(ngModel)]="model.opis"></textarea>
+        </label>
+        <label class="wywiad__check">
+          <input type="checkbox" name="zgoda" required [(ngModel)]="model.zgoda" />
+          <span>
+            Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie wizyty,
+            zgodnie z Polityką prywatności.
+          </span>
+        </label>
+        <button type="submit" class="btn btn--solid wywiad__submit" [disabled]="f.invalid || wysylanie()">
+          {{ wysylanie() ? 'Wysyłanie…' : 'Wyślij' }}
+        </button>
+      </form>
+    } @else {
+      <p class="wywiad__ok" role="status">Dziękujemy! Oddzwonimy najszybciej, jak to możliwe.</p>
+    }
+  </div>
+</dialog>
