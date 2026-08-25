@@ -42,22 +42,6 @@ export const DIAGNOSTYKA: DiagnostykaEntry[] = [
     ],
   },
   {
-    slug: 'spirometria',
-    nazwa: 'Spirometria',
-    kategoria: 'Pulmonologia',
-    lead: 'Prosty test diagnostyczny oceniający funkcję płuc i układu oddechowego.',
-    bloki: [
-      {
-        typ: 'p',
-        text: 'Spirometria to prosty test diagnostyczny, który służy do oceny funkcji płuc i układu oddechowego.',
-      },
-      {
-        typ: 'p',
-        text: 'Jest to badanie nieinwazyjne, które pozwala lekarzowi ocenić zdolność płuc do wdechu i wydechu oraz zidentyfikować ewentualne problemy z oddychaniem.',
-      },
-    ],
-  },
-  {
     slug: 'pomiar-tetna-i-cisnienia',
     nazwa: 'Pomiar tętna i ciśnienia',
     kategoria: 'Kardiologia',

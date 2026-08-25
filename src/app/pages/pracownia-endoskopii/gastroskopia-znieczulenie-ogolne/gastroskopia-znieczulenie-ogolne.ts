@@ -1,11 +1,12 @@
 import { AfterViewInit, Component, DestroyRef, ElementRef, inject, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Seo } from '../../../services/seo';
+import { CennikPanel } from '../../../components/cennik-panel/cennik-panel';
 import { PageHero } from '../../../components/page-hero/page-hero';
 
 @Component({
   selector: 'app-gastroskopia-znieczulenie-ogolne',
-  imports: [RouterLink, PageHero],
+  imports: [RouterLink, PageHero, CennikPanel],
   templateUrl: './gastroskopia-znieczulenie-ogolne.html',
   styleUrl: './gastroskopia-znieczulenie-ogolne.scss',
 })

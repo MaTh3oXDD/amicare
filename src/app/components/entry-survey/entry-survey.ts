@@ -1,9 +1,13 @@
-import { Component, effect, ElementRef, signal, viewChild } from '@angular/core';
+import { Component, effect, ElementRef, inject, signal, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { API_CONFIG } from '../../config/api.config';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import { Formularze } from '../../services/formularze';
 
 const STORAGE_KEY = 'amicare-wywiad-tydzien';
 const OPEN_DELAY_MS = 1400;
+/* Ankieta wyskakuje wyłącznie na stronie badań klinicznych - nigdzie indziej. */
+const SCIEZKA_ANKIETY = '/badania-kliniczne';
 
 interface WywiadModel {
   imie: string;
@@ -11,10 +15,11 @@ interface WywiadModel {
   opis: string;
   badanie: string;
   zgoda: boolean;
+  firma: string;
 }
 
 function emptyModel(): WywiadModel {
-  return { imie: '', telefon: '', opis: '', badanie: '', zgoda: false };
+  return { imie: '', telefon: '', opis: '', badanie: '', zgoda: false, firma: '' };
 }
 
 function numerTygodnia(data: Date): string {
@@ -45,7 +50,11 @@ export class EntrySurvey {
   protected readonly otwarty = signal(false);
   protected readonly wyslano = signal(false);
   protected readonly wysylanie = signal(false);
+  protected readonly blad = signal(false);
   protected model = emptyModel();
+
+  private readonly formularze = inject(Formularze);
+  private readonly router = inject(Router);
 
   private readonly dialogRef = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
 
@@ -61,8 +70,17 @@ export class EntrySurvey {
 
     if (typeof window === 'undefined' || typeof localStorage === 'undefined') return;
 
-    const wszedlPrzezGlowna = window.location.pathname === '/' || window.location.pathname === '';
-    if (wszedlPrzezGlowna) return;
+    /* Komponent żyje w app.html, więc konstruktor odpala się raz - o wejściu na
+       podstronę decyduje nawigacja routera (NavigationEnd leci też przy pierwszym
+       wczytaniu, więc bezpośrednie wejście z URL-a też jest obsłużone). */
+    this.router.events
+      .pipe(filter((e): e is NavigationEnd => e instanceof NavigationEnd))
+      .subscribe((e) => this.sprobujOtworzyc(e.urlAfterRedirects));
+  }
+
+  private sprobujOtworzyc(url: string): void {
+    const sciezka = url.split(/[?#]/)[0].replace(/\/+$/, '') || '/';
+    if (sciezka !== SCIEZKA_ANKIETY) return;
 
     const biezacyTydzien = numerTygodnia(new Date());
     if (localStorage.getItem(STORAGE_KEY) === biezacyTydzien) return;
@@ -88,19 +106,19 @@ export class EntrySurvey {
     if (!imie || !telefon || !zgoda || this.wysylanie()) return;
 
     this.wysylanie.set(true);
+    this.blad.set(false);
 
-    try {
-      await fetch(API_CONFIG.surveyEndpoint, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ imie, telefon, badanie, opis }),
-      });
-    } catch {
-      // Backend jeszcze nie istnieje - zgłoszenie i tak liczymy za przyjęte,
-      // dopóki API_CONFIG.surveyEndpoint nie wskazuje na prawdziwy backend.
-    }
+    const ok = await this.formularze.wyslij('wywiad', {
+      imie,
+      telefon,
+      badanie,
+      opis,
+      zgoda,
+      firma: this.model.firma,
+    });
 
     this.wysylanie.set(false);
-    this.wyslano.set(true);
+    if (ok) this.wyslano.set(true);
+    else this.blad.set(true);
   }
 }

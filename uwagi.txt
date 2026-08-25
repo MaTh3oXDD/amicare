@@ -1,32 +1,12 @@
-
-//1. W nagłówku stronyDaj AmiCare Centrum Medyczne- kolonoskopia, gastroskopia, poradnie specjalistyczne
-//2. Na niebieskim tle pod nagłówkiem daj łódź jelenia góra
-//3. Napisz do Jacka o logo firmy, aby umieścić tam gdzie jest to co teraz
-//4. Wyciągnij z pola dla pacjentów to co jest w nim i daj każde jako osobną opcje do wyboru.
-5. Trzeba zmienić to co jest na głównej stronie, aby wskazywało na endoskopie a nie badania kliniczne (tutaj trzeba trochę pomocy Sylwi chyba, bo ja nie wiem do końca co tam dać)
-//6. W zakładce Konsultacje specjalistyczne usuń proszę współpracujemy również w dziedzinach
-//7. Jak jest wybór placówek, to proszę wypisz na romanowskiej jaki jest zakres i jaki na zgierskiej odnośnie komercji. Tj. na romanowskiej- Kolonoskopia, gastroskopia, gastroenterolog, reumatolog, psycholog, dietetyk Na zgierskiej: gastroenterolog, reumatolog, kardiolog, dietetyk, psycholog, internista, hepatolog.
-8. Chciałbym aby pracownia endoskopii była zawsze na pierwszym miejscu i teraz tak: jak wejdziesz w kolonoskopię to aby był opis badania. I żebyś w cenniku miał kolejne podstrony w ten sposób jak masz rozpisane na tym pliku co wysłane masz. Tak samo gastroskopia. 
-//9. W nagłówku zrobiłbym: Placówki, wypakował to z dla pacjenta, badania kliniczne, o nas, kontakt 
-//10. Brakuje mi umów się na wizytę i odnośników do naszych kalendarzy w znanym lekarzu( są dostępne widżety)//
-//11. W zakładce Placówki, chciałbym aby był plusik i rozwijała się lista usług i jakaś opcja umówienia się na wizytę
-
-POZOSTAŁ DO NAPRAWY:
-2. W o nas nie ma specjalizacji - Specjalizacje są wymienione, ale mogą potrzebować bardziej szczegółowego opisu
-6. Brak formularzy zgłoszeniowych - Formularze są dostępne ale mogą wymagać integracji z systemem rezerwacji
-
-
-
-//1.Specjalizacje glowna strona pracownia endoskopii na samej gorze
-//2.Nasi Specjalisci dla wszystkich specjalizacje w losowej kolejnosci maja sie wyswietlac spejcalisci i wejsc w nich w podstrone z o nas
-//3.pracownia endoskopii=/ Gastroskopia  Gastroskopia z analgosedacją i Znieczulenie ogólne
-//4.Gastroskopia - o badaniu, przygotowanie do  badania, badanie laczone i cennik
-//5.Gastroskopia z analgosedacją- o badaniu, przygotowanie do  badania, analgosedacja(dopisac slowo znieczuleniew tym spisie tresci po lewej) badanie laczane, cennik
-//6.Znieczulenie ogólne - o badaniu przygotowanie do badania, znieczulenie ogolne, badania przed zabiegiem wciagnac w znieczulenie ooglne, badania laczone i cennik 
-//7. to samo zrobic dla kolonoskopii
-8. badania diagnostyczne brakuje opisow pod tym 
-//9.w placowni zamienc uslugi w liscie zamiast tego obok siebie
-//10.w o nas podmienic zdjecia
-11. tez w placowkach po kliknieciu wybrac dokladne zdjecia o tych placoweczkach
-
-
+1.spirometria do usuniecia z badan diagnostycznych
+2.konsultacje-specjalistyczne dziwne J
+3.zamien miejscami badania kliniczne z centrum medyczne w stopce
+4.centrum medycznym 2 razy numer telefonu pod kazdym adresem
+5.lodz,jelenia gora linki 
+6. kazde slowo gastroskopia i kolanoskopia przekierowywuje na podstrone o tym
+7.cennik caly czas po prawej stronie
+8.OGOLNA ZAKALDKA CENNIK I ODNOSNIKI W CENNIKU
+9.na samym dole  wcenniku odnosniki tez 
+10.usunac zwykla gastoskopie na Gastroskopia z testem na Helicobacter pylori i to do wszystkich TO SAMO DOTYCZY KOLANOSKOPII
+11.usun powtorzone opcje w cenniku
+12. w analgosedacji a nie z analgosedacja

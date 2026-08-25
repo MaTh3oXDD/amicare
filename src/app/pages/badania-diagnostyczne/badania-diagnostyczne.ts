@@ -11,7 +11,6 @@ interface Badanie {
     | 'brzuch'
     | 'kolonoskopia'
     | 'gastroskopia'
-    | 'spirometria'
     | 'puls'
     | 'holter'
     | 'ekg'
@@ -62,15 +61,9 @@ export class BadaniaDiagnostyczne implements OnInit {
       ],
     },
     {
-      nazwa: 'Płuca i serce',
-      opis: 'Podstawowa diagnostyka układu oddechowego i krążenia.',
+      nazwa: 'Serce',
+      opis: 'Podstawowa diagnostyka układu krążenia.',
       badania: [
-        {
-          nazwa: 'Spirometria',
-          link: '/badania-diagnostyczne/spirometria',
-          opis: 'Mierzy pojemność i przepływ powietrza w płucach.',
-          icon: 'spirometria',
-        },
         {
           nazwa: 'Pomiar tętna i ciśnienia',
           link: '/badania-diagnostyczne/pomiar-tetna-i-cisnienia',
@@ -133,7 +126,7 @@ export class BadaniaDiagnostyczne implements OnInit {
     this.seo.set({
       title: 'Badania diagnostyczne - AmiCare Centrum Medyczne Łódź',
       description:
-        'Twoje zdrowie w najlepszych rękach. Badania diagnostyczne w AmiCare: diagnostyka bólu brzucha, kolonoskopia, gastroskopia, spirometria, EKG, USG, badanie Holtera i leczenie biologiczne.',
+        'Twoje zdrowie w najlepszych rękach. Badania diagnostyczne w AmiCare: diagnostyka bólu brzucha, kolonoskopia, gastroskopia, EKG, USG, badanie Holtera i leczenie biologiczne.',
       path: '/badania-diagnostyczne/',
     });
   }

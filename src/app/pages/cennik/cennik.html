@@ -1,0 +1,89 @@
+<app-page-hero
+  title="Cennik"
+  lead="Ceny badań endoskopowych, konsultacji i pakietów diagnostycznych. Kliknij nazwę, aby przejść do opisu badania i przygotowania."
+/>
+
+<section class="section">
+  <div class="container cennik-layout">
+    <aside class="cennik-nav">
+      <span class="mono cennik-nav__label">Na tej stronie</span>
+      <nav aria-label="Sekcje cennika">
+        @for (s of sekcje; track s.id) {
+          <a [routerLink]="[]" [fragment]="s.id">{{ s.tytul }}</a>
+        }
+      </nav>
+
+      <div class="cennik-nav__book">
+        <p class="cennik-nav__note">Cena zależy od rodzaju znieczulenia i dnia badania. Potwierdzimy ją przy rezerwacji.</p>
+        <a routerLink="/kontakt" class="btn btn--solid cennik-nav__btn">Zarezerwuj wizytę</a>
+        <a href="tel:+48422890250" class="mono cennik-nav__tel">tel · 42 28 90 250</a>
+      </div>
+    </aside>
+
+    <div class="cennik-tresc">
+      @for (s of sekcje; track s.id) {
+        <section class="cennik-sekcja" [id]="s.id" [attr.aria-labelledby]="s.id + '-h'">
+          <span class="eyebrow" [id]="s.id + '-h'">{{ s.tytul }}</span>
+          <p class="cennik-sekcja__lead">{{ s.opis }}</p>
+
+          @for (g of s.grupy; track g.tytul) {
+            <article class="cennik-grupa">
+              <div class="cennik-grupa__head">
+                <h3><a [routerLink]="g.link">{{ g.tytul }}</a></h3>
+                <a [routerLink]="g.link" class="mono cennik-grupa__more">
+                  {{ s.etykietaLinku }} <span aria-hidden="true">→</span>
+                </a>
+              </div>
+
+              <div class="cennik-scroll">
+                <table class="cennik" [class.cennik--weekend]="g.weekend">
+                  <thead>
+                    <tr>
+                      <th scope="col">Usługa</th>
+                      <th scope="col">{{ g.weekend ? 'Dni robocze' : 'Cena' }}</th>
+                      @if (g.weekend) {
+                        <th scope="col">Weekend</th>
+                      }
+                    </tr>
+                  </thead>
+                  <tbody>
+                    @for (w of g.wiersze; track w.usluga) {
+                      <tr>
+                        <td data-etykieta="Usługa">
+                          <!-- każda pozycja prowadzi do opisu: własnej strony,
+                               a gdy jej nie ma - do strony grupy -->
+                          <a [routerLink]="w.link ?? g.link">{{ w.usluga }}</a>
+                        </td>
+                        <td [attr.data-etykieta]="g.weekend ? 'Dni robocze' : 'Cena'">{{ w.cena }}</td>
+                        @if (g.weekend) {
+                          <td data-etykieta="Weekend">
+                            @if (w.cenaWeekend === 'n/d') {
+                              <span class="cennik__brak">niedostępne</span>
+                            } @else {
+                              {{ w.cenaWeekend ?? w.cena }}
+                            }
+                          </td>
+                        }
+                      </tr>
+                    }
+                  </tbody>
+                </table>
+              </div>
+            </article>
+          }
+        </section>
+      }
+
+      <div class="cennik-stopka">
+        <p>
+          Udział w badaniach klinicznych nie jest objęty tym cennikiem - szczegóły przekazuje
+          koordynator. <a routerLink="/badania-kliniczne">Zobacz prowadzone badania kliniczne</a>.
+        </p>
+        <p>
+          Ceny obowiązują w placówkach AmiCare w Łodzi. Płatność gotówką, kartą lub online zgodnie z
+          <a routerLink="/regulamin-platnosci">regulaminem płatności</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

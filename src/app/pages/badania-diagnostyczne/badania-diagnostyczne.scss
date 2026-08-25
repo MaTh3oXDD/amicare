@@ -53,22 +53,6 @@
   }
 }
 
-.diag-group__head {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-
-  .eyebrow {
-    margin-bottom: 0;
-  }
-}
-
-.diag-group__count {
-  flex-shrink: 0;
-  color: var(--c-ink-soft);
-}
-
 .diag-group__lead {
   max-width: 56ch;
   margin: 0.5rem 0 1.6rem;

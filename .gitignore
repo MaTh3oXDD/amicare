@@ -43,5 +43,12 @@ __screenshots__/
 Thumbs.db
 
 # Large source assets (kept locally, not in git)
-public/amicare-zrodla-foto/zdjeciaOdFotografa/
+# Oryginały od fotografa - ciężkie JPG-i, trzymane tylko lokalnie.
+# Wersja webp (amicare-zrodla-foto-webp/) jest wersjonowana - stąd ukośnik
+# na końcu, bez niego reguła nie objęłaby też folderu -webp.
+public/amicare-zrodla-foto/
 *.zip
+
+# Sekrety backendu formularzy
+server/.env
+server/node_modules/

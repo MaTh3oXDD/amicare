@@ -10,19 +10,19 @@ export const BADANIA: Study[] = [
     jednostka: 'Choroba Leśniowskiego-Crohna',
     dziedzina: 'Gastroenterologia',
     miasto: 'Łódź',
-    obraz: 'images/badania/crohn.jpg',
+    obraz: 'images/badania/crohn.webp',
   },
   {
     jednostka: 'Wrzodziejące zapalenie jelita grubego',
     dziedzina: 'Gastroenterologia',
     miasto: 'Łódź',
-    obraz: 'images/badania/wzjg.jpg',
+    obraz: 'images/badania/wzjg.webp',
   },
   {
     jednostka: 'Gastropareza',
     dziedzina: 'Gastroenterologia',
     miasto: 'Łódź',
-    obraz: 'images/badania/gastropareza.png',
+    obraz: 'images/badania/gastropareza.webp',
   },
   {
     jednostka: 'Badania wątrobowe - stłuszczenie wątroby',
@@ -34,7 +34,7 @@ export const BADANIA: Study[] = [
     jednostka: 'Świerzbiączka guzkowata',
     dziedzina: 'Dermatologia',
     miasto: 'Łódź',
-    obraz: 'images/badania/swierzbiaczka.jpg',
+    obraz: 'images/badania/swierzbiaczka.webp',
   },
   {
     jednostka: 'Trądzik odwrócony',
@@ -46,12 +46,12 @@ export const BADANIA: Study[] = [
     jednostka: 'Choroba Leśniowskiego-Crohna',
     dziedzina: 'Gastroenterologia',
     miasto: 'Jelenia Góra',
-    obraz: 'images/badania/crohn.jpg',
+    obraz: 'images/badania/crohn.webp',
   },
   {
     jednostka: 'Wrzodziejące zapalenie jelita grubego',
     dziedzina: 'Gastroenterologia',
     miasto: 'Jelenia Góra',
-    obraz: 'images/badania/wzjg.jpg',
+    obraz: 'images/badania/wzjg.webp',
   },
 ];

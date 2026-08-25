@@ -45,7 +45,7 @@ export const LEKARZE: Doctor[] = [
     name: 'Dr Karolina Niczyporuk',
     title: 'Lekarz specjalista w zakresie otolaryngologii dziecięcej',
     bio: 'Ukończyła studia medyczne na Wydziale Wojskowo - Lekarskim Uniwersytetu Medycznego w Łodzi. Aktualnie zajmuje stanowisko Młodszego Asystenta w Klinice Otolaryngologii Audiologii i Foniatrii Dziecięcej.',
-    photo: 'images/zespol/karolina-niczyporuk.jpg',
+    photo: 'images/zespol/karolina-niczyporuk.webp',
   },
   {
     name: 'lek. Julia Banasik',
@@ -64,7 +64,7 @@ export const LEKARZE: Doctor[] = [
     name: 'lek. Łukasz Spadliński',
     title: 'Kardiolog',
     bio: 'Jest specjalistą kardiologii. Od 2019 roku pracuje w Klinice Kardiologii CSK UM w Łodzi, gdzie na co dzień zajmuje się diagnostyką oraz leczeniem chorób serca.',
-    photo: 'images/zespol/lukasz-spadlinski-kardiolog.jpg',
+    photo: 'images/zespol/lukasz-spadlinski-kardiolog.webp',
     znanyLekarz: 'https://www.znanylekarz.pl/lukasz-spadlinski/kardiolog/lodz',
   },
   {
@@ -76,7 +76,7 @@ export const LEKARZE: Doctor[] = [
     name: 'Dr n.med. Natalia Zawada-Kornalewicz',
     title: 'Lekarz specjalista w zakresie chorób wewnętrznych, diabetologii i endokrynologii',
     bio: 'Ukończyła studia medyczne jako absolwent Uniwersytetu Medycznego w Łodzi, a następnie uzyskała tytuł doktora nauk medycznych.',
-    photo: 'images/zespol/natalia-zawada-kornalewicz.jpg',
+    photo: 'images/zespol/natalia-zawada-kornalewicz.webp',
   },
   {
     name: 'dr n. med. Hubert Zatorski',
@@ -105,7 +105,7 @@ export const LEKARZE: Doctor[] = [
     name: 'Dr Joanna Kowalska-Majka',
     title: 'Lekarz specjalista w zakresie reumatologii oraz chorób wewnętrznych',
     bio: 'Studia medyczne ukończyła jako absolwentka Wydziału Lekarskiego Uniwersytetu Medycznego w Łodzi.',
-    photo: 'images/zespol/joanna-kowalska-majka.jpg',
+    photo: 'images/zespol/joanna-kowalska-majka.webp',
     znanyLekarz: 'https://www.znanylekarz.pl/joanna-kowalska-majka/reumatolog-internista/lodz',
   },
   {
@@ -145,7 +145,7 @@ export const LEKARZE: Doctor[] = [
     name: 'Dr Katarzyna Przybyłowska-Kustosik',
     title: 'Lekarz specjalista w zakresie psychiatrii',
     bio: 'Ukończyła studia medyczne na Wydziale Lekarskim Uniwersytetu Medycznego w Białymstoku. Ukończyła kurs psychoterapii w Instytucie Ericksonowskim w Łodzi.',
-    photo: 'images/zespol/dr-katarzyna-przybylowska-kustosik.jpg',
+    photo: 'images/zespol/dr-katarzyna-przybylowska-kustosik.webp',
   },
   {
     name: 'Dr n. med. Izabela Kubińska',
@@ -158,7 +158,7 @@ export const LEKARZE: Doctor[] = [
     name: 'Dr n. med. Aleksandra Bała-Wojsznis',
     title: 'Lekarz specjalista w zakresie dermatologii oraz wenerologii',
     bio: 'Ukończyła studia medyczne na Wydziale Wojskowo - Lekarskim Akademii Medycznej w Łodzi. Posiada doświadczenie w prowadzeniu badań klinicznych jako współbadacz od 2008 roku.',
-    photo: 'images/zespol/aleksandra-bala-wojsznis-1.jpg',
+    photo: 'images/zespol/aleksandra-bala-wojsznis-1.webp',
   },
   {
     name: 'Dr n.med. Adam Rafał Poliwczak',
@@ -205,13 +205,13 @@ export const KADRA: Doctor[] = [
     name: 'Jakub Majka',
     title: 'Kierownik Centrum Medycznego ds. usług medycznych',
     bio: 'Swoją przygodę zawodową rozpoczął właśnie w AmiCare Centrum Medycznym.',
-    photo: 'images/zespol/jakub-majka.jpg',
+    photo: 'images/zespol/jakub-majka.webp',
   },
   {
     name: 'Anna Góra',
     title: 'Kierownik ośrodka badań klinicznych',
     bio: 'Absolwentka Uniwersytetu Medycznego w Łodzi. Od ponad 20 lat związana z sektorem ochrony zdrowia.',
-    photo: 'images/zespol/anna-gora-sm.jpg',
+    photo: 'images/zespol/anna-gora-sm.webp',
   },
 ];
 
@@ -240,13 +240,13 @@ export const PIELEGNIARKI: Doctor[] = [
     name: 'Hubert Sadowski',
     title: 'Pielęgniarz',
     bio: 'Pielęgniarz z doświadczeniem zdobytym w warunkach Szpitalnego Oddziału Ratunkowego.',
-    photo: 'images/zespol/hubert-sadowski-sm.jpg',
+    photo: 'images/zespol/hubert-sadowski-sm.webp',
   },
   {
     name: 'Angelika Jurkiewicz',
     title: 'Pielęgniarka badań klinicznych',
     bio: 'Pielęgniarka z doświadczeniem zdobytym w pracy z pacjentami pediatrycznymi.',
-    photo: 'images/zespol/amicare-angelika-jurkiewicz-sm.jpg',
+    photo: 'images/zespol/amicare-angelika-jurkiewicz-sm.webp',
   },
   { name: 'Dorota Dutkiewicz', title: 'Pielęgniarka' },
   { name: 'Marta Galoch', title: 'Pielęgniarka' },

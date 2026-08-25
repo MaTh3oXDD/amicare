@@ -101,6 +101,10 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'cennik',
+    loadComponent: () => import('./pages/cennik/cennik').then((m) => m.Cennik),
+  },
+  {
     path: 'wspolpraca',
     loadComponent: () => import('./pages/wspolpraca/wspolpraca').then((m) => m.Wspolpraca),
   },

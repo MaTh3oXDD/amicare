@@ -1,0 +1,48 @@
+@if (grupa(); as g) {
+  <aside class="cennik-panel" aria-labelledby="cennik-panel-h">
+    <div class="cennik-panel__head">
+      <span class="mono cennik-panel__label" id="cennik-panel-h">Cennik</span>
+      <h4>{{ g.tytul }}</h4>
+    </div>
+
+    <ul class="cennik-panel__lista">
+      @for (w of g.wiersze; track w.usluga) {
+        <li class="cennik-panel__poz" [class.cennik-panel__poz--tu]="biezacy(w.link)">
+          @if (biezacy(w.link)) {
+            <span class="mono cennik-panel__tu">czytasz o tym badaniu</span>
+          }
+
+          <span class="cennik-panel__usluga">
+            @if (w.link && !biezacy(w.link)) {
+              <a [routerLink]="w.link">{{ w.usluga }}</a>
+            } @else {
+              {{ w.usluga }}
+            }
+          </span>
+
+          <div class="cennik-panel__ceny" [class.cennik-panel__ceny--dwie]="g.weekend">
+            <div class="cennik-panel__slot">
+              <span class="mono cennik-panel__kiedy">{{ g.weekend ? 'dni robocze' : 'cena' }}</span>
+              <span class="cennik-panel__cena">{{ w.cena }}</span>
+            </div>
+
+            @if (g.weekend) {
+              <div class="cennik-panel__slot" [class.cennik-panel__slot--brak]="!weekend(w).dostepne">
+                <span class="mono cennik-panel__kiedy">weekend</span>
+                <span class="cennik-panel__cena">{{ weekend(w).tekst }}</span>
+              </div>
+            }
+          </div>
+        </li>
+      }
+    </ul>
+
+    <div class="cennik-panel__akcje">
+      <a routerLink="/kontakt" class="btn btn--solid cennik-panel__btn">Zarezerwuj wizytę</a>
+      <a href="tel:+48422890250" class="mono cennik-panel__tel">tel · 42 28 90 250</a>
+      <a routerLink="/cennik" class="mono cennik-panel__pelny">
+        pełny cennik <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </aside>
+}

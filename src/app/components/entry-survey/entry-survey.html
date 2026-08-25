@@ -32,6 +32,17 @@
           Opisz swoją sprawę (opcjonalnie)
           <textarea name="opis" rows="3" [(ngModel)]="model.opis"></textarea>
         </label>
+        <!-- honeypot: ukryty przed ludźmi, boty go wypełniają -->
+        <input
+          type="text"
+          name="firma"
+          [(ngModel)]="model.firma"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+          style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0"
+        />
+
         <label class="wywiad__check">
           <input type="checkbox" name="zgoda" required [(ngModel)]="model.zgoda" />
           <span>
@@ -42,6 +53,13 @@
         <button type="submit" class="btn btn--solid wywiad__submit" [disabled]="f.invalid || wysylanie()">
           {{ wysylanie() ? 'Wysyłanie…' : 'Wyślij' }}
         </button>
+
+        @if (blad()) {
+          <p class="wywiad__error" role="alert">
+            Nie udało się wysłać zgłoszenia. Prosimy zadzwonić:
+            <a href="tel:+48422890250">+48 42 28 90 250</a>.
+          </p>
+        }
       </form>
     } @else {
       <p class="wywiad__ok" role="status">Dziękujemy! Oddzwonimy najszybciej, jak to możliwe.</p>

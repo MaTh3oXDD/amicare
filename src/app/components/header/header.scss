@@ -32,6 +32,13 @@
   }
 }
 
+.topbar__what {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
 .topbar__contact {
   display: flex;
   gap: 1.6rem;
@@ -47,7 +54,14 @@
     justify-content: flex-start;
   }
 
-  .topbar__contact {
+  .topbar__what {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+
+.topbar__contact {
     flex-direction: column;
     gap: 0.3rem;
   }

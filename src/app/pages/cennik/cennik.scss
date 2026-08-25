@@ -1,0 +1,246 @@
+.cennik-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: start;
+
+  @media (min-width: 940px) {
+    grid-template-columns: 17rem minmax(0, 1fr);
+  }
+}
+
+/* ── boczna nawigacja ───────────────────── */
+
+.cennik-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+
+  @media (min-width: 940px) {
+    position: sticky;
+    top: 1.75rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    padding: 0.6rem 0 0.6rem 1rem;
+    border-left: 2px solid var(--c-mist);
+    color: var(--c-ink-soft);
+    transition: border-color 0.2s ease, color 0.2s ease;
+
+    &:hover {
+      border-left-color: var(--c-green);
+      color: var(--c-evergreen);
+    }
+  }
+}
+
+.cennik-nav__label {
+  color: var(--c-green-ink);
+}
+
+.cennik-nav__book {
+  padding: 1.4rem;
+  background: var(--c-porcelain);
+  border: 1px solid var(--c-line);
+}
+
+.cennik-nav__note {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  color: var(--c-ink-soft);
+}
+
+.cennik-nav__btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.cennik-nav__tel {
+  display: block;
+  text-align: center;
+  margin-top: 0.8rem;
+  color: var(--c-ink-soft);
+
+  &:hover {
+    color: var(--c-evergreen);
+  }
+}
+
+/* ── sekcje i grupy ─────────────────────── */
+
+.cennik-sekcja {
+  /* odstęp między sekcjami większy niż między grupami w środku -
+     inaczej sekcje zlewają się w jedną listę */
+  & + & {
+    margin-top: clamp(3rem, 7vw, 5rem);
+  }
+
+  /* nagłówek nie może chować się pod przyklejonym menu przy skoku z kotwicy */
+  scroll-margin-top: 1.75rem;
+}
+
+.cennik-sekcja__lead {
+  max-width: 56ch;
+  margin: 0.4rem 0 2rem;
+}
+
+.cennik-grupa {
+  & + & {
+    margin-top: clamp(2rem, 4vw, 3rem);
+  }
+}
+
+.cennik-grupa__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 2px solid var(--c-evergreen);
+
+  h3 {
+    margin: 0;
+    min-width: 0;
+  }
+
+  h3 a {
+    color: inherit;
+
+    &:hover {
+      color: var(--c-evergreen);
+    }
+  }
+}
+
+.cennik-grupa__more {
+  flex-shrink: 0;
+  color: var(--c-green-ink);
+
+  &:hover {
+    color: var(--c-evergreen);
+  }
+}
+
+/* ── tabela ─────────────────────────────── */
+
+.cennik-grupa table.cennik {
+  /* cyfry o równej szerokości - ceny układają się w kolumnę i da się je
+     porównać wzrokiem bez czytania każdej z osobna */
+  font-variant-numeric: tabular-nums;
+
+  th {
+    white-space: nowrap;
+  }
+
+  th:not(:first-child),
+  td:not(:first-child) {
+    text-align: right;
+  }
+
+  td:first-child {
+    color: var(--c-ink);
+  }
+
+  tbody tr:hover td {
+    background: var(--c-porcelain);
+  }
+}
+
+/* Brak terminu to nie kwota - inny stopień i kolor, żeby słowo nie udawało
+   ceny w kolumnie liczb. Ta sama zasada co w panelu na stronach badań. */
+.cennik__brak {
+  color: var(--c-ink-soft);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+/* Pionowa kreska między kolumną dni roboczych a weekendem - sam odstęp
+   nie wystarcza, żeby oko trzymało się właściwej kolumny w długiej tabeli.
+   Tylko tam, gdzie kolumny cen są dwie. */
+.cennik-grupa table.cennik--weekend {
+  th:last-child,
+  td:last-child {
+    border-left: 1px solid var(--c-mist);
+  }
+}
+
+@media (max-width: 719px) {
+  .cennik-grupa table.cennik--weekend td:last-child {
+    border-left: none;
+  }
+}
+
+/* Na wąskim ekranie tabela zamienia się w listę: przewijanie w bok przy
+   cenniku, który pacjent czyta na telefonie, gubi połowę kolumn. */
+@media (max-width: 719px) {
+  .cennik-grupa table.cennik {
+    thead {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
+    tr {
+      display: block;
+      padding: 0.9rem 0;
+      border-bottom: 1px solid var(--c-mist);
+    }
+
+    td {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.15rem 0;
+      border: none;
+      text-align: right;
+    }
+
+    td:first-child {
+      display: block;
+      text-align: left;
+      margin-bottom: 0.35rem;
+      font-weight: 500;
+    }
+
+    td:not(:first-child)::before {
+      content: attr(data-etykieta);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--c-bronze);
+      text-align: left;
+    }
+
+    tbody tr:hover td {
+      background: none;
+    }
+  }
+}
+
+.cennik-stopka {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--c-line);
+  font-size: 0.9rem;
+  color: var(--c-ink-soft);
+
+  p {
+    margin: 0;
+    max-width: 68ch;
+  }
+}

@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { PLACOWKI } from '../../models/placowka';
 
 interface NavLink {
   label: string;
@@ -20,6 +21,16 @@ interface NavGroup {
   styleUrl: './header.scss',
 })
 export class Header {
+  /* Miasta w pasku nad menu. Jedna placówka w mieście - link wprost do niej,
+     kilka - na listę placówek. */
+  protected readonly miasta = [...new Set(PLACOWKI.map((p) => p.miasto))].map((miasto) => {
+    const wMiescie = PLACOWKI.filter((p) => p.miasto === miasto);
+    return {
+      miasto,
+      link: wMiescie.length === 1 ? `/placowki/${wMiescie[0].slug}` : '/placowki',
+    };
+  });
+
   protected readonly menuOpen = signal(false);
   protected readonly openGroup = signal<string | null>(null);
 
@@ -28,6 +39,7 @@ export class Header {
     { label: 'Pracownia endoskopii', link: '/pracownia-endoskopii' },
     { label: 'Badania diagnostyczne', link: '/badania-diagnostyczne' },
     { label: 'Badania kliniczne', link: '/badania-kliniczne' },
+    { label: 'Cennik', link: '/cennik' },
     { label: 'Placówki', link: '/placowki' },
     {
       label: 'O nas',

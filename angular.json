@@ -26,7 +26,12 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "ignore": [
+                  "amicare-zrodla-foto/**",
+                  "amicare-zrodla-foto-webp/**",
+                  "Bez tytułu.png"
+                ]
               }
             ],
             "styles": [
@@ -53,6 +58,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "github-pages": {
+              "baseHref": "/amicare/"
             }
           },
           "defaultConfiguration": "production"
@@ -93,7 +101,12 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/amicare/",
+            "branch": "gh-pages",
+            "message": "Deploy na GitHub Pages"
+          }
         }
       }
     }

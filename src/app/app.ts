@@ -2,13 +2,13 @@ import { AfterViewInit, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { Footer } from './components/footer/footer';
-import { ColorPicker } from './components/color-picker/color-picker';
 import { EntrySurvey } from './components/entry-survey/entry-survey';
+import { AutolinkBadania } from './directives/autolink-badania';
 import { ScrollReveal } from './services/scroll-reveal';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, ColorPicker, EntrySurvey],
+  imports: [RouterOutlet, Header, Footer, EntrySurvey, AutolinkBadania],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })

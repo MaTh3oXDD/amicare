@@ -14,8 +14,8 @@
     Prosimy o podanie tematu kontaktu*
     <select name="temat" required [(ngModel)]="model.temat">
       <option value="" disabled selected>-Proszę wybrać opcję-</option>
-      @for (t of tematy; track t) {
-        <option [value]="t">{{ t }}</option>
+      @for (t of tematy; track t.klucz) {
+        <option [value]="t.klucz">{{ t.etykieta }}</option>
       }
     </select>
   </label>
@@ -24,6 +24,17 @@
     Treść wiadomości*
     <textarea name="tresc" rows="6" required [(ngModel)]="model.tresc"></textarea>
   </label>
+
+  <!-- honeypot: ukryty przed ludźmi, boty go wypełniają -->
+  <input
+    type="text"
+    name="firma"
+    [(ngModel)]="model.firma"
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+    style="position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0"
+  />
 
   <label class="form__check">
     <input type="checkbox" name="zgoda" required [(ngModel)]="model.zgoda" />
@@ -36,9 +47,18 @@
 
   <p class="form__note">Prosimy o wypełnienie pól oznaczonych *</p>
 
-  <button type="submit" class="btn btn--solid" [disabled]="f.invalid">Wyślij</button>
+  <button type="submit" class="btn btn--solid" [disabled]="f.invalid || wysylanie()">
+    {{ wysylanie() ? 'Wysyłanie…' : 'Wyślij' }}
+  </button>
 
   @if (wyslano()) {
-    <p class="form__ok" role="status">Otwarto program pocztowy - dziękujemy za wiadomość.</p>
+    <p class="form__ok" role="status">Dziękujemy za wiadomość - odpowiemy najszybciej, jak to możliwe.</p>
+  }
+
+  @if (blad()) {
+    <p class="form__error" role="alert">
+      Nie udało się wysłać wiadomości. Prosimy spróbować ponownie lub napisać na
+      <a href="mailto:rejestracja&#64;amicare.pl">rejestracja&#64;amicare.pl</a>.
+    </p>
   }
 </form>

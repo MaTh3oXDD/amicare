@@ -1,17 +1,14 @@
 /* AmiCare - premium design system
-   porcelana / evergreen / bronze · Fraunces + Archivo + IBM Plex Mono */
+   porcelana / evergreen / bronze · Source Serif 4 + Archivo + IBM Plex Mono */
 
 :root {
   /* paleta z logo: granat "Ami" + zieleń "Care" */
   --c-ink: #1a2333;
   --c-ink-soft: #4a566b;
 
-  /* 4 dostępne odcienie granatu - przełączane widżetem w prawym dolnym rogu */
-  --c-blue-1: #152a52; /* Granat (domyślny) */
-  --c-blue-2: #0d2440; /* Atrament - najciemniejszy, max. kontrast */
+  /* Kolor wiodący strony: Kobalt. Widżet do przełączania odcieni został usunięty. */
   --c-blue-3: #1d3f78; /* Kobalt */
-  --c-blue-4: #2a5aa8; /* Lazur */
-  --c-accent-blue: var(--c-blue-1);
+  --c-accent-blue: var(--c-blue-3);
   --c-navy: var(--c-accent-blue);
   --c-steel: #3d5c94;
   --c-green: #57b33a;
@@ -24,7 +21,7 @@
   --c-evergreen: var(--c-navy);
   --c-pine: var(--c-steel);
   --c-bronze: var(--c-green-ink);
-  --font-display: 'Fraunces', Georgia, serif;
+  --font-display: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-body: 'Archivo', 'Segoe UI', system-ui, sans-serif;
   --font-mono: 'IBM Plex Mono', 'Consolas', monospace;
   --max-w: 1180px;
@@ -78,21 +75,71 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  font-weight: 500;
-  line-height: 1.12;
+  font-optical-sizing: auto;
+  font-weight: 600;
   color: var(--c-ink);
-  margin: 0 0 0.55em;
-  letter-spacing: -0.015em;
+  /* równa długość wierszy zamiast pojedynczego słowa na ostatniej linii */
+  text-wrap: balance;
 }
 
-h1 { font-size: clamp(2.4rem, 5.5vw, 4rem); }
-h2 { font-size: clamp(1.9rem, 3.6vw, 2.7rem); }
-h3 { font-size: clamp(1.25rem, 2.4vw, 1.55rem); }
+/* Skala nagłówków. Interlinia i tracking zmieniają się razem ze stopniem:
+   duży stopień znosi ciasną interlinię i ujemny tracking, mały ich nie znosi -
+   te same wartości, które porządkują nagłówek 68px, sklejają nagłówek 18px.
+
+   Dolna granica h1 to 2.1rem: Source Serif 4 jest szersze od poprzedniej
+   czcionki i przy 2.4rem nagłówki rozbijały się na wąskich ekranach. */
+h1 {
+  font-size: clamp(2.1rem, 5.5vw, 4rem);
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+  margin: 0 0 0.45em;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3.6vw, 2.7rem);
+  line-height: 1.16;
+  letter-spacing: -0.016em;
+  margin: 0 0 0.5em;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 2.4vw, 1.55rem);
+  line-height: 1.28;
+  letter-spacing: -0.008em;
+  margin: 0 0 0.55em;
+}
+
+/* h4 miał 17px, czyli dokładnie tyle co akapit - różnił się wyłącznie krojem
+   i grubością, więc czytał się jak pogrubione zdanie, nie jak śródtytuł.
+   Dostaje własny stopień i wyraźnie więcej powietrza nad sobą niż pod. */
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.38;
+  letter-spacing: 0;
+  margin: 2em 0 0.5em;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
 
 p { margin: 0 0 1em; color: var(--c-ink-soft); }
 
 a { color: var(--c-pine); text-decoration: none; }
 a:hover { color: var(--c-evergreen); }
+
+/* automatyczne odnośniki do badań w tekście - podkreślenie odróżnia je
+   od zwykłej treści, bez tego giną w akapicie */
+a[data-autolink] {
+  text-decoration: underline;
+  text-decoration-color: var(--c-mist);
+  text-underline-offset: 0.18em;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration-color: currentColor;
+  }
+}
 
 /* links inside body copy: underlined by default (not color alone) - thickens on hover.
    Low-vision/color-blind readers need a non-color cue that text is a link. */
@@ -165,7 +212,9 @@ img { max-width: 100%; display: block; }
 
 .eyebrow {
   display: inline-flex;
-  align-items: center;
+  /* flex-start, nie center: przy zawijaniu na wąskich ekranach znacznik
+     wjeżdżał na drugą linię tekstu zamiast stać przy pierwszej */
+  align-items: flex-start;
   gap: 0.7rem;
   font-family: var(--font-mono);
   font-size: 0.8rem;
@@ -179,6 +228,8 @@ img { max-width: 100%; display: block; }
 /* tri-mark: three strokes = three placówki (zieleń logo) */
 .eyebrow::before {
   content: '';
+  flex: 0 0 auto;
+  margin-top: 0.35em;
   width: 22px;
   height: 10px;
   background:
@@ -226,9 +277,12 @@ img { max-width: 100%; display: block; }
 }
 
 @media (min-width: 720px) {
-  .grid--2 { grid-template-columns: repeat(2, 1fr); }
-  .grid--3 { grid-template-columns: repeat(3, 1fr); }
-  .grid--4 { grid-template-columns: repeat(4, 1fr); }
+  /* minmax(0, 1fr) zamiast 1fr: domyślne 1fr to minmax(auto, 1fr), więc
+     długie słowo w komórce rozpycha kolumnę ponad szerokość kontenera
+     i cała strona zaczyna przewijać się w poziomie. */
+  .grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
 .cennik-scroll {

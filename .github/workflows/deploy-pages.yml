@@ -22,10 +22,11 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npx ng build --base-href /amicare/
-      # SPA fallback + disable Jekyll processing
-      - run: cp dist/amicare/browser/index.html dist/amicare/browser/404.html
-      - run: touch dist/amicare/browser/.nojekyll
+      # base href siedzi w angular.json (konfiguracja github-pages),
+      # zeby lokalny 'npm run deploy' i ten workflow budowaly tak samo
+      - run: npm run build:pages
+      # SPA fallback + wylaczenie Jekylla
+      - run: node scripts/pages-404.mjs
       # Publish the built site to the gh-pages branch (the branch GitHub Pages serves)
       - name: Publish to gh-pages
         env:

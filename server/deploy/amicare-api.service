@@ -1,0 +1,17 @@
+[Unit]
+Description=Amicare - API formularzy kontaktowych
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=/opt/amicare-api
+EnvironmentFile=/etc/amicare-api.env
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

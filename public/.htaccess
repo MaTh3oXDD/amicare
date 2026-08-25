@@ -1,0 +1,34 @@
+# Apache: routing Angulara + proxy formularzy.
+# Trafia do folderu www razem z resztą plików strony.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Wymuś HTTPS - formularze zbierają dane pacjentów
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # /api/... zostaw backendowi, nie przepisuj na index.html
+  RewriteRule ^api/ - [L]
+
+  # Każda inna ścieżka bez pliku na dysku -> index.html (routing Angulara)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json
+</IfModule>
+
+# Pliki z hashem w nazwie - cache na rok
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>

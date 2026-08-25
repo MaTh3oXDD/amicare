@@ -10,9 +10,21 @@
         </p>
       </div>
 
+      <div>
+        <h3 class="footer__h">Centrum Medyczne - Łódź</h3>
+        @for (p of centra; track p.slug) {
+          <p>
+            {{ p.adres }}<br />
+            <span class="footer__note">{{ p.godziny }}</span><br />
+            telefon: <a href="tel:{{ p.telefon.split(' ').join('') }}">{{ p.telefon }}</a><br />
+            email: <a href="mailto:{{ p.email }}">{{ p.email }}</a>
+          </p>
+        }
+      </div>
+
       @for (p of osrodki; track p.slug) {
         <div>
-          <h3 class="footer__h">Badania kliniczne - {{ p.miasto }}</h3>
+          <h3 class="footer__h">Badania kliniczne - Łódź, Bełchatów, {{ p.miasto }}</h3>
           @if (p.uwaga) {
             <p class="footer__note">{{ p.uwaga }}</p>
           }
@@ -22,20 +34,6 @@
           </p>
         </div>
       }
-
-      <div>
-        <h3 class="footer__h">Centrum Medyczne - Łódź</h3>
-        @for (p of centra; track p.slug) {
-          <p>
-            {{ p.adres }}<br />
-            <span class="footer__note">{{ p.godziny }}</span>
-          </p>
-        }
-        <p>
-          telefon: <a href="tel:+48422890250">+48 42 28 90 250</a><br />
-          email: <a href="mailto:rejestracja@amicare.pl">rejestracja&#64;amicare.pl</a>
-        </p>
-      </div>
     </div>
 
     <div class="footer__bottom">
@@ -47,6 +45,7 @@
         <a routerLink="/placowki">Placówki</a>
         <a routerLink="/o-nas">O nas</a>
         <a routerLink="/badania-kliniczne">Badania kliniczne</a>
+        <a routerLink="/cennik">Cennik</a>
         <a routerLink="/wspolpraca">Współpraca</a>
         <a routerLink="/kontakt">Kontakt</a>
         <a routerLink="/regulamin-platnosci">Regulamin płatności online</a>

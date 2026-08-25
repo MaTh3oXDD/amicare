@@ -44,6 +44,10 @@
   background: var(--c-white);
   padding: clamp(2rem, 5vw, 3.2rem);
   max-width: 30rem;
+  /* cała zawartość karty wyśrodkowana - wyśrodkowany nagłówek nad
+     wyrównaną do lewej treścią czytałby się jak błąd składu */
+  margin-inline: auto;
+  text-align: center;
   box-shadow: 0 24px 60px -24px rgba(21, 42, 82, 0.35);
   animation: rise 0.7s ease both;
 
@@ -63,21 +67,31 @@
   }
 }
 
+/* w układzie wyśrodkowanym znacznik stoi nad tekstem - inline zostawiał go
+   przyklejonego do lewej krawędzi, gdy tekst zawijał się na wąskim ekranie */
+.hero .eyebrow {
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+
+  &::before {
+    margin-top: 0;
+  }
+}
+
 .hero h1 {
   color: var(--c-ink);
-  max-width: 14ch;
-
-  em {
-    font-style: italic;
-    font-weight: 400;
-    color: var(--c-green-ink);
-  }
+  /* "AmiCare Centrum Medyczne" to jedna nazwa - ma mieścić się w jednym
+     wierszu. Górny limit 3.85rem (~65px) to najwięcej, co wchodzi w kartę
+     przy 1440px; o łamaniu decyduje <br> w szablonie, nie max-width. */
+  font-size: clamp(2.1rem, 5.5vw, 3.85rem);
+  max-width: none;
 }
 
 .hero__lead {
   font-size: 1.1rem;
   max-width: 44ch;
-  margin: 0 0 1.2rem;
+  margin: 0 auto 1.2rem;
   color: var(--c-ink-soft);
 
   @media (min-width: 860px) {
@@ -89,6 +103,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 1.8rem;
 }
 
@@ -377,7 +392,7 @@
   }
 
   h2 {
-    max-width: 24ch;
+    max-width: 26ch;
     margin-inline: auto;
   }
 

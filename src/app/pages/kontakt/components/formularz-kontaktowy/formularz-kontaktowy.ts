@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Formularze } from '../../../../services/formularze';
 
 @Component({
   selector: 'app-formularz-kontaktowy',
@@ -8,16 +9,22 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './formularz-kontaktowy.scss',
 })
 export class FormularzKontaktowy {
+  // Klucz decyduje o adresie odbiorcy po stronie backendu - etykietę można zmieniać dowolnie.
+  // Klucze muszą się zgadzać z TEMATY_KONTAKT w server/server.js
   protected readonly tematy = [
-    'Jestem pacjentką/em i mam pytanie',
-    'Jestem lekarzem interesuje mnie współpraca',
-    'Interesuje mnie współpraca',
-    'Przesyłam moją opinię',
-    'Proszę o więcej informacji na temat badań klinicznych',
-    'Umówienie wizyty',
+    { klucz: 'pacjent', etykieta: 'Jestem pacjentką/em i mam pytanie' },
+    { klucz: 'lekarz', etykieta: 'Jestem lekarzem interesuje mnie współpraca' },
+    { klucz: 'wspolpraca', etykieta: 'Interesuje mnie współpraca' },
+    { klucz: 'opinia', etykieta: 'Przesyłam moją opinię' },
+    { klucz: 'badania-kliniczne', etykieta: 'Proszę o więcej informacji na temat badań klinicznych' },
+    { klucz: 'wizyta', etykieta: 'Umówienie wizyty' },
   ];
 
+  private readonly formularze = inject(Formularze);
+
   protected readonly wyslano = signal(false);
+  protected readonly wysylanie = signal(false);
+  protected readonly blad = signal(false);
 
   protected model = {
     imie: '',
@@ -25,14 +32,20 @@ export class FormularzKontaktowy {
     temat: '',
     tresc: '',
     zgoda: false,
+    firma: '', // honeypot - ukryty w szablonie, wypełniają go tylko boty
   };
 
-  wyslij(): void {
+  protected async wyslij(): Promise<void> {
     const { imie, email, temat, tresc, zgoda } = this.model;
-    if (!imie || !email || !temat || !tresc || !zgoda) return;
-    const body = encodeURIComponent(`${tresc}\n\n${imie}`);
-    const subject = encodeURIComponent(temat);
-    window.location.href = `mailto:rejestracja@amicare.pl?subject=${subject}&body=${body}`;
-    this.wyslano.set(true);
+    if (!imie || !email || !temat || !tresc || !zgoda || this.wysylanie()) return;
+
+    this.wysylanie.set(true);
+    this.blad.set(false);
+
+    const ok = await this.formularze.wyslij('kontakt', { ...this.model });
+
+    this.wysylanie.set(false);
+    if (ok) this.wyslano.set(true);
+    else this.blad.set(true);
   }
 }

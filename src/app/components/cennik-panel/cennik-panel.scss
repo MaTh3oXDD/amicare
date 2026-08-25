@@ -1,0 +1,195 @@
+.cennik-panel {
+  display: block;
+  background: var(--c-porcelain);
+  border: 1px solid var(--c-line);
+  /* lewa krawędź w kolorze wiodącym - ten sam sygnał co na kartach badań */
+  border-left: 3px solid var(--c-evergreen);
+  padding: 1.4rem 1.5rem 1.5rem;
+}
+
+.cennik-panel__head {
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--c-mist);
+
+  h4 {
+    margin: 0.35rem 0 0;
+  }
+}
+
+.cennik-panel__label {
+  color: var(--c-green-ink);
+}
+
+.cennik-panel__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cennik-panel__poz {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* więcej powietrza niż w zwykłej liście - pozycja cennika to jednostka
+     do porównania, nie wiersz do przeczytania po kolei */
+  padding: 1.05rem 0;
+  border-bottom: 1px solid var(--c-mist);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Wariant, który pacjent właśnie czyta. Wyróżniony, bo cała lista istnieje po to,
+   żeby zobaczył swoją cenę na tle alternatyw - taniej bez znieczulenia, drożej w pełnym. */
+.cennik-panel__poz--tu {
+  margin: 0 -1.5rem;
+  padding: 1.05rem 1.5rem;
+  background: var(--c-white);
+  border-left: 2px solid var(--c-green);
+  border-bottom-color: transparent;
+}
+
+.cennik-panel__tu {
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  color: var(--c-green-ink);
+}
+
+.cennik-panel__usluga {
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--c-ink);
+
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--c-evergreen);
+    }
+  }
+}
+
+/* Dwa stałe sloty: dni robocze i weekend. Ta sama pozycja w każdym wierszu,
+   więc oko uczy się jej raz i dalej tylko porównuje liczby. */
+.cennik-panel__ceny {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.5rem;
+}
+
+.cennik-panel__ceny--dwie {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* pionowa kreska rozdziela dni robocze od weekendu mocniej niż sam odstęp */
+  gap: 0;
+
+  .cennik-panel__slot + .cennik-panel__slot {
+    padding-left: 0.9rem;
+    border-left: 1px solid var(--c-mist);
+  }
+}
+
+.cennik-panel__slot {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.cennik-panel__kiedy {
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-bronze);
+}
+
+.cennik-panel__cena {
+  font-family: var(--font-mono);
+  font-size: 1.02rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--c-evergreen);
+}
+
+/* Brak terminu to nie cena - inny kolor i mniejszy stopień, żeby słowo
+   nie udawało kwoty w kolumnie liczb. */
+.cennik-panel__slot--brak {
+  .cennik-panel__kiedy,
+  .cennik-panel__cena {
+    color: var(--c-ink-soft);
+  }
+
+  .cennik-panel__cena {
+    font-size: 0.8rem;
+    letter-spacing: 0.02em;
+  }
+}
+
+.cennik-panel__akcje {
+  margin-top: 1.2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--c-mist);
+}
+
+.cennik-panel__btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.cennik-panel__tel,
+.cennik-panel__pelny {
+  display: block;
+  text-align: center;
+  margin-top: 0.8rem;
+  color: var(--c-ink-soft);
+
+  &:hover {
+    color: var(--c-evergreen);
+  }
+}
+
+.cennik-panel__pelny {
+  color: var(--c-green-ink);
+}
+
+/* Poniżej układu trzykolumnowego panel leży pod treścią na pełną szerokość -
+   wtedy pozycje mogą stanąć w wierszu zamiast jedna pod drugą. */
+@media (min-width: 861px) and (max-width: 1279px) {
+  .cennik-panel__poz {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.4rem 2rem;
+  }
+
+  .cennik-panel__tu {
+    flex-basis: 100%;
+  }
+
+  .cennik-panel__usluga {
+    flex: 1 1 18rem;
+  }
+
+  .cennik-panel__ceny--dwie {
+    flex-shrink: 0;
+    grid-template-columns: repeat(2, 8rem);
+  }
+
+  .cennik-panel__akcje {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .cennik-panel__btn {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .cennik-panel__tel,
+  .cennik-panel__pelny {
+    margin-top: 0;
+  }
+}

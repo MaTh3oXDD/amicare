@@ -13,7 +13,6 @@
           <a routerLink="." fragment="przygotowanie" data-toc data-toc-id="przygotowanie">Przygotowanie do badania</a>
           <a routerLink="." fragment="znieczulenie" data-toc data-toc-id="znieczulenie">Znieczulenie ogólne</a>
           <a routerLink="." fragment="badanie-laczone" data-toc data-toc-id="badanie-laczone">Badanie łączone</a>
-          <a routerLink="." fragment="cennik" data-toc data-toc-id="cennik">Cennik</a>
         </nav>
       </aside>
 
@@ -303,41 +302,9 @@
           </ul>
         </article>
 
-        <article class="dossier__entry" id="cennik">
-          <h3>Cennik</h3>
-          <div class="cennik-card">
-            <table class="cennik">
-              <tbody>
-                <tr>
-                  <td>Gastroskopia</td>
-                  <td>550 zł (dni robocze) / 600 zł (weekend)</td>
-                </tr>
-                <tr>
-                  <td>Gastroskopia z analgosedacją</td>
-                  <td>900 zł (dni robocze) / 1100 zł (weekend)</td>
-                </tr>
-                <tr>
-                  <td>Gastroskopia w znieczuleniu ogólnym</td>
-                  <td>1300 zł</td>
-                </tr>
-                <tr>
-                  <td>Kolonoskopia + Gastroskopia w znieczuleniu ogólnym</td>
-                  <td>2500 zł</td>
-                </tr>
-                <tr>
-                  <td>Gastroskopia z testem na Helicobacter pylori</td>
-                  <td>550 zł</td>
-                </tr>
-                <tr>
-                  <td>Gastroskopia z testem na H. pylori + znieczulenie</td>
-                  <td>900 zł</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p class="contact-note">Rezerwacja: <a href="tel:+48422890250">42 28 90 250</a></p>
-        </article>
       </div>
+
+      <app-cennik-panel class="dossier__cennik" />
     </div>
   </div>
 </section>

@@ -2,14 +2,47 @@
 // Echoes the site's "lab-report" mono voice (see .eyebrow / .mono in styles.scss)
 // so a long clinical document reads like a requisition sheet, not a wall of text.
 
+/* Trzy kolumny potrzebują więcej miejsca niż reszta serwisu, inaczej kolumna
+   z treścią schodzi poniżej wygodnej długości wiersza. Dotyczy tylko tej sekcji. */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1340px;
+  }
+}
+
 .dossier {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: clamp(2rem, 5vw, 4rem);
   align-items: start;
 
+  /* Od 1280px cennik staje się trzecią kolumną i jedzie z pacjentem przy
+     przewijaniu - cena ma być widoczna w chwili czytania o przygotowaniu,
+     a nie dopiero na końcu długiego dokumentu. */
+  @media (min-width: 1280px) {
+    grid-template-columns: 190px minmax(0, 1fr) 17rem;
+    gap: 3rem;
+  }
+
   @media (max-width: 860px) {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.dossier__cennik {
+  /* Węższy ekran: panel schodzi pod treść na pełną szerokość. */
+  @media (min-width: 861px) and (max-width: 1279px) {
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: 1280px) {
+    position: sticky;
+    top: 1.75rem;
+    /* Lista wariantów bywa dłuższa niż ekran. Bez limitu dolna część panelu,
+       razem z przyciskiem rezerwacji, staje się nieosiągalna przy przewijaniu. */
+    max-height: calc(100vh - 3.5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 }
 

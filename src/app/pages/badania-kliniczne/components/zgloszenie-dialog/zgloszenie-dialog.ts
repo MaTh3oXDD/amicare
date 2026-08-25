@@ -1,5 +1,6 @@
-import { Component, effect, ElementRef, input, output, signal, viewChild } from '@angular/core';
+import { Component, effect, ElementRef, inject, input, output, signal, viewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Formularze } from '../../../../services/formularze';
 import { Study } from '../../models/study';
 
 interface ZgloszenieModel {
@@ -8,10 +9,11 @@ interface ZgloszenieModel {
   email: string;
   wiadomosc: string;
   zgoda: boolean;
+  firma: string;
 }
 
 function emptyModel(): ZgloszenieModel {
-  return { imie: '', telefon: '', email: '', wiadomosc: '', zgoda: false };
+  return { imie: '', telefon: '', email: '', wiadomosc: '', zgoda: false, firma: '' };
 }
 
 @Component({
@@ -27,7 +29,11 @@ export class ZgloszenieDialog {
   private readonly dialogRef = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
 
   protected readonly wyslano = signal(false);
+  protected readonly wysylanie = signal(false);
+  protected readonly blad = signal(false);
   protected model = emptyModel();
+
+  private readonly formularze = inject(Formularze);
 
   constructor() {
     effect(() => {
@@ -36,6 +42,7 @@ export class ZgloszenieDialog {
 
       if (study) {
         this.wyslano.set(false);
+        this.blad.set(false);
         this.model = emptyModel();
         if (!dialog.open) dialog.showModal();
       } else if (dialog.open) {
@@ -52,24 +59,29 @@ export class ZgloszenieDialog {
     if (event.target === dialog) dialog.close();
   }
 
-  protected wyslij(): void {
+  protected async wyslij(): Promise<void> {
     const study = this.study();
     if (!study) return;
 
-    const { imie, telefon, email, wiadomosc, zgoda } = this.model;
-    if (!imie || !telefon || !zgoda) return;
+    const { imie, telefon, email, wiadomosc, zgoda, firma } = this.model;
+    if (!imie || !telefon || !zgoda || this.wysylanie()) return;
 
-    const subject = encodeURIComponent(`Zgłoszenie do badania - ${study.jednostka}`);
-    const bodyLines = [
-      `Badanie: ${study.jednostka} (${study.miasto})`,
-      `Imię i nazwisko: ${imie}`,
-      `Telefon: ${telefon}`,
-      email ? `Email: ${email}` : null,
-      wiadomosc ? `\nWiadomość:\n${wiadomosc}` : null,
-    ].filter((line): line is string => line !== null);
+    this.wysylanie.set(true);
+    this.blad.set(false);
 
-    const body = encodeURIComponent(bodyLines.join('\n'));
-    window.location.href = `mailto:office@amicare.pl?subject=${subject}&body=${body}`;
-    this.wyslano.set(true);
+    const ok = await this.formularze.wyslij('badanie-kliniczne', {
+      imie,
+      telefon,
+      email,
+      wiadomosc,
+      zgoda,
+      firma,
+      badanie: study.jednostka,
+      miasto: study.miasto,
+    });
+
+    this.wysylanie.set(false);
+    if (ok) this.wyslano.set(true);
+    else this.blad.set(true);
   }
 }

@@ -1,7 +1,14 @@
 <header class="header">
   <div class="topbar">
     <div class="container topbar__inner">
-      <span class="topbar__what">Łódź · Jelenia Góra</span>
+      <span class="topbar__what">
+        @for (m of miasta; track m.miasto; let last = $last) {
+          <a [routerLink]="m.link">{{ m.miasto }}</a>
+          @if (!last) {
+            <span aria-hidden="true">·</span>
+          }
+        }
+      </span>
       <span class="topbar__contact">
         <a href="tel:+48422890250">tel · 42 28 90 250</a>
         <a href="mailto:rejestracja@amicare.pl">rejestracja&#64;amicare.pl</a>

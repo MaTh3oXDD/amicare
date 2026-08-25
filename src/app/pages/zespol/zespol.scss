@@ -1,6 +1,20 @@
 .osoba {
   display: flex;
   flex-direction: column;
+
+  /* host komponentu jest domyślnie inline, więc height:100% karty nie działa
+     i karty w wierszu miały różne wysokości */
+  app-doctor-card {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  /* link zawsze przy dolnej krawędzi kolumny, na równi w całym wierszu */
+  > .osoba__more {
+    margin-top: auto;
+    padding-top: 0.6rem;
+  }
 }
 
 .osoba__more {
@@ -14,6 +28,7 @@
   text-decoration: none;
   font-size: inherit;
   font-family: inherit;
+  white-space: nowrap;
 
   &:hover {
     color: var(--c-steel);
@@ -26,8 +41,10 @@
 
 .staff__meta {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: baseline;
-  gap: 0.8rem;
+  gap: 0.2rem 0.8rem;
+  min-width: 0;
 }
 
 .staff {
@@ -39,20 +56,29 @@
   grid-template-columns: minmax(0, 1fr);
 
   @media (min-width: 720px) {
-    grid-template-columns: repeat(3, 1fr);
+    /* minmax(0,…) - bez tego długie nazwisko rozpycha kolumnę
+       ponad szerokość kontenera i cała strona przewija się w poziomie */
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   li {
     display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 0.2rem 1rem;
     padding: 0.7rem 0;
     border-bottom: 1px solid var(--c-line);
+    min-width: 0;
+
+    strong {
+      min-width: 0;
+    }
 
     span {
       color: var(--c-ink-soft);
       font-size: 0.85rem;
-      white-space: nowrap;
+      min-width: 0;
     }
   }
 }
