@@ -60,3 +60,81 @@
   background: var(--c-navy);
   color: var(--c-white);
 }
+
+.dlaczego__lead {
+  max-width: 62ch;
+  color: var(--c-ink-soft);
+}
+
+.atuty {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 2.4rem;
+  margin: 2.6rem 0 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.atut {
+  padding-top: 1.1rem;
+  border-top: 2px solid var(--c-accent-blue);
+}
+
+/* Naglowki maja rozna liczbe linii, wiec akapity startowalyby na roznych
+   wysokosciach. Subgrid pilnuje, zeby marka, naglowek i tresc lezaly
+   w tych samych wierszach w calym rzedzie. */
+@supports (grid-template-rows: subgrid) {
+  .atut {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+  }
+}
+
+/* Bez subgrid: rezerwujemy w naglowku miejsce na dwie linie. */
+@supports not (grid-template-rows: subgrid) {
+  .atut h3 {
+    min-height: calc(1.22rem * 1.25 * 2);
+  }
+}
+
+.atut__marka {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-green-ink);
+}
+
+.atut h3 {
+  margin: 0 0 0.45rem;
+  font-family: var(--font-display);
+  font-size: 1.22rem;
+  line-height: 1.25;
+}
+
+.atut p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--c-ink-soft);
+}
+
+.dlaczego__miejsce {
+  max-width: 62ch;
+  color: var(--c-ink-soft);
+}
+
+@media (max-width: 959px) {
+  .atuty {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .atuty {
+    grid-template-columns: 1fr;
+  }
+}

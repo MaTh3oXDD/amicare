@@ -1,0 +1,98 @@
+@if (badanie(); as b) {
+  <app-page-hero [title]="b.jednostka" [lead]="b.lead" [photo]="b.obraz" />
+
+  <section class="section badanie">
+    <div class="container badanie__layout">
+      <aside class="badanie__aside">
+        <div class="karta">
+          <span class="mono karta__label">Rekrutacja otwarta</span>
+          <dl class="karta__dane">
+            <div>
+              <dt>Ośrodek</dt>
+              <dd>{{ b.miasto }}</dd>
+            </div>
+            <div>
+              <dt>Dziedzina</dt>
+              <dd>{{ b.dziedzina }}</dd>
+            </div>
+            @if (b.przebieg) {
+              <div>
+                <dt>Przebieg</dt>
+                <dd>{{ b.przebieg }}</dd>
+              </div>
+            }
+          </dl>
+          <!-- Gołe href="#zgloszenie" rozwiązuje się względem <base href="/">
+               i wyrzuca na stronę główną. Fragment musi przejść przez router. -->
+          <a [routerLink]="[]" fragment="zgloszenie" class="btn btn--solid karta__cta">
+            Umów się na rozmowę
+          </a>
+          <a href="tel:+48786086331" class="mono karta__tel">tel · 786 086 331</a>
+        </div>
+      </aside>
+
+      <div class="badanie__main">
+        <span class="eyebrow">{{ b.dziedzina }} · {{ b.miasto }}</span>
+
+        @if (b.kryteria?.length) {
+          <div class="kwalifikacja">
+            <h2 class="kwalifikacja__title">Sprawdź, czy się kwalifikujesz</h2>
+            <ul class="kwalifikacja__lista">
+              @for (k of b.kryteria; track k) {
+                <li class="kwalifikacja__pozycja">
+                  <span class="kwalifikacja__znak" aria-hidden="true"></span>
+                  <span class="kwalifikacja__tresc">{{ k }}</span>
+                </li>
+              }
+            </ul>
+            <p class="kwalifikacja__nota">
+              Wszystkie punkty muszą być spełnione jednocześnie. To wstępna kwalifikacja — ostateczną
+              decyzję podejmuje lekarz badacz podczas wizyty w ośrodku. Udział jest dobrowolny i
+              można z niego zrezygnować na każdym etapie.
+            </p>
+          </div>
+        }
+
+        @if (b.korzysci?.length) {
+          <div class="blok">
+            <h2>Co zapewnia udział</h2>
+            <ul class="blok__lista">
+              @for (k of b.korzysci; track k) {
+                <li>{{ k }}</li>
+              }
+            </ul>
+          </div>
+        }
+
+        <p class="badanie__powrot">
+          <a routerLink="/badania-kliniczne">← Wszystkie badania kliniczne</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- is-visible od razu: to cel kotwicy, a skok wyprzedza scroll-reveal
+       i użytkownik lądował na sekcji z opacity: 0, czyli na pustym ekranie. -->
+  <section
+    class="section section--cream is-visible zgloszenie"
+    id="zgloszenie"
+    aria-labelledby="zgloszenie-h"
+  >
+    <div class="container zgloszenie__layout">
+      <div class="zgloszenie__intro">
+        <span class="eyebrow">Zgłoszenie</span>
+        <h2 id="zgloszenie-h">Umów się na rozmowę kwalifikacyjną</h2>
+        <p>
+          Zostaw kontakt, a koordynator badania oddzwoni, przeprowadzi wstępną kwalifikację przez
+          telefon i wyjaśni zasady udziału. Rozmowa nie zobowiązuje do niczego.
+        </p>
+        <p class="zgloszenie__badanie">
+          <span class="mono">Badanie</span>
+          {{ b.jednostka }} · {{ b.miasto }}
+        </p>
+      </div>
+
+      <app-zgloszenie-form [study]="b" />
+    </div>
+  </section>
+}

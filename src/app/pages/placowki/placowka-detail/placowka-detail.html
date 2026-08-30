@@ -64,6 +64,24 @@
     </div>
   </section>
 
+  @if (p.wyposazenie?.length) {
+    <section class="section section--tint" aria-labelledby="wyp-h">
+      <div class="container">
+        <span class="eyebrow">Pracownia Endoskopii</span>
+        <h2 id="wyp-h">Sprzęt w tej placówce</h2>
+        <ul class="wyposazenie">
+          @for (w of p.wyposazenie; track w.nazwa) {
+            <li>
+              <h3>{{ w.nazwa }}</h3>
+              <p>{{ w.opis }}</p>
+            </li>
+          }
+        </ul>
+        <a routerLink="/pracownia-endoskopii" class="btn btn--ghost">Pracownia Endoskopii</a>
+      </div>
+    </section>
+  }
+
   @if (badania().length) {
     <section class="section section--tint" aria-labelledby="bad-h">
       <div class="container">

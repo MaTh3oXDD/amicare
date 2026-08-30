@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { Seo } from '../../../services/seo';
 import { CennikPanel } from '../../../components/cennik-panel/cennik-panel';
 import { PageHero } from '../../../components/page-hero/page-hero';
+import { schematZabiegu } from '../../../utils/schema-zabieg';
 
 @Component({
   selector: 'app-gastroskopia-z-analgosedacja',
@@ -17,14 +18,38 @@ export class GastroskopiaZAnalgosedacja implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.seo.set({
-      title: 'Gastroskopia w analgosedacji - Pracownia Endoskopii AmiCare Łódź',
+      title: 'Gastroskopia w znieczuleniu analgosedacji - Pracownia Endoskopii AmiCare Łódź',
       description:
-        'Gastroskopia w analgosedacji w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego w znieczuleniu dożylnym. Przygotowanie, cennik i rezerwacja wizyty.',
-      path: '/pracownia-endoskopii/gastroskopia-z-analgosedacja/',
+        'Gastroskopia w znieczuleniu analgosedacji w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego w znieczuleniu dożylnym. Przygotowanie, cennik i rezerwacja wizyty.',
+      path: '/pracownia-endoskopii/gastroskopia-z-analgosedacja',
     });
+
+    this.seo.setBreadcrumbs([
+      { nazwa: 'Pracownia endoskopii', sciezka: '/pracownia-endoskopii' },
+      { nazwa: 'Gastroskopia w znieczuleniu analgosedacji', sciezka: '/pracownia-endoskopii/gastroskopia-z-analgosedacja' },
+    ]);
+
+    this.seo.setJsonLd(
+      'ld-zabieg',
+      schematZabiegu({
+        nazwa: 'Gastroskopia w znieczuleniu analgosedacji',
+        opis:
+          'Gastroskopia w znieczuleniu analgosedacji w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego w znieczuleniu dożylnym. Przygotowanie, cennik i rezerwacja wizyty.',
+        sciezka: '/pracownia-endoskopii/gastroskopia-z-analgosedacja',
+        czescCiala: 'górny odcinek przewodu pokarmowego',
+        cena: 900,
+        przygotowanie:
+          'Pozostanie na czczo przed znieczuleniem, według zaleceń przekazanych przy rejestracji.',
+      }),
+    );
+
   }
 
   ngAfterViewInit(): void {
+    /* Prerender wykonuje ngAfterViewInit na serwerze, gdzie nie ma IntersectionObserver.
+       Podświetlanie spisu treści to warstwa interakcji - dokłada się po hydracji. */
+    if (typeof IntersectionObserver === 'undefined') return;
+
     const root: HTMLElement = this.host.nativeElement;
     const entries = Array.from(root.querySelectorAll('.dossier__entry[id]')) as HTMLElement[];
     const links = new Map(

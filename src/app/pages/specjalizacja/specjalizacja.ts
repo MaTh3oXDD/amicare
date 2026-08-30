@@ -51,8 +51,13 @@ export class Specjalizacja {
       this.seo.set({
         title: `${s.nazwa} Łódź - Konsultacje | AmiCare Centrum Medyczne`,
         description: `${s.nazwa} w Łodzi - AmiCare Centrum Medyczne. ${s.opis[0]}`.slice(0, 160),
-        path: `/konsultacje-specjalistyczne/${s.slug}/`,
+        path: `/konsultacje-specjalistyczne/${s.slug}`,
       });
+
+      this.seo.setBreadcrumbs([
+        { nazwa: 'Konsultacje specjalistyczne', sciezka: '/konsultacje-specjalistyczne' },
+        { nazwa: s.nazwa, sciezka: `/konsultacje-specjalistyczne/${s.slug}` },
+      ]);
       this.seo.setJsonLd('ld-specjalizacja', {
         '@context': 'https://schema.org',
         '@type': 'MedicalClinic',

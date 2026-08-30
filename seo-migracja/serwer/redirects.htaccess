@@ -1,0 +1,208 @@
+# Wygenerowane przez scripts/redirects.mjs
+# Źródło: seo-migracja/stare-urls.txt (181 adresów ze starej sitemapy)
+# Nie edytuj ręcznie - popraw REGULY w skrypcie i uruchom go ponownie.
+
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# RewriteRule, nie RedirectMatch: mod_rewrite wykonuje sie przed mod_alias,
+# wiec tylko tak stare adresy lapia 301 przed obcieciem ukosnika.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteRule ^sitemap_index\.xml$ /sitemap.xml [R=301,L]
+  RewriteRule ^wp-(content|includes|admin)/ - [G,L]
+  RewriteRule ^(wp-login\.php|xmlrpc\.php)$ - [G,L]
+
+  RewriteRule ^amicare/amicare-specjalizacje-kompleksowe-badania-i-opieka-zdrowotna/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/?$ /badania-diagnostyczne [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/badanie-ekg/?$ /badania-diagnostyczne/badanie-ekg [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/badanie-holtera/?$ /badania-diagnostyczne/badanie-holtera [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/badanie-usg/?$ /badania-diagnostyczne/badanie-usg [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/diagnostyka-bolu-brzucha/?$ /badania-diagnostyczne/diagnostyka-bolu-brzucha [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/gastroskopia/?$ /pracownia-endoskopii/gastroskopia [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/kolonoskopia/?$ /pracownia-endoskopii/kolonoskopia [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/leczenie-biologiczne/?$ /badania-diagnostyczne/leczenie-biologiczne [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/pobranie-krwi/?$ /badania-diagnostyczne/pobranie-krwi [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/pomiar-masy-ciala/?$ /badania-diagnostyczne/pomiar-masy-ciala [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/pomiar-tetna-i-cisnienia/?$ /badania-diagnostyczne/pomiar-tetna-i-cisnienia [R=301,L]
+  RewriteRule ^amicare/badania-diagnostyczne/spirometria/?$ /badania-diagnostyczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/czy-udzial-w-badaniach-klinicznych-jest-bezpieczny/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/i-faza-badan-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/ii-faza-badan-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/iii-faza-badan-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/informacje-o-badaniach-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/iv-faza-badan-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/dlaczego-badania-kliniczne-sa-wazne/kto-moze-brac-udzial-w-badaniach-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/jelenia-gora/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/jelenia-gora/gastroenterologia-jelenia-gora/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/jelenia-gora/gastroenterologia-jelenia-gora/jednostka-chorobowa-wrzodziejace-zapalenie-jelita-grubego-jg/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/jelenia-gora/gastroenterologia-jelenia-gora/jelenia-gora-formularz-kwalifikacyjny-do-leczenia-choroby-lesniowskiego-crohna/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/dermatologia/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/dermatologia/jednostka-chorobowa-swierzbiaczka-guzkowata-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/dermatologia/jednostka-chorobowa-tradzik-odwrocony-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/diabetologia/jednostka-chorobowa-stan-przedcukrzycowy-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/gastroenterologia-lodz/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/gastroenterologia-lodz/jednostka-chorobowa-badania-watrobowe-stluszczenie-watroby-ogolnie-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/gastroenterologia-lodz/jednostka-chorobowa-choroba-lesniowskiego-crohna-crohna-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/gastroenterologia-lodz/jednostka-chorobowa-gastropareza-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/gastroenterologia-lodz/jednostka-chorobowa-wrzodziejace-zapalenie-jelita-grubego-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/neurologia-lodz/jednostka-chorobowa-miastenia-gravis-u-dzieci-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/pulmonologia/jednostka-chorobowa-pochp-l/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/badania-kliniczne/obecnie-prowadzone-badania-kliniczne/lodz/urologia/jednostka-chorobowa-popromienne-zapalenie-pecherza/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^amicare/swiatowy-dzien-bez-tytoniu/?$ - [G,L]
+  RewriteRule ^amicare/uslugi-swiadczone-dla-grupy-luxmed/?$ /o-nas/wspolpracujemy [R=301,L]
+  RewriteRule ^amicare/uslugi-swiadczone-dla-grupy-polmed/?$ /o-nas/wspolpracujemy [R=301,L]
+  RewriteRule ^dziekujemy-za-wiadomosc/?$ /kontakt [R=301,L]
+  RewriteRule ^dziekujemy-za-zgloszenie/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/about-clinical-trials/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/about-us/?$ /o-nas [R=301,L]
+  RewriteRule ^en/clinical-trials-currently-in-progress-and-eligibility-surveys/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/contact-us/?$ /kontakt [R=301,L]
+  RewriteRule ^en/home-2/?$ / [R=301,L]
+  RewriteRule ^en/home/?$ / [R=301,L]
+  RewriteRule ^en/im-a-patient/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/acromegaly/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/ankylosing-spondylitis-as/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/atopic-dermatitis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/crohns-disease/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/depressive-disorder/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/diabetes/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/epilepsy/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/multiple-sclerosis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/myasthenia-gravis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/non-alcoholic-fatty-liver-disease/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/psoriasis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/psoriatic-arthritis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/resistant-hypertension/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/rheumatoid-arthritis-ra/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/spondyloarthritis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/systemic-lupus-erythematosus/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/ulcerative-colitis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^en/im-a-patient/what-diseases-do-we-study/urticaria/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^etapy-badan-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/akromegalia/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/atopowe-zapalenie-skory/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/choroba-lesnikowskiego-crohna/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/cukrzyca/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/depresja/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/luszczyca/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/luszczycowe-zapalenie-stawow/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/miastenia-gravis/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/nadcisnienie-tetnicze-oporne/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/niealkoholowa-stluszczeniowa-choroba-watroby/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/osiowa-spondyloartropatia/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/padaczka-epilepsja/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/pokrzywka/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/reumatoidalne-zapalenie-stawow/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/stwardnienie-rozsiane/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/toczen-rumieniowaty-skorny-ukladowy/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/wrzodziejace-zapalenie-jelita-grubego/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/co-oferujemy/zesztywniajace-zapalenie-stawow-kregoslupa-zzsk/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/dr-n-med-adam-rafal-poliwczak/?$ /o-nas/zespol/dr-n-med-adam-rafal-poliwczak [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/dr-n-med-dariusz-krzyczmanik/?$ /o-nas/zespol/dr-n-med-dariusz-krzyczmanik [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/dr-n-med-hubert-zatorski/?$ /o-nas/zespol/dr-n-med-hubert-zatorski [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/dr-n-med-i-n-o-zdr-danuta-domzal-magrowska/?$ /o-nas/zespol/dr-n-med-i-n-o-zdr-danuta-domzal-magrowska [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/dr-n-med-krzysztof-grzegorczyk/?$ /o-nas/zespol/dr-n-med-krzysztof-grzegorczyk [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/dr-n-med-milena-padysz/?$ /o-nas/zespol/dr-n-med-milena-padysz [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/gabinet-gastroenterologiczny/?$ /konsultacje-specjalistyczne/gastroenterologia [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/lek-julia-banasik/?$ /o-nas/zespol/lek-julia-banasik [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/lek-lukasz-spadlinski/?$ /o-nas/zespol/lek-lukasz-spadlinski [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/lek-magdalena-baranska/?$ /o-nas/zespol/lek-magdalena-baranska [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/lek-michal-stasiak/?$ /o-nas/zespol/lek-michal-stasiak [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/mgr-paulina-kruk-dietetyczka/?$ /konsultacje-specjalistyczne/dietetyka [R=301,L]
+  RewriteRule ^jestem-pacjentem/gabinety-prywatne/oliwia-scigalska-dietetyczka/?$ /konsultacje-specjalistyczne/dietetyka [R=301,L]
+  # /konsultacje-specjalistyczne/ -> /konsultacje-specjalistyczne (obsluguje ogolna regula obcinajaca ukosnik)
+  # /konsultacje-specjalistyczne/psychologia/ -> /konsultacje-specjalistyczne/psychologia (obsluguje ogolna regula obcinajaca ukosnik)
+  RewriteRule ^konsultacje-specjalistyczne/psychologia/diagnoza-psychologiczna/?$ /konsultacje-specjalistyczne/psychologia [R=301,L]
+  RewriteRule ^konsultacje-specjalistyczne/psychologia/oferta/?$ /konsultacje-specjalistyczne/psychologia [R=301,L]
+  RewriteRule ^konsultacje-specjalistyczne/psychologia/tus/?$ /konsultacje-specjalistyczne/psychologia [R=301,L]
+  # /kontakt/ -> /kontakt (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/ -> /o-nas (obsluguje ogolna regula obcinajaca ukosnik)
+  RewriteRule ^o-nas/gratulacje-dla-glownego-badacza-i-calego-zespolu/?$ /o-nas [R=301,L]
+  # /o-nas/zespol/ -> /o-nas/zespol (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dominika-buczynska/ -> /o-nas/zespol/dominika-buczynska (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-hab-n-med-mariola-swiderek-matysiak/ -> /o-nas/zespol/dr-hab-n-med-mariola-swiderek-matysiak (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-joanna-kowalska-majka/ -> /o-nas/zespol/dr-joanna-kowalska-majka (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-karolina-niczyporuk/ -> /o-nas/zespol/dr-karolina-niczyporuk (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-katarzyna-przybylowska-kustosik/ -> /o-nas/zespol/dr-katarzyna-przybylowska-kustosik (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-n-med-agnieszka-bala/ -> /o-nas/zespol/dr-n-med-agnieszka-bala (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-n-med-aleksandra-bala-wojsznis/ -> /o-nas/zespol/dr-n-med-aleksandra-bala-wojsznis (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-n-med-dorota-czech/ -> /o-nas/zespol/dr-n-med-dorota-czech (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-n-med-izabela-kubinska/ -> /o-nas/zespol/dr-n-med-izabela-kubinska (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-n-med-jacek-przybyla/ -> /o-nas/zespol/dr-n-med-jacek-przybyla (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-n-med-lukasz-przyslo/ -> /o-nas/zespol/dr-n-med-lukasz-przyslo (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/dr-n-med-natalia-zawada-kornalewicz/ -> /o-nas/zespol/dr-n-med-natalia-zawada-kornalewicz (obsluguje ogolna regula obcinajaca ukosnik)
+  RewriteRule ^o-nas/zespol/kadra-zarzadzajaca/?$ /o-nas/zespol [R=301,L]
+  RewriteRule ^o-nas/zespol/kadra-zarzadzajaca/adam-juszczak/?$ /o-nas/zespol/adam-juszczak [R=301,L]
+  RewriteRule ^o-nas/zespol/kadra-zarzadzajaca/anna-gora/?$ /o-nas/zespol/anna-gora [R=301,L]
+  RewriteRule ^o-nas/zespol/kadra-zarzadzajaca/jakub-majka/?$ /o-nas/zespol/jakub-majka [R=301,L]
+  RewriteRule ^o-nas/zespol/kadra-zarzadzajaca/marlena-serwacinska/?$ /o-nas/zespol/marlena-serwacinska [R=301,L]
+  RewriteRule ^o-nas/zespol/kadra-zarzadzajaca/michal-bytomski/?$ /o-nas/zespol/michal-bytomski [R=301,L]
+  RewriteRule ^o-nas/zespol/koordynatorzy/?$ /o-nas/zespol [R=301,L]
+  RewriteRule ^o-nas/zespol/koordynatorzy/dorota-sobczyk-clapa/?$ /o-nas/zespol/dorota-sobczyk-clapa [R=301,L]
+  RewriteRule ^o-nas/zespol/koordynatorzy/karolina-szczesniak/?$ /o-nas/zespol/karolina-szczesniak [R=301,L]
+  RewriteRule ^o-nas/zespol/koordynatorzy/maria-smul/?$ /o-nas/zespol/maria-smul [R=301,L]
+  # /o-nas/zespol/lek-karolina-kabot/ -> /o-nas/zespol/lek-karolina-kabot (obsluguje ogolna regula obcinajaca ukosnik)
+  # /o-nas/zespol/lek-leszek-weber/ -> /o-nas/zespol/lek-leszek-weber (obsluguje ogolna regula obcinajaca ukosnik)
+  RewriteRule ^o-nas/zespol/pielegniarki/?$ /o-nas/zespol [R=301,L]
+  RewriteRule ^o-nas/zespol/pielegniarki/angelika-jurkiewicz/?$ /o-nas/zespol/angelika-jurkiewicz [R=301,L]
+  RewriteRule ^o-nas/zespol/pielegniarki/barbara-estal/?$ /o-nas/zespol [R=301,L]
+  RewriteRule ^o-nas/zespol/pielegniarki/martyna-janczak/?$ /o-nas/zespol [R=301,L]
+  RewriteRule ^o-nas/zespol/pielegniarki/miroslawa-kazmierczak/?$ /o-nas/zespol [R=301,L]
+  # /o-nas/zespol/prof-dr-hab-n-med-joanna-jerzynska/ -> /o-nas/zespol/prof-dr-hab-n-med-joanna-jerzynska (obsluguje ogolna regula obcinajaca ukosnik)
+  RewriteRule ^o-nas/zespol/zespol-pielegniarski/?$ /o-nas/zespol [R=301,L]
+  RewriteRule ^o-nas/zespol/zespol-pielegniarski/angelika-jurkiewicz/?$ /o-nas/zespol/angelika-jurkiewicz [R=301,L]
+  RewriteRule ^o-nas/zespol/zespol-pielegniarski/hubert-sadowski/?$ /o-nas/zespol/hubert-sadowski [R=301,L]
+  RewriteRule ^oferta/?$ /konsultacje-specjalistyczne [R=301,L]
+  # /pracownia-endoskopii/ -> /pracownia-endoskopii (obsluguje ogolna regula obcinajaca ukosnik)
+  RewriteRule ^prawa-pacjenta-w-badaniach-klinicznych/?$ /badania-kliniczne [R=301,L]
+  RewriteRule ^specjalizacja/alergologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/anestezjologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/chirurgia/?$ /konsultacje-specjalistyczne/chirurgia [R=301,L]
+  RewriteRule ^specjalizacja/choroby-wewnetrzne/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/choroby-zakazne/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/dermatologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/diabetologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/dietetyka/?$ /konsultacje-specjalistyczne/dietetyka [R=301,L]
+  RewriteRule ^specjalizacja/endokrynologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/epileptologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/farmakologia-kliniczna/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/gastroenterologia-pl/?$ /konsultacje-specjalistyczne/gastroenterologia [R=301,L]
+  RewriteRule ^specjalizacja/kardiologia/?$ /konsultacje-specjalistyczne/kardiologia [R=301,L]
+  RewriteRule ^specjalizacja/laryngologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/neurologia-dziecieca/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/neurologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/onkologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/pediatria/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/poz/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/proktologia/?$ /konsultacje-specjalistyczne/proktologia [R=301,L]
+  RewriteRule ^specjalizacja/psychiatria/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/psychologia/?$ /konsultacje-specjalistyczne/psychologia [R=301,L]
+  RewriteRule ^specjalizacja/reumatologia/?$ /konsultacje-specjalistyczne/reumatologia [R=301,L]
+  RewriteRule ^specjalizacja/urologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^specjalizacja/wenerologia/?$ /konsultacje-specjalistyczne [R=301,L]
+  RewriteRule ^sponsorzy/?$ /wspolpraca [R=301,L]
+  RewriteRule ^wp_jac_slide/slide-01/?$ - [G,L]
+  RewriteRule ^wp_jac_slide/slide-02/?$ - [G,L]
+  # /wspolpraca/ -> /wspolpraca (obsluguje ogolna regula obcinajaca ukosnik)
+  RewriteRule ^wspolpracujemy/?$ /o-nas/wspolpracujemy [R=301,L]
+
+  # Jedna konwencja adresu: bez ukosnika na koncu, zgodnie z canonicalem.
+  # Na samym koncu - wczesniej obcielaby ukosnik starym adresom przed ich regulami.
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+</IfModule>

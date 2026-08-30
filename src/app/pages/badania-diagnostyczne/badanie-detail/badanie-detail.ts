@@ -42,8 +42,13 @@ export class BadanieDetail {
       this.seo.set({
         title: `${b.nazwa} - Badania diagnostyczne | AmiCare Centrum Medyczne`,
         description: `${b.nazwa} w AmiCare Łódź. ${b.lead}`.slice(0, 160),
-        path: `/badania-diagnostyczne/${b.slug}/`,
+        path: `/badania-diagnostyczne/${b.slug}`,
       });
+
+      this.seo.setBreadcrumbs([
+        { nazwa: 'Badania diagnostyczne', sciezka: '/badania-diagnostyczne' },
+        { nazwa: b.nazwa, sciezka: `/badania-diagnostyczne/${b.slug}` },
+      ]);
     });
   }
 }

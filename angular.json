@@ -30,13 +30,16 @@
                 "ignore": [
                   "amicare-zrodla-foto/**",
                   "amicare-zrodla-foto-webp/**",
-                  "Bez tytułu.png"
+                  "Bez tytułu.png",
+                  "images/graphify-out/**"
                 ]
               }
             ],
             "styles": [
               "src/styles.scss"
-            ]
+            ],
+            "server": "src/main.server.ts",
+            "outputMode": "static"
           },
           "configurations": {
             "production": {
@@ -92,7 +95,11 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "ignore": [
+                  "Bez tytułu.png",
+                  "images/graphify-out/**"
+                ]
               }
             ],
             "styles": [

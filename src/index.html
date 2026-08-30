@@ -15,13 +15,18 @@
   <meta property="og:image" content="https://amicare.pl/images/centrum-020.webp">
   <meta property="og:title" content="AmiCare Łódź - Centrum Medyczne i Badania Kliniczne">
   <meta property="og:description" content="AmiCare Łódź - centrum medyczne z dwiema przychodniami (ul. Romanowska 55N i ul. Zgierska 249). Konsultacje specjalistyczne, badania kliniczne, endoskopia i diagnostyka w jednym miejscu.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://amicare.pl/images/centrum-020.webp">
+  <meta name="theme-color" content="#1d3f78">
+  <link rel="canonical" href="https://amicare.pl/">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="images/slogan.svg">
   <link rel="apple-touch-icon" href="images/slogan.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- Fonty z wlasnej domeny (src/fonts.scss). Preload dwoch krojow uzytych
+       nad linia zalamania: tresc i naglowki. Reszta doczytuje sie normalnie. -->
+  <link rel="preload" href="fonts/archivo-400-600-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/source-serif-4-400-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 <body>
   <app-root></app-root>

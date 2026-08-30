@@ -3,6 +3,7 @@ import { DOCUMENT } from '@angular/common';
 import { Router, RouterLink } from '@angular/router';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { Seo } from '../../../services/seo';
+import { slugify } from '../../../utils/slug';
 import { Doctor, KADRA, KOORDYNATORZY, LEKARZE, PIELEGNIARKI } from '../../../models/doctor';
 import { BIOGRAMY } from '../models/biogramy';
 
@@ -73,7 +74,7 @@ export class ZespolDetail implements OnInit {
   protected readonly doctor = computed<Doctor | undefined>(() => {
     const s = this.slug();
     const all = [...LEKARZE, ...KADRA, ...KOORDYNATORZY, ...PIELEGNIARKI];
-    return all.find((d) => d.name.toLowerCase().replace(/\s+/g, '-') === s);
+    return all.find((d) => slugify(d.name) === s);
   });
 
   protected readonly znanyLekarzSlug = computed<string | undefined>(() => {
@@ -103,19 +104,34 @@ export class ZespolDetail implements OnInit {
           0,
           160,
         ),
-        path: `/o-nas/zespol/${this.slug()}/`,
+        path: `/o-nas/zespol/${this.slug()}`,
+        image: d.photo,
       });
+
+      this.seo.setBreadcrumbs([
+        { nazwa: 'O nas', sciezka: '/o-nas' },
+        { nazwa: 'Zespół', sciezka: '/o-nas/zespol' },
+        { nazwa: d.name, sciezka: `/o-nas/zespol/${this.slug()}` },
+      ]);
       this.seo.setJsonLd('ld-physician', {
         '@context': 'https://schema.org',
         '@type': 'Physician',
         name: d.name,
-        medicalSpecialty: d.title,
+        jobTitle: d.title,
+        url: `https://amicare.pl/o-nas/zespol/${this.slug()}`,
+        ...(d.photo ? { image: `https://amicare.pl/${d.photo}` } : {}),
+        ...(d.znanyLekarz ? { sameAs: [d.znanyLekarz] } : {}),
+        ...(d.bio ? { description: d.bio } : {}),
         worksFor: {
           '@type': 'MedicalOrganization',
           name: 'AmiCare Centrum Medyczne',
           url: 'https://amicare.pl/',
         },
         address: { '@type': 'PostalAddress', addressLocality: 'Łódź', addressCountry: 'PL' },
+        availableService: {
+          '@type': 'MedicalTherapy',
+          name: d.title,
+        },
       });
 
       if (d.znanyLekarz) {

@@ -16,7 +16,7 @@ export class RegulaminPlatnosci implements OnInit {
       title: 'Regulamin płatności online - AmiCare Centrum Medyczne Łódź',
       description:
         'Regulamin płatności online i warunki transakcji w AmiCare Centrum Medyczne w Łodzi.',
-      path: '/regulamin-platnosci/',
+      path: '/regulamin-platnosci',
     });
   }
 }

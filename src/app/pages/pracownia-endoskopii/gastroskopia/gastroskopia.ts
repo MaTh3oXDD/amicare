@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { Seo } from '../../../services/seo';
 import { CennikPanel } from '../../../components/cennik-panel/cennik-panel';
 import { PageHero } from '../../../components/page-hero/page-hero';
+import { schematZabiegu } from '../../../utils/schema-zabieg';
 
 @Component({
   selector: 'app-gastroskopia',
@@ -20,11 +21,33 @@ export class Gastroskopia implements OnInit, AfterViewInit {
       title: 'Gastroskopia - Pracownia Endoskopii AmiCare Łódź',
       description:
         'Gastroskopia w znieczuleniu miejscowym w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego. Przygotowanie, cennik i rezerwacja wizyty.',
-      path: '/pracownia-endoskopii/gastroskopia/',
+      path: '/pracownia-endoskopii/gastroskopia',
     });
+
+    this.seo.setBreadcrumbs([
+      { nazwa: 'Pracownia endoskopii', sciezka: '/pracownia-endoskopii' },
+      { nazwa: 'Gastroskopia', sciezka: '/pracownia-endoskopii/gastroskopia' },
+    ]);
+
+    this.seo.setJsonLd(
+      'ld-zabieg',
+      schematZabiegu({
+        nazwa: 'Gastroskopia',
+        opis:
+          'Gastroskopia w znieczuleniu miejscowym w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego. Przygotowanie, cennik i rezerwacja wizyty.',
+        sciezka: '/pracownia-endoskopii/gastroskopia',
+        czescCiala: 'górny odcinek przewodu pokarmowego',
+        cena: 550,
+      }),
+    );
+
   }
 
   ngAfterViewInit(): void {
+    /* Prerender wykonuje ngAfterViewInit na serwerze, gdzie nie ma IntersectionObserver.
+       Podświetlanie spisu treści to warstwa interakcji - dokłada się po hydracji. */
+    if (typeof IntersectionObserver === 'undefined') return;
+
     const root: HTMLElement = this.host.nativeElement;
     const entries = Array.from(root.querySelectorAll('.dossier__entry[id]')) as HTMLElement[];
     const links = new Map(

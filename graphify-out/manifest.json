@@ -1,12 +1,12 @@
 {
   "angular.json": {
-    "mtime": 1787577639.7625194,
-    "ast_hash": "005ecb09a47771782a2038d32be3f651",
+    "mtime": 1788020790.6469605,
+    "ast_hash": "67623e50700fc0a47de12fa209b5aa8a",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1787577666.0390732,
-    "ast_hash": "7240f0e5c22c4fe074212257a90414fe",
+    "mtime": 1788020667.1819324,
+    "ast_hash": "1a885ec292b398b58beabd3c33f10c64",
     "semantic_hash": ""
   },
   "src/app/app.config.ts": {
@@ -15,8 +15,8 @@
     "semantic_hash": ""
   },
   "src/app/app.routes.ts": {
-    "mtime": 1787574314.9447856,
-    "ast_hash": "8e407a2e8264384fb56a50ccf7fb67fc",
+    "mtime": 1788084204.361923,
+    "ast_hash": "62234f3355446993600e41971a848bf8",
     "semantic_hash": ""
   },
   "src/app/app.spec.ts": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/app/components/header/header.ts": {
-    "mtime": 1787574314.9468048,
-    "ast_hash": "b190b3ef3bd9dc8ca41147b47ff5aace",
+    "mtime": 1788012348.1741135,
+    "ast_hash": "6d4dce3701aa25da9d461a46275800c6",
     "semantic_hash": ""
   },
   "src/app/components/page-hero/page-hero.ts": {
@@ -60,28 +60,28 @@
     "semantic_hash": ""
   },
   "src/app/models/placowka.ts": {
-    "mtime": 1787567119.879,
-    "ast_hash": "38d133ad0878a0dc216887bfbcb0ab8a",
+    "mtime": 1788041883.9291155,
+    "ast_hash": "78912a8b1b6fed424be4a5e24e71915c",
     "semantic_hash": ""
   },
   "src/app/pages/badania-diagnostyczne/badania-diagnostyczne.ts": {
-    "mtime": 1787570570.258921,
-    "ast_hash": "3b02d09ac58bc049bbaa0e85313f2ac5",
+    "mtime": 1788043336.1446147,
+    "ast_hash": "24ecd536cd7bcaff5846729415cc3a33",
     "semantic_hash": ""
   },
   "src/app/pages/badania-kliniczne/badania-kliniczne.ts": {
-    "mtime": 1785947049.0796528,
-    "ast_hash": "32daa6cdc59e6848767675138d76a5b6",
+    "mtime": 1788084189.0927317,
+    "ast_hash": "2e54d2d3a6be2a945e7d71e87a548b29",
     "semantic_hash": ""
   },
   "src/app/pages/badania-kliniczne/components/study-card/study-card.ts": {
-    "mtime": 1784484277.2544253,
-    "ast_hash": "31109122d9aa8a1eb6330cef428df42b",
+    "mtime": 1788084640.5460112,
+    "ast_hash": "2b5a88dd69e9b50b4c42843190d110b7",
     "semantic_hash": ""
   },
   "src/app/pages/badania-kliniczne/models/study.ts": {
-    "mtime": 1787568592.386009,
-    "ast_hash": "26323a3008b7fd39751924cead392cb1",
+    "mtime": 1788084029.8031297,
+    "ast_hash": "17a6532f940d3b813d49f0ca6c677456",
     "semantic_hash": ""
   },
   "src/app/pages/home/components/aktualnosci/aktualnosci.ts": {
@@ -95,8 +95,8 @@
     "semantic_hash": ""
   },
   "src/app/pages/konsultacje/konsultacje.ts": {
-    "mtime": 1785526760.9366846,
-    "ast_hash": "66bb343bd3f51b79a4ff1c0c951700ae",
+    "mtime": 1788012145.2120347,
+    "ast_hash": "41454034463c3ea3a6addf1907d56925",
     "semantic_hash": ""
   },
   "src/app/pages/kontakt/components/formularz-kontaktowy/formularz-kontaktowy.ts": {
@@ -105,43 +105,43 @@
     "semantic_hash": ""
   },
   "src/app/pages/kontakt/kontakt.ts": {
-    "mtime": 1785526760.9396856,
-    "ast_hash": "7685de4788482d6351e36392563f71bc",
+    "mtime": 1788012145.2120347,
+    "ast_hash": "ec23db0f739336e398b4c61caa9a97b8",
     "semantic_hash": ""
   },
   "src/app/pages/o-nas/o-nas.ts": {
-    "mtime": 1785526760.9416838,
-    "ast_hash": "4e38c75dd80c5d9513cb58096294d251",
+    "mtime": 1788012145.2130365,
+    "ast_hash": "ce35a09235484ad58dab9bd4090e870a",
     "semantic_hash": ""
   },
   "src/app/pages/placowki/placowka-detail/placowka-detail.ts": {
-    "mtime": 1785526760.9436848,
-    "ast_hash": "8239cb6df414f44e2b5e71b1a974a76c",
+    "mtime": 1788020663.2080083,
+    "ast_hash": "62890f8a4d2dbc8bc98deff9e5275cbe",
     "semantic_hash": ""
   },
   "src/app/pages/placowki/placowki.ts": {
-    "mtime": 1785606075.5515625,
-    "ast_hash": "c9810eff096ac728a34a284e3dcef139",
+    "mtime": 1788012145.2140384,
+    "ast_hash": "5753e1e139af2fc0ad613605c8bdf474",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/pracownia-endoskopii.ts": {
-    "mtime": 1785945918.1896853,
-    "ast_hash": "af896b722b7e3c864fbe9e26fa261dbf",
+    "mtime": 1788012145.2170343,
+    "ast_hash": "15474c5d7ca6252cccaf7265e51454dd",
     "semantic_hash": ""
   },
   "src/app/pages/specjalizacja/models/specjalizacja-data.ts": {
-    "mtime": 1787577061.5617385,
-    "ast_hash": "76512c7124c72c9aafd9e8128e261d58",
+    "mtime": 1788041980.4592652,
+    "ast_hash": "27a2eccbd99ee4ee3d72d8cd10cc1974",
     "semantic_hash": ""
   },
   "src/app/pages/specjalizacja/specjalizacja.ts": {
-    "mtime": 1786305014.9803016,
-    "ast_hash": "93a2117a8efe32d8e2e6f9edcc086630",
+    "mtime": 1788013338.5272715,
+    "ast_hash": "3e80c5efcce79e9e5209e5edaa9edfdb",
     "semantic_hash": ""
   },
   "src/app/pages/wspolpraca/wspolpraca.ts": {
-    "mtime": 1785526760.9606884,
-    "ast_hash": "0ec61125e652dd87d5f810b3cc69eced",
+    "mtime": 1788012145.2250404,
+    "ast_hash": "2fd967fab96b52743a7a5c1f68a01862",
     "semantic_hash": ""
   },
   "src/app/pages/zespol/components/biogram-dialog/biogram-dialog.ts": {
@@ -155,14 +155,14 @@
     "semantic_hash": ""
   },
   "src/app/pages/zespol/zespol.ts": {
-    "mtime": 1785526760.966688,
-    "ast_hash": "6c5b1b135c772b00f34cbcf89d308dfd",
+    "mtime": 1788012145.2260373,
+    "ast_hash": "aa1d70d9db7a4c1ff95d3bc08d78772b",
     "semantic_hash": ""
   },
   "src/app/services/seo.ts": {
-    "mtime": 1784403089.606111,
-    "ast_hash": "df840a4ce5d08a588670691162d09cc3",
-    "semantic_hash": "df840a4ce5d08a588670691162d09cc3"
+    "mtime": 1788013204.9911907,
+    "ast_hash": "a72ef9552f1e99a39fea49ef8ff0ed6e",
+    "semantic_hash": ""
   },
   "src/main.ts": {
     "mtime": 1784402860.1155732,
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "src/app/pages/polityka-prywatnosci/polityka-prywatnosci.ts": {
-    "mtime": 1785526760.9466836,
-    "ast_hash": "9f0c027f1f6bf8860f6786eac36d0876",
+    "mtime": 1788012145.216037,
+    "ast_hash": "8720c8d552d3e0ed8a8030e68a28dd98",
     "semantic_hash": ""
   },
   "README.md": {
@@ -200,8 +200,8 @@
     "semantic_hash": ""
   },
   "public/robots.txt": {
-    "mtime": 1784403485.4586995,
-    "ast_hash": "8cdbde72373ced8a9dc5586ee37165b9",
+    "mtime": 1788013493.091715,
+    "ast_hash": "a76f4effd063733d38ce047e381cb42c",
     "semantic_hash": ""
   },
   "src/app/app.html": {
@@ -210,8 +210,8 @@
     "semantic_hash": ""
   },
   "src/app/components/footer/footer.html": {
-    "mtime": 1787574314.9477944,
-    "ast_hash": "66dfabc49127f2a634c507836c36a8f7",
+    "mtime": 1788012348.175117,
+    "ast_hash": "61a3037e8153bb4db8348102a684ac0f",
     "semantic_hash": ""
   },
   "src/app/components/header/header.html": {
@@ -220,13 +220,13 @@
     "semantic_hash": ""
   },
   "src/app/pages/badania-diagnostyczne/badania-diagnostyczne.html": {
-    "mtime": 1787570604.9602394,
-    "ast_hash": "0edaa3cd47a2568f6111987a56a937a0",
+    "mtime": 1787680840.9113817,
+    "ast_hash": "5aa4233745bd57ef4f78cc45a13c2bde",
     "semantic_hash": ""
   },
   "src/app/pages/badania-kliniczne/badania-kliniczne.html": {
-    "mtime": 1787567119.884012,
-    "ast_hash": "f3be2883901e3b0d5a09829b573c5c12",
+    "mtime": 1788087274.6813612,
+    "ast_hash": "9aa94a41071c880c55f14a6c5d08f9cd",
     "semantic_hash": ""
   },
   "src/app/pages/home/components/aktualnosci/aktualnosci.html": {
@@ -250,18 +250,18 @@
     "semantic_hash": ""
   },
   "src/app/pages/kontakt/kontakt.html": {
-    "mtime": 1787567119.8891692,
-    "ast_hash": "88729c103e84c7edfb7751b8003f7b23",
+    "mtime": 1788022713.795241,
+    "ast_hash": "4f8f794119f7e42850b23247d1cbcda4",
     "semantic_hash": ""
   },
   "src/app/pages/o-nas/o-nas.html": {
-    "mtime": 1785945262.3326623,
-    "ast_hash": "10a001cff28f960b4c8cd9ec0f10e49b",
+    "mtime": 1788043793.1346421,
+    "ast_hash": "fdc5d3013751d4917e511ed270f5756e",
     "semantic_hash": ""
   },
   "src/app/pages/placowki/placowka-detail/placowka-detail.html": {
-    "mtime": 1785606724.285472,
-    "ast_hash": "8028d9e787ec029765ea823ca1be2b17",
+    "mtime": 1788041651.6709175,
+    "ast_hash": "1fb258d536742fc9d1e556657a62bd21",
     "semantic_hash": ""
   },
   "src/app/pages/placowki/placowki.html": {
@@ -270,8 +270,8 @@
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/pracownia-endoskopii.html": {
-    "mtime": 1787577061.5607364,
-    "ast_hash": "e9530505284d131e96fe630108c35f37",
+    "mtime": 1788042893.5771441,
+    "ast_hash": "e39cbf48a2fa4f600b21395bba8c7f24",
     "semantic_hash": ""
   },
   "src/app/pages/specjalizacja/specjalizacja.html": {
@@ -280,8 +280,8 @@
     "semantic_hash": ""
   },
   "src/app/pages/wspolpraca/wspolpraca.html": {
-    "mtime": 1787567119.8940256,
-    "ast_hash": "948a7f7feff931f5f7df00f82f4a0b30",
+    "mtime": 1788043793.1366475,
+    "ast_hash": "a6f2893ccb22bb63eb3f8ac45a520c53",
     "semantic_hash": ""
   },
   "src/app/pages/zespol/components/biogram-dialog/biogram-dialog.html": {
@@ -295,8 +295,8 @@
     "semantic_hash": ""
   },
   "src/index.html": {
-    "mtime": 1787567956.7212873,
-    "ast_hash": "2e774e4ea7b0704245d5e6d81456dadd",
+    "mtime": 1788022641.8410177,
+    "ast_hash": "2b12de41086cab8ca94c3659444494de",
     "semantic_hash": ""
   },
   "uwagi.txt": {
@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "public/images/amicare-bg.webp": {
-    "mtime": 1784402899.088207,
-    "ast_hash": "576546975aa4b6b480dfdf81e593d936",
+    "mtime": 1788022726.721398,
+    "ast_hash": "900c5974e81e5287e45a8d24a3b96fc2",
     "semantic_hash": ""
   },
   "public/images/badania/tradzik-odwrocony.webp": {
@@ -415,8 +415,8 @@
     "semantic_hash": ""
   },
   "src/app/pages/regulamin-platnosci/regulamin-platnosci.ts": {
-    "mtime": 1785526760.9556832,
-    "ast_hash": "46469da783068c5726ce53f6f4b88140",
+    "mtime": 1788012145.2240393,
+    "ast_hash": "e9d78d63540473edf83404a584266c1c",
     "semantic_hash": ""
   },
   "src/app/pages/polityka-prywatnosci/polityka-prywatnosci.html": {
@@ -430,8 +430,8 @@
     "semantic_hash": ""
   },
   "src/app/pages/zespol/zespol-detail/zespol-detail.ts": {
-    "mtime": 1785526760.9636827,
-    "ast_hash": "3601a954896ed71a29a221d1a6a8b3ba",
+    "mtime": 1788013338.5272715,
+    "ast_hash": "1cba340640f8f2a4ced643e49e97bf65",
     "semantic_hash": ""
   },
   "src/app/pages/zespol/zespol-detail/zespol-detail.html": {
@@ -445,23 +445,13 @@
     "semantic_hash": ""
   },
   "src/app/services/scroll-reveal.ts": {
-    "mtime": 1784486094.1695237,
-    "ast_hash": "afe756ae3cc4b7f7540036884fb5a328",
+    "mtime": 1788040672.8434155,
+    "ast_hash": "d5dce5a314d110891b09ee494a4e1e43",
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
     "mtime": 1785610693.5903938,
     "ast_hash": "e4b1307705acdf8b9d362296547fcf97",
-    "semantic_hash": ""
-  },
-  "src/app/pages/badania-kliniczne/components/zgloszenie-dialog/zgloszenie-dialog.ts": {
-    "mtime": 1787567473.2030768,
-    "ast_hash": "047c940a37f951654637aa6562271988",
-    "semantic_hash": ""
-  },
-  "src/app/pages/badania-kliniczne/components/zgloszenie-dialog/zgloszenie-dialog.html": {
-    "mtime": 1787567482.6469219,
-    "ast_hash": "8f56453e2cffece69e2eb7b42059a662",
     "semantic_hash": ""
   },
   "audyt.md": {
@@ -470,13 +460,13 @@
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/gastroskopia/gastroskopia.ts": {
-    "mtime": 1787574828.2449048,
-    "ast_hash": "d37f70f06d154050baa4329d63942c29",
+    "mtime": 1788020695.711989,
+    "ast_hash": "d88a5da4a7cacec5153db291f7c55120",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/kolonoskopia/kolonoskopia.ts": {
-    "mtime": 1787574828.2504601,
-    "ast_hash": "a86dc1ad9dd2521f2cb48d59b7edbcc4",
+    "mtime": 1788020683.6664965,
+    "ast_hash": "8daf3cf3288f22aa968d741789ce6730",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/gastroskopia/gastroskopia.html": {
@@ -510,8 +500,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/deploy-pages.yml": {
-    "mtime": 1786304829.6095011,
-    "ast_hash": "d135f9c11312388890923b54d1a58f59",
+    "mtime": 1787585444.4629226,
+    "ast_hash": "b97628323fd700c65c504591a905fced",
     "semantic_hash": ""
   },
   "src/amicare-slogan1.svg": {
@@ -525,18 +515,18 @@
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.ts": {
-    "mtime": 1787577061.5597346,
-    "ast_hash": "1247434713fe589d98cedb78cf7e2338",
+    "mtime": 1788041980.4542675,
+    "ast_hash": "fd949ff09eed537d69b930f78c7a9436",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.ts": {
-    "mtime": 1787574828.2504601,
-    "ast_hash": "9c9e0f30c99188ba915e741b6d992c83",
+    "mtime": 1788020695.7129908,
+    "ast_hash": "f36532a79a383e020dfa5c65ea9fc1c5",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.html": {
-    "mtime": 1787577061.5583172,
-    "ast_hash": "89ba0c84f979245081c41d3ceb80218a",
+    "mtime": 1788041980.5198843,
+    "ast_hash": "0aa9f07c722f4c9f7c3b3af51a44cd05",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.html": {
@@ -545,18 +535,18 @@
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.ts": {
-    "mtime": 1787574828.2589927,
-    "ast_hash": "8f89660db94205b2e1a68cda534f1857",
+    "mtime": 1788041980.4572742,
+    "ast_hash": "86302d2399a4bd3331f40daf792a2215",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne/kolonoskopia-znieczulenie-ogolne.ts": {
-    "mtime": 1787574828.2589927,
-    "ast_hash": "cb620d4f2ab0efff94f45f85f8579818",
+    "mtime": 1788020683.6675496,
+    "ast_hash": "83a50cbbccaee64de16628736ae5945d",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.html": {
-    "mtime": 1787574828.2504601,
-    "ast_hash": "4ad2dfeb684ae274209b1e5f44db048c",
+    "mtime": 1788041980.5218792,
+    "ast_hash": "b08c9d15b561d857ae1a6f0cfa739e0d",
     "semantic_hash": ""
   },
   "src/app/pages/pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne/kolonoskopia-znieczulenie-ogolne.html": {
@@ -585,13 +575,13 @@
     "semantic_hash": ""
   },
   "src/app/pages/badania-diagnostyczne/models/diagnostyka-data.ts": {
-    "mtime": 1787570570.260923,
-    "ast_hash": "473416eb6359606b8912b11d97203e38",
+    "mtime": 1788043336.1446147,
+    "ast_hash": "ca25a0937be351be63d7c09a68c9161d",
     "semantic_hash": ""
   },
   "src/app/pages/badania-diagnostyczne/badanie-detail/badanie-detail.ts": {
-    "mtime": 1785611850.3250587,
-    "ast_hash": "0d6c62877d673154650352230a602b26",
+    "mtime": 1788013338.5282757,
+    "ast_hash": "8fa85d96563114dc5f3076268f5138e5",
     "semantic_hash": ""
   },
   "src/app/pages/badania-diagnostyczne/badanie-detail/badanie-detail.html": {
@@ -625,7 +615,7 @@
     "semantic_hash": ""
   },
   "public/images/przychodnia/wejscie-parking.webp": {
-    "mtime": 1785945030.234,
+    "mtime": 1788020764.4773722,
     "ast_hash": "6a621c3c5f0bba436ca2cb7fa4e594e6",
     "semantic_hash": ""
   },
@@ -640,8 +630,8 @@
     "semantic_hash": ""
   },
   "src/app/components/entry-survey/entry-survey.ts": {
-    "mtime": 1787567456.0816863,
-    "ast_hash": "4b2f5afa9fdcf454a4694bacf2594de9",
+    "mtime": 1787680798.246941,
+    "ast_hash": "a21372c04b2d4a92576f8769e2f393f0",
     "semantic_hash": ""
   },
   "src/app/components/entry-survey/entry-survey.html": {
@@ -1365,8 +1355,8 @@
     "semantic_hash": ""
   },
   "server/server.js": {
-    "mtime": 1787568000.0632274,
-    "ast_hash": "e86545029ae5b610011b6e69f2867e36",
+    "mtime": 1788087268.507289,
+    "ast_hash": "54460e30de91db238c1aa020957279b4",
     "semantic_hash": ""
   },
   "src/app/services/formularze.ts": {
@@ -1485,18 +1475,18 @@
     "semantic_hash": ""
   },
   "src/app/directives/autolink-badania.ts": {
-    "mtime": 1787575026.8162134,
-    "ast_hash": "42c8a1a6f94406a169886dbbced930bc",
+    "mtime": 1788022937.9728224,
+    "ast_hash": "d921b7fadad9bea9badf5ead1e914427",
     "semantic_hash": ""
   },
   "src/app/pages/cennik/models/cennik-data.ts": {
-    "mtime": 1787577061.5573318,
-    "ast_hash": "61c76fa50376dfb6d2600de3d68ad35e",
+    "mtime": 1788041980.4462676,
+    "ast_hash": "1a36b1d3f75f560bc376874efc6a45f8",
     "semantic_hash": ""
   },
   "src/app/pages/cennik/cennik.ts": {
-    "mtime": 1787574257.7899554,
-    "ast_hash": "73c7e6d4b72ae88f29bbda43daa8002e",
+    "mtime": 1788012145.2100353,
+    "ast_hash": "9d232c42fb695aac449f6e6dd2ec15b5",
     "semantic_hash": ""
   },
   "src/app/pages/cennik/cennik.html": {
@@ -2317,6 +2307,181 @@
   "public/amicare-zrodla-foto-webp/zespolNowe/zuzia-chmielewska.webp": {
     "mtime": 1787577598.5962617,
     "ast_hash": "75386de94f9e8837419d89258ab25bdc",
+    "semantic_hash": ""
+  },
+  "scripts/pages-404.mjs": {
+    "mtime": 1788013204.9921947,
+    "ast_hash": "c338a672604dc9ece923728c8027b569",
+    "semantic_hash": ""
+  },
+  "seo-migracja/01-slabe-punkty.md": {
+    "mtime": 1788040831.2452042,
+    "ast_hash": "1d82b03d9449d43cdbe5f02933542f14",
+    "semantic_hash": ""
+  },
+  "seo-migracja/README.md": {
+    "mtime": 1788013792.959616,
+    "ast_hash": "317cc42e82d309b89dc0d6780321da0d",
+    "semantic_hash": ""
+  },
+  "seo-migracja/02-mapa-przekierowan.md": {
+    "mtime": 1788013792.9513304,
+    "ast_hash": "6b2499e845d467e870351f1b80a57c85",
+    "semantic_hash": ""
+  },
+  "seo-migracja/03-plan-dzialan.md": {
+    "mtime": 1788013792.9556775,
+    "ast_hash": "2e2bf2612e31c185f82fc5d6dfa52163",
+    "semantic_hash": ""
+  },
+  "src/app/utils/slug.ts": {
+    "mtime": 1788012133.0017257,
+    "ast_hash": "e1820557bf917a04fc4fa0978b4cb162",
+    "semantic_hash": ""
+  },
+  "seo-migracja/stare-urls.txt": {
+    "mtime": 1788009288.5824714,
+    "ast_hash": "266e9f3027cbc88b96263baff435ee5b",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpracujemy/models/partnerzy.ts": {
+    "mtime": 1788039121.568854,
+    "ast_hash": "1f251d3f9fce3857218b46f3828347f5",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpracujemy/wspolpracujemy.ts": {
+    "mtime": 1788041412.1928723,
+    "ast_hash": "882afc3479e6592c3792ff9afa7e7653",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpracujemy/wspolpracujemy.html": {
+    "mtime": 1788041451.583711,
+    "ast_hash": "919900f751bb42f4bd7307f5da161b9e",
+    "semantic_hash": ""
+  },
+  "scripts/sitemap.mjs": {
+    "mtime": 1788084204.3635197,
+    "ast_hash": "39458ceb63e3db75b41ab45f0084b2e9",
+    "semantic_hash": ""
+  },
+  "src/app/app.routes.server.ts": {
+    "mtime": 1788084204.361923,
+    "ast_hash": "0809cc2bbb0ded8185c241eff90b1476",
+    "semantic_hash": ""
+  },
+  "src/app/app.config.server.ts": {
+    "mtime": 1788012919.2177439,
+    "ast_hash": "3970e45a18d96e13afe0e0f10cbda945",
+    "semantic_hash": ""
+  },
+  "src/app/pages/nie-znaleziono/nie-znaleziono.ts": {
+    "mtime": 1788013189.4040406,
+    "ast_hash": "4c2e883729ae384ad25c6833854685ff",
+    "semantic_hash": ""
+  },
+  "src/app/utils/schema-zabieg.ts": {
+    "mtime": 1788020683.6654954,
+    "ast_hash": "64cdcd87c4e7530d20ed3c201d7d5579",
+    "semantic_hash": ""
+  },
+  "src/main.server.ts": {
+    "mtime": 1788013025.0773106,
+    "ast_hash": "97cea67d7fa6d1b4b97e330a29eecaf5",
+    "semantic_hash": ""
+  },
+  "src/app/pages/nie-znaleziono/nie-znaleziono.html": {
+    "mtime": 1788013189.4491684,
+    "ast_hash": "aeead156decc23eb72be43a54272c1e4",
+    "semantic_hash": ""
+  },
+  "scripts/redirects.mjs": {
+    "mtime": 1788043336.1456156,
+    "ast_hash": "c0a104ad42c3421835eec8aae69436f4",
+    "semantic_hash": ""
+  },
+  "public/llms.txt": {
+    "mtime": 1788013493.0497034,
+    "ast_hash": "c0cfed6fda3929af238ffd5a72b61fc4",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/allianz.webp": {
+    "mtime": 1788039062.109587,
+    "ast_hash": "cb0bf0c6364d8ffa4b91fb2ae24dd59c",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/dasmed.webp": {
+    "mtime": 1788039108.668562,
+    "ast_hash": "0e380c882fc7adde2d5f71db454cb767",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/generali-zdrowie.webp": {
+    "mtime": 1788039062.1235871,
+    "ast_hash": "a2be88c9413cc734e86a77efbe938a90",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/jp-medica.webp": {
+    "mtime": 1788039062.1390996,
+    "ast_hash": "ec4e54611ebd316469ef0dcfd834281d",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/luxmed.webp": {
+    "mtime": 1788039062.1476471,
+    "ast_hash": "22eccacfa1c7a81b270ce62ba98857b7",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/medicover.webp": {
+    "mtime": 1788039062.1586404,
+    "ast_hash": "245e385c96dc1c0195de23840c18ffae",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/polmed.webp": {
+    "mtime": 1788039062.1707027,
+    "ast_hash": "266e7bca34c55d987aacb231f9f1e22d",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/pzu-zdrowie.webp": {
+    "mtime": 1788039062.1776524,
+    "ast_hash": "f5fc792810db46448449afe82fd91c70",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/saneo.webp": {
+    "mtime": 1788039062.1886518,
+    "ast_hash": "71a222d4fc0f60d18806744ff8830d1e",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/telemedi.webp": {
+    "mtime": 1788039062.202699,
+    "ast_hash": "38eb6efb35f0e42d64f53cec7cc5ef4b",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/wejscie-parking-1200.webp": {
+    "mtime": 1788022678.3474832,
+    "ast_hash": "52fa9704d0b902f3b5fb8459bd9b6f9d",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/wejscie-parking-800.webp": {
+    "mtime": 1788022678.5395505,
+    "ast_hash": "f9b128775f45b22d97b789eadf700961",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/zgloszenie-form/zgloszenie-form.ts": {
+    "mtime": 1788084042.0656476,
+    "ast_hash": "76241d7c9472fc2e4c5292c8f1574d4d",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/zgloszenie-form/zgloszenie-form.html": {
+    "mtime": 1788084059.5267518,
+    "ast_hash": "4effba4dec60533ad729c745a4e54436",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/badanie-kliniczne-detail/badanie-kliniczne-detail.ts": {
+    "mtime": 1788084089.29172,
+    "ast_hash": "92464b5cba784bd4fa30cf95ba543082",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/badanie-kliniczne-detail/badanie-kliniczne-detail.html": {
+    "mtime": 1788084440.881045,
+    "ast_hash": "9ca751c2639aec88165e166b47e49d6e",
     "semantic_hash": ""
   }
 }

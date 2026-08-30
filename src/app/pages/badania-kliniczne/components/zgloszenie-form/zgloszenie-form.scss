@@ -1,0 +1,144 @@
+.zform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.zform__row {
+  display: grid;
+  gap: 1.15rem;
+}
+
+@media (min-width: 40rem) {
+  .zform__row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.zform__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.zform__label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-ink);
+}
+
+.zform__hint {
+  color: var(--c-ink-soft);
+  letter-spacing: 0.1em;
+}
+
+.zform input,
+.zform textarea {
+  font: inherit;
+  padding: 0.8rem 0.95rem;
+  border: 1px solid var(--c-mist);
+  border-radius: 0;
+  background: var(--c-white);
+  color: var(--c-ink);
+  transition: border-color 0.2s ease;
+}
+
+.zform textarea {
+  resize: vertical;
+}
+
+.zform input:hover,
+.zform textarea:hover {
+  border-color: var(--c-steel);
+}
+
+.zform input:focus-visible,
+.zform textarea:focus-visible {
+  outline: 2px solid var(--c-bronze);
+  outline-offset: 1px;
+  border-color: var(--c-evergreen);
+}
+
+/* honeypot - poza kadrem, nigdy w tabulacji */
+.zform__trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.zform__consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--c-ink-soft);
+
+  input {
+    margin-top: 0.25rem;
+    width: auto;
+    flex: 0 0 auto;
+    accent-color: var(--c-navy);
+  }
+}
+
+.zform__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-top: 0.25rem;
+
+  button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+  }
+}
+
+.zform__alt {
+  color: var(--c-ink-soft);
+
+  a {
+    color: var(--c-navy);
+    border-bottom: 1px solid var(--c-mist);
+  }
+
+  a:hover {
+    border-bottom-color: currentcolor;
+  }
+}
+
+.zform__error {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid #b3261e;
+  background: rgba(179, 38, 30, 0.05);
+  color: #8c1d17;
+  font-size: 0.9rem;
+
+  a {
+    color: inherit;
+    font-weight: 600;
+  }
+}
+
+.zform__ok {
+  border-left: 3px solid var(--c-green);
+  padding: 0.5rem 0 0.5rem 1.25rem;
+
+  .mono {
+    display: block;
+    color: var(--c-green-ink);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin: 0;
+    max-width: 52ch;
+  }
+}

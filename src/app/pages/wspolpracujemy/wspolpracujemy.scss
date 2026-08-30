@@ -1,0 +1,99 @@
+.partnerzy__lead {
+  max-width: 62ch;
+  color: var(--c-ink-soft);
+}
+
+/* Siatka rysuje linie obramowaniami kafelkow, nie tlem kontenera:
+   grupa z dwoma partnerami zostawia biale miejsce zamiast szarej dziury. */
+.partnerzy {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2.4rem 0 0;
+  padding: 0;
+  list-style: none;
+  background: var(--c-white);
+  border-top: 1px solid var(--c-line);
+  border-left: 1px solid var(--c-line);
+}
+
+/* Grupa mniejsza niz trzech partnerow rozklada sie na cala szerokosc,
+   zamiast zostawiac pusta kolumne. */
+.partnerzy--dwie {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.partnerzy--jedna {
+  grid-template-columns: 1fr;
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.6rem;
+  border-right: 1px solid var(--c-line);
+  border-bottom: 1px solid var(--c-line);
+}
+
+/* Stala strefa na logo: pliki maja rozne proporcje (PZU jest kwadratowe,
+   Telemedi bardzo szerokie), a bez niej kafelki rozjezdzalyby sie w pionie. */
+.partner__logo-box {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  margin-bottom: 0.2rem;
+}
+
+.partner__logo {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 44px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+/* Partner bez pliku logo - nazwa zapisana krojem szeryfowym zamiast pustki. */
+.partner__logo-zastepczy {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  line-height: 1;
+  color: var(--c-accent-blue);
+}
+
+.partner__nazwa {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.partner__nazwa a {
+  color: var(--c-accent-blue);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.partner__nazwa a:hover {
+  border-bottom-color: currentColor;
+}
+
+.partner__opis {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--c-ink-soft);
+}
+
+@media (max-width: 859px) {
+  .partnerzy {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 559px) {
+  .partnerzy {
+    grid-template-columns: 1fr;
+  }
+}

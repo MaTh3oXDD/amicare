@@ -58,6 +58,12 @@ export class BadaniaDiagnostyczne implements OnInit {
           opis: 'Wgląd w przełyk, żołądek i dwunastnicę przez cienki endoskop.',
           icon: 'gastroskopia',
         },
+        {
+          nazwa: 'Leczenie biologiczne',
+          link: '/badania-diagnostyczne/leczenie-biologiczne',
+          opis: 'Podanie leku biologicznego pod nadzorem zespołu medycznego.',
+          icon: 'infuzja',
+        },
       ],
     },
     {
@@ -108,26 +114,14 @@ export class BadaniaDiagnostyczne implements OnInit {
         },
       ],
     },
-    {
-      nazwa: 'Terapie',
-      opis: 'Leczenie prowadzone i nadzorowane w naszym centrum.',
-      badania: [
-        {
-          nazwa: 'Leczenie biologiczne',
-          link: '/badania-diagnostyczne/leczenie-biologiczne',
-          opis: 'Podanie leku biologicznego pod nadzorem zespołu medycznego.',
-          icon: 'infuzja',
-        },
-      ],
-    },
   ];
 
   ngOnInit(): void {
     this.seo.set({
       title: 'Badania diagnostyczne - AmiCare Centrum Medyczne Łódź',
       description:
-        'Twoje zdrowie w najlepszych rękach. Badania diagnostyczne w AmiCare: diagnostyka bólu brzucha, kolonoskopia, gastroskopia, EKG, USG, badanie Holtera i leczenie biologiczne.',
-      path: '/badania-diagnostyczne/',
+        'Twoje zdrowie w najlepszych rękach. Badania diagnostyczne w AmiCare Łódź: diagnostyka bólu brzucha, kolonoskopia, gastroskopia, leczenie biologiczne, EKG, USG, badanie Holtera i pobranie krwi.',
+      path: '/badania-diagnostyczne',
     });
   }
 }

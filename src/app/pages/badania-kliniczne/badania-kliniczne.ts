@@ -1,9 +1,17 @@
-import { Component, computed, inject, OnDestroy, OnInit, signal } from '@angular/core';
+import {
+  Component,
+  PLATFORM_ID,
+  computed,
+  inject,
+  OnDestroy,
+  OnInit,
+  signal,
+} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { Seo } from '../../services/seo';
 import { PageHero } from '../../components/page-hero/page-hero';
 import { StudyCard } from './components/study-card/study-card';
-import { ZgloszenieDialog } from './components/zgloszenie-dialog/zgloszenie-dialog';
-import { BADANIA, Study } from './models/study';
+import { BADANIA } from './models/study';
 
 interface Phase {
   numeral: string;
@@ -38,12 +46,13 @@ const AUTOPLAY_MS = 6_000;
 
 @Component({
   selector: 'app-badania-kliniczne',
-  imports: [PageHero, StudyCard, ZgloszenieDialog],
+  imports: [PageHero, StudyCard],
   templateUrl: './badania-kliniczne.html',
   styleUrl: './badania-kliniczne.scss',
 })
 export class BadaniaKliniczne implements OnInit, OnDestroy {
   private seo = inject(Seo);
+  private readonly przegladarka = isPlatformBrowser(inject(PLATFORM_ID));
 
   protected readonly phases = PHASES;
   protected readonly activePhase = signal(0);
@@ -58,16 +67,6 @@ export class BadaniaKliniczne implements OnInit, OnDestroy {
   protected readonly badania = computed(() =>
     this.filtr() === 'Wszystkie' ? BADANIA : BADANIA.filter((b) => b.miasto === this.filtr()),
   );
-
-  protected readonly selectedStudy = signal<Study | null>(null);
-
-  protected openZgloszenie(study: Study): void {
-    this.selectedStudy.set(study);
-  }
-
-  protected onZgloszenieClosed(): void {
-    this.selectedStudy.set(null);
-  }
 
   protected goToPhase(index: number): void {
     this.activePhase.set(index);
@@ -93,7 +92,9 @@ export class BadaniaKliniczne implements OnInit, OnDestroy {
   }
 
   private startAutoplay(): void {
-    if (this.reducedMotion) return;
+    /* Na serwerze setInterval nigdy nie pozwoliłby aplikacji dojść do stanu
+       stabilnego, a prerender czeka właśnie na ten moment. */
+    if (!this.przegladarka || this.reducedMotion) return;
     this.autoplayTimer = setInterval(() => this.nextPhase(), AUTOPLAY_MS);
   }
 
@@ -119,7 +120,7 @@ export class BadaniaKliniczne implements OnInit, OnDestroy {
       title: 'Badania kliniczne - AmiCare | Łódź i Jelenia Góra',
       description:
         'Obecnie prowadzone badania kliniczne i ankiety kwalifikujące w ośrodkach AmiCare w Łodzi i Jeleniej Górze. Dlaczego badania kliniczne są tak istotne? Jakie są etapy badań klinicznych?',
-      path: '/badania-kliniczne/',
+      path: '/badania-kliniczne',
     });
     this.startAutoplay();
   }

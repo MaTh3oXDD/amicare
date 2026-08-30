@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { Seo } from '../../../services/seo';
 import { CennikPanel } from '../../../components/cennik-panel/cennik-panel';
 import { PageHero } from '../../../components/page-hero/page-hero';
+import { schematZabiegu } from '../../../utils/schema-zabieg';
 
 @Component({
   selector: 'app-kolonoskopia',
@@ -20,11 +21,35 @@ export class Kolonoskopia implements OnInit, AfterViewInit {
       title: 'Kolonoskopia - Pracownia Endoskopii AmiCare Łódź',
       description:
         'Kolonoskopia w znieczuleniu miejscowym w AmiCare Łódź - badanie dolnego odcinka przewodu pokarmowego. Przygotowanie i rezerwacja wizyty.',
-      path: '/pracownia-endoskopii/kolonoskopia/',
+      path: '/pracownia-endoskopii/kolonoskopia',
     });
+
+    this.seo.setBreadcrumbs([
+      { nazwa: 'Pracownia endoskopii', sciezka: '/pracownia-endoskopii' },
+      { nazwa: 'Kolonoskopia', sciezka: '/pracownia-endoskopii/kolonoskopia' },
+    ]);
+
+    this.seo.setJsonLd(
+      'ld-zabieg',
+      schematZabiegu({
+        nazwa: 'Kolonoskopia',
+        opis:
+          'Kolonoskopia w znieczuleniu miejscowym w AmiCare Łódź - badanie dolnego odcinka przewodu pokarmowego. Przygotowanie i rezerwacja wizyty.',
+        sciezka: '/pracownia-endoskopii/kolonoskopia',
+        czescCiala: 'jelito grube',
+        cena: 650,
+        przygotowanie:
+          'Dieta ubogoresztkowa i preparat przeczyszczający według zaleceń przekazanych przy rejestracji.',
+      }),
+    );
+
   }
 
   ngAfterViewInit(): void {
+    /* Prerender wykonuje ngAfterViewInit na serwerze, gdzie nie ma IntersectionObserver.
+       Podświetlanie spisu treści to warstwa interakcji - dokłada się po hydracji. */
+    if (typeof IntersectionObserver === 'undefined') return;
+
     const root: HTMLElement = this.host.nativeElement;
     const entries = Array.from(root.querySelectorAll('.dossier__entry[id]')) as HTMLElement[];
     const links = new Map(

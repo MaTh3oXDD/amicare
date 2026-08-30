@@ -156,3 +156,32 @@ h1 {
     }
   }
 }
+
+.wyposazenie {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem 2.4rem;
+  margin: 2rem 0 2.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.wyposazenie h3 {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-body);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.wyposazenie p {
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--c-ink-soft);
+}
+
+@media (max-width: 719px) {
+  .wyposazenie {
+    grid-template-columns: 1fr;
+  }
+}

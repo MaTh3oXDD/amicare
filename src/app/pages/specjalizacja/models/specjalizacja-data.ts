@@ -28,6 +28,8 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
       'Specjalizujemy się w diagnostyce schorzeń przełyku, żołądka, jelita cienkiego i grubego, takich jak m.in. refluks, choroba wrzodowa, zespół jelita drażliwego (IBS), nieswoiste choroby zapalne jelit (np. choroba Crohna, wrzodziejące zapalenie jelita grubego), a także w profilaktyce i wczesnym wykrywaniu zmian nowotworowych.',
       'Prowadzimy konsultacje gastroenterologiczne dla dorosłych i dla dzieci. Podczas wizyty lekarz przeprowadza szczegółowy wywiad, analizuje wyniki badań oraz planuje dalszą diagnostykę lub leczenie.',
       'Dbamy o komfort, bezpieczeństwo i dyskrecję na każdym etapie diagnostyki i leczenia.',
+      'Prowadzimy również leczenie biologiczne. Polega ono na podawaniu preparatów biologicznych, które zmniejszają odpowiedź zapalną w organizmie - łagodzą objawy i zatrzymują dalszy rozwój choroby. Terapia jest przeznaczona dla pacjentów z zaawansowanymi chorobami autoimmunologicznymi, opornymi na leczenie konwencjonalne, którzy nie mogą wziąć udziału w badaniach klinicznych.',
+      'W AmiCare stosujemy dwa preparaty: Yuflyma (adalimumab) i Remsima (infliksymab). Cały proces przebiega zgodnie z aktualnymi wytycznymi, pod nadzorem lekarzy specjalistów z doświadczeniem w tym zakresie. Koszt ustalamy indywidualnie po pierwszej wizycie u specjalisty.',
     ],
     listy: [
       {
@@ -55,6 +57,14 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
         ],
       },
       {
+        tytul: 'Wskazania do leczenia biologicznego',
+        punkty: [
+          'choroby zapalne jelit: choroba Leśniowskiego-Crohna, wrzodziejące zapalenie jelita grubego',
+          'choroby reumatyczne: reumatoidalne zapalenie stawów, zesztywniające zapalenie stawów kręgosłupa, młodzieńcze idiopatyczne zapalenie stawów, łuszczycowe zapalenie stawów',
+          'choroby o podłożu alergicznym: astma, atopowe zapalenie skóry, pokrzywka idiopatyczna',
+        ],
+      },
+      {
         tytul: 'Dlaczego warto nas wybrać',
         punkty: [
           'nowoczesny sprzęt endoskopowy',
@@ -72,6 +82,10 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
         pozycje: [
           { usluga: 'Konsultacja Gastroenterologiczna', cena: 'od 300 do 350 zł' },
           { usluga: 'Konsultacja Gastroenterologiczna w weekend', cena: 'od 400 do 450 zł' },
+          {
+            usluga: 'Leczenie biologiczne (Yuflyma, Remsima)',
+            cena: 'ustalana indywidualnie po pierwszej wizycie',
+          },
         ],
       },
       {
@@ -84,7 +98,7 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
             cenaWeekend: '600zł',
           },
           {
-            usluga: 'Gastroskopia w analgosedacji (znieczulenie, z testem na Helicobacter pylori)',
+            usluga: 'Gastroskopia w znieczuleniu analgosedacji (z testem na Helicobacter pylori)',
             cena: '900zł',
             cenaWeekend: '1100zł',
           },
@@ -101,7 +115,7 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
         pozycje: [
           { usluga: 'Kolonoskopia', cena: '650zł', cenaWeekend: '700zł' },
           {
-            usluga: 'Kolonoskopia w analgosedacji (znieczulenie)',
+            usluga: 'Kolonoskopia w znieczuleniu analgosedacji',
             cena: '1000zł',
             cenaWeekend: '1200zł',
           },
@@ -115,7 +129,7 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
         pozycje: [
           { usluga: 'Kolonoskopia + Gastroskopia', cena: '1300zł' },
           {
-            usluga: 'Kolonoskopia + Gastroskopia w analgosedacji (znieczulenie)',
+            usluga: 'Kolonoskopia + Gastroskopia w znieczuleniu analgosedacji',
             cena: '1600zł',
             cenaWeekend: '2000zł',
           },
@@ -135,6 +149,64 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
       'Dr n.med. Krzysztof Grzegorczyk',
       'Dr n. med. Rafał Drozda',
     ],
+  },
+  {
+    slug: 'hepatologia',
+    nazwa: 'Hepatologia',
+    opis: [
+      'Hepatologia zajmuje się chorobami wątroby, dróg żółciowych i trzustki. Do konsultacji hepatologicznej najczęściej kieruje wynik badań krwi: podwyższone próby wątrobowe (ALT, AST, GGTP, bilirubina) albo obraz stłuszczenia wątroby opisany w USG jamy brzusznej.',
+      'Wątroba długo nie boli. Choroba potrafi rozwijać się latami bez wyraźnych objawów, a pierwszym sygnałem bywa przypadkowo wykonane badanie. Dlatego nieprawidłowego wyniku prób wątrobowych nie warto zostawiać bez wyjaśnienia - nawet gdy nic nie dolega.',
+      'W AmiCare konsultacje hepatologiczne prowadzą gastroenterolodzy zajmujący się chorobami wątroby: dr n. med. Hubert Zatorski i dr n. med. Milena Padysz. Podczas wizyty lekarz analizuje dotychczasowe wyniki, przeprowadza szczegółowy wywiad i planuje dalszą diagnostykę lub leczenie.',
+      'Diagnostykę wykonujemy na miejscu: badania krwi, USG jamy brzusznej oraz - jeśli obraz kliniczny tego wymaga - gastroskopię i kolonoskopię w naszej pracowni endoskopii.',
+    ],
+    listy: [
+      {
+        tytul: 'Zajmujemy się między innymi',
+        punkty: [
+          'stłuszczeniową chorobą wątroby (w tym niealkoholową)',
+          'przewlekłymi wirusowymi zapaleniami wątroby typu B i C',
+          'autoimmunologicznymi chorobami wątroby i dróg żółciowych',
+          'polekowym i toksycznym uszkodzeniem wątroby',
+          'włóknieniem i marskością wątroby oraz ich powikłaniami',
+          'kamicą żółciową i chorobami dróg żółciowych',
+          'przewlekłym zapaleniem trzustki',
+        ],
+      },
+      {
+        tytul: 'Kiedy zgłosić się do hepatologa',
+        punkty: [
+          'nieprawidłowe próby wątrobowe w badaniach krwi',
+          'stłuszczenie lub inne zmiany wątroby opisane w USG',
+          'przewlekłe zmęczenie, świąd skóry, zażółcenie skóry lub oczu',
+          'ból w prawym podżebrzu, nudności, brak apetytu',
+          'rozpoznana cukrzyca, otyłość lub zaburzenia lipidowe - to czynniki ryzyka stłuszczenia wątroby',
+          'przewlekłe przyjmowanie leków obciążających wątrobę',
+        ],
+      },
+      {
+        tytul: 'Diagnostyka dostępna na miejscu',
+        punkty: [
+          'pobranie krwi i badania laboratoryjne',
+          'USG jamy brzusznej',
+          'gastroskopia i kolonoskopia w pracowni endoskopii',
+          'pobranie wycinków do badania histopatologicznego podczas endoskopii',
+        ],
+      },
+    ],
+    cenniki: [
+      {
+        naglowek: 'Konsultacje',
+        weekend: true,
+        pozycje: [
+          {
+            usluga: 'Konsultacja hepatologiczna',
+            cena: 'od 300 do 350 zł',
+            cenaWeekend: 'od 400 do 450 zł',
+          },
+        ],
+      },
+    ],
+    lekarze: ['dr n. med. Hubert Zatorski', 'dr n. med. Milena Padysz'],
   },
   {
     slug: 'chirurgia',

@@ -20,7 +20,7 @@ export class Konsultacje implements OnInit {
       title: 'Konsultacje specjalistyczne - AmiCare Centrum Medyczne Łódź',
       description:
         'Konsultacje specjalistyczne w AmiCare: gastroenterologia, chirurgia, reumatologia, kardiologia, psychologia, dietetyka, proktologia. Łatwy i szybki dostęp do wysoko specjalistycznej diagnostyki.',
-      path: '/konsultacje-specjalistyczne/',
+      path: '/konsultacje-specjalistyczne',
     });
   }
 }

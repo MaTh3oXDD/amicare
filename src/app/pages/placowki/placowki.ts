@@ -33,7 +33,7 @@ export class Placowki implements OnInit {
       title: 'Placówki - AmiCare | Łódź Romanowska, Łódź Zgierska, Jelenia Góra',
       description:
         'Trzy placówki AmiCare: Centrum Medyczne Łódź Romanowska 55N, Centrum Medyczne Łódź Zgierska 249 oraz Ośrodek Badań Klinicznych w Jeleniej Górze. Telefon: +48 42 28 90 250.',
-      path: '/placowki/',
+      path: '/placowki',
     });
   }
 }

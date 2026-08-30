@@ -6,12 +6,15 @@ import { join } from 'node:path';
 
 const KATALOG = 'dist/amicare/browser';
 const index = join(KATALOG, 'index.html');
+/* Po włączeniu prerenderu mamy prawdziwą stronę błędu - lepsza na 404
+   niż kopia strony głównej, która wygląda dla bota jak poprawna treść. */
+const strona404 = join(KATALOG, 'nie-znaleziono', 'index.html');
 
 if (!existsSync(index)) {
   console.error(`Brak ${index}. Najpierw zbuduj projekt.`);
   process.exit(1);
 }
 
-copyFileSync(index, join(KATALOG, '404.html'));
+copyFileSync(existsSync(strona404) ? strona404 : index, join(KATALOG, '404.html'));
 writeFileSync(join(KATALOG, '.nojekyll'), '');
 console.log('404.html i .nojekyll gotowe');

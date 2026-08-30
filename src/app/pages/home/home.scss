@@ -19,11 +19,17 @@
   position: absolute;
   inset: -6%;
   z-index: 0;
-  background-image: url('../../../../public/images/przychodnia/wejscie-parking.webp');
+  /* Tlo jest rozmyte i przykryte gradientem, wiec pelne 1800 px nic nie wnosi.
+     To element LCP strony glownej - 158 KB zamiast 298 KB. */
+  background-image: url('../../../../public/images/przychodnia/wejscie-parking-1200.webp');
   background-size: cover;
   background-position: center;
   filter: blur(3px) saturate(0.9);
   transform: scale(1.06);
+
+  @media (max-width: 859px) {
+    background-image: url('../../../../public/images/przychodnia/wejscie-parking-800.webp');
+  }
 
   &::after {
     content: '';

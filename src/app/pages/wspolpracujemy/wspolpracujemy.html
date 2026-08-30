@@ -1,0 +1,89 @@
+<app-page-hero
+  title="Współpracujemy"
+  lead="Przyjmujemy pacjentów w ramach polis i abonamentów medycznych, a z lokalnymi podmiotami w Łodzi dzielimy opiekę nad pacjentem. Poniżej pełna lista partnerów AmiCare Centrum Medyczne."
+/>
+
+@for (g of grupy; track g.id; let odd = $odd) {
+  <section
+    class="section"
+    [class.section--cream]="odd"
+    [id]="g.id"
+    [attr.aria-labelledby]="g.id + '-h'"
+  >
+    <div class="container">
+      <span class="eyebrow">Partnerzy</span>
+      <h2 [id]="g.id + '-h'">{{ g.tytul }}</h2>
+      <p class="partnerzy__lead">{{ g.lead }}</p>
+
+      <ul
+        class="partnerzy"
+        [class.partnerzy--dwie]="kolumny(g) === 2"
+        [class.partnerzy--jedna]="kolumny(g) === 1"
+      >
+        @for (p of g.partnerzy; track p.nazwa) {
+          <li class="partner">
+            <div class="partner__logo-box">
+              @if (p.logo) {
+                <img
+                  class="partner__logo"
+                  [src]="p.logo"
+                  [alt]="'Logo ' + p.nazwa"
+                  loading="lazy"
+                  decoding="async"
+                  [width]="p.logoWidth ?? 200"
+                  height="80"
+                />
+              } @else {
+                <span class="partner__logo-zastepczy" aria-hidden="true">{{ p.nazwa }}</span>
+              }
+            </div>
+            <h3 class="partner__nazwa">
+              @if (p.url) {
+                <a [href]="p.url" target="_blank" rel="noopener">{{ p.nazwa }}</a>
+              } @else {
+                {{ p.nazwa }}
+              }
+            </h3>
+            <p class="partner__opis">{{ p.opis }}</p>
+          </li>
+        }
+      </ul>
+    </div>
+  </section>
+}
+
+<section class="section" aria-labelledby="jak-h">
+  <div class="container grid grid--2 block">
+    <div>
+      <span class="eyebrow">Jak umówić wizytę</span>
+      <h2 id="jak-h">Wizyta na polisę lub abonament</h2>
+      <p>
+        Przy rezerwacji podaj nazwę ubezpieczyciela i numer polisy albo karty abonamentowej.
+        Rejestracja sprawdzi, czy dane świadczenie mieści się w Twoim pakiecie, i poda ewentualną
+        dopłatę. Skierowanie od lekarza prowadzącego bywa wymagane przy badaniach endoskopowych -
+        pytaj o to przed wizytą.
+      </p>
+      <p>
+        Świadczenia nieobjęte pakietem rozliczamy według
+        <a routerLink="/cennik">cennika</a>. Zakres badań opisaliśmy w sekcjach
+        <a routerLink="/pracownia-endoskopii">Pracownia endoskopii</a> oraz
+        <a routerLink="/badania-diagnostyczne">Badania diagnostyczne</a>.
+      </p>
+      <a routerLink="/kontakt" class="btn btn--ghost">Umów wizytę</a>
+    </div>
+    <div>
+      <span class="eyebrow">Dla firm i ośrodków</span>
+      <h2>Chcesz podjąć współpracę?</h2>
+      <p>
+        Prowadzimy badania kliniczne dla Sponsorów i CRO, wynajmujemy gabinety lekarskie oraz
+        realizujemy usługi diagnostyczne dla podmiotów zewnętrznych. Warunki i zakres opisaliśmy
+        na stronie <a routerLink="/wspolpraca">Współpraca</a>.
+      </p>
+      <p>
+        Ośrodkom opieki i podmiotom medycznym z Łodzi udostępniamy diagnostykę endoskopową
+        w <a routerLink="/placowki/lodz-romanowska">placówce przy ul. Romanowskiej 55N</a>.
+      </p>
+      <a routerLink="/wspolpraca" class="btn btn--ghost">Zasady współpracy</a>
+    </div>
+  </div>
+</section>

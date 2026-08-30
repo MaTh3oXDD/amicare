@@ -18,7 +18,7 @@ const TEMATY_KONTAKT = {
 };
 
 const FORMULARZE = {
-  // Dialog zgłoszeniowy na /badania-kliniczne
+  // Formularz zgłoszeniowy na podstronach /badania-kliniczne/:slug
   'badanie-kliniczne': {
     to: () => BADANIA_KLINICZNE,
     temat: (d) => `Zgłoszenie do badania klinicznego: ${d.badanie || 'nieokreślone'}`,
@@ -34,9 +34,11 @@ const FORMULARZE = {
     },
   },
 
-  // Popup wywiadu wstępnego (app.html)
+  /* Popup wywiadu wstępnego. Wyskakuje wyłącznie na /badania-kliniczne
+     (SCIEZKA_ANKIETY w entry-survey.ts), więc każde zgłoszenie stamtąd należy
+     do rekrutacji - także gdy pacjent zostawi puste „Nie wiem / inne". */
   wywiad: {
-    to: (d) => (d.badanie === 'Badania kliniczne' ? BADANIA_KLINICZNE : REJESTRACJA),
+    to: () => BADANIA_KLINICZNE,
     temat: () => 'Wywiad wstępny ze strony',
     wymagane: ['imie', 'telefon'],
     opcjonalne: ['badanie', 'opis'],

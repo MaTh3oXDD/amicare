@@ -1,0 +1,252 @@
+/* Podwójna specyficzność celowo: globalne `.section` ustawia padding skrótem,
+   a bez tego dolny padding treści zderzał się z górnym formularza i robił przepaść. */
+.section.badanie {
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.badanie__layout {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 60rem) {
+  .badanie__layout {
+    grid-template-columns: minmax(0, 1fr) 19rem;
+    gap: 3.5rem;
+  }
+
+  /* Karta stoi w DOM przed treścią, żeby na telefonie „Umów się" było
+     od razu pod nagłówkiem. Na desktopie wraca na prawą kolumnę. */
+  .badanie__main {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .badanie__aside {
+    grid-column: 2;
+    grid-row: 1;
+    position: sticky;
+    top: 6rem;
+  }
+}
+
+/* ---------- karta boczna ---------- */
+
+.karta {
+  background: var(--c-porcelain);
+  border: 1px solid var(--c-mist);
+  padding: 1.6rem 1.5rem;
+}
+
+.karta__label {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--c-green-ink);
+  margin-bottom: 1.2rem;
+
+  &::before {
+    content: '';
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--c-green);
+    flex: 0 0 auto;
+  }
+}
+
+.karta__dane {
+  margin: 0 0 1.5rem;
+
+  div + div {
+    margin-top: 0.9rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--c-mist);
+  }
+
+  dt {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--c-ink-soft);
+    margin-bottom: 0.25rem;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.5;
+    color: var(--c-ink);
+  }
+}
+
+.karta__cta {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.karta__tel {
+  display: block;
+  margin-top: 0.9rem;
+  text-align: center;
+  color: var(--c-ink-soft);
+
+  &:hover {
+    color: var(--c-navy);
+  }
+}
+
+/* ---------- lista kwalifikacyjna ---------- */
+
+.kwalifikacja {
+  border: 1px solid var(--c-mist);
+  border-left: 3px solid var(--c-green);
+  padding: clamp(1.5rem, 4vw, 2.25rem);
+  margin-bottom: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.kwalifikacja__title {
+  margin: 0 0 1.4rem;
+  font-size: clamp(1.4rem, 3vw, 1.85rem);
+}
+
+.kwalifikacja__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kwalifikacja__pozycja {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--c-mist);
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.kwalifikacja__znak {
+  position: relative;
+  flex: 0 0 auto;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.2rem;
+  border: 1.5px solid var(--c-green);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0.34rem;
+    top: 0.08rem;
+    width: 0.3rem;
+    height: 0.6rem;
+    border: solid var(--c-green-ink);
+    border-width: 0 2px 2px 0;
+    transform: rotate(43deg);
+  }
+}
+
+.kwalifikacja__tresc {
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--c-ink);
+}
+
+.kwalifikacja__nota {
+  margin: 1.4rem 0 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--c-mist);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--c-ink-soft);
+}
+
+/* ---------- korzyści ---------- */
+
+.blok h2 {
+  font-size: clamp(1.3rem, 2.6vw, 1.6rem);
+  margin: 0 0 1.1rem;
+}
+
+.blok__lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    position: relative;
+    padding: 0.55rem 0 0.55rem 1.6rem;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--c-ink-soft);
+  }
+
+  li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.15rem;
+    width: 0.75rem;
+    height: 1.5px;
+    background: var(--c-steel);
+  }
+}
+
+.badanie__powrot {
+  margin: clamp(2.5rem, 5vw, 3.5rem) 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--c-mist);
+  font-size: 0.9rem;
+}
+
+/* ---------- zgłoszenie ---------- */
+
+.zgloszenie {
+  scroll-margin-top: 5rem;
+}
+
+.zgloszenie__layout {
+  display: grid;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (min-width: 60rem) {
+  .zgloszenie__layout {
+    grid-template-columns: minmax(0, 26rem) minmax(0, 1fr);
+    gap: 4rem;
+  }
+}
+
+.zgloszenie__intro {
+  h2 {
+    margin: 0 0 0.8rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+  }
+
+  p {
+    max-width: 46ch;
+  }
+}
+
+.zgloszenie__badanie {
+  margin: 1.6rem 0 0;
+  padding: 0.9rem 1.1rem;
+  background: var(--c-white);
+  border-left: 3px solid var(--c-navy);
+  font-size: 0.95rem;
+  color: var(--c-ink);
+
+  .mono {
+    display: block;
+    color: var(--c-ink-soft);
+    margin-bottom: 0.25rem;
+  }
+}

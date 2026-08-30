@@ -1,4 +1,4 @@
-import { Component, effect, ElementRef, inject, input, output, signal, viewChild } from '@angular/core';
+import { Component, inject, input, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Formularze } from '../../../../services/formularze';
 import { Study } from '../../models/study';
@@ -17,16 +17,13 @@ function emptyModel(): ZgloszenieModel {
 }
 
 @Component({
-  selector: 'app-zgloszenie-dialog',
+  selector: 'app-zgloszenie-form',
   imports: [FormsModule],
-  templateUrl: './zgloszenie-dialog.html',
-  styleUrl: './zgloszenie-dialog.scss',
+  templateUrl: './zgloszenie-form.html',
+  styleUrl: './zgloszenie-form.scss',
 })
-export class ZgloszenieDialog {
-  readonly study = input<Study | null>(null);
-  readonly closed = output<void>();
-
-  private readonly dialogRef = viewChild.required<ElementRef<HTMLDialogElement>>('dialog');
+export class ZgloszenieForm {
+  readonly study = input.required<Study>();
 
   protected readonly wyslano = signal(false);
   protected readonly wysylanie = signal(false);
@@ -35,34 +32,8 @@ export class ZgloszenieDialog {
 
   private readonly formularze = inject(Formularze);
 
-  constructor() {
-    effect(() => {
-      const study = this.study();
-      const dialog = this.dialogRef().nativeElement;
-
-      if (study) {
-        this.wyslano.set(false);
-        this.blad.set(false);
-        this.model = emptyModel();
-        if (!dialog.open) dialog.showModal();
-      } else if (dialog.open) {
-        dialog.close();
-      }
-    });
-  }
-
-  protected onDialogClose(): void {
-    this.closed.emit();
-  }
-
-  protected onBackdropClick(event: MouseEvent, dialog: HTMLDialogElement): void {
-    if (event.target === dialog) dialog.close();
-  }
-
   protected async wyslij(): Promise<void> {
     const study = this.study();
-    if (!study) return;
-
     const { imie, telefon, email, wiadomosc, zgoda, firma } = this.model;
     if (!imie || !telefon || !zgoda || this.wysylanie()) return;
 
@@ -81,7 +52,11 @@ export class ZgloszenieDialog {
     });
 
     this.wysylanie.set(false);
-    if (ok) this.wyslano.set(true);
-    else this.blad.set(true);
+    if (ok) {
+      this.wyslano.set(true);
+      this.model = emptyModel();
+    } else {
+      this.blad.set(true);
+    }
   }
 }

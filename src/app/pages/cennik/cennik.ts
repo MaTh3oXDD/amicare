@@ -20,7 +20,7 @@ export class Cennik implements OnInit {
       title: 'Cennik - AmiCare Centrum Medyczne Łódź',
       description:
         'Cennik AmiCare Łódź: gastroskopia, kolonoskopia, konsultacje specjalistyczne, badania diagnostyczne. Ceny w dni robocze i w weekend.',
-      path: '/cennik/',
+      path: '/cennik',
     });
   }
 }

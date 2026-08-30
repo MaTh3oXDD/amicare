@@ -19,6 +19,11 @@ export const routes: Routes = [
       import('./pages/zespol/zespol-detail/zespol-detail').then((m) => m.ZespolDetail),
   },
   {
+    path: 'o-nas/wspolpracujemy',
+    loadComponent: () =>
+      import('./pages/wspolpracujemy/wspolpracujemy').then((m) => m.Wspolpracujemy),
+  },
+  {
     path: 'placowki',
     loadComponent: () => import('./pages/placowki/placowki').then((m) => m.Placowki),
   },
@@ -31,6 +36,13 @@ export const routes: Routes = [
     path: 'badania-kliniczne',
     loadComponent: () =>
       import('./pages/badania-kliniczne/badania-kliniczne').then((m) => m.BadaniaKliniczne),
+  },
+  {
+    path: 'badania-kliniczne/:slug',
+    loadComponent: () =>
+      import(
+        './pages/badania-kliniczne/badanie-kliniczne-detail/badanie-kliniczne-detail'
+      ).then((m) => m.BadanieKliniczneDetail),
   },
   {
     path: 'konsultacje-specjalistyczne',
@@ -126,5 +138,16 @@ export const routes: Routes = [
         (m) => m.RegulaminPlatnosci,
       ),
   },
-  { path: '**', redirectTo: '' },
+  {
+    path: 'nie-znaleziono',
+    loadComponent: () =>
+      import('./pages/nie-znaleziono/nie-znaleziono').then((m) => m.NieZnaleziono),
+  },
+  /* Bez przekierowania na stronę główną: stary, nieistniejący adres musi
+     wyglądać jak błąd, a nie jak poprawna strona z kodem 200. */
+  {
+    path: '**',
+    loadComponent: () =>
+      import('./pages/nie-znaleziono/nie-znaleziono').then((m) => m.NieZnaleziono),
+  },
 ];

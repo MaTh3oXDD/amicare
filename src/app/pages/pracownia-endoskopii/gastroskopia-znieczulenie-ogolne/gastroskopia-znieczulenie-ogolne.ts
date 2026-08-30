@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { Seo } from '../../../services/seo';
 import { CennikPanel } from '../../../components/cennik-panel/cennik-panel';
 import { PageHero } from '../../../components/page-hero/page-hero';
+import { schematZabiegu } from '../../../utils/schema-zabieg';
 
 @Component({
   selector: 'app-gastroskopia-znieczulenie-ogolne',
@@ -20,11 +21,35 @@ export class GastroskopiaZnieczulenieOgolne implements OnInit, AfterViewInit {
       title: 'Gastroskopia w znieczuleniu ogólnym - Pracownia Endoskopii AmiCare Łódź',
       description:
         'Gastroskopia w znieczuleniu ogólnym w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego z udziałem anestezjologa. Przygotowanie, badania przed zabiegiem, cennik i rezerwacja wizyty.',
-      path: '/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne/',
+      path: '/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne',
     });
+
+    this.seo.setBreadcrumbs([
+      { nazwa: 'Pracownia endoskopii', sciezka: '/pracownia-endoskopii' },
+      { nazwa: 'Gastroskopia w znieczuleniu ogólnym', sciezka: '/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne' },
+    ]);
+
+    this.seo.setJsonLd(
+      'ld-zabieg',
+      schematZabiegu({
+        nazwa: 'Gastroskopia w znieczuleniu ogólnym',
+        opis:
+          'Gastroskopia w znieczuleniu ogólnym w AmiCare Łódź - badanie górnego odcinka przewodu pokarmowego z udziałem anestezjologa. Przygotowanie, badania przed zabiegiem, cennik i rezerwacja wizyty.',
+        sciezka: '/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne',
+        czescCiala: 'górny odcinek przewodu pokarmowego',
+        cena: 1000,
+        przygotowanie:
+          'Konsultacja anestezjologiczna i pozostanie na czczo przed zabiegiem.',
+      }),
+    );
+
   }
 
   ngAfterViewInit(): void {
+    /* Prerender wykonuje ngAfterViewInit na serwerze, gdzie nie ma IntersectionObserver.
+       Podświetlanie spisu treści to warstwa interakcji - dokłada się po hydracji. */
+    if (typeof IntersectionObserver === 'undefined') return;
+
     const root: HTMLElement = this.host.nativeElement;
     const entries = Array.from(root.querySelectorAll('.dossier__entry[id]')) as HTMLElement[];
     const links = new Map(

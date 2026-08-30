@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Pozostałości po WordPressie - nie ma czego indeksować.
+Disallow: /wp-admin/
+Disallow: /wp-content/
+Disallow: /wp-includes/
+
 Sitemap: https://amicare.pl/sitemap.xml

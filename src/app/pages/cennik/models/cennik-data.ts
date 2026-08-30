@@ -31,14 +31,14 @@ export interface CennikSekcja {
 const PODSTRONY: Record<string, string> = {
   Gastroskopia: '/pracownia-endoskopii/gastroskopia',
   'Gastroskopia (z testem na Helicobacter pylori)': '/pracownia-endoskopii/gastroskopia',
-  'Gastroskopia w analgosedacji': '/pracownia-endoskopii/gastroskopia-z-analgosedacja',
-  'Gastroskopia w analgosedacji (znieczulenie, z testem na Helicobacter pylori)':
+  'Gastroskopia w znieczuleniu analgosedacji': '/pracownia-endoskopii/gastroskopia-z-analgosedacja',
+  'Gastroskopia w znieczuleniu analgosedacji (z testem na Helicobacter pylori)':
     '/pracownia-endoskopii/gastroskopia-z-analgosedacja',
   'Gastroskopia w znieczuleniu ogólnym': '/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne',
   'Gastroskopia w znieczuleniu ogólnym (z testem na Helicobacter pylori)':
     '/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne',
   Kolonoskopia: '/pracownia-endoskopii/kolonoskopia',
-  'Kolonoskopia w analgosedacji (znieczulenie)': '/pracownia-endoskopii/kolonoskopia-w-analgosedacji',
+  'Kolonoskopia w znieczuleniu analgosedacji': '/pracownia-endoskopii/kolonoskopia-w-analgosedacji',
   'Kolonoskopia w znieczuleniu ogólnym': '/pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne',
 };
 

@@ -5,6 +5,7 @@ import { DoctorCard } from '../../components/doctor-card/doctor-card';
 import { Doctor, KADRA, KOORDYNATORZY, LEKARZE, PIELEGNIARKI } from '../../models/doctor';
 import { BIOGRAMY } from './models/biogramy';
 import { RouterLink } from '@angular/router';
+import { slugify } from '../../utils/slug';
 
 @Component({
   selector: 'app-zespol',
@@ -21,8 +22,7 @@ export class Zespol implements OnInit {
   protected readonly pielegniarki = PIELEGNIARKI;
 
   getDetailUrl(d: Doctor): string {
-    const slug = d.name.toLowerCase().replace(/\s+/g, '-');
-    return `/o-nas/zespol/${slug}`;
+    return `/o-nas/zespol/${slugify(d.name)}`;
   }
 
   hasBiogram(d: Doctor): boolean {
@@ -34,7 +34,7 @@ export class Zespol implements OnInit {
       title: 'Zespół - AmiCare Centrum Medyczne Łódź',
       description:
         'Poznaj zespół AmiCare Centrum Medyczne w Łodzi - lekarze specjaliści, kadra zarządzająca, koordynatorzy badań klinicznych i zespół pielęgniarski. We help Patients through Science.',
-      path: '/o-nas/zespol/',
+      path: '/o-nas/zespol',
     });
   }
 }

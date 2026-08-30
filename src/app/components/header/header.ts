@@ -47,6 +47,7 @@ export class Header {
       children: [
         { label: 'O AmiCare', link: '/o-nas' },
         { label: 'Zespół', link: '/o-nas/zespol' },
+        { label: 'Współpracujemy', link: '/o-nas/wspolpracujemy' },
         { label: 'Współpraca', link: '/wspolpraca' },
       ],
     },

@@ -17,7 +17,7 @@ export class PracowniaEndoskopii implements OnInit {
       title: 'Pracownia Endoskopii - AmiCare Centrum Medyczne Łódź',
       description:
         'Nowoczesna pracownia endoskopii AmiCare w Łodzi: kolonoskopia i gastroskopia. Wybierz badanie, aby poznać szczegóły, przygotowanie i cennik.',
-      path: '/pracownia-endoskopii/',
+      path: '/pracownia-endoskopii',
     });
   }
 }

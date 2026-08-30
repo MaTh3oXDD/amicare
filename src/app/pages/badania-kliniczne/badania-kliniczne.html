@@ -15,8 +15,13 @@
     </p>
     <p>
       Naszym hasłem jest „WE HELP PATIENTS THROUGH SCIENCE - POMAGAMY PACJENTOM PRZEZ NAUKĘ” - to
-      dla nas niezmiernie ważne, aby ta pomoc była na najwyższym poziomie. W 2023 roku zostało to
-      docenione przez inspektora rządu amerykańskiego FDA.
+      dla nas niezmiernie ważne, aby ta pomoc była na najwyższym poziomie.
+    </p>
+    <p>
+      Nasz ośrodek przeszedł dwie inspekcje amerykańskiej Agencji Żywności i Leków (FDA) - w 2023
+      i 2026 roku - obie z wynikiem pozytywnym. Dla pacjenta udział w badaniu klinicznym to przede
+      wszystkim kwestia zaufania i bezpieczeństwa, a inspekcja FDA sprawdza dokładnie to: sposób
+      prowadzenia badania oraz ochronę praw i bezpieczeństwa uczestników.
     </p>
 
     <div class="phases">
@@ -75,7 +80,11 @@
 
 <section class="section section--cream" aria-labelledby="obecne-h">
   <div class="container">
-    <h2 id="obecne-h">Obecnie prowadzone badania kliniczne i ankiety kwalifikujące</h2>
+    <h2 id="obecne-h">Obecnie prowadzone badania kliniczne</h2>
+    <p class="intro">
+      Badania z otwartą rekrutacją mają własną stronę z kryteriami kwalifikacji i formularzem
+      zgłoszeniowym. Przy pozostałych kryteria przekazuje koordynator przez telefon.
+    </p>
 
     <div class="filters" role="group" aria-label="Filtruj po mieście">
       @for (m of miasta; track m) {
@@ -92,15 +101,13 @@
 
     <div class="grid grid--3">
       @for (b of badania(); track b.jednostka + b.miasto) {
-        <app-study-card [study]="b" (openForm)="openZgloszenie(b)" />
+        <app-study-card [study]="b" />
       }
     </div>
 
     <p class="contact-note">
       Kontakt w sprawie badań klinicznych: <a href="tel:+48786086331">+48 786 086 331</a> ·
-      <a href="mailto:office@amicare.pl">office&#64;amicare.pl</a>
+      <a href="mailto:a.gora@amicare.pl">a.gora&#64;amicare.pl</a>
     </p>
   </div>
 </section>
-
-<app-zgloszenie-dialog [study]="selectedStudy()" (closed)="onZgloszenieClosed()" />

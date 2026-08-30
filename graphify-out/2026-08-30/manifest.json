@@ -1,0 +1,2487 @@
+{
+  "angular.json": {
+    "mtime": 1788020790.6469605,
+    "ast_hash": "67623e50700fc0a47de12fa209b5aa8a",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1788020667.1819324,
+    "ast_hash": "1a885ec292b398b58beabd3c33f10c64",
+    "semantic_hash": ""
+  },
+  "src/app/app.config.ts": {
+    "mtime": 1787567420.943513,
+    "ast_hash": "6f5cedd7a7b17759a1ed77eb65db56c7",
+    "semantic_hash": ""
+  },
+  "src/app/app.routes.ts": {
+    "mtime": 1788084204.361923,
+    "ast_hash": "62234f3355446993600e41971a848bf8",
+    "semantic_hash": ""
+  },
+  "src/app/app.spec.ts": {
+    "mtime": 1784403520.7582946,
+    "ast_hash": "c652cedc22b85b9a113eb3d959433bca",
+    "semantic_hash": "c652cedc22b85b9a113eb3d959433bca"
+  },
+  "src/app/app.ts": {
+    "mtime": 1787572706.2320557,
+    "ast_hash": "bcf6634a14a25945aa5767d5f0398b92",
+    "semantic_hash": ""
+  },
+  "src/app/components/doctor-card/doctor-card.ts": {
+    "mtime": 1784403150.6705935,
+    "ast_hash": "076d0fc55a5edfeefae32dc7ef103287",
+    "semantic_hash": "076d0fc55a5edfeefae32dc7ef103287"
+  },
+  "src/app/components/footer/footer.ts": {
+    "mtime": 1786304830.8382528,
+    "ast_hash": "5310032f5177b94bd7fd77ae1dcbfdbe",
+    "semantic_hash": ""
+  },
+  "src/app/components/header/header.ts": {
+    "mtime": 1788012348.1741135,
+    "ast_hash": "6d4dce3701aa25da9d461a46275800c6",
+    "semantic_hash": ""
+  },
+  "src/app/components/page-hero/page-hero.ts": {
+    "mtime": 1786304830.8432517,
+    "ast_hash": "da8479486f0fc3d95f2b74d4a2443751",
+    "semantic_hash": ""
+  },
+  "src/app/components/placowka-card/placowka-card.ts": {
+    "mtime": 1784405100.6538777,
+    "ast_hash": "deb2636e0b56c424e483ba55ae45824f",
+    "semantic_hash": "deb2636e0b56c424e483ba55ae45824f"
+  },
+  "src/app/models/doctor.ts": {
+    "mtime": 1787568592.3807678,
+    "ast_hash": "62a468229719509b965d420a2ab2cd27",
+    "semantic_hash": ""
+  },
+  "src/app/models/placowka.ts": {
+    "mtime": 1788041883.9291155,
+    "ast_hash": "78912a8b1b6fed424be4a5e24e71915c",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-diagnostyczne/badania-diagnostyczne.ts": {
+    "mtime": 1788043336.1446147,
+    "ast_hash": "24ecd536cd7bcaff5846729415cc3a33",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/badania-kliniczne.ts": {
+    "mtime": 1788084189.0927317,
+    "ast_hash": "2e54d2d3a6be2a945e7d71e87a548b29",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/study-card/study-card.ts": {
+    "mtime": 1788084640.5460112,
+    "ast_hash": "2b5a88dd69e9b50b4c42843190d110b7",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/models/study.ts": {
+    "mtime": 1788084029.8031297,
+    "ast_hash": "17a6532f940d3b813d49f0ca6c677456",
+    "semantic_hash": ""
+  },
+  "src/app/pages/home/components/aktualnosci/aktualnosci.ts": {
+    "mtime": 1787568592.3880074,
+    "ast_hash": "db965e431e5396ac8828bc99969a644f",
+    "semantic_hash": ""
+  },
+  "src/app/pages/home/home.ts": {
+    "mtime": 1785943085.8707166,
+    "ast_hash": "ac7026b5051c326398a46ea4ab4481ee",
+    "semantic_hash": ""
+  },
+  "src/app/pages/konsultacje/konsultacje.ts": {
+    "mtime": 1788012145.2120347,
+    "ast_hash": "41454034463c3ea3a6addf1907d56925",
+    "semantic_hash": ""
+  },
+  "src/app/pages/kontakt/components/formularz-kontaktowy/formularz-kontaktowy.ts": {
+    "mtime": 1787567432.9468076,
+    "ast_hash": "a5489b258db58c9b7db1b8166a24cf3c",
+    "semantic_hash": ""
+  },
+  "src/app/pages/kontakt/kontakt.ts": {
+    "mtime": 1788012145.2120347,
+    "ast_hash": "ec23db0f739336e398b4c61caa9a97b8",
+    "semantic_hash": ""
+  },
+  "src/app/pages/o-nas/o-nas.ts": {
+    "mtime": 1788012145.2130365,
+    "ast_hash": "ce35a09235484ad58dab9bd4090e870a",
+    "semantic_hash": ""
+  },
+  "src/app/pages/placowki/placowka-detail/placowka-detail.ts": {
+    "mtime": 1788020663.2080083,
+    "ast_hash": "62890f8a4d2dbc8bc98deff9e5275cbe",
+    "semantic_hash": ""
+  },
+  "src/app/pages/placowki/placowki.ts": {
+    "mtime": 1788012145.2140384,
+    "ast_hash": "5753e1e139af2fc0ad613605c8bdf474",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/pracownia-endoskopii.ts": {
+    "mtime": 1788012145.2170343,
+    "ast_hash": "15474c5d7ca6252cccaf7265e51454dd",
+    "semantic_hash": ""
+  },
+  "src/app/pages/specjalizacja/models/specjalizacja-data.ts": {
+    "mtime": 1788041980.4592652,
+    "ast_hash": "27a2eccbd99ee4ee3d72d8cd10cc1974",
+    "semantic_hash": ""
+  },
+  "src/app/pages/specjalizacja/specjalizacja.ts": {
+    "mtime": 1788013338.5272715,
+    "ast_hash": "3e80c5efcce79e9e5209e5edaa9edfdb",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpraca/wspolpraca.ts": {
+    "mtime": 1788012145.2250404,
+    "ast_hash": "2fd967fab96b52743a7a5c1f68a01862",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/components/biogram-dialog/biogram-dialog.ts": {
+    "mtime": 1784406997.1473005,
+    "ast_hash": "b7d1b3ea5b8443de1e09edc22501b698",
+    "semantic_hash": "b7d1b3ea5b8443de1e09edc22501b698"
+  },
+  "src/app/pages/zespol/models/biogramy.ts": {
+    "mtime": 1785526760.962684,
+    "ast_hash": "e764a1acc9bfa95f7d8675e567124424",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/zespol.ts": {
+    "mtime": 1788012145.2260373,
+    "ast_hash": "aa1d70d9db7a4c1ff95d3bc08d78772b",
+    "semantic_hash": ""
+  },
+  "src/app/services/seo.ts": {
+    "mtime": 1788013204.9911907,
+    "ast_hash": "a72ef9552f1e99a39fea49ef8ff0ed6e",
+    "semantic_hash": ""
+  },
+  "src/main.ts": {
+    "mtime": 1784402860.1155732,
+    "ast_hash": "1289536d6d8f94242a4ffc598d094633",
+    "semantic_hash": "1289536d6d8f94242a4ffc598d094633"
+  },
+  "tsconfig.app.json": {
+    "mtime": 1784402860.1185806,
+    "ast_hash": "f0ed6c81d0a374939052cff4567f713f",
+    "semantic_hash": "f0ed6c81d0a374939052cff4567f713f"
+  },
+  "tsconfig.json": {
+    "mtime": 1784402860.1039689,
+    "ast_hash": "481934fa92ea3deadda691e7aa66ff31",
+    "semantic_hash": "481934fa92ea3deadda691e7aa66ff31"
+  },
+  "tsconfig.spec.json": {
+    "mtime": 1784402860.119578,
+    "ast_hash": "09ccc14eae54035b93ae8f1768ca2506",
+    "semantic_hash": "09ccc14eae54035b93ae8f1768ca2506"
+  },
+  ".claude/settings.json": {
+    "mtime": 1784451246.313671,
+    "ast_hash": "18843da59668dd2a9468306f7f1f1057",
+    "semantic_hash": ""
+  },
+  "src/app/pages/polityka-prywatnosci/polityka-prywatnosci.ts": {
+    "mtime": 1788012145.216037,
+    "ast_hash": "8720c8d552d3e0ed8a8030e68a28dd98",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1784402860.1009789,
+    "ast_hash": "075ecbd12f2f09d1c89854b0bc2f9344",
+    "semantic_hash": ""
+  },
+  "public/robots.txt": {
+    "mtime": 1788013493.091715,
+    "ast_hash": "a76f4effd063733d38ce047e381cb42c",
+    "semantic_hash": ""
+  },
+  "src/app/app.html": {
+    "mtime": 1787572706.2270465,
+    "ast_hash": "0c4db189af4ee0d5edb0c2b37a60731c",
+    "semantic_hash": ""
+  },
+  "src/app/components/footer/footer.html": {
+    "mtime": 1788012348.175117,
+    "ast_hash": "61a3037e8153bb4db8348102a684ac0f",
+    "semantic_hash": ""
+  },
+  "src/app/components/header/header.html": {
+    "mtime": 1787572601.022098,
+    "ast_hash": "c912135175bc72899d98f21d01e5d8be",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-diagnostyczne/badania-diagnostyczne.html": {
+    "mtime": 1787680840.9113817,
+    "ast_hash": "5aa4233745bd57ef4f78cc45a13c2bde",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/badania-kliniczne.html": {
+    "mtime": 1788084189.0936885,
+    "ast_hash": "8d5980e528726939741a18ccbf0237af",
+    "semantic_hash": ""
+  },
+  "src/app/pages/home/components/aktualnosci/aktualnosci.html": {
+    "mtime": 1784406458.75761,
+    "ast_hash": "0fec4bbbcf4f472d5a32084ebd842db3",
+    "semantic_hash": ""
+  },
+  "src/app/pages/home/home.html": {
+    "mtime": 1787569860.8960352,
+    "ast_hash": "bcd680806cd05548a6d6bd15817b6537",
+    "semantic_hash": ""
+  },
+  "src/app/pages/konsultacje/konsultacje.html": {
+    "mtime": 1785946661.5192742,
+    "ast_hash": "ccd01cfb8987b9ad821257dfb1dece94",
+    "semantic_hash": ""
+  },
+  "src/app/pages/kontakt/components/formularz-kontaktowy/formularz-kontaktowy.html": {
+    "mtime": 1787567444.2999442,
+    "ast_hash": "4a0ad759b0ffa36afc8584b258a0b7c8",
+    "semantic_hash": ""
+  },
+  "src/app/pages/kontakt/kontakt.html": {
+    "mtime": 1788022713.795241,
+    "ast_hash": "4f8f794119f7e42850b23247d1cbcda4",
+    "semantic_hash": ""
+  },
+  "src/app/pages/o-nas/o-nas.html": {
+    "mtime": 1788043793.1346421,
+    "ast_hash": "fdc5d3013751d4917e511ed270f5756e",
+    "semantic_hash": ""
+  },
+  "src/app/pages/placowki/placowka-detail/placowka-detail.html": {
+    "mtime": 1788041651.6709175,
+    "ast_hash": "1fb258d536742fc9d1e556657a62bd21",
+    "semantic_hash": ""
+  },
+  "src/app/pages/placowki/placowki.html": {
+    "mtime": 1785946776.4330235,
+    "ast_hash": "742d71b0ff3573fcbba409829af9e49e",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/pracownia-endoskopii.html": {
+    "mtime": 1788042893.5771441,
+    "ast_hash": "e39cbf48a2fa4f600b21395bba8c7f24",
+    "semantic_hash": ""
+  },
+  "src/app/pages/specjalizacja/specjalizacja.html": {
+    "mtime": 1785607975.3537836,
+    "ast_hash": "4e6cc71324aabc344260efcbcdfbd331",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpraca/wspolpraca.html": {
+    "mtime": 1788043793.1366475,
+    "ast_hash": "a6f2893ccb22bb63eb3f8ac45a520c53",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/components/biogram-dialog/biogram-dialog.html": {
+    "mtime": 1784407000.9266229,
+    "ast_hash": "b12425e35b72fc87d2e5b706abbf559e",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/zespol.html": {
+    "mtime": 1784452014.8617113,
+    "ast_hash": "e5096cd087449e8859ab854ceea8903e",
+    "semantic_hash": ""
+  },
+  "src/index.html": {
+    "mtime": 1788022641.8410177,
+    "ast_hash": "2b12de41086cab8ca94c3659444494de",
+    "semantic_hash": ""
+  },
+  "uwagi.txt": {
+    "mtime": 1786557669.1191201,
+    "ast_hash": "acdcffcfc862d8395e6664659b4a9f7c",
+    "semantic_hash": ""
+  },
+  "public/images/amicare-bg.webp": {
+    "mtime": 1788022726.721398,
+    "ast_hash": "900c5974e81e5287e45a8d24a3b96fc2",
+    "semantic_hash": ""
+  },
+  "public/images/badania/tradzik-odwrocony.webp": {
+    "mtime": 1784402902.258437,
+    "ast_hash": "42ce6eef3d250c622e97dab0029c0523",
+    "semantic_hash": ""
+  },
+  "public/images/badania/watroba.webp": {
+    "mtime": 1784402902.5489748,
+    "ast_hash": "9200d9a839b0378857d3d16e4a257864",
+    "semantic_hash": ""
+  },
+  "public/images/centrum-015.webp": {
+    "mtime": 1784402899.3372617,
+    "ast_hash": "793230264c55677dc8ce7d002812c088",
+    "semantic_hash": ""
+  },
+  "public/images/centrum-020.webp": {
+    "mtime": 1784402899.5682702,
+    "ast_hash": "f1ba34f0323a7e98259a5e2bfb01ce2d",
+    "semantic_hash": ""
+  },
+  "public/images/slogan.svg": {
+    "mtime": 1784402900.6449401,
+    "ast_hash": "616dce6d39cc8be36b69f86389814b96",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/adam-poliwczak-kardiolog.webp": {
+    "mtime": 1784402926.300607,
+    "ast_hash": "6e277a8830ef0e845400669c8cdcb06e",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/adam_juszczak.webp": {
+    "mtime": 1784402926.431604,
+    "ast_hash": "2b540b17f5a62c0bad79f9f100c05bc3",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/agnieszka-bala.webp": {
+    "mtime": 1784402925.241742,
+    "ast_hash": "9d1d32d52888124a718cdc57fbf18263",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/danuta-domzal-magrowska.webp": {
+    "mtime": 1784402925.771665,
+    "ast_hash": "c6673df0146a2d38692aa7ff8c9c0699",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/dariusz-krzyczmanik.webp": {
+    "mtime": 1784402925.5494654,
+    "ast_hash": "c4a9506035c6f9d14ac528ed2f9893a3",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/dorota-sobczyk-clapa.webp": {
+    "mtime": 1784402927.0034287,
+    "ast_hash": "3120b3f67e32ef4415e62340081aeeb4",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/izabela-kubinska.webp": {
+    "mtime": 1784402925.9927294,
+    "ast_hash": "451f2c95fd19df1f6fcb8cecd337bf10",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/joanna-jerzynska.webp": {
+    "mtime": 1784402924.9082286,
+    "ast_hash": "1fd6831eb17cf0570b8960e093c008ab",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/julia-banasik.webp": {
+    "mtime": 1784402924.8122227,
+    "ast_hash": "fb238672a97b5a12fef831c75e913130",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/karolina-szczesniak.webp": {
+    "mtime": 1784402927.1054313,
+    "ast_hash": "35c8171049fd8cb5c564b747b81f20e5",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/magdalena-baranska.webp": {
+    "mtime": 1784402924.620229,
+    "ast_hash": "89c1cbe120058881577db180f7f618eb",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/marlena-serwacinska.webp": {
+    "mtime": 1784402926.6544278,
+    "ast_hash": "e2bbbd12831787489bf6ae8bc3979942",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/michal-bytomski.webp": {
+    "mtime": 1784402926.550432,
+    "ast_hash": "71f6c050068679b3d2934ff26d14f2a0",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/michal-stasiak.webp": {
+    "mtime": 1784402925.4407375,
+    "ast_hash": "5dee55206bc3ce05722791d8386e9aa9",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/milena-padysz.webp": {
+    "mtime": 1784402925.643476,
+    "ast_hash": "c6b28fc134d7c0efcdf551e087f97926",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/rafal-drozda.webp": {
+    "mtime": 1784402924.5262322,
+    "ast_hash": "4177134a1b333870179cc5349c059915",
+    "semantic_hash": ""
+  },
+  "src/app/pages/regulamin-platnosci/regulamin-platnosci.ts": {
+    "mtime": 1788012145.2240393,
+    "ast_hash": "e9d78d63540473edf83404a584266c1c",
+    "semantic_hash": ""
+  },
+  "src/app/pages/polityka-prywatnosci/polityka-prywatnosci.html": {
+    "mtime": 1787567140.1786947,
+    "ast_hash": "832ae1ee0ba4996d6d2e5d8ad6e5d0c9",
+    "semantic_hash": ""
+  },
+  "src/app/pages/regulamin-platnosci/regulamin-platnosci.html": {
+    "mtime": 1785526760.954685,
+    "ast_hash": "408cbdff08c3949a1e3310138f6a535f",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/zespol-detail/zespol-detail.ts": {
+    "mtime": 1788013338.5272715,
+    "ast_hash": "1cba340640f8f2a4ced643e49e97bf65",
+    "semantic_hash": ""
+  },
+  "src/app/pages/zespol/zespol-detail/zespol-detail.html": {
+    "mtime": 1785608091.8272223,
+    "ast_hash": "5d20d2ab0f2c166fbf2798445af1585a",
+    "semantic_hash": ""
+  },
+  "AUDYT-UI-UX.md": {
+    "mtime": 1784482485.1936276,
+    "ast_hash": "938990145841d1f9537999105ad6c1e5",
+    "semantic_hash": ""
+  },
+  "src/app/services/scroll-reveal.ts": {
+    "mtime": 1788040672.8434155,
+    "ast_hash": "d5dce5a314d110891b09ee494a4e1e43",
+    "semantic_hash": ""
+  },
+  ".claude/settings.local.json": {
+    "mtime": 1785610693.5903938,
+    "ast_hash": "e4b1307705acdf8b9d362296547fcf97",
+    "semantic_hash": ""
+  },
+  "audyt.md": {
+    "mtime": 1784485859.7513955,
+    "ast_hash": "7c1ad88283fe7d5d15af19f4ca688843",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia/gastroskopia.ts": {
+    "mtime": 1788020695.711989,
+    "ast_hash": "d88a5da4a7cacec5153db291f7c55120",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia/kolonoskopia.ts": {
+    "mtime": 1788020683.6664965,
+    "ast_hash": "8daf3cf3288f22aa968d741789ce6730",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia/gastroskopia.html": {
+    "mtime": 1787574828.2449048,
+    "ast_hash": "a41a617bb18f71bdb68f1d9395dda19e",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia/kolonoskopia.html": {
+    "mtime": 1787574828.2504601,
+    "ast_hash": "3477e004ccd59c40f76ddf32493d1272",
+    "semantic_hash": ""
+  },
+  ".vscode/extensions.json": {
+    "mtime": 1784402860.1075788,
+    "ast_hash": "66fd9e60d4633b6099fe02e06a7075ea",
+    "semantic_hash": ""
+  },
+  ".vscode/launch.json": {
+    "mtime": 1784402860.1085773,
+    "ast_hash": "430386a2f03e9d559664c196344c121b",
+    "semantic_hash": ""
+  },
+  ".vscode/tasks.json": {
+    "mtime": 1784402860.1095755,
+    "ast_hash": "d2fc2624d783980be281b4cf0acc2455",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-07-27-hero-3d-blob-design.md": {
+    "mtime": 1785176087.3073065,
+    "ast_hash": "89136c3089c645b60341f3adea0c7f70",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy-pages.yml": {
+    "mtime": 1787585444.4629226,
+    "ast_hash": "b97628323fd700c65c504591a905fced",
+    "semantic_hash": ""
+  },
+  "src/amicare-slogan1.svg": {
+    "mtime": 1785520738.2820337,
+    "ast_hash": "616dce6d39cc8be36b69f86389814b96",
+    "semantic_hash": ""
+  },
+  "public/Bez\u00a0tytu\u0142u.png": {
+    "mtime": 1785524477.6316202,
+    "ast_hash": "03a41f1e2b5eb77faa86e3a330792241",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.ts": {
+    "mtime": 1788041980.4542675,
+    "ast_hash": "fd949ff09eed537d69b930f78c7a9436",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.ts": {
+    "mtime": 1788020695.7129908,
+    "ast_hash": "f36532a79a383e020dfa5c65ea9fc1c5",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia-z-analgosedacja/gastroskopia-z-analgosedacja.html": {
+    "mtime": 1788041980.5198843,
+    "ast_hash": "0aa9f07c722f4c9f7c3b3af51a44cd05",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne/gastroskopia-znieczulenie-ogolne.html": {
+    "mtime": 1787574828.2504601,
+    "ast_hash": "d63121d0994bcba0685d3f854815d9ca",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.ts": {
+    "mtime": 1788041980.4572742,
+    "ast_hash": "86302d2399a4bd3331f40daf792a2215",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne/kolonoskopia-znieczulenie-ogolne.ts": {
+    "mtime": 1788020683.6675496,
+    "ast_hash": "83a50cbbccaee64de16628736ae5945d",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia-w-analgosedacji/kolonoskopia-w-analgosedacji.html": {
+    "mtime": 1788041980.5218792,
+    "ast_hash": "b08c9d15b561d857ae1a6f0cfa739e0d",
+    "semantic_hash": ""
+  },
+  "src/app/pages/pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne/kolonoskopia-znieczulenie-ogolne.html": {
+    "mtime": 1787574828.2589927,
+    "ast_hash": "ac9e935a46ab1351fb2b73274a604b27",
+    "semantic_hash": ""
+  },
+  "public/images/o-nas/budynek.webp": {
+    "mtime": 1785606358.882003,
+    "ast_hash": "23c31230cd79d4c2a421072ed8b85dd9",
+    "semantic_hash": ""
+  },
+  "public/images/o-nas/endoskopia-sprzet.webp": {
+    "mtime": 1785606357.7981803,
+    "ast_hash": "55e7931a904c717ac64c97cf3aa2ad79",
+    "semantic_hash": ""
+  },
+  "public/images/o-nas/gabinet.webp": {
+    "mtime": 1785606356.5231607,
+    "ast_hash": "fc9ccd56db86e3e4bc7025361f0ed399",
+    "semantic_hash": ""
+  },
+  "public/images/o-nas/recepcja.webp": {
+    "mtime": 1785606355.3811994,
+    "ast_hash": "cc38f9c5fb573bb723ea4850900c6216",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-diagnostyczne/models/diagnostyka-data.ts": {
+    "mtime": 1788043336.1446147,
+    "ast_hash": "ca25a0937be351be63d7c09a68c9161d",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-diagnostyczne/badanie-detail/badanie-detail.ts": {
+    "mtime": 1788013338.5282757,
+    "ast_hash": "8fa85d96563114dc5f3076268f5138e5",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-diagnostyczne/badanie-detail/badanie-detail.html": {
+    "mtime": 1785611862.3620389,
+    "ast_hash": "a599624d43d64fb7cb9312c7e3fe8739",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/gabinet-konsultacyjny.webp": {
+    "mtime": 1785945027.882,
+    "ast_hash": "968e5f70a3af1b49dba22eeae6d23fed",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/recepcja-detal.webp": {
+    "mtime": 1785945027.033,
+    "ast_hash": "ea6b18eb888e51b7848747ab2e6c384c",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/recepcja-lada.webp": {
+    "mtime": 1785945026.409,
+    "ast_hash": "b67c87721291e688f0e0c87c5b175bd1",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/sala-zabiegowa.webp": {
+    "mtime": 1785945028.703,
+    "ast_hash": "f1c58664cee3eb51bf85abb6315a82f4",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/sprzet-endoskopowy.webp": {
+    "mtime": 1785945029.463,
+    "ast_hash": "d79c344d84e85cff10ae1617ff6619c0",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/wejscie-parking.webp": {
+    "mtime": 1788020764.4773722,
+    "ast_hash": "6a621c3c5f0bba436ca2cb7fa4e594e6",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/insuflator-co2.webp": {
+    "mtime": 1785946208.272,
+    "ast_hash": "d189c3773f6126c7bcb1589416bcb489",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/sala-endoskopowa.webp": {
+    "mtime": 1785946208.695,
+    "ast_hash": "58e406143459a8ba972c73a4d516b83f",
+    "semantic_hash": ""
+  },
+  "src/app/components/entry-survey/entry-survey.ts": {
+    "mtime": 1787680798.246941,
+    "ast_hash": "a21372c04b2d4a92576f8769e2f393f0",
+    "semantic_hash": ""
+  },
+  "src/app/components/entry-survey/entry-survey.html": {
+    "mtime": 1787567473.202076,
+    "ast_hash": "0f70005de2bd00722abf9dc5c6a1836a",
+    "semantic_hash": ""
+  },
+  "src/app/config/api.config.ts": {
+    "mtime": 1787567420.4834857,
+    "ast_hash": "ae6222ccf0ec1bcee7a491113c162be6",
+    "semantic_hash": ""
+  },
+  "docs/chunk-2AMYQ2AC.js": {
+    "mtime": 1786304830.712251,
+    "ast_hash": "3ec7b231fedf0cc746c6195f0d106a8e",
+    "semantic_hash": ""
+  },
+  "docs/chunk-2C5IIOKE.js": {
+    "mtime": 1786304830.7132504,
+    "ast_hash": "dff12e633772e71c2d8031fd5efbb9a0",
+    "semantic_hash": ""
+  },
+  "docs/chunk-2NU2EFFN.js": {
+    "mtime": 1786304830.7142503,
+    "ast_hash": "e47726e38cf4964f99bfd1b3e9acec25",
+    "semantic_hash": ""
+  },
+  "docs/chunk-3Q3XPL3E.js": {
+    "mtime": 1786304830.7152503,
+    "ast_hash": "2b9fb132a4588e799d9923dc99c9d8d9",
+    "semantic_hash": ""
+  },
+  "docs/chunk-4ZUYKUDO.js": {
+    "mtime": 1786304830.7162497,
+    "ast_hash": "eed0787535f04410d7d1f5811143bf4f",
+    "semantic_hash": ""
+  },
+  "docs/chunk-6JI7OYZJ.js": {
+    "mtime": 1786304830.7172508,
+    "ast_hash": "3fcbfec5073361779ef678f048ac9f18",
+    "semantic_hash": ""
+  },
+  "docs/chunk-7Z2DGOUG.js": {
+    "mtime": 1786304830.7182503,
+    "ast_hash": "a5bffbf31b93bc251748db7beb727bf9",
+    "semantic_hash": ""
+  },
+  "docs/chunk-CE3VTVLW.js": {
+    "mtime": 1786304830.71925,
+    "ast_hash": "2d6636c4f32038ba5fd0e79723ee067d",
+    "semantic_hash": ""
+  },
+  "docs/chunk-EA3UHFAO.js": {
+    "mtime": 1786304830.7202501,
+    "ast_hash": "cf20a3f4ddd5f4495730518a4f5fda90",
+    "semantic_hash": ""
+  },
+  "docs/chunk-FHAPVKAG.js": {
+    "mtime": 1786304830.7212503,
+    "ast_hash": "28e0aad524d227813db0845740ce2a8d",
+    "semantic_hash": ""
+  },
+  "docs/chunk-GSK7Z4PX.js": {
+    "mtime": 1786304830.7222505,
+    "ast_hash": "70174c48ffb652205fa9b11323103675",
+    "semantic_hash": ""
+  },
+  "docs/chunk-IFM2YI3K.js": {
+    "mtime": 1786304830.7232504,
+    "ast_hash": "a135f57c17d880bb437ff1f79d673822",
+    "semantic_hash": ""
+  },
+  "docs/chunk-IJ6QUMF3.js": {
+    "mtime": 1786304830.7242491,
+    "ast_hash": "0890b98a85ee88ecdc32bbfdf8cebb73",
+    "semantic_hash": ""
+  },
+  "docs/chunk-KF7IVESP.js": {
+    "mtime": 1786304830.7252486,
+    "ast_hash": "cbb065c6dd2d05858ccc3bc2494b5c4e",
+    "semantic_hash": ""
+  },
+  "docs/chunk-LW7FNN3I.js": {
+    "mtime": 1786304830.7262492,
+    "ast_hash": "d8dcbb583c19c9be00bc14c7e5a498b6",
+    "semantic_hash": ""
+  },
+  "docs/chunk-MP4VU3G6.js": {
+    "mtime": 1786304830.7272494,
+    "ast_hash": "7369e0221015ea33fa2a8a82ab55c0c6",
+    "semantic_hash": ""
+  },
+  "docs/chunk-N2RHFJM4.js": {
+    "mtime": 1786304830.7282503,
+    "ast_hash": "3b62835f5bb23cdeb33717765e3ad658",
+    "semantic_hash": ""
+  },
+  "docs/chunk-NSYNGZWC.js": {
+    "mtime": 1786304830.7292502,
+    "ast_hash": "32ae69cbd1bc8cdfec139d2b89dfb947",
+    "semantic_hash": ""
+  },
+  "docs/chunk-PKO7TAFU.js": {
+    "mtime": 1786304830.7302492,
+    "ast_hash": "dd078377b1826b6d7bc1d305506bb106",
+    "semantic_hash": ""
+  },
+  "docs/chunk-Q3YR65IN.js": {
+    "mtime": 1786304830.7302492,
+    "ast_hash": "51b9f44f066642138be9604eb5377cac",
+    "semantic_hash": ""
+  },
+  "docs/chunk-Q66MMNBI.js": {
+    "mtime": 1786304830.7312498,
+    "ast_hash": "4c33eff75b299af4c7b04ec0808c9fd4",
+    "semantic_hash": ""
+  },
+  "docs/chunk-REWALMGU.js": {
+    "mtime": 1786304830.73225,
+    "ast_hash": "5142e460a213207cb8a1a3423c03d953",
+    "semantic_hash": ""
+  },
+  "docs/chunk-RNK2NDIJ.js": {
+    "mtime": 1786304830.7332492,
+    "ast_hash": "00e9e729d8e4d8f181ba5f2f402040ab",
+    "semantic_hash": ""
+  },
+  "docs/chunk-SOLVLAC6.js": {
+    "mtime": 1786304830.7362492,
+    "ast_hash": "301f722fba92b5d5f9003e3b4919b59f",
+    "semantic_hash": ""
+  },
+  "docs/chunk-TTR72NMK.js": {
+    "mtime": 1786304830.7372494,
+    "ast_hash": "cf8e3f6b22ba095b274e8e6b80bd16b8",
+    "semantic_hash": ""
+  },
+  "docs/chunk-UUUE6T76.js": {
+    "mtime": 1786304830.7382488,
+    "ast_hash": "34f64a37d1e926ab165f48ae51ed069c",
+    "semantic_hash": ""
+  },
+  "docs/chunk-UYKIZHI6.js": {
+    "mtime": 1786304830.7392502,
+    "ast_hash": "41de02a73041fc604368260f61b944cd",
+    "semantic_hash": ""
+  },
+  "docs/chunk-WYVBYYC4.js": {
+    "mtime": 1786304830.74025,
+    "ast_hash": "1c80579cc1aa20d1dc636dab12592734",
+    "semantic_hash": ""
+  },
+  "docs/chunk-XEE7SQ65.js": {
+    "mtime": 1786304830.7412496,
+    "ast_hash": "134e0e83eeab51867a222c9b8f641109",
+    "semantic_hash": ""
+  },
+  "docs/chunk-XEOKNEU7.js": {
+    "mtime": 1786304830.7422495,
+    "ast_hash": "c588261c2b7fc7aab91814d7220fdd68",
+    "semantic_hash": ""
+  },
+  "docs/chunk-XMMC6NEV.js": {
+    "mtime": 1786304830.7432497,
+    "ast_hash": "209bac838f81f8e6d9f8fb1d6e976e42",
+    "semantic_hash": ""
+  },
+  "docs/chunk-XPWGDVHT.js": {
+    "mtime": 1786304830.7442498,
+    "ast_hash": "ee1b7950bf55946df8f736ecdc14984d",
+    "semantic_hash": ""
+  },
+  "docs/chunk-XUZD56DQ.js": {
+    "mtime": 1786304830.7442498,
+    "ast_hash": "05b9bc9e10f772750661760d8585110e",
+    "semantic_hash": ""
+  },
+  "docs/main-YDVUPVWX.js": {
+    "mtime": 1786304830.829251,
+    "ast_hash": "82722f616b4c6762f788de71217c4ab9",
+    "semantic_hash": ""
+  },
+  "docs/polyfills-5CFQRCPP.js": {
+    "mtime": 1786304830.830251,
+    "ast_hash": "7fb7f50e263af46be6f0caa621b9b547",
+    "semantic_hash": ""
+  },
+  "docs/404.html": {
+    "mtime": 1786304829.6125028,
+    "ast_hash": "5d6ce6bc330e4778ebe1df6786e10db1",
+    "semantic_hash": ""
+  },
+  "docs/index.html": {
+    "mtime": 1786304830.8272505,
+    "ast_hash": "5d6ce6bc330e4778ebe1df6786e10db1",
+    "semantic_hash": ""
+  },
+  "docs/robots.txt": {
+    "mtime": 1786304830.831251,
+    "ast_hash": "f0ea3a8f69ab43b8d5b81c8904a95300",
+    "semantic_hash": ""
+  },
+  "docs/Bez\u00a0tytu\u0142u.png": {
+    "mtime": 1786304829.6215014,
+    "ast_hash": "03a41f1e2b5eb77faa86e3a330792241",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/aleksandra-bala-wojsznis.jpg": {
+    "mtime": 1786304829.6375024,
+    "ast_hash": "ad4735e55c8f0a8d20952b11d358548e",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/anna-gora.jpg": {
+    "mtime": 1786304829.6545017,
+    "ast_hash": "7343fc849198b00e61be5ab98d27af54",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/danuta-domzal-magrowska-1.jpg": {
+    "mtime": 1786304829.6695035,
+    "ast_hash": "ed66d245ee076386d1c4832aa77f13cf",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/danuta-domzal-magrowska.jpg": {
+    "mtime": 1786304829.6935036,
+    "ast_hash": "601f90e4349a165b432a2230de4b6d0d",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/dariusz-krzyczmanik-1.jpg": {
+    "mtime": 1786304829.7165024,
+    "ast_hash": "e9987e6c578314d5bb94beb7e3a9c00a",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/dariusz-krzyczmanik.jpg": {
+    "mtime": 1786304829.7305033,
+    "ast_hash": "1d656cc38eace2a3b4e84970b5cc0d9e",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/grupa-zarzad-01-2.jpg": {
+    "mtime": 1786304829.7595012,
+    "ast_hash": "68ebec621e9d6d972df2e50e1e3e8242",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/grupa-zarzad-01.jpg": {
+    "mtime": 1786304829.7885075,
+    "ast_hash": "c24b42b8a3f223c0b2885b8157af03b3",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/grupa-zarzad-02-trio-2.jpg": {
+    "mtime": 1786304829.8155074,
+    "ast_hash": "30f0d34723117da5c7ce66d08f589ab7",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/grupa-zarzad-02-trio.jpg": {
+    "mtime": 1786304829.8435044,
+    "ast_hash": "2c32391b2fdc50c6ab3bbeaaa59df4ec",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/izabela-kubinska.jpg": {
+    "mtime": 1786304829.8705058,
+    "ast_hash": "8d15b1ce957ddc55c66c928f34bee1d7",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/julia-banasik.jpg": {
+    "mtime": 1786304829.8895023,
+    "ast_hash": "ef054ca8149f7e10da6a15be8f8d03e6",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/julia-banasik2.jpg": {
+    "mtime": 1786304829.9145045,
+    "ast_hash": "ce87b935b60e9dc74a8fa3a6a220a0fe",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/karolina-szczesniak.jpg": {
+    "mtime": 1786304829.9355047,
+    "ast_hash": "9fa8737691b69ef042e94825548c46ae",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/kuba-majka.jpg": {
+    "mtime": 1786304829.9565043,
+    "ast_hash": "a44bf31bd2edcea075d70d17b693d057",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/magdalena-baranska-2.jpg": {
+    "mtime": 1786304829.97551,
+    "ast_hash": "29d5176bb08fe789e063a6c359534158",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/magdalena-baranska.jpg": {
+    "mtime": 1786304830.012068,
+    "ast_hash": "9b5a89800ffda3072a494c7de443eff4",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/michal-bytomski-1.jpg": {
+    "mtime": 1786304830.0320718,
+    "ast_hash": "310dfbfd63409992c2a6fa8367edda66",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/michal-bytomski-2.jpg": {
+    "mtime": 1786304830.0530717,
+    "ast_hash": "86a728854bb1ef4b500e007a6740cd52",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/michal-bytomski-3.jpg": {
+    "mtime": 1786304830.0740707,
+    "ast_hash": "fea7e184e3264b6151483339cef116e5",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/michal-bytomski.jpg": {
+    "mtime": 1786304830.093069,
+    "ast_hash": "15e7947b2c38bcc7bf0087dbe538f7de",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/michal-stasiak-2.jpg": {
+    "mtime": 1786304830.1140723,
+    "ast_hash": "2b65a4ce427f7f73036d09d36059b21d",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/michal-stasiak-3.jpg": {
+    "mtime": 1786304830.1310747,
+    "ast_hash": "b786cb28ce0675a25cba03b6ee513bcb",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/michal-stasiak.jpg": {
+    "mtime": 1786304830.1530707,
+    "ast_hash": "e97854c9eaa755eb3fef5a87d34189ec",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/milena-padysz-1.jpg": {
+    "mtime": 1786304830.17807,
+    "ast_hash": "9bb3cdeb09e7ad963e0b0bc3e3648ca2",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/milena-padysz.jpg": {
+    "mtime": 1786304830.1960697,
+    "ast_hash": "a1ab8e3fe48ccccb03b45f6e5e4ec89d",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam.jpg": {
+    "mtime": 1786304830.2770715,
+    "ast_hash": "a30afd97e62302e1904c2d6c47f5e0a2",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam1.jpg": {
+    "mtime": 1786304830.2920694,
+    "ast_hash": "37ab41b7afa1507f880b4eef1033e4a1",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam10.jpg": {
+    "mtime": 1786304830.3180735,
+    "ast_hash": "d3e2bdc9e7e2c63d3ca822e9bfea6cab",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam11.jpg": {
+    "mtime": 1786304830.34108,
+    "ast_hash": "14bd9d6e1740de89e137f1c21e7f8764",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam12.jpg": {
+    "mtime": 1786304830.363074,
+    "ast_hash": "9bc7ec3f198fd2b4491d142c891e70bb",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam13.jpg": {
+    "mtime": 1786304830.390071,
+    "ast_hash": "dbdf1cc111206b3f403a1dbd4f51d216",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam14.jpg": {
+    "mtime": 1786304830.417743,
+    "ast_hash": "b19acf648446e969ae3bfa6fe8def1ef",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam2.jpg": {
+    "mtime": 1786304830.4477434,
+    "ast_hash": "82efeafae34a4952ac5542285b8c70a5",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam3.jpg": {
+    "mtime": 1786304830.4707446,
+    "ast_hash": "f37395824d196c0af5b13805ffb1609a",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam4.jpg": {
+    "mtime": 1786304830.494743,
+    "ast_hash": "aaf6a8eceadd255ac7a455982f71ecf8",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam5.jpg": {
+    "mtime": 1786304830.518742,
+    "ast_hash": "02ba550f0c2c29c9ab82c303141a32d0",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam6.jpg": {
+    "mtime": 1786304830.5417428,
+    "ast_hash": "fd170b4cc73f4556582d266971ff6456",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam7.jpg": {
+    "mtime": 1786304830.562249,
+    "ast_hash": "45f0c08025cefc68e5863f489aa9887f",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam8.jpg": {
+    "mtime": 1786304830.5842505,
+    "ast_hash": "44320560c8518a86e6575dae9f59ff5f",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/nieznam9.jpg": {
+    "mtime": 1786304830.5992513,
+    "ast_hash": "54d796ae5c8c72f8d649c076617d79ed",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/para-01.jpg": {
+    "mtime": 1786304830.62325,
+    "ast_hash": "0c4c8fb3a97be08f427aa3954e43b202",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/para-02.jpg": {
+    "mtime": 1786304830.6532505,
+    "ast_hash": "d82c62008b195dedf687ac8d1922d055",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/rafal-drozda-1.jpg": {
+    "mtime": 1786304830.6692512,
+    "ast_hash": "0acf2b19334ca04f8a748f095ffafb2a",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/rafal-drozda-2.jpg": {
+    "mtime": 1786304830.691251,
+    "ast_hash": "94453ce626d340359de6a0a7162212ed",
+    "semantic_hash": ""
+  },
+  "docs/amicare-zrodla-foto/zespolNowe/rafal-drozda.jpg": {
+    "mtime": 1786304830.7112527,
+    "ast_hash": "76fb1abc0450b3d14a5a79447d98aaea",
+    "semantic_hash": ""
+  },
+  "docs/images/amicare-bg.webp": {
+    "mtime": 1786304830.74825,
+    "ast_hash": "576546975aa4b6b480dfdf81e593d936",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/cennik-drozda.jpg": {
+    "mtime": 1786304830.7512486,
+    "ast_hash": "8bdaa2197fc0682dd608760710a04d0f",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/crohn.jpg": {
+    "mtime": 1786304830.7532496,
+    "ast_hash": "98c3af2096861c0e75698c55637fd102",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/gastropareza.png": {
+    "mtime": 1786304830.755248,
+    "ast_hash": "e0e045ea05c5939aa804f609fd059993",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/luszczyca.jpg": {
+    "mtime": 1786304830.7572498,
+    "ast_hash": "1740bc7b91f0d807a4ed70274e99404c",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/miastenia-gravis.jpg": {
+    "mtime": 1786304830.7592502,
+    "ast_hash": "32a50480179742ffdda61dd6b3a33e07",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/swierzbiaczka.jpg": {
+    "mtime": 1786304830.761253,
+    "ast_hash": "126d1c166eaee35c05c4131d4274e137",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/tradzik-odwrocony.webp": {
+    "mtime": 1786304830.7622504,
+    "ast_hash": "42ce6eef3d250c622e97dab0029c0523",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/tradzik.png": {
+    "mtime": 1786304830.765249,
+    "ast_hash": "c8d2b93295be55ac1fd0eb867def1bad",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/watroba.webp": {
+    "mtime": 1786304830.76725,
+    "ast_hash": "9200d9a839b0378857d3d16e4a257864",
+    "semantic_hash": ""
+  },
+  "docs/images/badania/wzjg.jpg": {
+    "mtime": 1786304830.7692492,
+    "ast_hash": "5b8e2403876bba6918a45c6e597e0e86",
+    "semantic_hash": ""
+  },
+  "docs/images/centrum-015.webp": {
+    "mtime": 1786304830.7702494,
+    "ast_hash": "793230264c55677dc8ce7d002812c088",
+    "semantic_hash": ""
+  },
+  "docs/images/centrum-020.webp": {
+    "mtime": 1786304830.7712505,
+    "ast_hash": "f1ba34f0323a7e98259a5e2bfb01ce2d",
+    "semantic_hash": ""
+  },
+  "docs/images/kompleksowosc-01.jpg": {
+    "mtime": 1786304830.7762482,
+    "ast_hash": "ef759cd1b74030b26bc5a2ce6ed38ba2",
+    "semantic_hash": ""
+  },
+  "docs/images/kompleksowosc-02.jpg": {
+    "mtime": 1786304830.7802496,
+    "ast_hash": "1f1608e4c29bdb94301424417679da9e",
+    "semantic_hash": ""
+  },
+  "docs/images/logo.png": {
+    "mtime": 1786304830.7812495,
+    "ast_hash": "ea23aeb246bcdc996803331718d11076",
+    "semantic_hash": ""
+  },
+  "docs/images/o-nas/budynek.webp": {
+    "mtime": 1786304830.78325,
+    "ast_hash": "23c31230cd79d4c2a421072ed8b85dd9",
+    "semantic_hash": ""
+  },
+  "docs/images/o-nas/endoskopia-sprzet.webp": {
+    "mtime": 1786304830.7842503,
+    "ast_hash": "55e7931a904c717ac64c97cf3aa2ad79",
+    "semantic_hash": ""
+  },
+  "docs/images/o-nas/gabinet.webp": {
+    "mtime": 1786304830.7852495,
+    "ast_hash": "fc9ccd56db86e3e4bc7025361f0ed399",
+    "semantic_hash": ""
+  },
+  "docs/images/o-nas/recepcja.webp": {
+    "mtime": 1786304830.7862499,
+    "ast_hash": "cc38f9c5fb573bb723ea4850900c6216",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/gabinet-konsultacyjny.webp": {
+    "mtime": 1786304830.7882502,
+    "ast_hash": "968e5f70a3af1b49dba22eeae6d23fed",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/insuflator-co2.webp": {
+    "mtime": 1786304830.7892501,
+    "ast_hash": "d189c3773f6126c7bcb1589416bcb489",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/recepcja-detal.webp": {
+    "mtime": 1786304830.7912507,
+    "ast_hash": "ea6b18eb888e51b7848747ab2e6c384c",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/recepcja-lada.webp": {
+    "mtime": 1786304830.7922504,
+    "ast_hash": "b67c87721291e688f0e0c87c5b175bd1",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/sala-endoskopowa.webp": {
+    "mtime": 1786304830.7932498,
+    "ast_hash": "58e406143459a8ba972c73a4d516b83f",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/sala-zabiegowa.webp": {
+    "mtime": 1786304830.7942512,
+    "ast_hash": "f1c58664cee3eb51bf85abb6315a82f4",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/sprzet-endoskopowy.webp": {
+    "mtime": 1786304830.7952497,
+    "ast_hash": "d79c344d84e85cff10ae1617ff6619c0",
+    "semantic_hash": ""
+  },
+  "docs/images/przychodnia/wejscie-parking.webp": {
+    "mtime": 1786304830.7982502,
+    "ast_hash": "6a621c3c5f0bba436ca2cb7fa4e594e6",
+    "semantic_hash": ""
+  },
+  "docs/images/slogan.svg": {
+    "mtime": 1786304830.7992496,
+    "ast_hash": "7d7e33dc03a08f4128aa6f34086a15f0",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/adam-poliwczak-kardiolog.webp": {
+    "mtime": 1786304830.8002498,
+    "ast_hash": "6e277a8830ef0e845400669c8cdcb06e",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/adam_juszczak.webp": {
+    "mtime": 1786304830.80125,
+    "ast_hash": "2b540b17f5a62c0bad79f9f100c05bc3",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/agnieszka-bala.webp": {
+    "mtime": 1786304830.80225,
+    "ast_hash": "9d1d32d52888124a718cdc57fbf18263",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/aleksandra-bala-wojsznis-1.jpg": {
+    "mtime": 1786304830.8032506,
+    "ast_hash": "bcbe0bfcabb7cc0b2bb2b55b4a6d95e0",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/amicare-angelika-jurkiewicz-sm.jpg": {
+    "mtime": 1786304830.8042502,
+    "ast_hash": "6a39eee7eeeacac759f76f48e3001938",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/anna-gora-sm.jpg": {
+    "mtime": 1786304830.80525,
+    "ast_hash": "b5d0ddc145985dc14712cdb20d3765df",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/danuta-domzal-magrowska.webp": {
+    "mtime": 1786304830.80625,
+    "ast_hash": "c6673df0146a2d38692aa7ff8c9c0699",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/dariusz-krzyczmanik.webp": {
+    "mtime": 1786304830.80725,
+    "ast_hash": "c4a9506035c6f9d14ac528ed2f9893a3",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/dorota-sobczyk-clapa.webp": {
+    "mtime": 1786304830.8082495,
+    "ast_hash": "3120b3f67e32ef4415e62340081aeeb4",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/dr-katarzyna-przybylowska-kustosik.jpg": {
+    "mtime": 1786304830.8092499,
+    "ast_hash": "3175f4d259997265793e9fe24c3466b2",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/hubert-sadowski-sm.jpg": {
+    "mtime": 1786304830.8092499,
+    "ast_hash": "57aaad73586f02062e06b7a59448a704",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/izabela-kubinska.webp": {
+    "mtime": 1786304830.81025,
+    "ast_hash": "451f2c95fd19df1f6fcb8cecd337bf10",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/jakub-majka.jpg": {
+    "mtime": 1786304830.8122504,
+    "ast_hash": "1aaf92db7d5bd6645afeb09140b6c8ec",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/joanna-jerzynska.webp": {
+    "mtime": 1786304830.8122504,
+    "ast_hash": "1fd6831eb17cf0570b8960e093c008ab",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/joanna-kowalska-majka.jpg": {
+    "mtime": 1786304830.8132505,
+    "ast_hash": "396f3f64888de5109e8c3e9bc62b8848",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/julia-banasik.webp": {
+    "mtime": 1786304830.81425,
+    "ast_hash": "fb238672a97b5a12fef831c75e913130",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/karolina-niczyporuk.jpg": {
+    "mtime": 1786304830.8172479,
+    "ast_hash": "9cd733dcbd7c259a620a5abfb11acb9a",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/karolina-szczesniak.webp": {
+    "mtime": 1786304830.8182514,
+    "ast_hash": "35c8171049fd8cb5c564b747b81f20e5",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/lukasz-spadlinski-kardiolog.jpg": {
+    "mtime": 1786304830.8192508,
+    "ast_hash": "bb3161c8f148b96dfe13977d70378aec",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/magdalena-baranska.webp": {
+    "mtime": 1786304830.8202496,
+    "ast_hash": "89c1cbe120058881577db180f7f618eb",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/marlena-serwacinska.webp": {
+    "mtime": 1786304830.8212507,
+    "ast_hash": "e2bbbd12831787489bf6ae8bc3979942",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/michal-bytomski.webp": {
+    "mtime": 1786304830.8222497,
+    "ast_hash": "71f6c050068679b3d2934ff26d14f2a0",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/michal-stasiak.webp": {
+    "mtime": 1786304830.823252,
+    "ast_hash": "5dee55206bc3ce05722791d8386e9aa9",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/milena-padysz.webp": {
+    "mtime": 1786304830.82425,
+    "ast_hash": "c6b28fc134d7c0efcdf551e087f97926",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/natalia-zawada-kornalewicz.jpg": {
+    "mtime": 1786304830.82525,
+    "ast_hash": "bbdb37b836c4ec45bf06ed984f6c09fd",
+    "semantic_hash": ""
+  },
+  "docs/images/zespol/rafal-drozda.webp": {
+    "mtime": 1786304830.8262503,
+    "ast_hash": "4177134a1b333870179cc5349c059915",
+    "semantic_hash": ""
+  },
+  "server/deploy/wdroz.sh": {
+    "mtime": 1787568103.2254937,
+    "ast_hash": "847bb285095e0504298756955ba8da9a",
+    "semantic_hash": ""
+  },
+  "server/package.json": {
+    "mtime": 1787567403.027762,
+    "ast_hash": "8bdac6ceb7f81bb3b9ef1bbfff2a6a4f",
+    "semantic_hash": ""
+  },
+  "server/server.js": {
+    "mtime": 1787568000.0632274,
+    "ast_hash": "e86545029ae5b610011b6e69f2867e36",
+    "semantic_hash": ""
+  },
+  "src/app/services/formularze.ts": {
+    "mtime": 1787567420.5270052,
+    "ast_hash": "c301a69ece05c49119f12dd89e03efc9",
+    "semantic_hash": ""
+  },
+  "server/README.md": {
+    "mtime": 1787568122.4914548,
+    "ast_hash": "f402095ac633503d4607c31118d16fda",
+    "semantic_hash": ""
+  },
+  "public/images/badania/cennik-drozda.webp": {
+    "mtime": 1787568570.4171574,
+    "ast_hash": "789ed27bccbee9350c348b01248d94bb",
+    "semantic_hash": ""
+  },
+  "public/images/badania/crohn.webp": {
+    "mtime": 1787568570.5939422,
+    "ast_hash": "529865f5173581a762330368153b2004",
+    "semantic_hash": ""
+  },
+  "public/images/badania/gastropareza.webp": {
+    "mtime": 1787568570.7409797,
+    "ast_hash": "f43d7aafe4be8674dbca07fd385bda2e",
+    "semantic_hash": ""
+  },
+  "public/images/badania/luszczyca.webp": {
+    "mtime": 1787568570.8955655,
+    "ast_hash": "bceaaad7d4aeedfea014ba65c2ff1d33",
+    "semantic_hash": ""
+  },
+  "public/images/badania/miastenia-gravis.webp": {
+    "mtime": 1787568571.061314,
+    "ast_hash": "5eaecbe6d2159ccfae6ec2d70497081a",
+    "semantic_hash": ""
+  },
+  "public/images/badania/swierzbiaczka.webp": {
+    "mtime": 1787568571.210311,
+    "ast_hash": "f7f8fe1683d08eea5f961cea4453cf09",
+    "semantic_hash": ""
+  },
+  "public/images/badania/tradzik.webp": {
+    "mtime": 1787568571.3611646,
+    "ast_hash": "f97a2afe4b1ea5d10ce1c6d121bafc55",
+    "semantic_hash": ""
+  },
+  "public/images/badania/wzjg.webp": {
+    "mtime": 1787568571.5262992,
+    "ast_hash": "c20e526397d5de659b05ba2f8f4c7c1a",
+    "semantic_hash": ""
+  },
+  "public/images/kompleksowosc-01.webp": {
+    "mtime": 1787568571.9884868,
+    "ast_hash": "ae4dc0aa58e77e652c90ec11b8f3f537",
+    "semantic_hash": ""
+  },
+  "public/images/kompleksowosc-02.webp": {
+    "mtime": 1787568572.444878,
+    "ast_hash": "e2a8ba6c52a77b0722389760a451d880",
+    "semantic_hash": ""
+  },
+  "public/images/logo.webp": {
+    "mtime": 1787568574.678162,
+    "ast_hash": "7c9ef4139d21f2c36a13a68bcef9e3a2",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/aleksandra-bala-wojsznis-1.webp": {
+    "mtime": 1787568574.6921608,
+    "ast_hash": "86c5d11799dfce44f144773d46c0e22c",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/amicare-angelika-jurkiewicz-sm.webp": {
+    "mtime": 1787568574.7166831,
+    "ast_hash": "6a97d2833dfb1afdeadfe5b2a3edd34d",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/anna-gora-sm.webp": {
+    "mtime": 1787568574.7376828,
+    "ast_hash": "3639d77c82669538fd18b458bd4464f1",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/dr-katarzyna-przybylowska-kustosik.webp": {
+    "mtime": 1787568574.7546859,
+    "ast_hash": "55aa5430d6a8aba7d5ab4283b31637e3",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/hubert-sadowski-sm.webp": {
+    "mtime": 1787568574.7752118,
+    "ast_hash": "6a2b2625d3da56de059cc93e7d9c4973",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/jakub-majka.webp": {
+    "mtime": 1787568574.8457353,
+    "ast_hash": "d552eea7e2e865244fcf49ea26f12243",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/joanna-kowalska-majka.webp": {
+    "mtime": 1787568574.858735,
+    "ast_hash": "c225107213c6eb3ff3cd4656a3adc8b5",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/karolina-niczyporuk.webp": {
+    "mtime": 1787568574.8712678,
+    "ast_hash": "ab717d353ef0f314291c4905cc750b7f",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/lukasz-spadlinski-kardiolog.webp": {
+    "mtime": 1787568574.9733574,
+    "ast_hash": "bda2a0ccd5fe13f8540068e2b31bc884",
+    "semantic_hash": ""
+  },
+  "public/images/zespol/natalia-zawada-kornalewicz.webp": {
+    "mtime": 1787568574.9868035,
+    "ast_hash": "485bb87425539164c9ef540656ab448a",
+    "semantic_hash": ""
+  },
+  "src/app/directives/autolink-badania.ts": {
+    "mtime": 1788022937.9728224,
+    "ast_hash": "d921b7fadad9bea9badf5ead1e914427",
+    "semantic_hash": ""
+  },
+  "src/app/pages/cennik/models/cennik-data.ts": {
+    "mtime": 1788041980.4462676,
+    "ast_hash": "1a36b1d3f75f560bc376874efc6a45f8",
+    "semantic_hash": ""
+  },
+  "src/app/pages/cennik/cennik.ts": {
+    "mtime": 1788012145.2100353,
+    "ast_hash": "9d232c42fb695aac449f6e6dd2ec15b5",
+    "semantic_hash": ""
+  },
+  "src/app/pages/cennik/cennik.html": {
+    "mtime": 1787576654.169567,
+    "ast_hash": "d582084d380932207ce1abe2cb9dc392",
+    "semantic_hash": ""
+  },
+  "src/app/components/cennik-panel/cennik-panel.ts": {
+    "mtime": 1787575905.7836597,
+    "ast_hash": "593ef3a0a372c6eaf61734b321f03945",
+    "semantic_hash": ""
+  },
+  "src/app/components/cennik-panel/cennik-panel.html": {
+    "mtime": 1787575905.8417213,
+    "ast_hash": "417ecbddd5a1abaa0058543bfbe0f33d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/README.md": {
+    "mtime": 1787578155.1435454,
+    "ast_hash": "69eb6dedb8b634326360e6d843f4cfdd",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/A1 GOTOWE.webp": {
+    "mtime": 1787577184.1528687,
+    "ast_hash": "34ee9acd74fd1d5949e501976770541e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6297.webp": {
+    "mtime": 1787577189.0638504,
+    "ast_hash": "393271fc0bb7831b453c999e7b872d1e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6300 kopia.webp": {
+    "mtime": 1787577193.9260397,
+    "ast_hash": "65a9014073e47a2c6b2ca567c99da289",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6300.webp": {
+    "mtime": 1787577198.545871,
+    "ast_hash": "03faf2c7cf8e8e9aa02d6c9d2d5a4062",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6301.webp": {
+    "mtime": 1787577201.766356,
+    "ast_hash": "2dcaa81029750e71613a4d24e5e13225",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6304.webp": {
+    "mtime": 1787577205.5313454,
+    "ast_hash": "5990104f27dcc9adaa30de8fcd09c734",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6305.webp": {
+    "mtime": 1787577208.5857108,
+    "ast_hash": "8c1b400218b49ad3676244a965698322",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6308.webp": {
+    "mtime": 1787577213.0485651,
+    "ast_hash": "65de41f90441bd3acfc3cc94c86d67a3",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6309.webp": {
+    "mtime": 1787577217.309006,
+    "ast_hash": "78e93c2478f43727ecd845bb6cb07cb0",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6310.webp": {
+    "mtime": 1787577221.498561,
+    "ast_hash": "26563172293967e4960ad1b77fda2b7d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6311.webp": {
+    "mtime": 1787577225.3035343,
+    "ast_hash": "adf6e7117dd9b89dc2849f78cba78fa6",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6313.webp": {
+    "mtime": 1787577229.4439957,
+    "ast_hash": "0c40a98c651e6ef06766cdc77225bdbc",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6314.webp": {
+    "mtime": 1787577234.012915,
+    "ast_hash": "ec4812eedf3976ab779175a7c24eef37",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6315.webp": {
+    "mtime": 1787577237.1347852,
+    "ast_hash": "aaca56d190519b947b3d0de984f21f3f",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6316.webp": {
+    "mtime": 1787577250.6818624,
+    "ast_hash": "aaf87ed662d789d49190a134dc088de1",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6319.webp": {
+    "mtime": 1787577254.8437881,
+    "ast_hash": "d3b1220b13b3feb2c37b37ec3227e565",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6321.webp": {
+    "mtime": 1787577259.3356469,
+    "ast_hash": "0cf6e801a77d8428066445bb9a984f05",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6323.webp": {
+    "mtime": 1787577264.023915,
+    "ast_hash": "c49ce33f73e414ccf3617c56fb66abb4",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6324.webp": {
+    "mtime": 1787577268.8702307,
+    "ast_hash": "603a6813f81e2be0597fe7c929affba4",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6325.webp": {
+    "mtime": 1787577272.8895004,
+    "ast_hash": "159bb2bbac783bf0be2ea168c0796ba1",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6326.webp": {
+    "mtime": 1787577277.100711,
+    "ast_hash": "555af4e3d4ce88f34dd4c3200469f18c",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6328.webp": {
+    "mtime": 1787577293.2201004,
+    "ast_hash": "83a92ecced6eb101658ce2c83d287074",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6329.webp": {
+    "mtime": 1787577297.817788,
+    "ast_hash": "639d78ceb8d2e0aea50e7be6f3610854",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6330.webp": {
+    "mtime": 1787577302.2131114,
+    "ast_hash": "1de103043cea20c8fae6af245d22067e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6331.webp": {
+    "mtime": 1787577304.3041377,
+    "ast_hash": "2bdd788403cab85d5489fa7f1ea7a5d0",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6333.webp": {
+    "mtime": 1787577307.9691994,
+    "ast_hash": "cb31ef0ba6caa8182ba460a2fae5cc35",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6334.webp": {
+    "mtime": 1787577311.4746053,
+    "ast_hash": "7727a6919693083d2421f262cf5d2ff1",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6336.webp": {
+    "mtime": 1787577315.0607717,
+    "ast_hash": "aa6c87a89cf2a99acaf187616a5759bb",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6337.webp": {
+    "mtime": 1787577331.6391041,
+    "ast_hash": "3e44444de1bfa076303759ba783c582f",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6338.webp": {
+    "mtime": 1787577347.60598,
+    "ast_hash": "86095abd3f734699390a97a08ea45bb7",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6339.webp": {
+    "mtime": 1787577364.074155,
+    "ast_hash": "960395ecc25ad854592d81d8daa17b26",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6341.webp": {
+    "mtime": 1787577380.8071494,
+    "ast_hash": "46ae4ac8cc39434b8bf135e6e395be42",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6346.webp": {
+    "mtime": 1787577396.1970832,
+    "ast_hash": "7ac6a825c1a903b9459b586ad8e6458a",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6351.webp": {
+    "mtime": 1787577399.6614318,
+    "ast_hash": "8b4b3245c83c2def4fa6aa104d05195f",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6352.webp": {
+    "mtime": 1787577403.2510056,
+    "ast_hash": "8ab7257eaea60f82b648211c5e98bc09",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6355.webp": {
+    "mtime": 1787577407.1535718,
+    "ast_hash": "f2fda5b9183d7fcf314b3c0d3c36db41",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6356.webp": {
+    "mtime": 1787577410.7517848,
+    "ast_hash": "654ed9944f6d1ecfead5c6aede2a843b",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6357.webp": {
+    "mtime": 1787577413.5776832,
+    "ast_hash": "2ebef318794d2e7d07116355f2d4695b",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6359.webp": {
+    "mtime": 1787577416.6720984,
+    "ast_hash": "f9b9e940e08b15ea91c90117f2831b1d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6362.webp": {
+    "mtime": 1787577419.959357,
+    "ast_hash": "55de5268a71da0bcf972f18e0079dcbc",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6363.webp": {
+    "mtime": 1787577424.524404,
+    "ast_hash": "5c132ef12050c78e3475baf95066048d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6365.webp": {
+    "mtime": 1787577428.3109524,
+    "ast_hash": "429046a580d2945c147a435ce52a63ca",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6366.webp": {
+    "mtime": 1787577430.7292733,
+    "ast_hash": "742ca89654e38a326730ac3be433aeaf",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6367.webp": {
+    "mtime": 1787577435.2020085,
+    "ast_hash": "e186fcc67664683cd4314a10b5513de0",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6368.webp": {
+    "mtime": 1787577438.8804607,
+    "ast_hash": "edd7bc5c6579320d74d389c20e0d25c4",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6369.webp": {
+    "mtime": 1787577441.9983964,
+    "ast_hash": "071418dd6a670b10be93431131c91995",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6370.webp": {
+    "mtime": 1787577446.6681845,
+    "ast_hash": "bcf2da010afe695899ed92cd368c9289",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6371.webp": {
+    "mtime": 1787577449.3456626,
+    "ast_hash": "7ab5da1f602f827aae7570a44b78a5a5",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6374.webp": {
+    "mtime": 1787577453.9261093,
+    "ast_hash": "23183df98ff603c1398547d2ab439dc6",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6375.webp": {
+    "mtime": 1787577458.4756596,
+    "ast_hash": "f98a66b0a4c34ed3b016107decc239f9",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6377.webp": {
+    "mtime": 1787577463.296985,
+    "ast_hash": "75fa3da795bd4e47ad443e44256e9588",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6383.webp": {
+    "mtime": 1787577481.0559587,
+    "ast_hash": "0f1ad5d84e5e1bf1d7ff193f491ce2d6",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6388.webp": {
+    "mtime": 1787577485.8309448,
+    "ast_hash": "b764790ed475494edb337c7bd940c025",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSC_6391.webp": {
+    "mtime": 1787577489.5857878,
+    "ast_hash": "eef0170d0d3326d6cfd85a69189bd7cf",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7004.webp": {
+    "mtime": 1787577495.3491588,
+    "ast_hash": "3ba91311c3ef8cc9e3572ab89d79c470",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7005.webp": {
+    "mtime": 1787577499.7262726,
+    "ast_hash": "49107b027c0e653f34f95ed417d19411",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7006.webp": {
+    "mtime": 1787577504.1799645,
+    "ast_hash": "aa9e760598075fb12286398677e7117e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7008.webp": {
+    "mtime": 1787577506.9114902,
+    "ast_hash": "fc3eed104c4110c156c5ed13e119d9a1",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7010.webp": {
+    "mtime": 1787577509.6313052,
+    "ast_hash": "75517528c0c2e73b117b0d3f1bf857c6",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7013.webp": {
+    "mtime": 1787577513.6796405,
+    "ast_hash": "2cef58994fc1bbf7f4bb069568919494",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7014.webp": {
+    "mtime": 1787577518.0573318,
+    "ast_hash": "871d49930a0547884566732b10256cd8",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7016.webp": {
+    "mtime": 1787577522.6256104,
+    "ast_hash": "2a672cdd926a163e3e924fa9b4004791",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7017.webp": {
+    "mtime": 1787577525.9702253,
+    "ast_hash": "41f064f7d3005cadbd4c08feaab6c328",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7018.webp": {
+    "mtime": 1787577529.0546775,
+    "ast_hash": "4914f5080df8bec1ed0f98335542c4f5",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7019.webp": {
+    "mtime": 1787577546.2369723,
+    "ast_hash": "63f7dc80a4c9087624f2a7b7920feb6e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7021.webp": {
+    "mtime": 1787577551.0370975,
+    "ast_hash": "6507afd917c6843b05063829c571d7e3",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7042 kopia.webp": {
+    "mtime": 1787577551.4630475,
+    "ast_hash": "5c477201eb5ddab43b94b3a9c3b11ecc",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7060 kopia 2.webp": {
+    "mtime": 1787577552.0204349,
+    "ast_hash": "26dc221acb6f58237b2379983bca5a01",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7063 kopia.webp": {
+    "mtime": 1787577552.3708725,
+    "ast_hash": "8d69bca93a45a114467eb996f9409b3d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7071 kopia.webp": {
+    "mtime": 1787577552.8564973,
+    "ast_hash": "75386de94f9e8837419d89258ab25bdc",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7075 kopia 2.webp": {
+    "mtime": 1787577553.435334,
+    "ast_hash": "47f672069aaf17a36ec5410acc6c9f12",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7087 kopia.webp": {
+    "mtime": 1787577553.9462562,
+    "ast_hash": "6c25bae1e08a7900fa4236d896ebc060",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7095 kopia.webp": {
+    "mtime": 1787577554.4474697,
+    "ast_hash": "79a42557a8e8da64c848c5c167758893",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7108 kopia.webp": {
+    "mtime": 1787577555.019308,
+    "ast_hash": "83b584e7350b685dfa3b882ad5e4bf75",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7115 kopia.webp": {
+    "mtime": 1787577555.3649323,
+    "ast_hash": "cd71017edca4ddaebc553be3619275ca",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7133 kopia 2.webp": {
+    "mtime": 1787577555.712113,
+    "ast_hash": "13840cc2362940e874834c366b63d097",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7136 kopia 2.webp": {
+    "mtime": 1787577556.1696103,
+    "ast_hash": "70e602fc226bfec77f7293909befa755",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7143 kopia.webp": {
+    "mtime": 1787577556.6567543,
+    "ast_hash": "8448eaf11b308e322c24b19647d20a88",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7149 kopia.webp": {
+    "mtime": 1787577557.0848842,
+    "ast_hash": "d5de7252124c33f19a99b35295007456",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7152 kopia.webp": {
+    "mtime": 1787577557.7593853,
+    "ast_hash": "7aae0e23ec001d7cef1c36381d5c2900",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7152 kopia2.webp": {
+    "mtime": 1787577558.4118898,
+    "ast_hash": "45dd74c0a0476d4fc4168cd2d26582ce",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7155 kopia.webp": {
+    "mtime": 1787577558.7085874,
+    "ast_hash": "6bffafe2f887dec4911069fd172d480a",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7161 kopia.webp": {
+    "mtime": 1787577559.07141,
+    "ast_hash": "427a5e7bf7adbecd1965e89aa4c6e10d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7166 kopia.webp": {
+    "mtime": 1787577559.5839787,
+    "ast_hash": "2673b569e43dd711ee22b7bcd72c838c",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7166 kopia2.webp": {
+    "mtime": 1787577560.0807247,
+    "ast_hash": "8f72b3933a1a45aaa468c2ee2ffb8cc5",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7171 kopia.webp": {
+    "mtime": 1787577560.5661657,
+    "ast_hash": "de6fdb6358fb2cec3af59cb355ec564d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7171 kopia2.webp": {
+    "mtime": 1787577561.12329,
+    "ast_hash": "9646f6f239729ecca6921d48b0f56234",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7176 kopia.webp": {
+    "mtime": 1787577561.6561694,
+    "ast_hash": "11cb7f62ea105a9a2a549637553f749b",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7176 kopia2.webp": {
+    "mtime": 1787577562.2060492,
+    "ast_hash": "bd1ec90e5e75886858edceeb0ae2c475",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7181 kopia 2.webp": {
+    "mtime": 1787577562.7130814,
+    "ast_hash": "dc69a00f79e9d3a48d94abefeabb67ec",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7200 kopia 2.webp": {
+    "mtime": 1787577563.2238188,
+    "ast_hash": "17a812c2c4f508ed76adcadd38207f6f",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7204 kopia 2.webp": {
+    "mtime": 1787577563.7541478,
+    "ast_hash": "0c192bf5caf407f449188c610f32175b",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7208 kopia.webp": {
+    "mtime": 1787577564.1229079,
+    "ast_hash": "09372effe70c0ff51f9ec9c86fd5c0b2",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7217 kopia 2.webp": {
+    "mtime": 1787577564.6640673,
+    "ast_hash": "11925def5c83340f1da8cc758c6366bc",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7229 kopia.webp": {
+    "mtime": 1787577565.0738535,
+    "ast_hash": "a00089a13808b8c4083a9a257827d8e3",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7235 kopia 2.webp": {
+    "mtime": 1787577565.5428429,
+    "ast_hash": "3edf82eb2c7f168b1ceddff56eb56e28",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7242 kopia 2.webp": {
+    "mtime": 1787577566.088675,
+    "ast_hash": "7fe7e1cd070708a323da9b0d4e02bf4c",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7253 kopia.webp": {
+    "mtime": 1787577566.477822,
+    "ast_hash": "7e9988650336e0f181e69a24bc5c2b03",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7262 kopia.webp": {
+    "mtime": 1787577567.015512,
+    "ast_hash": "73eff7b45224401ab8a9e6c36e2b6ce1",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7264 kopia.webp": {
+    "mtime": 1787577567.611392,
+    "ast_hash": "d0e56721777c9d03844a262d524684a2",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7268 kopia.webp": {
+    "mtime": 1787577568.003197,
+    "ast_hash": "b36b6530568fbd99159e20e7892bacaf",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7273 kopia.webp": {
+    "mtime": 1787577568.5036585,
+    "ast_hash": "70e07583d52939b9068cde0a0495cb5a",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7280 kopia.webp": {
+    "mtime": 1787577568.898634,
+    "ast_hash": "5459c065eb3d3cd2f18045b85af6e004",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7283 kopia.webp": {
+    "mtime": 1787577569.4136465,
+    "ast_hash": "470c36b332c88d6e1a163a501c25bb72",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7295 kopia.webp": {
+    "mtime": 1787577569.8006692,
+    "ast_hash": "b32ac0b0a7d5f5b38be4d4392a6a2bce",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7298 kopia.webp": {
+    "mtime": 1787577570.3559327,
+    "ast_hash": "96af686abe84e1813a2281119c1ae04d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7308 kopia.webp": {
+    "mtime": 1787577570.7473228,
+    "ast_hash": "bdb8e1120aad163723022ec74de9e28d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7321 kopia.webp": {
+    "mtime": 1787577571.1921608,
+    "ast_hash": "ce1766e80cf434d68b7cf1a8a95a617e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7336 kopia 2.webp": {
+    "mtime": 1787577571.680405,
+    "ast_hash": "b0fc9e4ff9c9e6416b18f5bdcb5a5c78",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7346 kopia.webp": {
+    "mtime": 1787577572.0118828,
+    "ast_hash": "8609868b498b5f0d57585acf1e7f0bf5",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7355_(2) kopia.webp": {
+    "mtime": 1787577572.4705698,
+    "ast_hash": "b8906b01ac2101e880a4260aec040432",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7359 kopia 2.webp": {
+    "mtime": 1787577572.9705465,
+    "ast_hash": "7fe95dc3edf1a457dedc755cfd22b056",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7367 kopia.webp": {
+    "mtime": 1787577573.5831308,
+    "ast_hash": "bc9b1b4e463f4dc45f59d09d9c23ecef",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zdjeciaOdFotografa/DSF_7375 kopia.webp": {
+    "mtime": 1787577574.0908136,
+    "ast_hash": "11778c8cc6a45d421580c05d173fdeea",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/agnieszka-bala-1.webp": {
+    "mtime": 1787577574.580883,
+    "ast_hash": "8448eaf11b308e322c24b19647d20a88",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/agnieszka-bala.webp": {
+    "mtime": 1787577574.880726,
+    "ast_hash": "6bffafe2f887dec4911069fd172d480a",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/aleksandra-bala-wojsznis.webp": {
+    "mtime": 1787577575.2572398,
+    "ast_hash": "427a5e7bf7adbecd1965e89aa4c6e10d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/anna-gora.webp": {
+    "mtime": 1787577575.7006328,
+    "ast_hash": "5c477201eb5ddab43b94b3a9c3b11ecc",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/danuta-domzal-magrowska-1.webp": {
+    "mtime": 1787577576.0605428,
+    "ast_hash": "a00089a13808b8c4083a9a257827d8e3",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/danuta-domzal-magrowska.webp": {
+    "mtime": 1787577576.5209093,
+    "ast_hash": "3edf82eb2c7f168b1ceddff56eb56e28",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/dariusz-krzyczmanik-1.webp": {
+    "mtime": 1787577577.0854,
+    "ast_hash": "83b584e7350b685dfa3b882ad5e4bf75",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/dariusz-krzyczmanik.webp": {
+    "mtime": 1787577577.4173532,
+    "ast_hash": "cd71017edca4ddaebc553be3619275ca",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/grupa-zarzad-01-2.webp": {
+    "mtime": 1787577578.0590706,
+    "ast_hash": "45dd74c0a0476d4fc4168cd2d26582ce",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/grupa-zarzad-01.webp": {
+    "mtime": 1787577578.7004821,
+    "ast_hash": "7aae0e23ec001d7cef1c36381d5c2900",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/grupa-zarzad-02-trio-2.webp": {
+    "mtime": 1787577579.2206216,
+    "ast_hash": "8f72b3933a1a45aaa468c2ee2ffb8cc5",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/grupa-zarzad-02-trio.webp": {
+    "mtime": 1787577579.7647896,
+    "ast_hash": "2673b569e43dd711ee22b7bcd72c838c",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/izabela-kubinska.webp": {
+    "mtime": 1787577580.3369071,
+    "ast_hash": "11925def5c83340f1da8cc758c6366bc",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/joanna-kowalska-majka-1.webp": {
+    "mtime": 1787577580.8022819,
+    "ast_hash": "b0fc9e4ff9c9e6416b18f5bdcb5a5c78",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/joanna-kowalska-majka.webp": {
+    "mtime": 1787577581.493009,
+    "ast_hash": "8609868b498b5f0d57585acf1e7f0bf5",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/julia-banasik.webp": {
+    "mtime": 1787577581.921152,
+    "ast_hash": "5459c065eb3d3cd2f18045b85af6e004",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/julia-banasik2.webp": {
+    "mtime": 1787577582.4344585,
+    "ast_hash": "70e07583d52939b9068cde0a0495cb5a",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/karolina-szczesniak.webp": {
+    "mtime": 1787577582.7794375,
+    "ast_hash": "13840cc2362940e874834c366b63d097",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/krzysztof-tylki-1.webp": {
+    "mtime": 1787577583.3305979,
+    "ast_hash": "96af686abe84e1813a2281119c1ae04d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/krzysztof-tylki.webp": {
+    "mtime": 1787577583.707251,
+    "ast_hash": "bdb8e1120aad163723022ec74de9e28d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/kuba-majka.webp": {
+    "mtime": 1787577584.1976838,
+    "ast_hash": "11778c8cc6a45d421580c05d173fdeea",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/kuba-obidoski.webp": {
+    "mtime": 1787577584.7764812,
+    "ast_hash": "47f672069aaf17a36ec5410acc6c9f12",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/magdalena-baranska-2.webp": {
+    "mtime": 1787577585.179091,
+    "ast_hash": "7e9988650336e0f181e69a24bc5c2b03",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/magdalena-baranska.webp": {
+    "mtime": 1787577585.7458613,
+    "ast_hash": "7fe7e1cd070708a323da9b0d4e02bf4c",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/martyna-ambrychiewicz.webp": {
+    "mtime": 1787577586.245412,
+    "ast_hash": "79a42557a8e8da64c848c5c167758893",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/michal-bytomski-1.webp": {
+    "mtime": 1787577586.906622,
+    "ast_hash": "de6fdb6358fb2cec3af59cb355ec564d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/michal-bytomski-2.webp": {
+    "mtime": 1787577587.470678,
+    "ast_hash": "bd1ec90e5e75886858edceeb0ae2c475",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/michal-bytomski-3.webp": {
+    "mtime": 1787577588.005297,
+    "ast_hash": "11cb7f62ea105a9a2a549637553f749b",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/michal-bytomski.webp": {
+    "mtime": 1787577588.5033784,
+    "ast_hash": "9646f6f239729ecca6921d48b0f56234",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/michal-stasiak-2.webp": {
+    "mtime": 1787577589.0839274,
+    "ast_hash": "d0e56721777c9d03844a262d524684a2",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/michal-stasiak-3.webp": {
+    "mtime": 1787577589.4819744,
+    "ast_hash": "b36b6530568fbd99159e20e7892bacaf",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/michal-stasiak.webp": {
+    "mtime": 1787577590.025678,
+    "ast_hash": "73eff7b45224401ab8a9e6c36e2b6ce1",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/milena-padysz-1.webp": {
+    "mtime": 1787577590.528575,
+    "ast_hash": "470c36b332c88d6e1a163a501c25bb72",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/milena-padysz.webp": {
+    "mtime": 1787577590.9310844,
+    "ast_hash": "b32ac0b0a7d5f5b38be4d4392a6a2bce",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/nieznam.webp": {
+    "mtime": 1787577593.3273666,
+    "ast_hash": "34ee9acd74fd1d5949e501976770541e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/nikola-chyziak.webp": {
+    "mtime": 1787577593.817927,
+    "ast_hash": "7fe95dc3edf1a457dedc755cfd22b056",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/oliwia-scigalska-1.webp": {
+    "mtime": 1787577594.3718908,
+    "ast_hash": "26dc221acb6f58237b2379983bca5a01",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/oliwia-scigalska.webp": {
+    "mtime": 1787577594.7323964,
+    "ast_hash": "8d69bca93a45a114467eb996f9409b3d",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/para-01.webp": {
+    "mtime": 1787577595.1932404,
+    "ast_hash": "b8906b01ac2101e880a4260aec040432",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/para-02.webp": {
+    "mtime": 1787577595.778082,
+    "ast_hash": "bc9b1b4e463f4dc45f59d09d9c23ecef",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/rafal-drozda-1.webp": {
+    "mtime": 1787577596.1619172,
+    "ast_hash": "09372effe70c0ff51f9ec9c86fd5c0b2",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/rafal-drozda-2.webp": {
+    "mtime": 1787577596.6784763,
+    "ast_hash": "17a812c2c4f508ed76adcadd38207f6f",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/rafal-drozda.webp": {
+    "mtime": 1787577597.2011533,
+    "ast_hash": "0c192bf5caf407f449188c610f32175b",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/sylwia-olejnik.webp": {
+    "mtime": 1787577597.6222887,
+    "ast_hash": "ce1766e80cf434d68b7cf1a8a95a617e",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/zofia-stanko.webp": {
+    "mtime": 1787577598.1012237,
+    "ast_hash": "6c25bae1e08a7900fa4236d896ebc060",
+    "semantic_hash": ""
+  },
+  "public/amicare-zrodla-foto-webp/zespolNowe/zuzia-chmielewska.webp": {
+    "mtime": 1787577598.5962617,
+    "ast_hash": "75386de94f9e8837419d89258ab25bdc",
+    "semantic_hash": ""
+  },
+  "scripts/pages-404.mjs": {
+    "mtime": 1788013204.9921947,
+    "ast_hash": "c338a672604dc9ece923728c8027b569",
+    "semantic_hash": ""
+  },
+  "seo-migracja/01-slabe-punkty.md": {
+    "mtime": 1788040831.2452042,
+    "ast_hash": "1d82b03d9449d43cdbe5f02933542f14",
+    "semantic_hash": ""
+  },
+  "seo-migracja/README.md": {
+    "mtime": 1788013792.959616,
+    "ast_hash": "317cc42e82d309b89dc0d6780321da0d",
+    "semantic_hash": ""
+  },
+  "seo-migracja/02-mapa-przekierowan.md": {
+    "mtime": 1788013792.9513304,
+    "ast_hash": "6b2499e845d467e870351f1b80a57c85",
+    "semantic_hash": ""
+  },
+  "seo-migracja/03-plan-dzialan.md": {
+    "mtime": 1788013792.9556775,
+    "ast_hash": "2e2bf2612e31c185f82fc5d6dfa52163",
+    "semantic_hash": ""
+  },
+  "src/app/utils/slug.ts": {
+    "mtime": 1788012133.0017257,
+    "ast_hash": "e1820557bf917a04fc4fa0978b4cb162",
+    "semantic_hash": ""
+  },
+  "seo-migracja/stare-urls.txt": {
+    "mtime": 1788009288.5824714,
+    "ast_hash": "266e9f3027cbc88b96263baff435ee5b",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpracujemy/models/partnerzy.ts": {
+    "mtime": 1788039121.568854,
+    "ast_hash": "1f251d3f9fce3857218b46f3828347f5",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpracujemy/wspolpracujemy.ts": {
+    "mtime": 1788041412.1928723,
+    "ast_hash": "882afc3479e6592c3792ff9afa7e7653",
+    "semantic_hash": ""
+  },
+  "src/app/pages/wspolpracujemy/wspolpracujemy.html": {
+    "mtime": 1788041451.583711,
+    "ast_hash": "919900f751bb42f4bd7307f5da161b9e",
+    "semantic_hash": ""
+  },
+  "scripts/sitemap.mjs": {
+    "mtime": 1788084204.3635197,
+    "ast_hash": "39458ceb63e3db75b41ab45f0084b2e9",
+    "semantic_hash": ""
+  },
+  "src/app/app.routes.server.ts": {
+    "mtime": 1788084204.361923,
+    "ast_hash": "0809cc2bbb0ded8185c241eff90b1476",
+    "semantic_hash": ""
+  },
+  "src/app/app.config.server.ts": {
+    "mtime": 1788012919.2177439,
+    "ast_hash": "3970e45a18d96e13afe0e0f10cbda945",
+    "semantic_hash": ""
+  },
+  "src/app/pages/nie-znaleziono/nie-znaleziono.ts": {
+    "mtime": 1788013189.4040406,
+    "ast_hash": "4c2e883729ae384ad25c6833854685ff",
+    "semantic_hash": ""
+  },
+  "src/app/utils/schema-zabieg.ts": {
+    "mtime": 1788020683.6654954,
+    "ast_hash": "64cdcd87c4e7530d20ed3c201d7d5579",
+    "semantic_hash": ""
+  },
+  "src/main.server.ts": {
+    "mtime": 1788013025.0773106,
+    "ast_hash": "97cea67d7fa6d1b4b97e330a29eecaf5",
+    "semantic_hash": ""
+  },
+  "src/app/pages/nie-znaleziono/nie-znaleziono.html": {
+    "mtime": 1788013189.4491684,
+    "ast_hash": "aeead156decc23eb72be43a54272c1e4",
+    "semantic_hash": ""
+  },
+  "scripts/redirects.mjs": {
+    "mtime": 1788043336.1456156,
+    "ast_hash": "c0a104ad42c3421835eec8aae69436f4",
+    "semantic_hash": ""
+  },
+  "public/llms.txt": {
+    "mtime": 1788013493.0497034,
+    "ast_hash": "c0cfed6fda3929af238ffd5a72b61fc4",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/allianz.webp": {
+    "mtime": 1788039062.109587,
+    "ast_hash": "cb0bf0c6364d8ffa4b91fb2ae24dd59c",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/dasmed.webp": {
+    "mtime": 1788039108.668562,
+    "ast_hash": "0e380c882fc7adde2d5f71db454cb767",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/generali-zdrowie.webp": {
+    "mtime": 1788039062.1235871,
+    "ast_hash": "a2be88c9413cc734e86a77efbe938a90",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/jp-medica.webp": {
+    "mtime": 1788039062.1390996,
+    "ast_hash": "ec4e54611ebd316469ef0dcfd834281d",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/luxmed.webp": {
+    "mtime": 1788039062.1476471,
+    "ast_hash": "22eccacfa1c7a81b270ce62ba98857b7",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/medicover.webp": {
+    "mtime": 1788039062.1586404,
+    "ast_hash": "245e385c96dc1c0195de23840c18ffae",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/polmed.webp": {
+    "mtime": 1788039062.1707027,
+    "ast_hash": "266e7bca34c55d987aacb231f9f1e22d",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/pzu-zdrowie.webp": {
+    "mtime": 1788039062.1776524,
+    "ast_hash": "f5fc792810db46448449afe82fd91c70",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/saneo.webp": {
+    "mtime": 1788039062.1886518,
+    "ast_hash": "71a222d4fc0f60d18806744ff8830d1e",
+    "semantic_hash": ""
+  },
+  "public/images/partnerzy/telemedi.webp": {
+    "mtime": 1788039062.202699,
+    "ast_hash": "38eb6efb35f0e42d64f53cec7cc5ef4b",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/wejscie-parking-1200.webp": {
+    "mtime": 1788022678.3474832,
+    "ast_hash": "52fa9704d0b902f3b5fb8459bd9b6f9d",
+    "semantic_hash": ""
+  },
+  "public/images/przychodnia/wejscie-parking-800.webp": {
+    "mtime": 1788022678.5395505,
+    "ast_hash": "f9b128775f45b22d97b789eadf700961",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/zgloszenie-form/zgloszenie-form.ts": {
+    "mtime": 1788084042.0656476,
+    "ast_hash": "76241d7c9472fc2e4c5292c8f1574d4d",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/components/zgloszenie-form/zgloszenie-form.html": {
+    "mtime": 1788084059.5267518,
+    "ast_hash": "4effba4dec60533ad729c745a4e54436",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/badanie-kliniczne-detail/badanie-kliniczne-detail.ts": {
+    "mtime": 1788084089.29172,
+    "ast_hash": "92464b5cba784bd4fa30cf95ba543082",
+    "semantic_hash": ""
+  },
+  "src/app/pages/badania-kliniczne/badanie-kliniczne-detail/badanie-kliniczne-detail.html": {
+    "mtime": 1788084440.881045,
+    "ast_hash": "9ca751c2639aec88165e166b47e49d6e",
+    "semantic_hash": ""
+  }
+}

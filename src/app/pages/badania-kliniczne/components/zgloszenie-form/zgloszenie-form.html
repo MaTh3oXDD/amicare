@@ -1,0 +1,72 @@
+@if (!wyslano()) {
+  <form class="zform" (ngSubmit)="wyslij()" #f="ngForm" novalidate>
+    <div class="zform__row">
+      <label class="zform__field">
+        <span class="zform__label">Imię i nazwisko*</span>
+        <input type="text" name="imie" required [(ngModel)]="model.imie" autocomplete="name" />
+      </label>
+      <label class="zform__field">
+        <span class="zform__label">Telefon*</span>
+        <input type="tel" name="telefon" required [(ngModel)]="model.telefon" autocomplete="tel" />
+      </label>
+    </div>
+
+    <label class="zform__field">
+      <span class="zform__label">Email <span class="zform__hint">opcjonalnie</span></span>
+      <input type="email" name="email" [(ngModel)]="model.email" autocomplete="email" />
+    </label>
+
+    <label class="zform__field">
+      <span class="zform__label">Wiadomość <span class="zform__hint">opcjonalnie</span></span>
+      <textarea
+        name="wiadomosc"
+        rows="4"
+        [(ngModel)]="model.wiadomosc"
+        placeholder="Np. pora dnia, o której najłatwiej się z Państwem skontaktować."
+      ></textarea>
+    </label>
+
+    <!-- honeypot: ukryty przed ludźmi, boty go wypełniają -->
+    <input
+      type="text"
+      name="firma"
+      [(ngModel)]="model.firma"
+      tabindex="-1"
+      autocomplete="off"
+      aria-hidden="true"
+      class="zform__trap"
+    />
+
+    <label class="zform__consent">
+      <input type="checkbox" name="zgoda" required [(ngModel)]="model.zgoda" />
+      <span>
+        Wyrażam zgodę na przetwarzanie moich danych osobowych w celu kontaktu w sprawie badania
+        klinicznego, zgodnie z Polityką prywatności.
+      </span>
+    </label>
+
+    <div class="zform__actions">
+      <button type="submit" class="btn btn--solid" [disabled]="f.invalid || wysylanie()">
+        {{ wysylanie() ? 'Wysyłanie…' : 'Wyślij zgłoszenie' }}
+      </button>
+      <span class="zform__alt mono">
+        albo zadzwoń · <a href="tel:+48786086331">786 086 331</a>
+      </span>
+    </div>
+
+    @if (blad()) {
+      <p class="zform__error" role="alert">
+        Nie udało się wysłać zgłoszenia. Prosimy zadzwonić:
+        <a href="tel:+48786086331">+48 786 086 331</a>.
+      </p>
+    }
+  </form>
+} @else {
+  <div class="zform__ok" role="status">
+    <span class="mono">Zgłoszenie wysłane</span>
+    <p>
+      Koordynator badania oddzwoni i przeprowadzi wstępną kwalifikację przez telefon. Jeśli sprawa
+      jest pilna, prosimy dzwonić pod <a href="tel:+48786086331">+48 786 086 331</a>.
+    </p>
+  </div>
+}
