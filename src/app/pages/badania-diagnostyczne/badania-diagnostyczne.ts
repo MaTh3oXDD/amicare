@@ -16,8 +16,7 @@ interface Badanie {
     | 'ekg'
     | 'waga'
     | 'krew'
-    | 'usg'
-    | 'infuzja';
+    | 'usg';
 }
 
 interface Kategoria {
@@ -57,12 +56,6 @@ export class BadaniaDiagnostyczne implements OnInit {
           link: '/pracownia-endoskopii/gastroskopia',
           opis: 'Wgląd w przełyk, żołądek i dwunastnicę przez cienki endoskop.',
           icon: 'gastroskopia',
-        },
-        {
-          nazwa: 'Leczenie biologiczne',
-          link: '/badania-diagnostyczne/leczenie-biologiczne',
-          opis: 'Podanie leku biologicznego pod nadzorem zespołu medycznego.',
-          icon: 'infuzja',
         },
       ],
     },
@@ -120,7 +113,7 @@ export class BadaniaDiagnostyczne implements OnInit {
     this.seo.set({
       title: 'Badania diagnostyczne - AmiCare Centrum Medyczne Łódź',
       description:
-        'Twoje zdrowie w najlepszych rękach. Badania diagnostyczne w AmiCare Łódź: diagnostyka bólu brzucha, kolonoskopia, gastroskopia, leczenie biologiczne, EKG, USG, badanie Holtera i pobranie krwi.',
+        'Twoje zdrowie w najlepszych rękach. Badania diagnostyczne w AmiCare Łódź: diagnostyka bólu brzucha, kolonoskopia, gastroskopia, EKG, USG, badanie Holtera i pobranie krwi.',
       path: '/badania-diagnostyczne',
     });
   }

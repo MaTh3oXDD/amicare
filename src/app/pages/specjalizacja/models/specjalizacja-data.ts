@@ -10,11 +10,19 @@ export interface CennikTabela {
   pozycje: CennikPozycja[];
 }
 
+export interface Kafelek {
+  nazwa: string;
+  opis: string;
+  link: string;
+}
+
 export interface SpecjalizacjaInfo {
   slug: string;
   nazwa: string;
   opis: string[];
   listy?: { tytul: string; punkty: string[] }[];
+  kafelkiNaglowek?: string;
+  kafelki?: Kafelek[];
   cenniki: CennikTabela[];
   lekarze: string[];
 }
@@ -73,6 +81,16 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
           'opieka doświadczonego zespołu specjalistów',
           'przyjazne podejście do dzieci i dorosłych',
         ],
+      },
+    ],
+    kafelkiNaglowek: 'Terapia biologiczna',
+    kafelki: [
+      {
+        nazwa: 'Leczenie biologiczne',
+        opis:
+          'Terapia preparatami biologicznymi (Yuflyma, Remsima) w nieswoistych chorobach zapalnych jelit - ' +
+          'chorobie Leśniowskiego-Crohna i wrzodziejącym zapaleniu jelita grubego. Podanie leku pod nadzorem zespołu medycznego.',
+        link: '/badania-diagnostyczne/leczenie-biologiczne',
       },
     ],
     cenniki: [
@@ -261,6 +279,16 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
         ],
       },
     ],
+    kafelkiNaglowek: 'Terapia biologiczna',
+    kafelki: [
+      {
+        nazwa: 'Leczenie biologiczne',
+        opis:
+          'Terapia preparatami biologicznymi (Yuflyma, Remsima) w reumatoidalnym i łuszczycowym zapaleniu stawów, ' +
+          'zesztywniającym zapaleniu stawów kręgosłupa oraz młodzieńczym idiopatycznym zapaleniu stawów.',
+        link: '/badania-diagnostyczne/leczenie-biologiczne',
+      },
+    ],
     cenniki: [
       {
         weekend: false,
@@ -316,11 +344,11 @@ export const SPECJALIZACJE: SpecjalizacjaInfo[] = [
     slug: 'psychologia',
     nazwa: 'Psychologia',
     opis: [
-      'Twoje emocje mają znaczenie - skorzystaj z profesjonalnego wsparcia psychologicznego! Szukasz pomocy, zrozumienia i konkretnych rozwiązań? W naszym centrum medycznym oferujemy kompleksowe wsparcie dla dzieci, młodzieży i dorosłych. Pracujemy z empatią, doświadczeniem i indywidualnym podejściem do każdego pacjenta.',
+      'Prowadzimy konsultacje, terapię i diagnozę psychologiczną dla dzieci, młodzieży i dorosłych.',
       'Nasz zespół tworzą wykwalifikowani psycholodzy, terapeuci i mediatorzy, którzy łączą wieloletnie doświadczenie z empatycznym podejściem do każdego pacjenta. Pracujemy z osobami w różnym wieku i w różnych sytuacjach życiowych, zapewniając fachową pomoc opartą na rzetelnej wiedzy i szacunku.',
-      'Wierzymy, że skuteczna pomoc psychologiczna wymaga uważności na indywidualną historię i potrzeby każdego człowieka. Dlatego nasza praca opiera się na dokładnym zrozumieniu sytuacji pacjenta i dopasowaniu formy terapii do jego możliwości, celów i tempa.',
+      'Formę terapii dobieramy po rozpoznaniu sytuacji pacjenta - do jego możliwości, celów i tempa pracy.',
       'Tworzymy atmosferę pełną zrozumienia, życzliwości i zaufania. Nasze gabinety to przestrzeń, w której możesz mówić swobodnie, bez oceniania i obaw.',
-      'Zrób pierwszy krok. Skontaktuj się z nami i przekonaj się, że pomoc jest bliżej, niż myślisz. Ciepło Cię przywitamy i wspólnie znajdziemy najlepszą drogę do poprawy Twojego samopoczucia.',
+      'Pierwsza wizyta trwa 50 minut i służy rozpoznaniu problemu oraz ustaleniu dalszych kroków.',
     ],
     listy: [
       {

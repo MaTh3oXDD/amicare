@@ -43,7 +43,15 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding: 0 clamp(1.25rem, 4vw, 2.75rem) 0.5rem;
-  scrollbar-width: thin;
+  /* karuzelę przesuwa się palcem, strzałkami i kółkiem - pasek przewijania
+     tylko zaśmieca kadr pod kartami */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent 100%);
   -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 2.5rem), transparent 100%);
 

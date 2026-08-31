@@ -179,6 +179,7 @@ export const DIETETYCY: Doctor[] = [
     name: 'Oliwia Ścigalska',
     title: 'Dyplomowany dietetyk kliniczny',
     bio: 'Dyplomowany dietetyk kliniczny, absolwentka Uniwersytetu Medycznego w Łodzi oraz autor artykułów dla Dietetycy.org.pl.',
+    photo: 'images/zespol/oliwia-scigalska.webp',
   },
 ];
 

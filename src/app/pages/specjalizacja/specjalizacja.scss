@@ -1,3 +1,29 @@
+/* Tło sekcji opisu: tri-mark z logo powtórzony w kobalcie o niskim kryciu.
+   Ten sam znacznik co przy .eyebrow, więc strona nie dostaje nowej ozdoby,
+   tylko rozpisuje istniejący motyw na całą płaszczyznę. */
+.spec-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.spec-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(var(--c-blue-3), var(--c-blue-3)),
+    linear-gradient(var(--c-blue-3), var(--c-blue-3)),
+    linear-gradient(var(--c-blue-3), var(--c-blue-3));
+  background-size: 2px 14px, 2px 14px, 2px 14px;
+  background-position: 0 0, 10px 0, 20px 0;
+  background-repeat: repeat, repeat, repeat;
+  opacity: 0.05;
+  /* wzór tylko przy krawędziach - środek zostaje czysty pod tekstem */
+  mask-image: radial-gradient(120% 90% at 50% 45%, transparent 55%, #000 100%);
+}
+
 .spec {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -6,6 +32,14 @@
 
   @media (min-width: 960px) {
     grid-template-columns: 1.1fr 1fr;
+  }
+}
+
+/* dietetyka i inne bez cennika: bez pustej prawej kolumny */
+.spec--solo {
+  @media (min-width: 960px) {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 62ch;
   }
 }
 
@@ -32,10 +66,24 @@
   margin-top: 2rem;
 }
 
+.spec__cennik-head {
+  margin: 0 -2rem 1.6rem;
+  padding: 0.9rem 2rem;
+  background: var(--c-blue-3);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
 .spec__cennik {
   background: var(--c-cream);
   border: 1px solid var(--c-line);
-  padding: 2rem;
+  /* nagłówek dostaje pełną szerokość panelu, więc padding schodzi niżej */
+  padding: 0 2rem 2rem;
+  overflow: hidden;
 
   h3 {
     margin-top: 1.2em;
@@ -44,5 +92,84 @@
 
   table {
     background: #fff;
+  }
+
+  /* na telefonie 2rem panelu + wcięcie kontenera zostawiało tabeli
+     zbyt wąski pas - panel oddycha mniej, treść więcej */
+  @media (max-width: 719px) {
+    padding: 0 1.25rem 1.5rem;
+
+    .spec__cennik-head {
+      margin: 0 -1.25rem 1.4rem;
+      padding: 0.8rem 1.25rem;
+    }
+  }
+}
+
+/* etykieta sekcji - ten sam mono-eyebrow co w nagłówkach sekcji, żeby
+   kafelek nie ginął w potoku list powyżej */
+.spec__kafelki-label {
+  display: flex;
+  margin-top: 2.6rem;
+  margin-bottom: 0.9rem;
+  color: var(--c-green-ink);
+}
+
+.spec__kafelki {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.2rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
+.spec__kafelek {
+  display: flex;
+  flex-direction: column;
+  background: var(--c-white);
+  border: 1px solid var(--c-line);
+  /* zielona listwa = ten sam sygnał co znacznik eyebrow */
+  border-left: 3px solid var(--c-green);
+  padding: 1.7rem 1.6rem;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.45em;
+    font-size: 1.25rem;
+    color: var(--c-green-ink);
+  }
+
+  p {
+    font-size: 0.92rem;
+    flex: 1;
+  }
+
+  span {
+    margin-top: 1.1rem;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-green-ink);
+  }
+
+  &:hover {
+    border-color: var(--c-green);
+    box-shadow: 0 12px 28px rgba(62, 132, 36, 0.14);
+    transform: translateY(-3px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
   }
 }
