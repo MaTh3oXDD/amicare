@@ -1,0 +1,37 @@
+# AmiCare Centrum Medyczne
+
+> Centrum medyczne i ośrodek badań klinicznych w Łodzi (ul. Romanowska 55N, ul. Zgierska 249)
+> oraz w Jeleniej Górze. Pracownia endoskopii, konsultacje specjalistyczne, diagnostyka
+> i badania kliniczne. Rejestracja: 42 28 90 250, rejestracja@amicare.pl.
+
+## Pracownia endoskopii
+- [Pracownia endoskopii](https://amicare.pl/pracownia-endoskopii): gastroskopia i kolonoskopia w Łodzi
+- [Kolonoskopia](https://amicare.pl/pracownia-endoskopii/kolonoskopia): badanie jelita grubego, znieczulenie miejscowe
+- [Kolonoskopia w analgosedacji](https://amicare.pl/pracownia-endoskopii/kolonoskopia-w-analgosedacji)
+- [Kolonoskopia w znieczuleniu ogólnym](https://amicare.pl/pracownia-endoskopii/kolonoskopia-znieczulenie-ogolne)
+- [Gastroskopia](https://amicare.pl/pracownia-endoskopii/gastroskopia): badanie górnego odcinka przewodu pokarmowego
+- [Gastroskopia w analgosedacji](https://amicare.pl/pracownia-endoskopii/gastroskopia-z-analgosedacja)
+- [Gastroskopia w znieczuleniu ogólnym](https://amicare.pl/pracownia-endoskopii/gastroskopia-znieczulenie-ogolne)
+
+## Konsultacje i diagnostyka
+- [Konsultacje specjalistyczne](https://amicare.pl/konsultacje-specjalistyczne): gastroenterologia, chirurgia, reumatologia, kardiologia, proktologia, psychologia, dietetyka
+- [Badania diagnostyczne](https://amicare.pl/badania-diagnostyczne): USG, EKG, Holter, pobranie krwi, leczenie biologiczne
+- [Cennik](https://amicare.pl/cennik): ceny badań endoskopowych, konsultacji i diagnostyki
+
+## Badania kliniczne
+- [Badania kliniczne](https://amicare.pl/badania-kliniczne): obecnie prowadzone badania w Łodzi i Jeleniej Górze, ankiety kwalifikacyjne
+- [Współpraca](https://amicare.pl/wspolpraca): dla lekarzy badaczy, Sponsorów i CRO
+
+## Placówki i zespół
+- [Placówki](https://amicare.pl/placowki)
+- [Łódź, ul. Romanowska 55N](https://amicare.pl/placowki/lodz-romanowska): pon-pt 08:00-20:00
+- [Łódź, ul. Zgierska 249](https://amicare.pl/placowki/lodz-zgierska): pon-pt 08:00-16:00
+- [Jelenia Góra](https://amicare.pl/placowki/jelenia-gora)
+- [Zespół](https://amicare.pl/o-nas/zespol): lekarze, koordynatorzy badań, zespół pielęgniarski
+- [O nas](https://amicare.pl/o-nas)
+- [Współpracujemy](https://amicare.pl/o-nas/wspolpracujemy): ubezpieczyciele i partnerzy
+- [Kontakt](https://amicare.pl/kontakt)
+
+## Uwagi
+- Pełna lista adresów: https://amicare.pl/sitemap.xml
+- Treści mają charakter informacyjny i nie zastępują konsultacji lekarskiej.

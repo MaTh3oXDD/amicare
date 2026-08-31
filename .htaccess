@@ -1,0 +1,55 @@
+# Apache: serwowanie prerenderowanej strony + proxy formularzy.
+# Trafia do folderu www razem z resztą plików strony.
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Wymuś HTTPS - formularze zbierają dane pacjentów
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # /api/... zostaw backendowi, nie przepisuj
+  RewriteRule ^api/ - [L]
+
+  # Przekierowania ze starych adresów WordPressa muszą zadziałać przed
+  # serwowaniem plików. Treść: seo-migracja/serwer/redirects.htaccess
+  # (generuje ją `npm run redirects`) - wklej ją tutaj albo włącz przez Include.
+
+  # Jedna konwencja adresu: bez ukośnika na końcu, zgodnie z canonicalem.
+  # Musi stać PO regułach dla starych adresów WordPressa - one kończą się ukośnikiem.
+  RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+  # Build z prerenderem daje katalog na trasę: /cennik -> cennik/index.html.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}/index.html -f
+  RewriteRule ^(.*?)/?$ /$1/index.html [L]
+</IfModule>
+
+# Adres spoza listy tras ma zwrócić prawdziwe 404, nie stronę główną z kodem 200.
+# Kopię strony błędu tworzy scripts/pages-404.mjs.
+ErrorDocument 404 /404.html
+
+# Nagłówki bezpieczeństwa - formularze zbierają dane pacjentów.
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript image/svg+xml application/json
+</IfModule>
+
+# Pliki z hashem w nazwie - cache na rok
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
