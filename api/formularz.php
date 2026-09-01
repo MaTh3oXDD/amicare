@@ -347,6 +347,17 @@ if (isset($override['*'])) {
 
 $temat = sanitizeHeaderValue(($def['temat'])($pola));
 
+/* Kto sie zglasza - doklejane do tematu, zeby na liscie w skrzynce bylo widac
+   nazwisko i kontakt bez otwierania maila. */
+$kontaktNadawcy = array_filter([
+    sanitizeHeaderValue($pola['imie'] ?? ''),
+    sanitizeHeaderValue($pola['email'] ?? ''),
+    sanitizeHeaderValue($pola['telefon'] ?? ''),
+]);
+if ($kontaktNadawcy !== []) {
+    $temat .= ' - ' . implode(', ', $kontaktNadawcy);
+}
+
 $doMaila = isset($def['przeksztalc']) ? ($def['przeksztalc'])($pola) : $pola;
 
 $linie = ['Nowe zgloszenie ze strony amicare.pl', ''];
@@ -363,12 +374,23 @@ $linie[] = 'User-Agent: ' . sanitizeHeaderValue((string) ($_SERVER['HTTP_USER_AG
 
 $tresc = implode("\r\n", $linie);
 
+$imiePacjenta = sanitizeHeaderValue($pola['imie'] ?? '');
+
 $naglowki = [];
 if (isset($pola['email']) && $pola['email'] !== '') {
-    // Odpowiedz w kliencie pocztowym idzie prosto do pacjenta.
-    $naglowki['Reply-To'] = SmtpMailer::encodeHeader(sanitizeHeaderValue($pola['imie'] ?? ''))
+    // Odpowiedz w kliencie pocztowym idzie prosto do pacjenta, nie do nas.
+    $naglowki['Reply-To'] = SmtpMailer::encodeHeader($imiePacjenta)
         . ' <' . sanitizeHeaderValue($pola['email']) . '>';
 }
+
+/* Adres nadawcy musi zostac nasza skrzynka - serwer pocztowy odrzuca wysylke
+   z cudzej domeny (SPF/DKIM). Podmieniamy za to nazwe wyswietlana: imie i adres
+   pacjenta, zeby lista w skrzynce czytala sie jak lista zgloszen, a nie jak
+   kolejne maile od formularza. Adres celowo bez nawiasow ostrych - klienty
+   pocztowe oznaczaja taki zapis jako probe podszycia. */
+$nazwaNadawcy = $imiePacjenta !== ''
+    ? trim($imiePacjenta . ' · ' . ($pola['email'] ?? $pola['telefon'] ?? ''), " ·")
+    : (string) $config['mail_from_name'];
 
 $mailer = new SmtpMailer(
     (string) $config['smtp_host'],
@@ -381,7 +403,7 @@ $mailer = new SmtpMailer(
 try {
     $mailer->send(
         (string) $config['mail_from'],
-        (string) $config['mail_from_name'],
+        $nazwaNadawcy,
         $odbiorca,
         $temat,
         $tresc,
