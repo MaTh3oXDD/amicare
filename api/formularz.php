@@ -114,9 +114,14 @@ function formularze(): array
 /**
  * Sciezki przeszukiwane w poszukiwaniu pliku konfiguracyjnego, w kolejnosci.
  * Plik ma zwracac tablice - wzor w deploy/amicare-config.example.php.
- * Pierwsza sciezka pasuje do Pleska (katalog nad httpdocs, poza katalogiem WWW).
+ *
+ * Kolejnosc od najbezpieczniejszej: najpierw katalog domowy (dwa poziomy nad
+ * katalogiem strony, poza zasiegiem przegladarki niezaleznie od tego, gdzie
+ * wskazuje katalog glowny domeny), potem katalog tuz nad strona, na koncu
+ * sciezka systemowa dla wlasnego serwera.
  */
 const CONFIG_PATHS = [
+    __DIR__ . '/../../../amicare-config.php',
     __DIR__ . '/../../amicare-config.php',
     '/etc/amicare/config.php',
 ];
